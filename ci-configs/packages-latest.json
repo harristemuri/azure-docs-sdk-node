@@ -858,6 +858,12 @@
     },
     {
       "name": "azure-arm-appinsights@2.1.0"
+    },
+    {
+      "name": "@azure/keyvault-common@1.0.0"
+    },
+    {
+      "name": "@azure/arm-dataprotection@1.0.0"
     }
   ],
   "source_repos": []
