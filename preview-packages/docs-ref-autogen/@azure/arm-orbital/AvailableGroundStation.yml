@@ -112,6 +112,18 @@ properties:
       return:
         description: ''
         type: string
+  - name: releaseMode
+    uid: '@azure/arm-orbital.AvailableGroundStation.releaseMode'
+    package: '@azure/arm-orbital'
+    summary: Release Status of a ground station
+    fullName: releaseMode
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'releaseMode?: string'
+      return:
+        description: ''
+        type: string
   - name: type
     uid: '@azure/arm-orbital.AvailableGroundStation.type'
     package: '@azure/arm-orbital'

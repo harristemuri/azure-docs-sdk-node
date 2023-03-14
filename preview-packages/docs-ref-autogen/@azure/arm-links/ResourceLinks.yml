@@ -117,44 +117,6 @@ methods:
           PagedAsyncIterableIterator&lt;<xref
           uid="@azure/arm-links.ResourceLink" />, <xref
           uid="@azure/arm-links.ResourceLink" />[], PageSettings&gt;
-  - name: >-
-      listAtSourceScopeNext(string, string,
-      ResourceLinksListAtSourceScopeNextOptionalParams)
-    uid: '@azure/arm-links.ResourceLinks.listAtSourceScopeNext'
-    package: '@azure/arm-links'
-    summary: ListAtSourceScopeNext
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listAtSourceScopeNext(scope: string, nextLink: string,
-        options?: ResourceLinksListAtSourceScopeNextOptionalParams):
-        PagedAsyncIterableIterator<ResourceLink, ResourceLink[], PageSettings>
-      parameters:
-        - id: scope
-          type: string
-          description: >-
-            The fully qualified ID of the scope for getting the resource links.
-            For example, to
-                         list resource links at and under a resource group, set the scope to
-                         /subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/myGroup.
-        - id: nextLink
-          type: string
-          description: >-
-            The nextLink from the previous successful call to the
-            ListAtSourceScope method.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-links.ResourceLinksListAtSourceScopeNextOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: >-
-          PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-links.ResourceLink" />, <xref
-          uid="@azure/arm-links.ResourceLink" />[], PageSettings&gt;
   - name: listAtSubscription(ResourceLinksListAtSubscriptionOptionalParams)
     uid: '@azure/arm-links.ResourceLinks.listAtSubscription'
     package: '@azure/arm-links'
@@ -171,37 +133,6 @@ methods:
           type: >-
             <xref
             uid="@azure/arm-links.ResourceLinksListAtSubscriptionOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: >-
-          PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-links.ResourceLink" />, <xref
-          uid="@azure/arm-links.ResourceLink" />[], PageSettings&gt;
-  - name: >-
-      listAtSubscriptionNext(string,
-      ResourceLinksListAtSubscriptionNextOptionalParams)
-    uid: '@azure/arm-links.ResourceLinks.listAtSubscriptionNext'
-    package: '@azure/arm-links'
-    summary: ListAtSubscriptionNext
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listAtSubscriptionNext(nextLink: string, options?:
-        ResourceLinksListAtSubscriptionNextOptionalParams):
-        PagedAsyncIterableIterator<ResourceLink, ResourceLink[], PageSettings>
-      parameters:
-        - id: nextLink
-          type: string
-          description: >-
-            The nextLink from the previous successful call to the
-            ListAtSubscription method.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-links.ResourceLinksListAtSubscriptionNextOptionalParams"
             />
           description: The options parameters.
       return:

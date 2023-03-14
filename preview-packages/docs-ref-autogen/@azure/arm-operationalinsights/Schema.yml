@@ -88,38 +88,6 @@ properties:
       return:
         description: ''
         type: string
-  - name: restoredLogs
-    uid: '@azure/arm-operationalinsights.Schema.restoredLogs'
-    package: '@azure/arm-operationalinsights'
-    summary: >-
-      Parameters of the restore operation that initiated this table.
-
-      NOTE: This property will not be serialized. It can only be populated by
-      the server.
-    fullName: restoredLogs
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'restoredLogs?: RestoredLogs'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-operationalinsights.RestoredLogs" />
-  - name: searchResults
-    uid: '@azure/arm-operationalinsights.Schema.searchResults'
-    package: '@azure/arm-operationalinsights'
-    summary: >-
-      Parameters of the search job that initiated this table.
-
-      NOTE: This property will not be serialized. It can only be populated by
-      the server.
-    fullName: searchResults
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'searchResults?: SearchResults'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-operationalinsights.SearchResults" />
   - name: solutions
     uid: '@azure/arm-operationalinsights.Schema.solutions'
     package: '@azure/arm-operationalinsights'

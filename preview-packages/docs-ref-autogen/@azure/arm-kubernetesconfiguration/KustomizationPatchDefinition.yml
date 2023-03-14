@@ -21,12 +21,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'dependsOn?: DependsOnDefinition[]'
+      content: 'dependsOn?: string[]'
       return:
         description: ''
-        type: >-
-          <xref uid="@azure/arm-kubernetesconfiguration.DependsOnDefinition"
-          />[]
+        type: string[]
   - name: force
     uid: '@azure/arm-kubernetesconfiguration.KustomizationPatchDefinition.force'
     package: '@azure/arm-kubernetesconfiguration'

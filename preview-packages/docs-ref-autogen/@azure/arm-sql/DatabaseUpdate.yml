@@ -241,6 +241,18 @@ properties:
       return:
         description: ''
         type: string
+  - name: federatedClientId
+    uid: '@azure/arm-sql.DatabaseUpdate.federatedClientId'
+    package: '@azure/arm-sql'
+    summary: The Client id used for cross tenant per database CMK scenario
+    fullName: federatedClientId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'federatedClientId?: string'
+      return:
+        description: ''
+        type: string
   - name: highAvailabilityReplicaCount
     uid: '@azure/arm-sql.DatabaseUpdate.highAvailabilityReplicaCount'
     package: '@azure/arm-sql'
@@ -255,6 +267,18 @@ properties:
       return:
         description: ''
         type: number
+  - name: identity
+    uid: '@azure/arm-sql.DatabaseUpdate.identity'
+    package: '@azure/arm-sql'
+    summary: Database identity
+    fullName: identity
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'identity?: DatabaseIdentity'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-sql.DatabaseIdentity" />
   - name: isInfraEncryptionEnabled
     uid: '@azure/arm-sql.DatabaseUpdate.isInfraEncryptionEnabled'
     package: '@azure/arm-sql'
@@ -386,6 +410,20 @@ properties:
       return:
         description: ''
         type: Date
+  - name: primaryDelegatedIdentityClientId
+    uid: '@azure/arm-sql.DatabaseUpdate.primaryDelegatedIdentityClientId'
+    package: '@azure/arm-sql'
+    summary: >-
+      The Primary Delegated Identity Client id used for per database CMK - for
+      internal use only
+    fullName: primaryDelegatedIdentityClientId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'primaryDelegatedIdentityClientId?: string'
+      return:
+        description: ''
+        type: string
   - name: readScale
     uid: '@azure/arm-sql.DatabaseUpdate.readScale'
     package: '@azure/arm-sql'

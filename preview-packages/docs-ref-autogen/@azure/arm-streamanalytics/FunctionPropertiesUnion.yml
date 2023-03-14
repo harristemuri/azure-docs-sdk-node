@@ -7,7 +7,4 @@ fullName: FunctionPropertiesUnion
 remarks: ''
 isDeprecated: false
 syntax: |
-  type FunctionPropertiesUnion =
-    | FunctionProperties
-    | ScalarFunctionProperties
-    | AggregateFunctionProperties
+  type FunctionPropertiesUnion = FunctionProperties | ScalarFunctionProperties

@@ -574,6 +574,16 @@
         href: ~/docs-ref-services/latest/arm-datafactory-readme.md
         children:
         - '@azure/arm-datafactory'
+  - name: Data Protection
+    href: ~/docs-ref-services/latest/data-protection.md
+    landingPageType: Service
+    items:
+    - name: Management
+      items:
+      - name: Resource Management - Data Protection
+        children:
+        - '@azure/arm-dataprotection'
+        landingPageType: Service
   - name: Database Migration Service
     href: ~/docs-ref-services/latest/database-migration-service.md
     landingPageType: Service
@@ -968,6 +978,10 @@
       href: ~/docs-ref-services/latest/keyvault-certificates-readme.md
       children:
       - '@azure/keyvault-certificates'
+    - name: Common
+      href: ~/docs-ref-services/latest/keyvault-common-readme.md
+      children:
+      - '@azure/keyvault-common'
     - name: Key Vault - Keys
       href: ~/docs-ref-services/latest/keyvault-keys-readme.md
       children:
@@ -1414,7 +1428,7 @@
         href: ~/docs-ref-services/latest/arm-policyinsights-readme.md
         children:
         - '@azure/arm-policyinsights'
-  - name: PostgreSQL
+  - name: Postgresql
     href: ~/docs-ref-services/latest/postgresql.md
     landingPageType: Service
     items:

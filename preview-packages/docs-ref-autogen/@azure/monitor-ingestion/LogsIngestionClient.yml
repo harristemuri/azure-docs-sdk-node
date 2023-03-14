@@ -31,7 +31,7 @@ constructors:
           type: <xref uid="@azure/monitor-ingestion.LogsIngestionClientOptions" />
           description: Options for the MonitorIngestionClient.
 methods:
-  - name: upload(string, string, Record<string, unknown>[], UploadLogsOptions)
+  - name: upload(string, string, Record<string, unknown>[], LogsUploadOptions)
     uid: '@azure/monitor-ingestion.LogsIngestionClient.upload'
     package: '@azure/monitor-ingestion'
     summary: Uploads logs to Monitor Resource
@@ -40,7 +40,7 @@ methods:
     syntax:
       content: >-
         function upload(ruleId: string, streamName: string, logs: Record<string,
-        unknown>[], options?: UploadLogsOptions): Promise<UploadLogsResult>
+        unknown>[], options?: LogsUploadOptions): Promise<void>
       parameters:
         - id: ruleId
           type: string
@@ -54,12 +54,10 @@ methods:
             An array of objects matching the schema defined by the provided
             stream.
         - id: options
-          type: <xref uid="@azure/monitor-ingestion.UploadLogsOptions" />
+          type: <xref uid="@azure/monitor-ingestion.LogsUploadOptions" />
           description: |-
             The options parameters.
             See error response code and error response message for more detail.
       return:
         description: ''
-        type: >-
-          Promise&lt;<xref uid="@azure/monitor-ingestion.UploadLogsResult"
-          />&gt;
+        type: Promise&lt;void&gt;

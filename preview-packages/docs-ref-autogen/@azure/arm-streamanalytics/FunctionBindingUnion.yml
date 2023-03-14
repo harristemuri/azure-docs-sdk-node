@@ -9,7 +9,5 @@ isDeprecated: false
 syntax: |
   type FunctionBindingUnion =
     | FunctionBinding
-    | AzureMachineLearningStudioFunctionBinding
+    | AzureMachineLearningWebServiceFunctionBinding
     | JavaScriptFunctionBinding
-    | CSharpFunctionBinding
-    | AzureMachineLearningServiceFunctionBinding

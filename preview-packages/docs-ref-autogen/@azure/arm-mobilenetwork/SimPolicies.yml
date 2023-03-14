@@ -13,7 +13,9 @@ methods:
       SimPoliciesCreateOrUpdateOptionalParams)
     uid: '@azure/arm-mobilenetwork.SimPolicies.beginCreateOrUpdate'
     package: '@azure/arm-mobilenetwork'
-    summary: Creates or updates a SIM policy.
+    summary: >-
+      Creates or updates a SIM policy. Must be created in the same location as
+      its parent mobile network.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -52,7 +54,9 @@ methods:
       SimPoliciesCreateOrUpdateOptionalParams)
     uid: '@azure/arm-mobilenetwork.SimPolicies.beginCreateOrUpdateAndWait'
     package: '@azure/arm-mobilenetwork'
-    summary: Creates or updates a SIM policy.
+    summary: >-
+      Creates or updates a SIM policy. Must be created in the same location as
+      its parent mobile network.
     remarks: ''
     isDeprecated: false
     syntax:

@@ -13,7 +13,11 @@ methods:
       SlicesCreateOrUpdateOptionalParams)
     uid: '@azure/arm-mobilenetwork.Slices.beginCreateOrUpdate'
     package: '@azure/arm-mobilenetwork'
-    summary: Creates or updates a network slice.
+    summary: >-
+      Creates or updates a network slice. Must be created in the same location
+      as its parent mobile
+
+      network.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -51,7 +55,11 @@ methods:
       SlicesCreateOrUpdateOptionalParams)
     uid: '@azure/arm-mobilenetwork.Slices.beginCreateOrUpdateAndWait'
     package: '@azure/arm-mobilenetwork'
-    summary: Creates or updates a network slice.
+    summary: >-
+      Creates or updates a network slice. Must be created in the same location
+      as its parent mobile
+
+      network.
     remarks: ''
     isDeprecated: false
     syntax:

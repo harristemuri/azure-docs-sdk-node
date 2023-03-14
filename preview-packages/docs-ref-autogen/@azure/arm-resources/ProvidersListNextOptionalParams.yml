@@ -24,20 +24,6 @@ properties:
       return:
         description: ''
         type: string
-  - name: top
-    uid: '@azure/arm-resources.ProvidersListNextOptionalParams.top'
-    package: '@azure/arm-resources'
-    summary: >-
-      The number of results to return. If null is passed returns all
-      deployments.
-    fullName: top
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'top?: number'
-      return:
-        description: ''
-        type: number
 inheritedProperties:
   - name: abortSignal
     uid: '@azure/arm-resources.ProvidersListNextOptionalParams.abortSignal'

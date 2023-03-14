@@ -8,6 +8,18 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: platforms
+    uid: '@azure/arm-mobilenetwork.PacketCoreControlPlaneVersion.platforms'
+    package: '@azure/arm-mobilenetwork'
+    summary: Platform specific packet core control plane version properties.
+    fullName: platforms
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'platforms?: Platform[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mobilenetwork.Platform" />[]
   - name: provisioningState
     uid: '@azure/arm-mobilenetwork.PacketCoreControlPlaneVersion.provisioningState'
     package: '@azure/arm-mobilenetwork'
@@ -21,32 +33,6 @@ properties:
     isDeprecated: false
     syntax:
       content: 'provisioningState?: string'
-      return:
-        description: ''
-        type: string
-  - name: recommendedVersion
-    uid: '@azure/arm-mobilenetwork.PacketCoreControlPlaneVersion.recommendedVersion'
-    package: '@azure/arm-mobilenetwork'
-    summary: >-
-      Indicates whether this is the recommended version to use for new packet
-      core control plane deployments.
-    fullName: recommendedVersion
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'recommendedVersion?: string'
-      return:
-        description: ''
-        type: string
-  - name: versionState
-    uid: '@azure/arm-mobilenetwork.PacketCoreControlPlaneVersion.versionState'
-    package: '@azure/arm-mobilenetwork'
-    summary: The state of this packet core control plane version.
-    fullName: versionState
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'versionState?: string'
       return:
         description: ''
         type: string

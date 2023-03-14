@@ -8,6 +8,22 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: azureAsyncOperationId
+    uid: '@azure/arm-operationalinsights.RestoredLogs.azureAsyncOperationId'
+    package: '@azure/arm-operationalinsights'
+    summary: >-
+      Search results table async operation id.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: azureAsyncOperationId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'azureAsyncOperationId?: string'
+      return:
+        description: ''
+        type: string
   - name: endRestoreTime
     uid: '@azure/arm-operationalinsights.RestoredLogs.endRestoreTime'
     package: '@azure/arm-operationalinsights'
