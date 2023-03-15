@@ -7,35 +7,6 @@ fullName: ProvidersListAtTenantScopeNextOptionalParams
 remarks: ''
 isDeprecated: false
 type: interface
-properties:
-  - name: expand
-    uid: '@azure/arm-resources.ProvidersListAtTenantScopeNextOptionalParams.expand'
-    package: '@azure/arm-resources'
-    summary: >-
-      The properties to include in the results. For example, use
-      &$expand=metadata in the query string to retrieve resource provider
-      metadata. To include property aliases in response, use
-      $expand=resourceTypes/aliases.
-    fullName: expand
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'expand?: string'
-      return:
-        description: ''
-        type: string
-  - name: top
-    uid: '@azure/arm-resources.ProvidersListAtTenantScopeNextOptionalParams.top'
-    package: '@azure/arm-resources'
-    summary: The number of results to return. If null is passed returns all providers.
-    fullName: top
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'top?: number'
-      return:
-        description: ''
-        type: number
 inheritedProperties:
   - name: abortSignal
     uid: >-

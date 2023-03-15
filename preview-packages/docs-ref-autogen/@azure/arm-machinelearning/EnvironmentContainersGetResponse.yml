@@ -7,4 +7,4 @@ fullName: EnvironmentContainersGetResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type EnvironmentContainersGetResponse = EnvironmentContainerData
+  type EnvironmentContainersGetResponse = EnvironmentContainer

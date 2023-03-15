@@ -8,6 +8,59 @@ remarks: ''
 isDeprecated: false
 type: interface
 methods:
+  - name: beginCancel(string, string, string, JobsCancelOptionalParams)
+    uid: '@azure/arm-machinelearning.Jobs.beginCancel'
+    package: '@azure/arm-machinelearning'
+    summary: Cancels a Job (asynchronous).
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCancel(resourceGroupName: string, workspaceName: string,
+        id: string, options?: JobsCancelOptionalParams):
+        Promise<PollerLike<PollOperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: workspaceName
+          type: string
+          description: Name of Azure Machine Learning workspace.
+        - id: id
+          type: string
+          description: The name and identifier for the Job. This is case-sensitive.
+        - id: options
+          type: <xref uid="@azure/arm-machinelearning.JobsCancelOptionalParams" />
+          description: The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+  - name: beginCancelAndWait(string, string, string, JobsCancelOptionalParams)
+    uid: '@azure/arm-machinelearning.Jobs.beginCancelAndWait'
+    package: '@azure/arm-machinelearning'
+    summary: Cancels a Job (asynchronous).
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginCancelAndWait(resourceGroupName: string, workspaceName:
+        string, id: string, options?: JobsCancelOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: workspaceName
+          type: string
+          description: Name of Azure Machine Learning workspace.
+        - id: id
+          type: string
+          description: The name and identifier for the Job. This is case-sensitive.
+        - id: options
+          type: <xref uid="@azure/arm-machinelearning.JobsCancelOptionalParams" />
+          description: The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
   - name: beginDelete(string, string, string, JobsDeleteOptionalParams)
     uid: '@azure/arm-machinelearning.Jobs.beginDelete'
     package: '@azure/arm-machinelearning'
@@ -61,34 +114,8 @@ methods:
       return:
         description: ''
         type: Promise&lt;void&gt;
-  - name: cancel(string, string, string, JobsCancelOptionalParams)
-    uid: '@azure/arm-machinelearning.Jobs.cancel'
-    package: '@azure/arm-machinelearning'
-    summary: Cancels a Job.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function cancel(resourceGroupName: string, workspaceName: string, id:
-        string, options?: JobsCancelOptionalParams): Promise<void>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group. The name is case insensitive.
-        - id: workspaceName
-          type: string
-          description: Name of Azure Machine Learning workspace.
-        - id: id
-          type: string
-          description: The name and identifier for the Job. This is case-sensitive.
-        - id: options
-          type: <xref uid="@azure/arm-machinelearning.JobsCancelOptionalParams" />
-          description: The options parameters.
-      return:
-        description: ''
-        type: Promise&lt;void&gt;
   - name: >-
-      createOrUpdate(string, string, string, JobBaseData,
+      createOrUpdate(string, string, string, JobBase,
       JobsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.Jobs.createOrUpdate'
     package: '@azure/arm-machinelearning'
@@ -98,8 +125,8 @@ methods:
     syntax:
       content: >-
         function createOrUpdate(resourceGroupName: string, workspaceName:
-        string, id: string, body: JobBaseData, options?:
-        JobsCreateOrUpdateOptionalParams): Promise<JobBaseData>
+        string, id: string, body: JobBase, options?:
+        JobsCreateOrUpdateOptionalParams): Promise<JobBase>
       parameters:
         - id: resourceGroupName
           type: string
@@ -111,7 +138,7 @@ methods:
           type: string
           description: The name and identifier for the Job. This is case-sensitive.
         - id: body
-          type: <xref uid="@azure/arm-machinelearning.JobBaseData" />
+          type: <xref uid="@azure/arm-machinelearning.JobBase" />
           description: Job definition object.
         - id: options
           type: >-
@@ -120,7 +147,7 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;<xref uid="@azure/arm-machinelearning.JobBaseData" />&gt;
+        type: Promise&lt;<xref uid="@azure/arm-machinelearning.JobBase" />&gt;
   - name: get(string, string, string, JobsGetOptionalParams)
     uid: '@azure/arm-machinelearning.Jobs.get'
     package: '@azure/arm-machinelearning'
@@ -130,7 +157,7 @@ methods:
     syntax:
       content: >-
         function get(resourceGroupName: string, workspaceName: string, id:
-        string, options?: JobsGetOptionalParams): Promise<JobBaseData>
+        string, options?: JobsGetOptionalParams): Promise<JobBase>
       parameters:
         - id: resourceGroupName
           type: string
@@ -146,7 +173,7 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;<xref uid="@azure/arm-machinelearning.JobBaseData" />&gt;
+        type: Promise&lt;<xref uid="@azure/arm-machinelearning.JobBase" />&gt;
   - name: list(string, string, JobsListOptionalParams)
     uid: '@azure/arm-machinelearning.Jobs.list'
     package: '@azure/arm-machinelearning'
@@ -156,8 +183,8 @@ methods:
     syntax:
       content: >-
         function list(resourceGroupName: string, workspaceName: string,
-        options?: JobsListOptionalParams):
-        PagedAsyncIterableIterator<JobBaseData, JobBaseData[], PageSettings>
+        options?: JobsListOptionalParams): PagedAsyncIterableIterator<JobBase,
+        JobBase[], PageSettings>
       parameters:
         - id: resourceGroupName
           type: string
@@ -172,5 +199,5 @@ methods:
         description: ''
         type: >-
           PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-machinelearning.JobBaseData" />, <xref
-          uid="@azure/arm-machinelearning.JobBaseData" />[], PageSettings&gt;
+          uid="@azure/arm-machinelearning.JobBase" />, <xref
+          uid="@azure/arm-machinelearning.JobBase" />[], PageSettings&gt;

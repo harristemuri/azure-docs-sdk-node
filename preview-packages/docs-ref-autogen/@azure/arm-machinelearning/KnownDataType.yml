@@ -9,15 +9,15 @@ fullName: KnownDataType
 remarks: ''
 isDeprecated: false
 fields:
-  - name: MLTable
-    uid: '@azure/arm-machinelearning.KnownDataType.MLTable'
+  - name: Mltable
+    uid: '@azure/arm-machinelearning.KnownDataType.Mltable'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Mltable
   - name: UriFile
     uid: '@azure/arm-machinelearning.KnownDataType.UriFile'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: UriFile
   - name: UriFolder
     uid: '@azure/arm-machinelearning.KnownDataType.UriFolder'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: UriFolder

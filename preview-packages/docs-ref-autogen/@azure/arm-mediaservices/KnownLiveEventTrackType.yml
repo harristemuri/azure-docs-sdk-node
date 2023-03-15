@@ -1,0 +1,20 @@
+### YamlMime:TSEnum
+name: KnownLiveEventTrackType
+uid: '@azure/arm-mediaservices.KnownLiveEventTrackType'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Known values of
+  [LiveEventTrackType](xref:@azure/arm-mediaservices.LiveEventTrackType) that
+  the service accepts.
+fullName: KnownLiveEventTrackType
+remarks: ''
+isDeprecated: false
+fields:
+  - name: Audio
+    uid: '@azure/arm-mediaservices.KnownLiveEventTrackType.Audio'
+    package: '@azure/arm-mediaservices'
+    summary: Audio
+  - name: Video
+    uid: '@azure/arm-mediaservices.KnownLiveEventTrackType.Video'
+    package: '@azure/arm-mediaservices'
+    summary: Video

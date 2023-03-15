@@ -7,4 +7,5 @@ fullName: WorkspaceConnectionsListResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type WorkspaceConnectionsListResponse = PaginatedWorkspaceConnectionsList
+  type WorkspaceConnectionsListResponse =
+    WorkspaceConnectionPropertiesV2BasicResourceArmPaginatedResult

@@ -1,0 +1,20 @@
+### YamlMime:TSTypeAlias
+name: LiveEventStreamEventMediaType
+uid: '@azure/arm-mediaservices.LiveEventStreamEventMediaType'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Defines values for LiveEventStreamEventMediaType. \
+
+  [KnownLiveEventStreamEventMediaType](xref:@azure/arm-mediaservices.KnownLiveEventStreamEventMediaType)
+  can be used interchangeably with LiveEventStreamEventMediaType,
+   this enum contains the known values that the service supports.
+  ### Known values supported by the service
+
+  **audio** \
+
+  **video**
+fullName: LiveEventStreamEventMediaType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type LiveEventStreamEventMediaType = string

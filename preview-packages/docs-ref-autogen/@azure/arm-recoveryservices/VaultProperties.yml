@@ -8,6 +8,22 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: backupStorageVersion
+    uid: '@azure/arm-recoveryservices.VaultProperties.backupStorageVersion'
+    package: '@azure/arm-recoveryservices'
+    summary: >-
+      Backup storage version
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: backupStorageVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'backupStorageVersion?: string'
+      return:
+        description: ''
+        type: string
   - name: encryption
     uid: '@azure/arm-recoveryservices.VaultProperties.encryption'
     package: '@azure/arm-recoveryservices'
@@ -20,6 +36,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-recoveryservices.VaultPropertiesEncryption" />
+  - name: monitoringSettings
+    uid: '@azure/arm-recoveryservices.VaultProperties.monitoringSettings'
+    package: '@azure/arm-recoveryservices'
+    summary: Monitoring Settings of the vault
+    fullName: monitoringSettings
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'monitoringSettings?: MonitoringSettings'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-recoveryservices.MonitoringSettings" />
   - name: moveDetails
     uid: '@azure/arm-recoveryservices.VaultProperties.moveDetails'
     package: '@azure/arm-recoveryservices'
@@ -116,6 +144,46 @@ properties:
       return:
         description: ''
         type: string
+  - name: publicNetworkAccess
+    uid: '@azure/arm-recoveryservices.VaultProperties.publicNetworkAccess'
+    package: '@azure/arm-recoveryservices'
+    summary: >-
+      property to enable or disable resource provider inbound network traffic
+      from public clients
+    fullName: publicNetworkAccess
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'publicNetworkAccess?: string'
+      return:
+        description: ''
+        type: string
+  - name: redundancySettings
+    uid: '@azure/arm-recoveryservices.VaultProperties.redundancySettings'
+    package: '@azure/arm-recoveryservices'
+    summary: The redundancy Settings of a Vault
+    fullName: redundancySettings
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'redundancySettings?: VaultPropertiesRedundancySettings'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-recoveryservices.VaultPropertiesRedundancySettings" />
+  - name: securitySettings
+    uid: '@azure/arm-recoveryservices.VaultProperties.securitySettings'
+    package: '@azure/arm-recoveryservices'
+    summary: Security Settings of the vault
+    fullName: securitySettings
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'securitySettings?: SecuritySettings'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-recoveryservices.SecuritySettings" />
   - name: upgradeDetails
     uid: '@azure/arm-recoveryservices.VaultProperties.upgradeDetails'
     package: '@azure/arm-recoveryservices'

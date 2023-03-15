@@ -144,10 +144,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'propertyBag?: {[propertyName: string]: any}'
+      content: 'propertyBag?: Record<string, unknown>'
       return:
         description: ''
-        type: '{[propertyName: string]: any}'
+        type: Record&lt;string, unknown&gt;
   - name: remoteLoginPortPublicAccess
     uid: >-
       @azure/arm-machinelearning.AmlComputeProperties.remoteLoginPortPublicAccess

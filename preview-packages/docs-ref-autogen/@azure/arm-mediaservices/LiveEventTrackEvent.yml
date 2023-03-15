@@ -1,0 +1,46 @@
+### YamlMime:TSType
+name: LiveEventTrackEvent
+uid: '@azure/arm-mediaservices.LiveEventTrackEvent'
+package: '@azure/arm-mediaservices'
+summary: The live event track event.
+fullName: LiveEventTrackEvent
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: data
+    uid: '@azure/arm-mediaservices.LiveEventTrackEvent.data'
+    package: '@azure/arm-mediaservices'
+    summary: Event data.
+    fullName: data
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'data?: LiveEventTrackEventData'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.LiveEventTrackEventData" />
+  - name: eventTime
+    uid: '@azure/arm-mediaservices.LiveEventTrackEvent.eventTime'
+    package: '@azure/arm-mediaservices'
+    summary: The time event raised.
+    fullName: eventTime
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'eventTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: eventType
+    uid: '@azure/arm-mediaservices.LiveEventTrackEvent.eventType'
+    package: '@azure/arm-mediaservices'
+    summary: The type of the track event.
+    fullName: eventType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'eventType?: string'
+      return:
+        description: ''
+        type: string

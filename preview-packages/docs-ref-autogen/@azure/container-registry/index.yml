@@ -7,6 +7,7 @@ enums:
   - '@azure/container-registry.KnownArtifactArchitecture'
   - '@azure/container-registry.KnownArtifactOperatingSystem'
   - '@azure/container-registry.KnownContainerRegistryAudience'
+  - '@azure/container-registry.KnownManifestMediaType'
 classes:
   - '@azure/container-registry.ContainerRegistryBlobClient'
   - '@azure/container-registry.ContainerRegistryClient'
@@ -28,6 +29,7 @@ interfaces:
   - '@azure/container-registry.DownloadBlobResult'
   - '@azure/container-registry.DownloadManifestOptions'
   - '@azure/container-registry.DownloadManifestResult'
+  - '@azure/container-registry.DownloadOciImageManifestResult'
   - '@azure/container-registry.GetManifestPropertiesOptions'
   - '@azure/container-registry.GetRepositoryPropertiesOptions'
   - '@azure/container-registry.GetTagPropertiesOptions'
@@ -36,8 +38,8 @@ interfaces:
   - '@azure/container-registry.ListTagPropertiesOptions'
   - '@azure/container-registry.ManifestPageResponse'
   - '@azure/container-registry.OciAnnotations'
-  - '@azure/container-registry.OciBlobDescriptor'
-  - '@azure/container-registry.OciManifest'
+  - '@azure/container-registry.OciDescriptor'
+  - '@azure/container-registry.OciImageManifest'
   - '@azure/container-registry.RegistryArtifact'
   - '@azure/container-registry.RepositoryPageResponse'
   - '@azure/container-registry.TagPageResponse'
@@ -51,3 +53,27 @@ interfaces:
 typeAliases:
   - '@azure/container-registry.ArtifactManifestOrder'
   - '@azure/container-registry.ArtifactTagOrder'
+functions:
+  - name: isDownloadOciImageManifestResult(DownloadManifestResult)
+    uid: '@azure/container-registry.isDownloadOciImageManifestResult'
+    package: '@azure/container-registry'
+    summary: >-
+      Used to determine whether a manifest downloaded via
+      [downloadManifest](xref:@azure/container-registry.ContainerRegistryBlobClient.downloadManifest)
+      is an OCI image manifest.
+
+      If it is an OCI image manifest, the `manifest` property will contain the
+      manifest data as parsed JSON.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function isDownloadOciImageManifestResult(downloadResult:
+        DownloadManifestResult): downloadResult
+      parameters:
+        - id: downloadResult
+          type: <xref uid="@azure/container-registry.DownloadManifestResult" />
+          description: the download result to check.
+      return:
+        description: '- whether the downloaded manifest is an OCI image manifest.'
+        type: downloadResult

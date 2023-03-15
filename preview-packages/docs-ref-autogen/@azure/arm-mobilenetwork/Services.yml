@@ -13,7 +13,9 @@ methods:
       ServicesCreateOrUpdateOptionalParams)
     uid: '@azure/arm-mobilenetwork.Services.beginCreateOrUpdate'
     package: '@azure/arm-mobilenetwork'
-    summary: Creates or updates a service.
+    summary: >-
+      Creates or updates a service. Must be created in the same location as its
+      parent mobile network.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -55,7 +57,9 @@ methods:
       ServicesCreateOrUpdateOptionalParams)
     uid: '@azure/arm-mobilenetwork.Services.beginCreateOrUpdateAndWait'
     package: '@azure/arm-mobilenetwork'
-    summary: Creates or updates a service.
+    summary: >-
+      Creates or updates a service. Must be created in the same location as its
+      parent mobile network.
     remarks: ''
     isDeprecated: false
     syntax:

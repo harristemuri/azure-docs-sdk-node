@@ -1,4 +1,4 @@
-### YamlMime:TSTypeAlias
+### YamlMime:TSType
 name: Mpi
 uid: '@azure/arm-machinelearning.Mpi'
 package: '@azure/arm-machinelearning'
@@ -6,8 +6,32 @@ summary: MPI distribution configuration.
 fullName: Mpi
 remarks: ''
 isDeprecated: false
-syntax: |
-  type Mpi = DistributionConfiguration & {
-    distributionType: "Mpi",
-    processCountPerInstance?: number,
-  }
+type: interface
+properties:
+  - name: distributionType
+    uid: '@azure/arm-machinelearning.Mpi.distributionType'
+    package: '@azure/arm-machinelearning'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: distributionType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'distributionType: "Mpi"'
+      return:
+        description: ''
+        type: '"Mpi"'
+  - name: processCountPerInstance
+    uid: '@azure/arm-machinelearning.Mpi.processCountPerInstance'
+    package: '@azure/arm-machinelearning'
+    summary: Number of processes per MPI node.
+    fullName: processCountPerInstance
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'processCountPerInstance?: number'
+      return:
+        description: ''
+        type: number
+extends: <xref uid="@azure/arm-machinelearning.DistributionConfiguration" />

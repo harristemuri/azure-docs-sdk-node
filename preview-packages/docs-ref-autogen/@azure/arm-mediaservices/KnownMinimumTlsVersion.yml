@@ -1,0 +1,28 @@
+### YamlMime:TSEnum
+name: KnownMinimumTlsVersion
+uid: '@azure/arm-mediaservices.KnownMinimumTlsVersion'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Known values of
+  [MinimumTlsVersion](xref:@azure/arm-mediaservices.MinimumTlsVersion) that the
+  service accepts.
+fullName: KnownMinimumTlsVersion
+remarks: ''
+isDeprecated: false
+fields:
+  - name: Tls10
+    uid: '@azure/arm-mediaservices.KnownMinimumTlsVersion.Tls10'
+    package: '@azure/arm-mediaservices'
+    summary: Minimum TLS version is TLS 1.0.
+  - name: Tls11
+    uid: '@azure/arm-mediaservices.KnownMinimumTlsVersion.Tls11'
+    package: '@azure/arm-mediaservices'
+    summary: Minimum TLS version is TLS 1.1.
+  - name: Tls12
+    uid: '@azure/arm-mediaservices.KnownMinimumTlsVersion.Tls12'
+    package: '@azure/arm-mediaservices'
+    summary: Minimum TLS version is TLS 1.2.
+  - name: Tls13
+    uid: '@azure/arm-mediaservices.KnownMinimumTlsVersion.Tls13'
+    package: '@azure/arm-mediaservices'
+    summary: Minimum TLS version is TLS 1.3.

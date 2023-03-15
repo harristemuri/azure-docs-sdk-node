@@ -8,41 +8,29 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
-  - name: ddosCustomPolicy
-    uid: '@azure/arm-network.DdosSettings.ddosCustomPolicy'
+  - name: ddosProtectionPlan
+    uid: '@azure/arm-network.DdosSettings.ddosProtectionPlan'
     package: '@azure/arm-network'
-    summary: The DDoS custom policy associated with the public IP.
-    fullName: ddosCustomPolicy
+    summary: >-
+      The DDoS protection plan associated with the public IP. Can only be set if
+      ProtectionMode is Enabled
+    fullName: ddosProtectionPlan
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'ddosCustomPolicy?: SubResource'
+      content: 'ddosProtectionPlan?: SubResource'
       return:
         description: ''
         type: <xref uid="@azure/arm-network.SubResource" />
-  - name: protectedIP
-    uid: '@azure/arm-network.DdosSettings.protectedIP'
+  - name: protectionMode
+    uid: '@azure/arm-network.DdosSettings.protectionMode'
     package: '@azure/arm-network'
-    summary: Enables DDoS protection on the public IP.
-    fullName: protectedIP
+    summary: The DDoS protection mode of the public IP
+    fullName: protectionMode
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'protectedIP?: boolean'
-      return:
-        description: ''
-        type: boolean
-  - name: protectionCoverage
-    uid: '@azure/arm-network.DdosSettings.protectionCoverage'
-    package: '@azure/arm-network'
-    summary: >-
-      The DDoS protection policy customizability of the public IP. Only standard
-      coverage will have the ability to be customized.
-    fullName: protectionCoverage
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'protectionCoverage?: string'
+      content: 'protectionMode?: string'
       return:
         description: ''
         type: string

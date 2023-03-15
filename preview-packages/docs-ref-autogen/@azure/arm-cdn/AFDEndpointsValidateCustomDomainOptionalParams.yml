@@ -1,15 +1,15 @@
 ### YamlMime:TSType
-name: AFDEndpointsValidateCustomDomainOptionalParams
-uid: '@azure/arm-cdn.AFDEndpointsValidateCustomDomainOptionalParams'
+name: AfdEndpointsValidateCustomDomainOptionalParams
+uid: '@azure/arm-cdn.AfdEndpointsValidateCustomDomainOptionalParams'
 package: '@azure/arm-cdn'
 summary: Optional parameters.
-fullName: AFDEndpointsValidateCustomDomainOptionalParams
+fullName: AfdEndpointsValidateCustomDomainOptionalParams
 remarks: ''
 isDeprecated: false
 type: interface
 inheritedProperties:
   - name: abortSignal
-    uid: '@azure/arm-cdn.AFDEndpointsValidateCustomDomainOptionalParams.abortSignal'
+    uid: '@azure/arm-cdn.AfdEndpointsValidateCustomDomainOptionalParams.abortSignal'
     package: '@azure/arm-cdn'
     summary: The signal which can be used to abort requests.
     fullName: abortSignal
@@ -22,7 +22,7 @@ inheritedProperties:
         type: AbortSignalLike
     inheritanceDescription: <b>Inherited From</b> coreClient.OperationOptions.abortSignal
   - name: onResponse
-    uid: '@azure/arm-cdn.AFDEndpointsValidateCustomDomainOptionalParams.onResponse'
+    uid: '@azure/arm-cdn.AfdEndpointsValidateCustomDomainOptionalParams.onResponse'
     package: '@azure/arm-cdn'
     summary: |-
       A function to be called each time a response is received from the server
@@ -39,7 +39,7 @@ inheritedProperties:
     inheritanceDescription: <b>Inherited From</b> coreClient.OperationOptions.onResponse
   - name: requestOptions
     uid: >-
-      @azure/arm-cdn.AFDEndpointsValidateCustomDomainOptionalParams.requestOptions
+      @azure/arm-cdn.AfdEndpointsValidateCustomDomainOptionalParams.requestOptions
     package: '@azure/arm-cdn'
     summary: Options used when creating and sending HTTP requests for this operation.
     fullName: requestOptions
@@ -53,7 +53,7 @@ inheritedProperties:
     inheritanceDescription: <b>Inherited From</b> coreClient.OperationOptions.requestOptions
   - name: serializerOptions
     uid: >-
-      @azure/arm-cdn.AFDEndpointsValidateCustomDomainOptionalParams.serializerOptions
+      @azure/arm-cdn.AfdEndpointsValidateCustomDomainOptionalParams.serializerOptions
     package: '@azure/arm-cdn'
     summary: Options to override serialization/de-serialization behavior.
     fullName: serializerOptions
@@ -67,7 +67,7 @@ inheritedProperties:
     inheritanceDescription: <b>Inherited From</b> coreClient.OperationOptions.serializerOptions
   - name: tracingOptions
     uid: >-
-      @azure/arm-cdn.AFDEndpointsValidateCustomDomainOptionalParams.tracingOptions
+      @azure/arm-cdn.AfdEndpointsValidateCustomDomainOptionalParams.tracingOptions
     package: '@azure/arm-cdn'
     summary: Options used when tracing is enabled.
     fullName: tracingOptions

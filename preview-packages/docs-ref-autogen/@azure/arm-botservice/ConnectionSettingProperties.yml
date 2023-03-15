@@ -32,30 +32,6 @@ properties:
       return:
         description: ''
         type: string
-  - name: id
-    uid: '@azure/arm-botservice.ConnectionSettingProperties.id'
-    package: '@azure/arm-botservice'
-    summary: Id associated with the Connection Setting.
-    fullName: id
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'id?: string'
-      return:
-        description: ''
-        type: string
-  - name: name
-    uid: '@azure/arm-botservice.ConnectionSettingProperties.name'
-    package: '@azure/arm-botservice'
-    summary: Name associated with the Connection Setting.
-    fullName: name
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'name?: string'
-      return:
-        description: ''
-        type: string
   - name: parameters
     uid: '@azure/arm-botservice.ConnectionSettingProperties.parameters'
     package: '@azure/arm-botservice'

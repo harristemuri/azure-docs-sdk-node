@@ -35,6 +35,42 @@ constructors:
             uid="@azure/arm-templatespecs.TemplateSpecsClientOptionalParams" />
           description: The parameter options
 properties:
+  - name: $host
+    uid: '@azure/arm-templatespecs.TemplateSpecsClient.$host'
+    package: '@azure/arm-templatespecs'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
+  - name: apiVersion
+    uid: '@azure/arm-templatespecs.TemplateSpecsClient.apiVersion'
+    package: '@azure/arm-templatespecs'
+    summary: ''
+    fullName: apiVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion: string'
+      return:
+        description: ''
+        type: string
+  - name: subscriptionId
+    uid: '@azure/arm-templatespecs.TemplateSpecsClient.subscriptionId'
+    package: '@azure/arm-templatespecs'
+    summary: ''
+    fullName: subscriptionId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        description: ''
+        type: string
   - name: templateSpecs
     uid: '@azure/arm-templatespecs.TemplateSpecsClient.templateSpecs'
     package: '@azure/arm-templatespecs'
@@ -60,36 +96,6 @@ properties:
         description: ''
         type: <xref uid="@azure/arm-templatespecs.TemplateSpecVersions" />
 inheritedProperties:
-  - name: $host
-    uid: '@azure/arm-templatespecs.TemplateSpecsClient.$host'
-    package: '@azure/arm-templatespecs'
-    summary: ''
-    fullName: $host
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: '$host: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [TemplateSpecsClientContext.$host](xref:@azure/arm-templatespecs.TemplateSpecsClientContext.$host)
-  - name: apiVersion
-    uid: '@azure/arm-templatespecs.TemplateSpecsClient.apiVersion'
-    package: '@azure/arm-templatespecs'
-    summary: ''
-    fullName: apiVersion
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'apiVersion: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [TemplateSpecsClientContext.apiVersion](xref:@azure/arm-templatespecs.TemplateSpecsClientContext.apiVersion)
   - name: pipeline
     uid: '@azure/arm-templatespecs.TemplateSpecsClient.pipeline'
     package: '@azure/arm-templatespecs'
@@ -102,24 +108,7 @@ inheritedProperties:
       return:
         description: ''
         type: Pipeline
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [TemplateSpecsClientContext.pipeline](xref:@azure/arm-templatespecs.TemplateSpecsClientContext.pipeline)
-  - name: subscriptionId
-    uid: '@azure/arm-templatespecs.TemplateSpecsClient.subscriptionId'
-    package: '@azure/arm-templatespecs'
-    summary: ''
-    fullName: subscriptionId
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'subscriptionId: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [TemplateSpecsClientContext.subscriptionId](xref:@azure/arm-templatespecs.TemplateSpecsClientContext.subscriptionId)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.pipeline
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
     uid: '@azure/arm-templatespecs.TemplateSpecsClient.sendOperationRequest'
@@ -143,9 +132,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [TemplateSpecsClientContext.sendOperationRequest](xref:@azure/arm-templatespecs.TemplateSpecsClientContext.sendOperationRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-templatespecs.TemplateSpecsClient.sendRequest'
     package: '@azure/arm-templatespecs'
@@ -163,7 +150,5 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [TemplateSpecsClientContext.sendRequest](xref:@azure/arm-templatespecs.TemplateSpecsClientContext.sendRequest)
-extends: <xref uid="@azure/arm-templatespecs.TemplateSpecsClientContext" />
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendRequest
+extends: ServiceClient

@@ -43,10 +43,10 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        ruleCollectionType: "FirewallPolicyNatRuleCollection" |
-        "FirewallPolicyFilterRuleCollection"
+        ruleCollectionType: "FirewallPolicyFilterRuleCollection" |
+        "FirewallPolicyNatRuleCollection"
       return:
         description: ''
         type: >-
-          "FirewallPolicyNatRuleCollection" |
-          "FirewallPolicyFilterRuleCollection"
+          "FirewallPolicyFilterRuleCollection" |
+          "FirewallPolicyNatRuleCollection"

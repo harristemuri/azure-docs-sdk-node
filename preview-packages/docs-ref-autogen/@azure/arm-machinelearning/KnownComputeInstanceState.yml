@@ -13,60 +13,60 @@ fields:
   - name: CreateFailed
     uid: '@azure/arm-machinelearning.KnownComputeInstanceState.CreateFailed'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: CreateFailed
   - name: Creating
     uid: '@azure/arm-machinelearning.KnownComputeInstanceState.Creating'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Creating
   - name: Deleting
     uid: '@azure/arm-machinelearning.KnownComputeInstanceState.Deleting'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Deleting
   - name: JobRunning
     uid: '@azure/arm-machinelearning.KnownComputeInstanceState.JobRunning'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: JobRunning
   - name: Restarting
     uid: '@azure/arm-machinelearning.KnownComputeInstanceState.Restarting'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Restarting
   - name: Running
     uid: '@azure/arm-machinelearning.KnownComputeInstanceState.Running'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Running
   - name: SettingUp
     uid: '@azure/arm-machinelearning.KnownComputeInstanceState.SettingUp'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: SettingUp
   - name: SetupFailed
     uid: '@azure/arm-machinelearning.KnownComputeInstanceState.SetupFailed'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: SetupFailed
   - name: Starting
     uid: '@azure/arm-machinelearning.KnownComputeInstanceState.Starting'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Starting
   - name: Stopped
     uid: '@azure/arm-machinelearning.KnownComputeInstanceState.Stopped'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Stopped
   - name: Stopping
     uid: '@azure/arm-machinelearning.KnownComputeInstanceState.Stopping'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Stopping
   - name: Unknown
     uid: '@azure/arm-machinelearning.KnownComputeInstanceState.Unknown'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Unknown
   - name: Unusable
     uid: '@azure/arm-machinelearning.KnownComputeInstanceState.Unusable'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Unusable
   - name: UserSettingUp
     uid: '@azure/arm-machinelearning.KnownComputeInstanceState.UserSettingUp'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: UserSettingUp
   - name: UserSetupFailed
     uid: '@azure/arm-machinelearning.KnownComputeInstanceState.UserSetupFailed'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: UserSetupFailed

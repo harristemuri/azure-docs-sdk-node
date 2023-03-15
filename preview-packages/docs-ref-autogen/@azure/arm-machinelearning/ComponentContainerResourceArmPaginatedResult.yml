@@ -32,7 +32,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'value?: ComponentContainerData[]'
+      content: 'value?: ComponentContainer[]'
       return:
         description: ''
-        type: <xref uid="@azure/arm-machinelearning.ComponentContainerData" />[]
+        type: <xref uid="@azure/arm-machinelearning.ComponentContainer" />[]

@@ -402,7 +402,7 @@ methods:
           Promise&lt;<xref uid="@azure/arm-devtestlabs.ApplicableSchedule"
           />&gt;
   - name: >-
-      update(string, string, string, string, UpdateResource,
+      update(string, string, string, string, ServiceFabricFragment,
       ServiceFabricsUpdateOptionalParams)
     uid: '@azure/arm-devtestlabs.ServiceFabrics.update'
     package: '@azure/arm-devtestlabs'
@@ -414,7 +414,7 @@ methods:
     syntax:
       content: >-
         function update(resourceGroupName: string, labName: string, userName:
-        string, name: string, serviceFabric: UpdateResource, options?:
+        string, name: string, serviceFabric: ServiceFabricFragment, options?:
         ServiceFabricsUpdateOptionalParams): Promise<ServiceFabric>
       parameters:
         - id: resourceGroupName
@@ -430,7 +430,7 @@ methods:
           type: string
           description: The name of the service fabric.
         - id: serviceFabric
-          type: <xref uid="@azure/arm-devtestlabs.UpdateResource" />
+          type: <xref uid="@azure/arm-devtestlabs.ServiceFabricFragment" />
           description: A Service Fabric.
         - id: options
           type: >-

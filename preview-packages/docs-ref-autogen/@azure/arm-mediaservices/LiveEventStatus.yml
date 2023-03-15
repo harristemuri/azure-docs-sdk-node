@@ -1,0 +1,84 @@
+### YamlMime:TSType
+name: LiveEventStatus
+uid: '@azure/arm-mediaservices.LiveEventStatus'
+package: '@azure/arm-mediaservices'
+summary: The live event status.
+fullName: LiveEventStatus
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: healthDescriptions
+    uid: '@azure/arm-mediaservices.LiveEventStatus.healthDescriptions'
+    package: '@azure/arm-mediaservices'
+    summary: List of strings justifying the health status.
+    fullName: healthDescriptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'healthDescriptions?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: healthStatus
+    uid: '@azure/arm-mediaservices.LiveEventStatus.healthStatus'
+    package: '@azure/arm-mediaservices'
+    summary: Health status of last 20 seconds.
+    fullName: healthStatus
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'healthStatus?: string'
+      return:
+        description: ''
+        type: string
+  - name: ingestion
+    uid: '@azure/arm-mediaservices.LiveEventStatus.ingestion'
+    package: '@azure/arm-mediaservices'
+    summary: Live event ingestion entry.
+    fullName: ingestion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'ingestion?: LiveEventIngestion'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.LiveEventIngestion" />
+  - name: lastUpdatedTime
+    uid: '@azure/arm-mediaservices.LiveEventStatus.lastUpdatedTime'
+    package: '@azure/arm-mediaservices'
+    summary: Last updated UTC time of this status.
+    fullName: lastUpdatedTime
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'lastUpdatedTime?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: state
+    uid: '@azure/arm-mediaservices.LiveEventStatus.state'
+    package: '@azure/arm-mediaservices'
+    summary: >-
+      Current state of the live event. See
+      https://go.microsoft.com/fwlink/?linkid=2139012 for more information.
+    fullName: state
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'state?: string'
+      return:
+        description: ''
+        type: string
+  - name: trackStatus
+    uid: '@azure/arm-mediaservices.LiveEventStatus.trackStatus'
+    package: '@azure/arm-mediaservices'
+    summary: Track entry list.
+    fullName: trackStatus
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'trackStatus?: LiveEventTrackStatus[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.LiveEventTrackStatus" />[]

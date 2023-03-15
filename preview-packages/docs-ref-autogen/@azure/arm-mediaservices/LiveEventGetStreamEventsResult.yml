@@ -1,0 +1,22 @@
+### YamlMime:TSType
+name: LiveEventGetStreamEventsResult
+uid: '@azure/arm-mediaservices.LiveEventGetStreamEventsResult'
+package: '@azure/arm-mediaservices'
+summary: Get live event stream events result.
+fullName: LiveEventGetStreamEventsResult
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: value
+    uid: '@azure/arm-mediaservices.LiveEventGetStreamEventsResult.value'
+    package: '@azure/arm-mediaservices'
+    summary: The result of the get live event stream events.
+    fullName: value
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'value?: LiveEventStreamEvent[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.LiveEventStreamEvent" />[]

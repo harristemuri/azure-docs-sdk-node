@@ -1,0 +1,17 @@
+### YamlMime:TSEnum
+name: KnownLiveEventTrackEventType
+uid: '@azure/arm-mediaservices.KnownLiveEventTrackEventType'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Known values of
+  [LiveEventTrackEventType](xref:@azure/arm-mediaservices.LiveEventTrackEventType)
+  that the service accepts.
+fullName: KnownLiveEventTrackEventType
+remarks: ''
+isDeprecated: false
+fields:
+  - name: TrackEventIngestHeartbeat
+    uid: >-
+      @azure/arm-mediaservices.KnownLiveEventTrackEventType.TrackEventIngestHeartbeat
+    package: '@azure/arm-mediaservices'
+    summary: Track heartbeat received.

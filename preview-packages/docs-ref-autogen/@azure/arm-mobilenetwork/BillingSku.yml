@@ -10,19 +10,19 @@ summary: >-
    this enum contains the known values that the service supports.
   ### Known values supported by the service
 
-  **EvaluationPackage**: Evaluation package plan \
+  **G0**: 100 Mbps, 20 active SIMs plan \
 
-  **FlagshipStarterPackage**: Flagship starter package plan \
+  **G1**: 1 Gbps, 100 active SIMs plan \
 
-  **EdgeSite2GBPS**: Edge site 2Gbps plan \
+  **G2**: 2 Gbps, 200 active SIMs plan \
 
-  **EdgeSite3GBPS**: Edge site 3Gbps plan \
+  **G3**: 3 Gbps, 300 active SIMs plan \
 
-  **EdgeSite4GBPS**: Edge site 4Gbps plan \
+  **G4**: 4 Gbps, 400 active SIMs plan \
 
-  **MediumPackage**: Medium package plan \
+  **G5**: 5 Gbps, 500 active SIMs plan \
 
-  **LargePackage**: Large package plan
+  **G10**: 10 Gbps, 1000 active SIMs plan
 fullName: BillingSku
 remarks: ''
 isDeprecated: false

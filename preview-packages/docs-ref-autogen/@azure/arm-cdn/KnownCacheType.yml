@@ -12,4 +12,4 @@ fields:
   - name: All
     uid: '@azure/arm-cdn.KnownCacheType.All'
     package: '@azure/arm-cdn'
-    summary: ''
+    summary: All

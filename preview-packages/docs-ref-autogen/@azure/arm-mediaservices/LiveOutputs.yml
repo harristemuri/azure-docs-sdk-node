@@ -9,6 +9,40 @@ isDeprecated: false
 type: interface
 methods:
   - name: >-
+      asyncOperation(string, string, string,
+      LiveOutputsAsyncOperationOptionalParams)
+    uid: '@azure/arm-mediaservices.LiveOutputs.asyncOperation'
+    package: '@azure/arm-mediaservices'
+    summary: Get a Live Output operation status.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function asyncOperation(resourceGroupName: string, accountName: string,
+        operationId: string, options?: LiveOutputsAsyncOperationOptionalParams):
+        Promise<AsyncOperationResult>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: operationId
+          type: string
+          description: The ID of an ongoing async operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.LiveOutputsAsyncOperationOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-mediaservices.AsyncOperationResult"
+          />&gt;
+  - name: >-
       beginCreate(string, string, string, string, LiveOutput,
       LiveOutputsCreateOptionalParams)
     uid: '@azure/arm-mediaservices.LiveOutputs.beginCreate'
@@ -21,7 +55,7 @@ methods:
         function beginCreate(resourceGroupName: string, accountName: string,
         liveEventName: string, liveOutputName: string, parameters: LiveOutput,
         options?: LiveOutputsCreateOptionalParams):
-        Promise<PollerLike<PollOperationState<LiveOutput>, LiveOutput>>
+        Promise<SimplePollerLike<OperationState<LiveOutput>, LiveOutput>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -46,7 +80,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-mediaservices.LiveOutput" />&gt;, <xref
           uid="@azure/arm-mediaservices.LiveOutput" />&gt;&gt;
   - name: >-
@@ -104,7 +138,7 @@ methods:
         function beginDelete(resourceGroupName: string, accountName: string,
         liveEventName: string, liveOutputName: string, options?:
         LiveOutputsDeleteOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -125,7 +159,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: >-
       beginDeleteAndWait(string, string, string, string,
       LiveOutputsDeleteOptionalParams)
@@ -226,3 +262,42 @@ methods:
           PagedAsyncIterableIterator&lt;<xref
           uid="@azure/arm-mediaservices.LiveOutput" />, <xref
           uid="@azure/arm-mediaservices.LiveOutput" />[], PageSettings&gt;
+  - name: >-
+      operationLocation(string, string, string, string, string,
+      LiveOutputsOperationLocationOptionalParams)
+    uid: '@azure/arm-mediaservices.LiveOutputs.operationLocation'
+    package: '@azure/arm-mediaservices'
+    summary: Get a Live Output operation status.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function operationLocation(resourceGroupName: string, accountName:
+        string, liveEventName: string, liveOutputName: string, operationId:
+        string, options?: LiveOutputsOperationLocationOptionalParams):
+        Promise<LiveOutput>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: liveEventName
+          type: string
+          description: The name of the live event, maximum length is 32.
+        - id: liveOutputName
+          type: string
+          description: The name of the live output.
+        - id: operationId
+          type: string
+          description: The ID of an ongoing async operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.LiveOutputsOperationLocationOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@azure/arm-mediaservices.LiveOutput" />&gt;

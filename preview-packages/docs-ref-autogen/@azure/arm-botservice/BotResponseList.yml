@@ -2,7 +2,7 @@
 name: BotResponseList
 uid: '@azure/arm-botservice.BotResponseList'
 package: '@azure/arm-botservice'
-summary: The list of  bot service operation response.
+summary: The list of bot service operation response.
 fullName: BotResponseList
 remarks: ''
 isDeprecated: false

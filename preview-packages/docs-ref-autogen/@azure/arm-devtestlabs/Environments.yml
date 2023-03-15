@@ -224,7 +224,7 @@ methods:
           uid="@azure/arm-devtestlabs.DtlEnvironment" />, <xref
           uid="@azure/arm-devtestlabs.DtlEnvironment" />[], PageSettings&gt;
   - name: >-
-      update(string, string, string, string, UpdateResource,
+      update(string, string, string, string, DtlEnvironmentFragment,
       EnvironmentsUpdateOptionalParams)
     uid: '@azure/arm-devtestlabs.Environments.update'
     package: '@azure/arm-devtestlabs'
@@ -236,7 +236,7 @@ methods:
     syntax:
       content: >-
         function update(resourceGroupName: string, labName: string, userName:
-        string, name: string, dtlEnvironment: UpdateResource, options?:
+        string, name: string, dtlEnvironment: DtlEnvironmentFragment, options?:
         EnvironmentsUpdateOptionalParams): Promise<DtlEnvironment>
       parameters:
         - id: resourceGroupName
@@ -252,7 +252,7 @@ methods:
           type: string
           description: The name of the environment.
         - id: dtlEnvironment
-          type: <xref uid="@azure/arm-devtestlabs.UpdateResource" />
+          type: <xref uid="@azure/arm-devtestlabs.DtlEnvironmentFragment" />
           description: An environment, which is essentially an ARM template deployment.
         - id: options
           type: >-

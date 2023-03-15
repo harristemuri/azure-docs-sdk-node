@@ -42,10 +42,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'direction?: number'
+      content: 'direction?: FirewallPolicyIdpsSignatureDirection'
       return:
         description: ''
-        type: number
+        type: <xref uid="@azure/arm-network.FirewallPolicyIdpsSignatureDirection" />
   - name: group
     uid: '@azure/arm-network.SingleQueryResult.group'
     package: '@azure/arm-network'
@@ -92,10 +92,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'mode?: number'
+      content: 'mode?: FirewallPolicyIdpsSignatureMode'
       return:
         description: ''
-        type: number
+        type: <xref uid="@azure/arm-network.FirewallPolicyIdpsSignatureMode" />
   - name: protocol
     uid: '@azure/arm-network.SingleQueryResult.protocol'
     package: '@azure/arm-network'
@@ -116,10 +116,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'severity?: number'
+      content: 'severity?: FirewallPolicyIdpsSignatureSeverity'
       return:
         description: ''
-        type: number
+        type: <xref uid="@azure/arm-network.FirewallPolicyIdpsSignatureSeverity" />
   - name: signatureId
     uid: '@azure/arm-network.SingleQueryResult.signatureId'
     package: '@azure/arm-network'

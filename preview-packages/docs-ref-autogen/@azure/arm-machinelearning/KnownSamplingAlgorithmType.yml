@@ -13,12 +13,12 @@ fields:
   - name: Bayesian
     uid: '@azure/arm-machinelearning.KnownSamplingAlgorithmType.Bayesian'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Bayesian
   - name: Grid
     uid: '@azure/arm-machinelearning.KnownSamplingAlgorithmType.Grid'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Grid
   - name: Random
     uid: '@azure/arm-machinelearning.KnownSamplingAlgorithmType.Random'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Random

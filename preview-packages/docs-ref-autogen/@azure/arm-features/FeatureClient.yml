@@ -31,6 +31,30 @@ constructors:
           type: <xref uid="@azure/arm-features.FeatureClientOptionalParams" />
           description: The parameter options
 properties:
+  - name: $host
+    uid: '@azure/arm-features.FeatureClient.$host'
+    package: '@azure/arm-features'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
+  - name: apiVersion
+    uid: '@azure/arm-features.FeatureClient.apiVersion'
+    package: '@azure/arm-features'
+    summary: ''
+    fullName: apiVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion: string'
+      return:
+        description: ''
+        type: string
   - name: features
     uid: '@azure/arm-features.FeatureClient.features'
     package: '@azure/arm-features'
@@ -55,52 +79,6 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-features.SubscriptionFeatureRegistrations" />
-inheritedProperties:
-  - name: $host
-    uid: '@azure/arm-features.FeatureClient.$host'
-    package: '@azure/arm-features'
-    summary: ''
-    fullName: $host
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: '$host: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [FeatureClientContext.$host](xref:@azure/arm-features.FeatureClientContext.$host)
-  - name: apiVersion
-    uid: '@azure/arm-features.FeatureClient.apiVersion'
-    package: '@azure/arm-features'
-    summary: ''
-    fullName: apiVersion
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'apiVersion: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [FeatureClientContext.apiVersion](xref:@azure/arm-features.FeatureClientContext.apiVersion)
-  - name: pipeline
-    uid: '@azure/arm-features.FeatureClient.pipeline'
-    package: '@azure/arm-features'
-    summary: The pipeline used by this client to make requests
-    fullName: pipeline
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'pipeline: Pipeline'
-      return:
-        description: ''
-        type: Pipeline
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [FeatureClientContext.pipeline](xref:@azure/arm-features.FeatureClientContext.pipeline)
   - name: subscriptionId
     uid: '@azure/arm-features.FeatureClient.subscriptionId'
     package: '@azure/arm-features'
@@ -113,9 +91,20 @@ inheritedProperties:
       return:
         description: ''
         type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [FeatureClientContext.subscriptionId](xref:@azure/arm-features.FeatureClientContext.subscriptionId)
+inheritedProperties:
+  - name: pipeline
+    uid: '@azure/arm-features.FeatureClient.pipeline'
+    package: '@azure/arm-features'
+    summary: The pipeline used by this client to make requests
+    fullName: pipeline
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'pipeline: Pipeline'
+      return:
+        description: ''
+        type: Pipeline
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.pipeline
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
     uid: '@azure/arm-features.FeatureClient.sendOperationRequest'
@@ -139,9 +128,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [FeatureClientContext.sendOperationRequest](xref:@azure/arm-features.FeatureClientContext.sendOperationRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-features.FeatureClient.sendRequest'
     package: '@azure/arm-features'
@@ -159,11 +146,9 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [FeatureClientContext.sendRequest](xref:@azure/arm-features.FeatureClientContext.sendRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendRequest
 methods:
-  - name: listOperations(FeatureClientListOperationsOptionalParams)
+  - name: listOperations(ListOperationsOptionalParams)
     uid: '@azure/arm-features.FeatureClient.listOperations'
     package: '@azure/arm-features'
     summary: Lists all of the available Microsoft.Features REST API operations.
@@ -171,15 +156,11 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function listOperations(options?:
-        FeatureClientListOperationsOptionalParams):
+        function listOperations(options?: ListOperationsOptionalParams):
         PagedAsyncIterableIterator<Operation, Operation[], PageSettings>
       parameters:
         - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-features.FeatureClientListOperationsOptionalParams"
-            />
+          type: <xref uid="@azure/arm-features.ListOperationsOptionalParams" />
           description: The options parameters.
       return:
         description: ''
@@ -187,4 +168,4 @@ methods:
           PagedAsyncIterableIterator&lt;<xref
           uid="@azure/arm-features.Operation" />, <xref
           uid="@azure/arm-features.Operation" />[], PageSettings&gt;
-extends: <xref uid="@azure/arm-features.FeatureClientContext" />
+extends: ServiceClient

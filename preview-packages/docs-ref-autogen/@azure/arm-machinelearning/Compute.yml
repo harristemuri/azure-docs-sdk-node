@@ -11,11 +11,7 @@ properties:
   - name: computeLocation
     uid: '@azure/arm-machinelearning.Compute.computeLocation'
     package: '@azure/arm-machinelearning'
-    summary: >-
-      Location for the underlying compute
-
-      NOTE: This property will not be serialized. It can only be populated by
-      the server.
+    summary: Location for the underlying compute
     fullName: computeLocation
     remarks: ''
     isDeprecated: false
@@ -35,13 +31,13 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        computeType: "AKS" | "Kubernetes" | "AmlCompute" | "ComputeInstance" |
+        computeType: "AKS" | "AmlCompute" | "Kubernetes" | "ComputeInstance" |
         "VirtualMachine" | "HDInsight" | "DataFactory" | "Databricks" |
         "DataLakeAnalytics" | "SynapseSpark"
       return:
         description: ''
         type: >-
-          "AKS" | "Kubernetes" | "AmlCompute" | "ComputeInstance" |
+          "AKS" | "AmlCompute" | "Kubernetes" | "ComputeInstance" |
           "VirtualMachine" | "HDInsight" | "DataFactory" | "Databricks" |
           "DataLakeAnalytics" | "SynapseSpark"
   - name: createdOn

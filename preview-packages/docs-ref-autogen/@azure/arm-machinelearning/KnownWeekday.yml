@@ -1,39 +1,39 @@
 ### YamlMime:TSEnum
-name: KnownWeekday
-uid: '@azure/arm-machinelearning.KnownWeekday'
+name: KnownWeekDay
+uid: '@azure/arm-machinelearning.KnownWeekDay'
 package: '@azure/arm-machinelearning'
 summary: >-
-  Known values of [Weekday](xref:@azure/arm-machinelearning.Weekday) that the
+  Known values of [WeekDay](xref:@azure/arm-machinelearning.WeekDay) that the
   service accepts.
-fullName: KnownWeekday
+fullName: KnownWeekDay
 remarks: ''
 isDeprecated: false
 fields:
   - name: Friday
-    uid: '@azure/arm-machinelearning.KnownWeekday.Friday'
+    uid: '@azure/arm-machinelearning.KnownWeekDay.Friday'
     package: '@azure/arm-machinelearning'
     summary: Friday weekday
   - name: Monday
-    uid: '@azure/arm-machinelearning.KnownWeekday.Monday'
+    uid: '@azure/arm-machinelearning.KnownWeekDay.Monday'
     package: '@azure/arm-machinelearning'
     summary: Monday weekday
   - name: Saturday
-    uid: '@azure/arm-machinelearning.KnownWeekday.Saturday'
+    uid: '@azure/arm-machinelearning.KnownWeekDay.Saturday'
     package: '@azure/arm-machinelearning'
     summary: Saturday weekday
   - name: Sunday
-    uid: '@azure/arm-machinelearning.KnownWeekday.Sunday'
+    uid: '@azure/arm-machinelearning.KnownWeekDay.Sunday'
     package: '@azure/arm-machinelearning'
     summary: Sunday weekday
   - name: Thursday
-    uid: '@azure/arm-machinelearning.KnownWeekday.Thursday'
+    uid: '@azure/arm-machinelearning.KnownWeekDay.Thursday'
     package: '@azure/arm-machinelearning'
     summary: Thursday weekday
   - name: Tuesday
-    uid: '@azure/arm-machinelearning.KnownWeekday.Tuesday'
+    uid: '@azure/arm-machinelearning.KnownWeekDay.Tuesday'
     package: '@azure/arm-machinelearning'
     summary: Tuesday weekday
   - name: Wednesday
-    uid: '@azure/arm-machinelearning.KnownWeekday.Wednesday'
+    uid: '@azure/arm-machinelearning.KnownWeekDay.Wednesday'
     package: '@azure/arm-machinelearning'
     summary: Wednesday weekday

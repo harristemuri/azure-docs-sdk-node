@@ -1,0 +1,11 @@
+### YamlMime:TSTypeAlias
+name: LiveEventsListGetTrackIngestHeartbeatsResponse
+uid: '@azure/arm-mediaservices.LiveEventsListGetTrackIngestHeartbeatsResponse'
+package: '@azure/arm-mediaservices'
+summary: Contains response data for the listGetTrackIngestHeartbeats operation.
+fullName: LiveEventsListGetTrackIngestHeartbeatsResponse
+remarks: ''
+isDeprecated: false
+syntax: |
+  type LiveEventsListGetTrackIngestHeartbeatsResponse =
+    LiveEventGetTrackIngestHeartbeatsResult

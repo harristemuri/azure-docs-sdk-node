@@ -222,7 +222,7 @@ methods:
           uid="@azure/arm-devtestlabs.Schedule" />, <xref
           uid="@azure/arm-devtestlabs.Schedule" />[], PageSettings&gt;
   - name: >-
-      update(string, string, string, string, UpdateResource,
+      update(string, string, string, string, ScheduleFragment,
       VirtualMachineSchedulesUpdateOptionalParams)
     uid: '@azure/arm-devtestlabs.VirtualMachineSchedules.update'
     package: '@azure/arm-devtestlabs'
@@ -232,7 +232,7 @@ methods:
     syntax:
       content: >-
         function update(resourceGroupName: string, labName: string,
-        virtualMachineName: string, name: string, schedule: UpdateResource,
+        virtualMachineName: string, name: string, schedule: ScheduleFragment,
         options?: VirtualMachineSchedulesUpdateOptionalParams):
         Promise<Schedule>
       parameters:
@@ -249,7 +249,7 @@ methods:
           type: string
           description: The name of the schedule.
         - id: schedule
-          type: <xref uid="@azure/arm-devtestlabs.UpdateResource" />
+          type: <xref uid="@azure/arm-devtestlabs.ScheduleFragment" />
           description: A schedule.
         - id: options
           type: >-

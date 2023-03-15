@@ -12,7 +12,8 @@ properties:
     uid: '@azure/arm-dashboard.OperationDisplay.description'
     package: '@azure/arm-dashboard'
     summary: >-
-      Description of the operation, e.g., 'Read grafana'.
+      The short, localized friendly description of the operation; suitable for
+      tool tips and detailed views.
 
       NOTE: This property will not be serialized. It can only be populated by
       the server.
@@ -28,7 +29,9 @@ properties:
     uid: '@azure/arm-dashboard.OperationDisplay.operation'
     package: '@azure/arm-dashboard'
     summary: >-
-      Operation type, e.g., read, write, delete, etc.
+      The concise, localized friendly name for the operation; suitable for
+      dropdowns. E.g. "Create or Update Virtual Machine", "Restart Virtual
+      Machine".
 
       NOTE: This property will not be serialized. It can only be populated by
       the server.
@@ -44,8 +47,8 @@ properties:
     uid: '@azure/arm-dashboard.OperationDisplay.provider'
     package: '@azure/arm-dashboard'
     summary: >-
-      The localized friendly form of the resource provider name, i.e.,
-      Microsoft.Dashboard.
+      The localized friendly form of the resource provider name, e.g. "Microsoft
+      Monitoring Insights" or "Microsoft Compute".
 
       NOTE: This property will not be serialized. It can only be populated by
       the server.
@@ -62,7 +65,7 @@ properties:
     package: '@azure/arm-dashboard'
     summary: >-
       The localized friendly name of the resource type related to this
-      operation, e.g., 'grafana'.
+      operation. E.g. "Virtual Machines" or "Job Schedule Collections".
 
       NOTE: This property will not be serialized. It can only be populated by
       the server.

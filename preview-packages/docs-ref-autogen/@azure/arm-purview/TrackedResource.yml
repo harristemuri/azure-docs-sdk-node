@@ -76,10 +76,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'systemData?: SystemData'
+      content: 'systemData?: TrackedResourceSystemData'
       return:
         description: ''
-        type: <xref uid="@azure/arm-purview.SystemData" />
+        type: <xref uid="@azure/arm-purview.TrackedResourceSystemData" />
   - name: tags
     uid: '@azure/arm-purview.TrackedResource.tags'
     package: '@azure/arm-purview'

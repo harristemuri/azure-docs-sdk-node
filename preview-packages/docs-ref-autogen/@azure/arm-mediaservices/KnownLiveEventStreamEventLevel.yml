@@ -1,0 +1,28 @@
+### YamlMime:TSEnum
+name: KnownLiveEventStreamEventLevel
+uid: '@azure/arm-mediaservices.KnownLiveEventStreamEventLevel'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Known values of
+  [LiveEventStreamEventLevel](xref:@azure/arm-mediaservices.LiveEventStreamEventLevel)
+  that the service accepts.
+fullName: KnownLiveEventStreamEventLevel
+remarks: ''
+isDeprecated: false
+fields:
+  - name: Critical
+    uid: '@azure/arm-mediaservices.KnownLiveEventStreamEventLevel.Critical'
+    package: '@azure/arm-mediaservices'
+    summary: Critical
+  - name: Error
+    uid: '@azure/arm-mediaservices.KnownLiveEventStreamEventLevel.Error'
+    package: '@azure/arm-mediaservices'
+    summary: Error
+  - name: Information
+    uid: '@azure/arm-mediaservices.KnownLiveEventStreamEventLevel.Information'
+    package: '@azure/arm-mediaservices'
+    summary: Information
+  - name: Warning
+    uid: '@azure/arm-mediaservices.KnownLiveEventStreamEventLevel.Warning'
+    package: '@azure/arm-mediaservices'
+    summary: Warning

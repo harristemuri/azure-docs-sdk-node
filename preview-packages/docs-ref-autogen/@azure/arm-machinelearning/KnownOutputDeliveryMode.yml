@@ -13,8 +13,8 @@ fields:
   - name: ReadWriteMount
     uid: '@azure/arm-machinelearning.KnownOutputDeliveryMode.ReadWriteMount'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: ReadWriteMount
   - name: Upload
     uid: '@azure/arm-machinelearning.KnownOutputDeliveryMode.Upload'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Upload

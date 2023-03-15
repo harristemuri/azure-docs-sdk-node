@@ -176,7 +176,7 @@ methods:
         description: ''
         type: Promise&lt;void&gt;
   - name: >-
-      update(string, string, string, UpdateResource,
+      update(string, string, string, NotificationChannelFragment,
       NotificationChannelsUpdateOptionalParams)
     uid: '@azure/arm-devtestlabs.NotificationChannels.update'
     package: '@azure/arm-devtestlabs'
@@ -188,7 +188,7 @@ methods:
     syntax:
       content: >-
         function update(resourceGroupName: string, labName: string, name:
-        string, notificationChannel: UpdateResource, options?:
+        string, notificationChannel: NotificationChannelFragment, options?:
         NotificationChannelsUpdateOptionalParams): Promise<NotificationChannel>
       parameters:
         - id: resourceGroupName
@@ -201,7 +201,7 @@ methods:
           type: string
           description: The name of the notification channel.
         - id: notificationChannel
-          type: <xref uid="@azure/arm-devtestlabs.UpdateResource" />
+          type: <xref uid="@azure/arm-devtestlabs.NotificationChannelFragment" />
           description: A notification.
         - id: options
           type: >-

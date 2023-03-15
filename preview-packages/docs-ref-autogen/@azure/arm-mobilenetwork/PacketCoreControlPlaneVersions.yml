@@ -34,25 +34,23 @@ methods:
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-mobilenetwork.PacketCoreControlPlaneVersion" />&gt;
-  - name: >-
-      listByResourceGroup(PacketCoreControlPlaneVersionsListByResourceGroupOptionalParams)
-    uid: >-
-      @azure/arm-mobilenetwork.PacketCoreControlPlaneVersions.listByResourceGroup
+  - name: list(PacketCoreControlPlaneVersionsListOptionalParams)
+    uid: '@azure/arm-mobilenetwork.PacketCoreControlPlaneVersions.list'
     package: '@azure/arm-mobilenetwork'
     summary: Lists all supported packet core control planes versions.
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
-        function listByResourceGroup(options?:
-        PacketCoreControlPlaneVersionsListByResourceGroupOptionalParams):
+        function list(options?:
+        PacketCoreControlPlaneVersionsListOptionalParams):
         PagedAsyncIterableIterator<PacketCoreControlPlaneVersion,
         PacketCoreControlPlaneVersion[], PageSettings>
       parameters:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-mobilenetwork.PacketCoreControlPlaneVersionsListByResourceGroupOptionalParams"
+            uid="@azure/arm-mobilenetwork.PacketCoreControlPlaneVersionsListOptionalParams"
             />
           description: The options parameters.
       return:

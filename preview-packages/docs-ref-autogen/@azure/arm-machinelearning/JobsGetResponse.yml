@@ -7,4 +7,4 @@ fullName: JobsGetResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type JobsGetResponse = JobBaseData
+  type JobsGetResponse = JobBase

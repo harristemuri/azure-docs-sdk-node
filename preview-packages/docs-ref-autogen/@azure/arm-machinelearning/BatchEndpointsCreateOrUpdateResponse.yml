@@ -7,4 +7,4 @@ fullName: BatchEndpointsCreateOrUpdateResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type BatchEndpointsCreateOrUpdateResponse = BatchEndpointData
+  type BatchEndpointsCreateOrUpdateResponse = BatchEndpoint

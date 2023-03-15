@@ -8,6 +8,18 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: action
+    uid: '@azure/arm-network.ManagedRuleOverride.action'
+    package: '@azure/arm-network'
+    summary: Describes the override action to be applied when rule matches.
+    fullName: action
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'action?: string'
+      return:
+        description: ''
+        type: string
   - name: ruleId
     uid: '@azure/arm-network.ManagedRuleOverride.ruleId'
     package: '@azure/arm-network'

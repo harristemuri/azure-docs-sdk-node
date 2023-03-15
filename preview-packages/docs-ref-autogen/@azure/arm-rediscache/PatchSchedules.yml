@@ -9,7 +9,7 @@ isDeprecated: false
 type: interface
 methods:
   - name: >-
-      createOrUpdate(string, string, RedisPatchSchedule, string,
+      createOrUpdate(string, string, string, RedisPatchSchedule,
       PatchSchedulesCreateOrUpdateOptionalParams)
     uid: '@azure/arm-rediscache.PatchSchedules.createOrUpdate'
     package: '@azure/arm-rediscache'
@@ -19,7 +19,7 @@ methods:
     syntax:
       content: >-
         function createOrUpdate(resourceGroupName: string, name: string,
-        parameters: RedisPatchSchedule, defaultParam: string, options?:
+        defaultParam: string, parameters: RedisPatchSchedule, options?:
         PatchSchedulesCreateOrUpdateOptionalParams): Promise<RedisPatchSchedule>
       parameters:
         - id: resourceGroupName
@@ -28,14 +28,14 @@ methods:
         - id: name
           type: string
           description: The name of the Redis cache.
-        - id: parameters
-          type: <xref uid="@azure/arm-rediscache.RedisPatchSchedule" />
-          description: Parameters to set the patching schedule for Redis cache.
         - id: defaultParam
           type: string
           description: >-
             Default string modeled as parameter for auto generation to work
             correctly.
+        - id: parameters
+          type: <xref uid="@azure/arm-rediscache.RedisPatchSchedule" />
+          description: Parameters to set the patching schedule for Redis cache.
         - id: options
           type: >-
             <xref

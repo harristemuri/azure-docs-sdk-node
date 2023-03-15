@@ -1,0 +1,24 @@
+### YamlMime:TSTypeAlias
+name: LiveEventHealthStatus
+uid: '@azure/arm-mediaservices.LiveEventHealthStatus'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Defines values for LiveEventHealthStatus. \
+
+  [KnownLiveEventHealthStatus](xref:@azure/arm-mediaservices.KnownLiveEventHealthStatus)
+  can be used interchangeably with LiveEventHealthStatus,
+   this enum contains the known values that the service supports.
+  ### Known values supported by the service
+
+  **Excellent**: Incoming bitrate >= 75% of target bitrate AND no Ingest warning
+  and error AND ABS(IngestDrift) is equal to 0. \
+
+  **Good**: Incoming bitrate >= 20% AND no Ingest Error or warning exception
+  discontinuities which gap < 10 seconds. \
+
+  **Poor**: Otherwise.
+fullName: LiveEventHealthStatus
+remarks: ''
+isDeprecated: false
+syntax: |
+  type LiveEventHealthStatus = string

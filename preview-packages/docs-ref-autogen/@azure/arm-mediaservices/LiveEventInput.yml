@@ -77,3 +77,17 @@ properties:
       return:
         description: ''
         type: string
+  - name: timedMetadataEndpoints
+    uid: '@azure/arm-mediaservices.LiveEventInput.timedMetadataEndpoints'
+    package: '@azure/arm-mediaservices'
+    summary: The metadata endpoints for the live event.
+    fullName: timedMetadataEndpoints
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'timedMetadataEndpoints?: LiveEventTimedMetadataEndpoint[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-mediaservices.LiveEventTimedMetadataEndpoint"
+          />[]

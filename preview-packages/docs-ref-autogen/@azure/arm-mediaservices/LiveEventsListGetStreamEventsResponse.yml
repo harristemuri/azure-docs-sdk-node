@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: LiveEventsListGetStreamEventsResponse
+uid: '@azure/arm-mediaservices.LiveEventsListGetStreamEventsResponse'
+package: '@azure/arm-mediaservices'
+summary: Contains response data for the listGetStreamEvents operation.
+fullName: LiveEventsListGetStreamEventsResponse
+remarks: ''
+isDeprecated: false
+syntax: |
+  type LiveEventsListGetStreamEventsResponse = LiveEventGetStreamEventsResult

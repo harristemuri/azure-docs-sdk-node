@@ -78,36 +78,6 @@ properties:
       return:
         description: ''
         type: number
-  - name: checkpointDatasetId
-    uid: '@azure/arm-machinelearning.ImageModelSettings.checkpointDatasetId'
-    package: '@azure/arm-machinelearning'
-    summary: |-
-      FileDataset id for pretrained checkpoint(s) for incremental training.
-      Make sure to pass CheckpointFilename along with CheckpointDatasetId.
-    fullName: checkpointDatasetId
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'checkpointDatasetId?: string'
-      return:
-        description: ''
-        type: string
-  - name: checkpointFilename
-    uid: '@azure/arm-machinelearning.ImageModelSettings.checkpointFilename'
-    package: '@azure/arm-machinelearning'
-    summary: >-
-      The pretrained checkpoint filename in FileDataset for incremental
-      training.
-
-      Make sure to pass CheckpointDatasetId along with CheckpointFilename.
-    fullName: checkpointFilename
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'checkpointFilename?: string'
-      return:
-        description: ''
-        type: string
   - name: checkpointFrequency
     uid: '@azure/arm-machinelearning.ImageModelSettings.checkpointFrequency'
     package: '@azure/arm-machinelearning'
@@ -120,6 +90,18 @@ properties:
       return:
         description: ''
         type: number
+  - name: checkpointModel
+    uid: '@azure/arm-machinelearning.ImageModelSettings.checkpointModel'
+    package: '@azure/arm-machinelearning'
+    summary: The pretrained checkpoint model for incremental training.
+    fullName: checkpointModel
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'checkpointModel?: MLFlowModelJobInput'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-machinelearning.MLFlowModelJobInput" />
   - name: checkpointRunId
     uid: '@azure/arm-machinelearning.ImageModelSettings.checkpointRunId'
     package: '@azure/arm-machinelearning'
@@ -370,23 +352,6 @@ properties:
     isDeprecated: false
     syntax:
       content: 'randomSeed?: number'
-      return:
-        description: ''
-        type: number
-  - name: splitRatio
-    uid: '@azure/arm-machinelearning.ImageModelSettings.splitRatio'
-    package: '@azure/arm-machinelearning'
-    summary: >-
-      If validation data is not defined, this specifies the split ratio for
-      splitting
-
-      train data into random train and validation subsets. Must be a float in
-      the range [0, 1].
-    fullName: splitRatio
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'splitRatio?: number'
       return:
         description: ''
         type: number

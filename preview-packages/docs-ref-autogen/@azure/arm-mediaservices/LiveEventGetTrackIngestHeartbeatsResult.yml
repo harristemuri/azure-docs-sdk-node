@@ -1,0 +1,22 @@
+### YamlMime:TSType
+name: LiveEventGetTrackIngestHeartbeatsResult
+uid: '@azure/arm-mediaservices.LiveEventGetTrackIngestHeartbeatsResult'
+package: '@azure/arm-mediaservices'
+summary: Get live event track ingest heart beats result.
+fullName: LiveEventGetTrackIngestHeartbeatsResult
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: value
+    uid: '@azure/arm-mediaservices.LiveEventGetTrackIngestHeartbeatsResult.value'
+    package: '@azure/arm-mediaservices'
+    summary: The result of the get live event track events.
+    fullName: value
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'value?: LiveEventTrackEvent[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.LiveEventTrackEvent" />[]

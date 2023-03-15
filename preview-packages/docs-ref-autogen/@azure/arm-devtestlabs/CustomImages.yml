@@ -199,7 +199,7 @@ methods:
           uid="@azure/arm-devtestlabs.CustomImage" />, <xref
           uid="@azure/arm-devtestlabs.CustomImage" />[], PageSettings&gt;
   - name: >-
-      update(string, string, string, UpdateResource,
+      update(string, string, string, CustomImageFragment,
       CustomImagesUpdateOptionalParams)
     uid: '@azure/arm-devtestlabs.CustomImages.update'
     package: '@azure/arm-devtestlabs'
@@ -211,7 +211,7 @@ methods:
     syntax:
       content: >-
         function update(resourceGroupName: string, labName: string, name:
-        string, customImage: UpdateResource, options?:
+        string, customImage: CustomImageFragment, options?:
         CustomImagesUpdateOptionalParams): Promise<CustomImage>
       parameters:
         - id: resourceGroupName
@@ -224,7 +224,7 @@ methods:
           type: string
           description: The name of the custom image.
         - id: customImage
-          type: <xref uid="@azure/arm-devtestlabs.UpdateResource" />
+          type: <xref uid="@azure/arm-devtestlabs.CustomImageFragment" />
           description: A custom image.
         - id: options
           type: >-

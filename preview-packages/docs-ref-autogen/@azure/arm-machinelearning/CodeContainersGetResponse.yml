@@ -7,4 +7,4 @@ fullName: CodeContainersGetResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type CodeContainersGetResponse = CodeContainerData
+  type CodeContainersGetResponse = CodeContainer

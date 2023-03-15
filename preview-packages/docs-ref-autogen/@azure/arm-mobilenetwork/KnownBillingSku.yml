@@ -9,31 +9,31 @@ fullName: KnownBillingSku
 remarks: ''
 isDeprecated: false
 fields:
-  - name: EdgeSite2Gbps
-    uid: '@azure/arm-mobilenetwork.KnownBillingSku.EdgeSite2Gbps'
+  - name: G0
+    uid: '@azure/arm-mobilenetwork.KnownBillingSku.G0'
     package: '@azure/arm-mobilenetwork'
-    summary: Edge site 2Gbps plan
-  - name: EdgeSite3Gbps
-    uid: '@azure/arm-mobilenetwork.KnownBillingSku.EdgeSite3Gbps'
+    summary: 100 Mbps, 20 active SIMs plan
+  - name: G1
+    uid: '@azure/arm-mobilenetwork.KnownBillingSku.G1'
     package: '@azure/arm-mobilenetwork'
-    summary: Edge site 3Gbps plan
-  - name: EdgeSite4Gbps
-    uid: '@azure/arm-mobilenetwork.KnownBillingSku.EdgeSite4Gbps'
+    summary: 1 Gbps, 100 active SIMs plan
+  - name: G10
+    uid: '@azure/arm-mobilenetwork.KnownBillingSku.G10'
     package: '@azure/arm-mobilenetwork'
-    summary: Edge site 4Gbps plan
-  - name: EvaluationPackage
-    uid: '@azure/arm-mobilenetwork.KnownBillingSku.EvaluationPackage'
+    summary: 10 Gbps, 1000 active SIMs plan
+  - name: G2
+    uid: '@azure/arm-mobilenetwork.KnownBillingSku.G2'
     package: '@azure/arm-mobilenetwork'
-    summary: Evaluation package plan
-  - name: FlagshipStarterPackage
-    uid: '@azure/arm-mobilenetwork.KnownBillingSku.FlagshipStarterPackage'
+    summary: 2 Gbps, 200 active SIMs plan
+  - name: G3
+    uid: '@azure/arm-mobilenetwork.KnownBillingSku.G3'
     package: '@azure/arm-mobilenetwork'
-    summary: Flagship starter package plan
-  - name: LargePackage
-    uid: '@azure/arm-mobilenetwork.KnownBillingSku.LargePackage'
+    summary: 3 Gbps, 300 active SIMs plan
+  - name: G4
+    uid: '@azure/arm-mobilenetwork.KnownBillingSku.G4'
     package: '@azure/arm-mobilenetwork'
-    summary: Large package plan
-  - name: MediumPackage
-    uid: '@azure/arm-mobilenetwork.KnownBillingSku.MediumPackage'
+    summary: 4 Gbps, 400 active SIMs plan
+  - name: G5
+    uid: '@azure/arm-mobilenetwork.KnownBillingSku.G5'
     package: '@azure/arm-mobilenetwork'
-    summary: Medium package plan
+    summary: 5 Gbps, 500 active SIMs plan

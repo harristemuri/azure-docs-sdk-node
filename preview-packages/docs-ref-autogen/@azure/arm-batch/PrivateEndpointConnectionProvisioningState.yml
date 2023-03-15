@@ -8,6 +8,9 @@ remarks: ''
 isDeprecated: false
 syntax: |
   type PrivateEndpointConnectionProvisioningState =
-    | "Succeeded"
+    | "Creating"
     | "Updating"
+    | "Deleting"
+    | "Succeeded"
     | "Failed"
+    | "Cancelled"

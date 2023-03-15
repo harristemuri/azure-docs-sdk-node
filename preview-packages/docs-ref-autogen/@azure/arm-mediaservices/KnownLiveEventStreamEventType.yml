@@ -1,0 +1,54 @@
+### YamlMime:TSEnum
+name: KnownLiveEventStreamEventType
+uid: '@azure/arm-mediaservices.KnownLiveEventStreamEventType'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Known values of
+  [LiveEventStreamEventType](xref:@azure/arm-mediaservices.LiveEventStreamEventType)
+  that the service accepts.
+fullName: KnownLiveEventStreamEventType
+remarks: ''
+isDeprecated: false
+fields:
+  - name: StreamEventBeginIngest
+    uid: >-
+      @azure/arm-mediaservices.KnownLiveEventStreamEventType.StreamEventBeginIngest
+    package: '@azure/arm-mediaservices'
+    summary: Ingest session begins.
+  - name: StreamEventChunkDropped
+    uid: >-
+      @azure/arm-mediaservices.KnownLiveEventStreamEventType.StreamEventChunkDropped
+    package: '@azure/arm-mediaservices'
+    summary: Fragment dropped.
+  - name: StreamEventDiscontinuity
+    uid: >-
+      @azure/arm-mediaservices.KnownLiveEventStreamEventType.StreamEventDiscontinuity
+    package: '@azure/arm-mediaservices'
+    summary: Timestamp discontinuity detected.
+  - name: StreamEventEndIngest
+    uid: >-
+      @azure/arm-mediaservices.KnownLiveEventStreamEventType.StreamEventEndIngest
+    package: '@azure/arm-mediaservices'
+    summary: Ingest session ends.
+  - name: StreamEventFirstChunkReceived
+    uid: >-
+      @azure/arm-mediaservices.KnownLiveEventStreamEventType.StreamEventFirstChunkReceived
+    package: '@azure/arm-mediaservices'
+    summary: First fragment received on ingest media track.
+  - name: StreamEventInvalidConnection
+    uid: >-
+      @azure/arm-mediaservices.KnownLiveEventStreamEventType.StreamEventInvalidConnection
+    package: '@azure/arm-mediaservices'
+    summary: Ingest session denied.
+  - name: StreamEventUnalignedKeyFrames
+    uid: >-
+      @azure/arm-mediaservices.KnownLiveEventStreamEventType.StreamEventUnalignedKeyFrames
+    package: '@azure/arm-mediaservices'
+    summary: Unaligned video keyframes detected.
+  - name: StreamEventUnalignedPresentation
+    uid: >-
+      @azure/arm-mediaservices.KnownLiveEventStreamEventType.StreamEventUnalignedPresentation
+    package: '@azure/arm-mediaservices'
+    summary: >-
+      Unaligned presentation detected, meaning two fragments across two quality
+      levels are not time aligned.

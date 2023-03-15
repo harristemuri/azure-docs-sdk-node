@@ -5,14 +5,12 @@ summary: ''
 type: package
 classes:
   - '@azure/arm-links.ManagementLinkClient'
-  - '@azure/arm-links.ManagementLinkClientContext'
 interfaces:
   - '@azure/arm-links.ManagementLinkClientOptionalParams'
   - '@azure/arm-links.Operation'
   - '@azure/arm-links.OperationDisplay'
   - '@azure/arm-links.OperationListResult'
   - '@azure/arm-links.Operations'
-  - '@azure/arm-links.OperationsListNextNextOptionalParams'
   - '@azure/arm-links.OperationsListNextOptionalParams'
   - '@azure/arm-links.OperationsListOptionalParams'
   - '@azure/arm-links.ResourceLink'
@@ -23,21 +21,35 @@ interfaces:
   - '@azure/arm-links.ResourceLinksCreateOrUpdateOptionalParams'
   - '@azure/arm-links.ResourceLinksDeleteOptionalParams'
   - '@azure/arm-links.ResourceLinksGetOptionalParams'
-  - '@azure/arm-links.ResourceLinksListAtSourceScopeNextNextOptionalParams'
   - '@azure/arm-links.ResourceLinksListAtSourceScopeNextOptionalParams'
   - '@azure/arm-links.ResourceLinksListAtSourceScopeOptionalParams'
-  - '@azure/arm-links.ResourceLinksListAtSubscriptionNextNextOptionalParams'
   - '@azure/arm-links.ResourceLinksListAtSubscriptionNextOptionalParams'
   - '@azure/arm-links.ResourceLinksListAtSubscriptionOptionalParams'
 typeAliases:
-  - '@azure/arm-links.OperationsListNextNextResponse'
   - '@azure/arm-links.OperationsListNextResponse'
   - '@azure/arm-links.OperationsListResponse'
   - '@azure/arm-links.ResourceLinksCreateOrUpdateResponse'
   - '@azure/arm-links.ResourceLinksGetResponse'
-  - '@azure/arm-links.ResourceLinksListAtSourceScopeNextNextResponse'
   - '@azure/arm-links.ResourceLinksListAtSourceScopeNextResponse'
   - '@azure/arm-links.ResourceLinksListAtSourceScopeResponse'
-  - '@azure/arm-links.ResourceLinksListAtSubscriptionNextNextResponse'
   - '@azure/arm-links.ResourceLinksListAtSubscriptionNextResponse'
   - '@azure/arm-links.ResourceLinksListAtSubscriptionResponse'
+functions:
+  - name: getContinuationToken(unknown)
+    uid: '@azure/arm-links.getContinuationToken'
+    package: '@azure/arm-links'
+    summary: |-
+      Given a result page from a pageable operation, returns a
+      continuation token that can be used to begin paging from
+      that point later.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getContinuationToken(page: unknown): string | undefined'
+      parameters:
+        - id: page
+          type: unknown
+          description: A result object from calling .byPage() on a paged operation.
+      return:
+        description: The continuation token that can be passed into byPage().
+        type: string | undefined

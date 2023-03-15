@@ -1,0 +1,60 @@
+### YamlMime:TSType
+name: LiveEventIngestInterruption
+uid: '@azure/arm-mediaservices.LiveEventIngestInterruption'
+package: '@azure/arm-mediaservices'
+summary: The live event ingest interruption data.
+fullName: LiveEventIngestInterruption
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: begin
+    uid: '@azure/arm-mediaservices.LiveEventIngestInterruption.begin'
+    package: '@azure/arm-mediaservices'
+    summary: UTC time of interruption start, encoder disconnected.
+    fullName: begin
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'begin?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: duration
+    uid: '@azure/arm-mediaservices.LiveEventIngestInterruption.duration'
+    package: '@azure/arm-mediaservices'
+    summary: >-
+      Duration of interruption in ISO 8601 time. For example, use PT1H30M to
+      indicate 1 hour and 30 minutes.
+    fullName: duration
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'duration?: string'
+      return:
+        description: ''
+        type: string
+  - name: end
+    uid: '@azure/arm-mediaservices.LiveEventIngestInterruption.end'
+    package: '@azure/arm-mediaservices'
+    summary: UTC time of interruption end, encoder re-connected.
+    fullName: end
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'end?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: reason
+    uid: '@azure/arm-mediaservices.LiveEventIngestInterruption.reason'
+    package: '@azure/arm-mediaservices'
+    summary: Interruption reason.
+    fullName: reason
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'reason?: string'
+      return:
+        description: ''
+        type: string

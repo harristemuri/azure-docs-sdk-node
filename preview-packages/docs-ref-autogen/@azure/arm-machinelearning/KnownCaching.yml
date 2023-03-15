@@ -12,12 +12,12 @@ fields:
   - name: None
     uid: '@azure/arm-machinelearning.KnownCaching.None'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: None
   - name: ReadOnly
     uid: '@azure/arm-machinelearning.KnownCaching.ReadOnly'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: ReadOnly
   - name: ReadWrite
     uid: '@azure/arm-machinelearning.KnownCaching.ReadWrite'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: ReadWrite

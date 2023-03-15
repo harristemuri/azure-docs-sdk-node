@@ -8,6 +8,18 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: dynamicVnetAssignmentScope
+    uid: '@azure/arm-batch.NetworkConfiguration.dynamicVnetAssignmentScope'
+    package: '@azure/arm-batch'
+    summary: The scope of dynamic vnet assignment.
+    fullName: dynamicVnetAssignmentScope
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'dynamicVnetAssignmentScope?: DynamicVNetAssignmentScope'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-batch.DynamicVNetAssignmentScope" />
   - name: endpointConfiguration
     uid: '@azure/arm-batch.NetworkConfiguration.endpointConfiguration'
     package: '@azure/arm-batch'

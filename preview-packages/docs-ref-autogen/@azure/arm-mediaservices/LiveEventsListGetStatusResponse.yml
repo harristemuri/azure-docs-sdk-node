@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: LiveEventsListGetStatusResponse
+uid: '@azure/arm-mediaservices.LiveEventsListGetStatusResponse'
+package: '@azure/arm-mediaservices'
+summary: Contains response data for the listGetStatus operation.
+fullName: LiveEventsListGetStatusResponse
+remarks: ''
+isDeprecated: false
+syntax: |
+  type LiveEventsListGetStatusResponse = LiveEventGetStatusResult

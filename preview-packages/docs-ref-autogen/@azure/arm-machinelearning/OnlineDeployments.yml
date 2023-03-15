@@ -9,7 +9,7 @@ isDeprecated: false
 type: interface
 methods:
   - name: >-
-      beginCreateOrUpdate(string, string, string, string, OnlineDeploymentData,
+      beginCreateOrUpdate(string, string, string, string, OnlineDeployment,
       OnlineDeploymentsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.OnlineDeployments.beginCreateOrUpdate'
     package: '@azure/arm-machinelearning'
@@ -20,10 +20,10 @@ methods:
       content: >-
         function beginCreateOrUpdate(resourceGroupName: string, workspaceName:
         string, endpointName: string, deploymentName: string, body:
-        OnlineDeploymentData, options?:
+        OnlineDeployment, options?:
         OnlineDeploymentsCreateOrUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<OnlineDeploymentData>,
-        OnlineDeploymentData>>
+        Promise<PollerLike<PollOperationState<OnlineDeployment>,
+        OnlineDeployment>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -38,7 +38,7 @@ methods:
           type: string
           description: Inference Endpoint Deployment name.
         - id: body
-          type: <xref uid="@azure/arm-machinelearning.OnlineDeploymentData" />
+          type: <xref uid="@azure/arm-machinelearning.OnlineDeployment" />
           description: Inference Endpoint entity to apply during operation.
         - id: options
           type: >-
@@ -50,11 +50,11 @@ methods:
         description: ''
         type: >-
           Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-machinelearning.OnlineDeploymentData" />&gt;, <xref
-          uid="@azure/arm-machinelearning.OnlineDeploymentData" />&gt;&gt;
+          uid="@azure/arm-machinelearning.OnlineDeployment" />&gt;, <xref
+          uid="@azure/arm-machinelearning.OnlineDeployment" />&gt;&gt;
   - name: >-
       beginCreateOrUpdateAndWait(string, string, string, string,
-      OnlineDeploymentData, OnlineDeploymentsCreateOrUpdateOptionalParams)
+      OnlineDeployment, OnlineDeploymentsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.OnlineDeployments.beginCreateOrUpdateAndWait'
     package: '@azure/arm-machinelearning'
     summary: Create or update Inference Endpoint Deployment (asynchronous).
@@ -64,9 +64,9 @@ methods:
       content: >-
         function beginCreateOrUpdateAndWait(resourceGroupName: string,
         workspaceName: string, endpointName: string, deploymentName: string,
-        body: OnlineDeploymentData, options?:
+        body: OnlineDeployment, options?:
         OnlineDeploymentsCreateOrUpdateOptionalParams):
-        Promise<OnlineDeploymentData>
+        Promise<OnlineDeployment>
       parameters:
         - id: resourceGroupName
           type: string
@@ -81,7 +81,7 @@ methods:
           type: string
           description: Inference Endpoint Deployment name.
         - id: body
-          type: <xref uid="@azure/arm-machinelearning.OnlineDeploymentData" />
+          type: <xref uid="@azure/arm-machinelearning.OnlineDeployment" />
           description: Inference Endpoint entity to apply during operation.
         - id: options
           type: >-
@@ -92,7 +92,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.OnlineDeploymentData"
+          Promise&lt;<xref uid="@azure/arm-machinelearning.OnlineDeployment"
           />&gt;
   - name: >-
       beginDelete(string, string, string, string,
@@ -167,7 +167,7 @@ methods:
         type: Promise&lt;void&gt;
   - name: >-
       beginUpdate(string, string, string, string,
-      PartialOnlineDeploymentPartialTrackedResource,
+      PartialMinimalTrackedResourceWithSku,
       OnlineDeploymentsUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.OnlineDeployments.beginUpdate'
     package: '@azure/arm-machinelearning'
@@ -178,10 +178,10 @@ methods:
       content: >-
         function beginUpdate(resourceGroupName: string, workspaceName: string,
         endpointName: string, deploymentName: string, body:
-        PartialOnlineDeploymentPartialTrackedResource, options?:
+        PartialMinimalTrackedResourceWithSku, options?:
         OnlineDeploymentsUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<OnlineDeploymentData>,
-        OnlineDeploymentData>>
+        Promise<PollerLike<PollOperationState<OnlineDeployment>,
+        OnlineDeployment>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -198,7 +198,7 @@ methods:
         - id: body
           type: >-
             <xref
-            uid="@azure/arm-machinelearning.PartialOnlineDeploymentPartialTrackedResource"
+            uid="@azure/arm-machinelearning.PartialMinimalTrackedResourceWithSku"
             />
           description: Online Endpoint entity to apply during operation.
         - id: options
@@ -211,11 +211,11 @@ methods:
         description: ''
         type: >-
           Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-machinelearning.OnlineDeploymentData" />&gt;, <xref
-          uid="@azure/arm-machinelearning.OnlineDeploymentData" />&gt;&gt;
+          uid="@azure/arm-machinelearning.OnlineDeployment" />&gt;, <xref
+          uid="@azure/arm-machinelearning.OnlineDeployment" />&gt;&gt;
   - name: >-
       beginUpdateAndWait(string, string, string, string,
-      PartialOnlineDeploymentPartialTrackedResource,
+      PartialMinimalTrackedResourceWithSku,
       OnlineDeploymentsUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.OnlineDeployments.beginUpdateAndWait'
     package: '@azure/arm-machinelearning'
@@ -226,8 +226,8 @@ methods:
       content: >-
         function beginUpdateAndWait(resourceGroupName: string, workspaceName:
         string, endpointName: string, deploymentName: string, body:
-        PartialOnlineDeploymentPartialTrackedResource, options?:
-        OnlineDeploymentsUpdateOptionalParams): Promise<OnlineDeploymentData>
+        PartialMinimalTrackedResourceWithSku, options?:
+        OnlineDeploymentsUpdateOptionalParams): Promise<OnlineDeployment>
       parameters:
         - id: resourceGroupName
           type: string
@@ -244,7 +244,7 @@ methods:
         - id: body
           type: >-
             <xref
-            uid="@azure/arm-machinelearning.PartialOnlineDeploymentPartialTrackedResource"
+            uid="@azure/arm-machinelearning.PartialMinimalTrackedResourceWithSku"
             />
           description: Online Endpoint entity to apply during operation.
         - id: options
@@ -256,7 +256,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.OnlineDeploymentData"
+          Promise&lt;<xref uid="@azure/arm-machinelearning.OnlineDeployment"
           />&gt;
   - name: get(string, string, string, string, OnlineDeploymentsGetOptionalParams)
     uid: '@azure/arm-machinelearning.OnlineDeployments.get'
@@ -268,7 +268,7 @@ methods:
       content: >-
         function get(resourceGroupName: string, workspaceName: string,
         endpointName: string, deploymentName: string, options?:
-        OnlineDeploymentsGetOptionalParams): Promise<OnlineDeploymentData>
+        OnlineDeploymentsGetOptionalParams): Promise<OnlineDeployment>
       parameters:
         - id: resourceGroupName
           type: string
@@ -291,7 +291,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.OnlineDeploymentData"
+          Promise&lt;<xref uid="@azure/arm-machinelearning.OnlineDeployment"
           />&gt;
   - name: >-
       getLogs(string, string, string, string, DeploymentLogsRequest,
@@ -344,7 +344,7 @@ methods:
       content: >-
         function list(resourceGroupName: string, workspaceName: string,
         endpointName: string, options?: OnlineDeploymentsListOptionalParams):
-        PagedAsyncIterableIterator<OnlineDeploymentData, OnlineDeploymentData[],
+        PagedAsyncIterableIterator<OnlineDeployment, OnlineDeployment[],
         PageSettings>
       parameters:
         - id: resourceGroupName
@@ -366,8 +366,8 @@ methods:
         description: ''
         type: >-
           PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-machinelearning.OnlineDeploymentData" />, <xref
-          uid="@azure/arm-machinelearning.OnlineDeploymentData" />[],
+          uid="@azure/arm-machinelearning.OnlineDeployment" />, <xref
+          uid="@azure/arm-machinelearning.OnlineDeployment" />[],
           PageSettings&gt;
   - name: >-
       listSkus(string, string, string, string,

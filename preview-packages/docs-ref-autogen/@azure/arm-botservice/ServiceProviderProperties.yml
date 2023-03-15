@@ -12,7 +12,7 @@ properties:
     uid: '@azure/arm-botservice.ServiceProviderProperties.devPortalUrl'
     package: '@azure/arm-botservice'
     summary: >-
-      Display Name of the Service Provider
+      URL of Dev Portal
 
       NOTE: This property will not be serialized. It can only be populated by
       the server.
@@ -43,11 +43,7 @@ properties:
   - name: iconUrl
     uid: '@azure/arm-botservice.ServiceProviderProperties.iconUrl'
     package: '@azure/arm-botservice'
-    summary: >-
-      Display Name of the Service Provider
-
-      NOTE: This property will not be serialized. It can only be populated by
-      the server.
+    summary: The URL of icon
     fullName: iconUrl
     remarks: ''
     isDeprecated: false
@@ -88,7 +84,7 @@ properties:
     uid: '@azure/arm-botservice.ServiceProviderProperties.serviceProviderName'
     package: '@azure/arm-botservice'
     summary: >-
-      Display Name of the Service Provider
+      Name of the Service Provider
 
       NOTE: This property will not be serialized. It can only be populated by
       the server.

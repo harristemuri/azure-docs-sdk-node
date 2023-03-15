@@ -12,6 +12,7 @@ syntax: |
     | AlexaChannel
     | FacebookChannel
     | EmailChannel
+    | OutlookChannel
     | MsTeamsChannel
     | SkypeChannel
     | KikChannel
@@ -22,3 +23,8 @@ syntax: |
     | SlackChannel
     | LineChannel
     | DirectLineSpeechChannel
+    | Omnichannel
+    | TelephonyChannel
+    | AcsChatChannel
+    | SearchAssistant
+    | M365Extensions

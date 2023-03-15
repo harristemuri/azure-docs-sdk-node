@@ -1,0 +1,22 @@
+### YamlMime:TSType
+name: LiveEventTimedMetadataEndpoint
+uid: '@azure/arm-mediaservices.LiveEventTimedMetadataEndpoint'
+package: '@azure/arm-mediaservices'
+summary: The live event metadata insertion endpoint.
+fullName: LiveEventTimedMetadataEndpoint
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: url
+    uid: '@azure/arm-mediaservices.LiveEventTimedMetadataEndpoint.url'
+    package: '@azure/arm-mediaservices'
+    summary: The metadata endpoint URL.
+    fullName: url
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'url?: string'
+      return:
+        description: ''
+        type: string

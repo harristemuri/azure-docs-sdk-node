@@ -35,7 +35,7 @@ properties:
   - name: scriptSource
     uid: '@azure/arm-machinelearning.ScriptReference.scriptSource'
     package: '@azure/arm-machinelearning'
-    summary: 'The storage source of the script: inline, workspace.'
+    summary: 'The storage source of the script: workspace.'
     fullName: scriptSource
     remarks: ''
     isDeprecated: false

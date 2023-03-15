@@ -14,24 +14,24 @@ fields:
     uid: >-
       @azure/arm-machinelearning.KnownPrivateEndpointServiceConnectionStatus.Approved
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Approved
   - name: Disconnected
     uid: >-
       @azure/arm-machinelearning.KnownPrivateEndpointServiceConnectionStatus.Disconnected
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Disconnected
   - name: Pending
     uid: >-
       @azure/arm-machinelearning.KnownPrivateEndpointServiceConnectionStatus.Pending
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Pending
   - name: Rejected
     uid: >-
       @azure/arm-machinelearning.KnownPrivateEndpointServiceConnectionStatus.Rejected
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Rejected
   - name: Timeout
     uid: >-
       @azure/arm-machinelearning.KnownPrivateEndpointServiceConnectionStatus.Timeout
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Timeout

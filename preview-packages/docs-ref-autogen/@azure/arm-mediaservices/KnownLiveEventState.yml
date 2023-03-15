@@ -1,0 +1,27 @@
+### YamlMime:TSEnum
+name: KnownLiveEventState
+uid: '@azure/arm-mediaservices.KnownLiveEventState'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Known values of [LiveEventState](xref:@azure/arm-mediaservices.LiveEventState)
+  that the service accepts.
+fullName: KnownLiveEventState
+remarks: ''
+isDeprecated: false
+fields:
+  - name: Running
+    uid: '@azure/arm-mediaservices.KnownLiveEventState.Running'
+    package: '@azure/arm-mediaservices'
+    summary: >-
+      The live event resources have been allocated, ingest and preview URLs have
+      been generated, and it is capable of receiving live streams. At this
+      point, billing is active. You must explicitly call Stop on the live event
+      resource to halt further billing.
+  - name: Stopped
+    uid: '@azure/arm-mediaservices.KnownLiveEventState.Stopped'
+    package: '@azure/arm-mediaservices'
+    summary: >-
+      This is the initial state of the live event after creation (unless
+      autostart was set to true.) No billing occurs in this state. In this
+      state, the live event properties can be updated but streaming is not
+      allowed.

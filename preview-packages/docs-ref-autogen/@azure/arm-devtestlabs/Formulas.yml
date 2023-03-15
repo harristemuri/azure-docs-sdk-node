@@ -168,7 +168,7 @@ methods:
           uid="@azure/arm-devtestlabs.Formula" />, <xref
           uid="@azure/arm-devtestlabs.Formula" />[], PageSettings&gt;
   - name: >-
-      update(string, string, string, UpdateResource,
+      update(string, string, string, FormulaFragment,
       FormulasUpdateOptionalParams)
     uid: '@azure/arm-devtestlabs.Formulas.update'
     package: '@azure/arm-devtestlabs'
@@ -178,7 +178,7 @@ methods:
     syntax:
       content: >-
         function update(resourceGroupName: string, labName: string, name:
-        string, formula: UpdateResource, options?:
+        string, formula: FormulaFragment, options?:
         FormulasUpdateOptionalParams): Promise<Formula>
       parameters:
         - id: resourceGroupName
@@ -191,7 +191,7 @@ methods:
           type: string
           description: The name of the formula.
         - id: formula
-          type: <xref uid="@azure/arm-devtestlabs.UpdateResource" />
+          type: <xref uid="@azure/arm-devtestlabs.FormulaFragment" />
           description: >-
             A formula for creating a VM, specifying an image base and other
             parameters

@@ -8,6 +8,22 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: description
+    uid: '@azure/arm-cdn.OperationDisplay.description'
+    package: '@azure/arm-cdn'
+    summary: >-
+      Description of operation.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: description
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'description?: string'
+      return:
+        description: ''
+        type: string
   - name: operation
     uid: '@azure/arm-cdn.OperationDisplay.operation'
     package: '@azure/arm-cdn'

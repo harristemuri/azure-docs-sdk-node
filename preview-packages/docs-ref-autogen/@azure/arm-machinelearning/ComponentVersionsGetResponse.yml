@@ -7,4 +7,4 @@ fullName: ComponentVersionsGetResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type ComponentVersionsGetResponse = ComponentVersionData
+  type ComponentVersionsGetResponse = ComponentVersion

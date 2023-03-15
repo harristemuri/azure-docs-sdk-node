@@ -1,0 +1,361 @@
+### YamlMime:TSType
+name: LiveEventStreamEventData
+uid: '@azure/arm-mediaservices.LiveEventStreamEventData'
+package: '@azure/arm-mediaservices'
+summary: The live event stream event data.
+fullName: LiveEventStreamEventData
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: bitrate
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.bitrate'
+    package: '@azure/arm-mediaservices'
+    summary: Bitrate of the track.
+    fullName: bitrate
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'bitrate?: number'
+      return:
+        description: ''
+        type: number
+  - name: currentFragmentTimestamp
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.currentFragmentTimestamp'
+    package: '@azure/arm-mediaservices'
+    summary: Current fragment timestamp in timescale.
+    fullName: currentFragmentTimestamp
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'currentFragmentTimestamp?: string'
+      return:
+        description: ''
+        type: string
+  - name: discontinuityGap
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.discontinuityGap'
+    package: '@azure/arm-mediaservices'
+    summary: Length of the discontinuity gap in timescale.
+    fullName: discontinuityGap
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'discontinuityGap?: number'
+      return:
+        description: ''
+        type: number
+  - name: duration
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.duration'
+    package: '@azure/arm-mediaservices'
+    summary: Fragment duration.
+    fullName: duration
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'duration?: string'
+      return:
+        description: ''
+        type: string
+  - name: fragmentDropReason
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.fragmentDropReason'
+    package: '@azure/arm-mediaservices'
+    summary: Reason the fragment was dropped.
+    fullName: fragmentDropReason
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'fragmentDropReason?: string'
+      return:
+        description: ''
+        type: string
+  - name: fragmentOneDuration
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.fragmentOneDuration'
+    package: '@azure/arm-mediaservices'
+    summary: Duration of first fragment used to make a comparison, in timescale.
+    fullName: fragmentOneDuration
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'fragmentOneDuration?: string'
+      return:
+        description: ''
+        type: string
+  - name: fragmentOneTimestamp
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.fragmentOneTimestamp'
+    package: '@azure/arm-mediaservices'
+    summary: Timestamp of first fragment used to make a comparison, in timescale.
+    fullName: fragmentOneTimestamp
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'fragmentOneTimestamp?: string'
+      return:
+        description: ''
+        type: string
+  - name: fragmentTwoDuration
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.fragmentTwoDuration'
+    package: '@azure/arm-mediaservices'
+    summary: Duration of second fragment used to make a comparison, in timescale.
+    fullName: fragmentTwoDuration
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'fragmentTwoDuration?: string'
+      return:
+        description: ''
+        type: string
+  - name: fragmentTwoTimestamp
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.fragmentTwoTimestamp'
+    package: '@azure/arm-mediaservices'
+    summary: Timestamp of second fragment used to make a comparison, in timescale.
+    fullName: fragmentTwoTimestamp
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'fragmentTwoTimestamp?: string'
+      return:
+        description: ''
+        type: string
+  - name: maxTime
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.maxTime'
+    package: '@azure/arm-mediaservices'
+    summary: The larger timestamp of the two fragments compared.
+    fullName: maxTime
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'maxTime?: string'
+      return:
+        description: ''
+        type: string
+  - name: maxTimeMediaType
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.maxTimeMediaType'
+    package: '@azure/arm-mediaservices'
+    summary: The media type of the larger timestamp of two fragments compared.
+    fullName: maxTimeMediaType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'maxTimeMediaType?: string'
+      return:
+        description: ''
+        type: string
+  - name: mediaTimestamp
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.mediaTimestamp'
+    package: '@azure/arm-mediaservices'
+    summary: Fragment timestamp in timescale.
+    fullName: mediaTimestamp
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'mediaTimestamp?: string'
+      return:
+        description: ''
+        type: string
+  - name: mediaType
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.mediaType'
+    package: '@azure/arm-mediaservices'
+    summary: Type of the track.
+    fullName: mediaType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'mediaType?: string'
+      return:
+        description: ''
+        type: string
+  - name: minTime
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.minTime'
+    package: '@azure/arm-mediaservices'
+    summary: The smaller timestamp of the two fragments compared.
+    fullName: minTime
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'minTime?: string'
+      return:
+        description: ''
+        type: string
+  - name: minTimeMediaType
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.minTimeMediaType'
+    package: '@azure/arm-mediaservices'
+    summary: The media type of the smaller timestamp of two fragments compared.
+    fullName: minTimeMediaType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'minTimeMediaType?: string'
+      return:
+        description: ''
+        type: string
+  - name: previousFragmentDuration
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.previousFragmentDuration'
+    package: '@azure/arm-mediaservices'
+    summary: Previous fragment duration in timescale.
+    fullName: previousFragmentDuration
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'previousFragmentDuration?: string'
+      return:
+        description: ''
+        type: string
+  - name: previousFragmentTimestamp
+    uid: >-
+      @azure/arm-mediaservices.LiveEventStreamEventData.previousFragmentTimestamp
+    package: '@azure/arm-mediaservices'
+    summary: Previous fragment timestamp in timescale.
+    fullName: previousFragmentTimestamp
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'previousFragmentTimestamp?: string'
+      return:
+        description: ''
+        type: string
+  - name: remoteIp
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.remoteIp'
+    package: '@azure/arm-mediaservices'
+    summary: Truncated IP of the encoder.
+    fullName: remoteIp
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'remoteIp?: string'
+      return:
+        description: ''
+        type: string
+  - name: remotePort
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.remotePort'
+    package: '@azure/arm-mediaservices'
+    summary: Port of the encoder.
+    fullName: remotePort
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'remotePort?: string'
+      return:
+        description: ''
+        type: string
+  - name: resolution
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.resolution'
+    package: '@azure/arm-mediaservices'
+    summary: Width x Height for video, null otherwise.
+    fullName: resolution
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'resolution?: string'
+      return:
+        description: ''
+        type: string
+  - name: resultCode
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.resultCode'
+    package: '@azure/arm-mediaservices'
+    summary: Result code.
+    fullName: resultCode
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'resultCode?: string'
+      return:
+        description: ''
+        type: string
+  - name: resultMessage
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.resultMessage'
+    package: '@azure/arm-mediaservices'
+    summary: Result message.
+    fullName: resultMessage
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'resultMessage?: string'
+      return:
+        description: ''
+        type: string
+  - name: streamId
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.streamId'
+    package: '@azure/arm-mediaservices'
+    summary: Stream ID in the format "trackName_bitrate"
+    fullName: streamId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'streamId?: string'
+      return:
+        description: ''
+        type: string
+  - name: streamName
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.streamName'
+    package: '@azure/arm-mediaservices'
+    summary: >-
+      Identifier of the stream or connection. Encoder or customer is responsible
+      to add this ID in the ingest URL.
+    fullName: streamName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'streamName?: string'
+      return:
+        description: ''
+        type: string
+  - name: timescale
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.timescale'
+    package: '@azure/arm-mediaservices'
+    summary: Timescale in which timestamps are expressed.
+    fullName: timescale
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'timescale?: string'
+      return:
+        description: ''
+        type: string
+  - name: timescaleOfMaxTime
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.timescaleOfMaxTime'
+    package: '@azure/arm-mediaservices'
+    summary: Timescale of the fragment with the larger timestamp.
+    fullName: timescaleOfMaxTime
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'timescaleOfMaxTime?: string'
+      return:
+        description: ''
+        type: string
+  - name: timescaleOfMinTime
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.timescaleOfMinTime'
+    package: '@azure/arm-mediaservices'
+    summary: Timescale of the fragment with the smaller timestamp.
+    fullName: timescaleOfMinTime
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'timescaleOfMinTime?: string'
+      return:
+        description: ''
+        type: string
+  - name: trackId
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.trackId'
+    package: '@azure/arm-mediaservices'
+    summary: Track index.
+    fullName: trackId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'trackId?: number'
+      return:
+        description: ''
+        type: number
+  - name: trackName
+    uid: '@azure/arm-mediaservices.LiveEventStreamEventData.trackName'
+    package: '@azure/arm-mediaservices'
+    summary: Name of the track.
+    fullName: trackName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'trackName?: string'
+      return:
+        description: ''
+        type: string

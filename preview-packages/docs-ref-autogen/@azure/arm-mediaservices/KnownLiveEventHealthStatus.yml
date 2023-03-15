@@ -1,0 +1,28 @@
+### YamlMime:TSEnum
+name: KnownLiveEventHealthStatus
+uid: '@azure/arm-mediaservices.KnownLiveEventHealthStatus'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Known values of
+  [LiveEventHealthStatus](xref:@azure/arm-mediaservices.LiveEventHealthStatus)
+  that the service accepts.
+fullName: KnownLiveEventHealthStatus
+remarks: ''
+isDeprecated: false
+fields:
+  - name: Excellent
+    uid: '@azure/arm-mediaservices.KnownLiveEventHealthStatus.Excellent'
+    package: '@azure/arm-mediaservices'
+    summary: >-
+      Incoming bitrate >= 75% of target bitrate AND no Ingest warning and error
+      AND ABS(IngestDrift) is equal to 0.
+  - name: Good
+    uid: '@azure/arm-mediaservices.KnownLiveEventHealthStatus.Good'
+    package: '@azure/arm-mediaservices'
+    summary: >-
+      Incoming bitrate >= 20% AND no Ingest Error or warning exception
+      discontinuities which gap < 10 seconds.
+  - name: Poor
+    uid: '@azure/arm-mediaservices.KnownLiveEventHealthStatus.Poor'
+    package: '@azure/arm-mediaservices'
+    summary: Otherwise.

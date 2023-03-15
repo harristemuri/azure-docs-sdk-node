@@ -7,4 +7,4 @@ fullName: BatchDeploymentsUpdateResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type BatchDeploymentsUpdateResponse = BatchDeploymentData
+  type BatchDeploymentsUpdateResponse = BatchDeployment

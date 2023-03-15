@@ -33,6 +33,18 @@ constructors:
           type: <xref uid="@azure/arm-mysql.MySQLManagementClientOptionalParams" />
           description: The parameter options
 properties:
+  - name: $host
+    uid: '@azure/arm-mysql.MySQLManagementClient.$host'
+    package: '@azure/arm-mysql'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
   - name: advisors
     uid: '@azure/arm-mysql.MySQLManagementClient.advisors'
     package: '@azure/arm-mysql'
@@ -308,6 +320,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-mysql.ServerSecurityAlertPolicies" />
+  - name: subscriptionId
+    uid: '@azure/arm-mysql.MySQLManagementClient.subscriptionId'
+    package: '@azure/arm-mysql'
+    summary: ''
+    fullName: subscriptionId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        description: ''
+        type: string
   - name: topQueryStatistics
     uid: '@azure/arm-mysql.MySQLManagementClient.topQueryStatistics'
     package: '@azure/arm-mysql'
@@ -345,21 +369,6 @@ properties:
         description: ''
         type: <xref uid="@azure/arm-mysql.WaitStatistics" />
 inheritedProperties:
-  - name: $host
-    uid: '@azure/arm-mysql.MySQLManagementClient.$host'
-    package: '@azure/arm-mysql'
-    summary: ''
-    fullName: $host
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: '$host: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [MySQLManagementClientContext.$host](xref:@azure/arm-mysql.MySQLManagementClientContext.$host)
   - name: pipeline
     uid: '@azure/arm-mysql.MySQLManagementClient.pipeline'
     package: '@azure/arm-mysql'
@@ -372,24 +381,7 @@ inheritedProperties:
       return:
         description: ''
         type: Pipeline
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [MySQLManagementClientContext.pipeline](xref:@azure/arm-mysql.MySQLManagementClientContext.pipeline)
-  - name: subscriptionId
-    uid: '@azure/arm-mysql.MySQLManagementClient.subscriptionId'
-    package: '@azure/arm-mysql'
-    summary: ''
-    fullName: subscriptionId
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'subscriptionId: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [MySQLManagementClientContext.subscriptionId](xref:@azure/arm-mysql.MySQLManagementClientContext.subscriptionId)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.pipeline
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
     uid: '@azure/arm-mysql.MySQLManagementClient.sendOperationRequest'
@@ -413,9 +405,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [MySQLManagementClientContext.sendOperationRequest](xref:@azure/arm-mysql.MySQLManagementClientContext.sendOperationRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-mysql.MySQLManagementClient.sendRequest'
     package: '@azure/arm-mysql'
@@ -433,9 +423,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [MySQLManagementClientContext.sendRequest](xref:@azure/arm-mysql.MySQLManagementClientContext.sendRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendRequest
 methods:
   - name: >-
       beginCreateRecommendedActionSession(string, string, string, string,
@@ -541,4 +529,4 @@ methods:
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-mysql.QueryPerformanceInsightResetDataResult" />&gt;
-extends: <xref uid="@azure/arm-mysql.MySQLManagementClientContext" />
+extends: ServiceClient

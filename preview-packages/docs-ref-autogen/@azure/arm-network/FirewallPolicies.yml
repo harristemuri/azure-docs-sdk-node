@@ -203,3 +203,34 @@ methods:
           PagedAsyncIterableIterator&lt;<xref
           uid="@azure/arm-network.FirewallPolicy" />, <xref
           uid="@azure/arm-network.FirewallPolicy" />[], PageSettings&gt;
+  - name: >-
+      updateTags(string, string, TagsObject,
+      FirewallPoliciesUpdateTagsOptionalParams)
+    uid: '@azure/arm-network.FirewallPolicies.updateTags'
+    package: '@azure/arm-network'
+    summary: Updates tags of a Azure Firewall Policy resource.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function updateTags(resourceGroupName: string, firewallPolicyName:
+        string, parameters: TagsObject, options?:
+        FirewallPoliciesUpdateTagsOptionalParams): Promise<FirewallPolicy>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: firewallPolicyName
+          type: string
+          description: The name of the Firewall Policy.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.TagsObject" />
+          description: Parameters supplied to update Azure Firewall Policy tags.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.FirewallPoliciesUpdateTagsOptionalParams" />
+          description: The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@azure/arm-network.FirewallPolicy" />&gt;

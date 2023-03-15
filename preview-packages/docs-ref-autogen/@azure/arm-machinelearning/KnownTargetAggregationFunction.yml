@@ -13,15 +13,15 @@ fields:
   - name: Max
     uid: '@azure/arm-machinelearning.KnownTargetAggregationFunction.Max'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Max
   - name: Mean
     uid: '@azure/arm-machinelearning.KnownTargetAggregationFunction.Mean'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Mean
   - name: Min
     uid: '@azure/arm-machinelearning.KnownTargetAggregationFunction.Min'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Min
   - name: None
     uid: '@azure/arm-machinelearning.KnownTargetAggregationFunction.None'
     package: '@azure/arm-machinelearning'
@@ -29,4 +29,4 @@ fields:
   - name: Sum
     uid: '@azure/arm-machinelearning.KnownTargetAggregationFunction.Sum'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Sum

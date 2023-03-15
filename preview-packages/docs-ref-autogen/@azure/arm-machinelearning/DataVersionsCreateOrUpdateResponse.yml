@@ -7,4 +7,4 @@ fullName: DataVersionsCreateOrUpdateResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type DataVersionsCreateOrUpdateResponse = DataVersionBaseData
+  type DataVersionsCreateOrUpdateResponse = DataVersionBase

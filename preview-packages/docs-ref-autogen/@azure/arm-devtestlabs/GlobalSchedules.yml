@@ -264,7 +264,7 @@ methods:
           uid="@azure/arm-devtestlabs.Schedule" />, <xref
           uid="@azure/arm-devtestlabs.Schedule" />[], PageSettings&gt;
   - name: >-
-      update(string, string, UpdateResource,
+      update(string, string, ScheduleFragment,
       GlobalSchedulesUpdateOptionalParams)
     uid: '@azure/arm-devtestlabs.GlobalSchedules.update'
     package: '@azure/arm-devtestlabs'
@@ -274,7 +274,7 @@ methods:
     syntax:
       content: >-
         function update(resourceGroupName: string, name: string, schedule:
-        UpdateResource, options?: GlobalSchedulesUpdateOptionalParams):
+        ScheduleFragment, options?: GlobalSchedulesUpdateOptionalParams):
         Promise<Schedule>
       parameters:
         - id: resourceGroupName
@@ -284,7 +284,7 @@ methods:
           type: string
           description: The name of the schedule.
         - id: schedule
-          type: <xref uid="@azure/arm-devtestlabs.UpdateResource" />
+          type: <xref uid="@azure/arm-devtestlabs.ScheduleFragment" />
           description: A schedule.
         - id: options
           type: >-

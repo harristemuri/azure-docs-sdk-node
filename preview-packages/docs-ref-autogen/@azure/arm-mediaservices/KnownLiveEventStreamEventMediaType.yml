@@ -1,0 +1,20 @@
+### YamlMime:TSEnum
+name: KnownLiveEventStreamEventMediaType
+uid: '@azure/arm-mediaservices.KnownLiveEventStreamEventMediaType'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Known values of
+  [LiveEventStreamEventMediaType](xref:@azure/arm-mediaservices.LiveEventStreamEventMediaType)
+  that the service accepts.
+fullName: KnownLiveEventStreamEventMediaType
+remarks: ''
+isDeprecated: false
+fields:
+  - name: Audio
+    uid: '@azure/arm-mediaservices.KnownLiveEventStreamEventMediaType.Audio'
+    package: '@azure/arm-mediaservices'
+    summary: Audio
+  - name: Video
+    uid: '@azure/arm-mediaservices.KnownLiveEventStreamEventMediaType.Video'
+    package: '@azure/arm-mediaservices'
+    summary: Video

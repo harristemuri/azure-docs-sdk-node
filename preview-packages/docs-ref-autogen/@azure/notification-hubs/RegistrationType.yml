@@ -20,5 +20,7 @@ syntax: |
     | "GcmTemplate"
     | "Mpns"
     | "MpnsTemplate"
+    | "Xiaomi"
+    | "XiaomiTemplate"
     | "Windows"
     | "WindowsTemplate"

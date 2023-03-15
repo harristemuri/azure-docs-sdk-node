@@ -38,6 +38,42 @@ constructors:
             />
           description: The parameter options
 properties:
+  - name: $host
+    uid: '@azure/arm-network.NetworkManagementClient.$host'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
+  - name: adminRuleCollections
+    uid: '@azure/arm-network.NetworkManagementClient.adminRuleCollections'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: adminRuleCollections
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'adminRuleCollections: AdminRuleCollections'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.AdminRuleCollections" />
+  - name: adminRules
+    uid: '@azure/arm-network.NetworkManagementClient.adminRules'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: adminRules
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'adminRules: AdminRules'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.AdminRules" />
   - name: applicationGatewayPrivateEndpointConnections
     uid: >-
       @azure/arm-network.NetworkManagementClient.applicationGatewayPrivateEndpointConnections
@@ -85,6 +121,41 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-network.ApplicationGateways" />
+  - name: applicationGatewayWafDynamicManifests
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.applicationGatewayWafDynamicManifests
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: applicationGatewayWafDynamicManifests
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        applicationGatewayWafDynamicManifests:
+        ApplicationGatewayWafDynamicManifests
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-network.ApplicationGatewayWafDynamicManifests"
+          />
+  - name: applicationGatewayWafDynamicManifestsDefault
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.applicationGatewayWafDynamicManifestsDefault
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: applicationGatewayWafDynamicManifestsDefault
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        applicationGatewayWafDynamicManifestsDefault:
+        ApplicationGatewayWafDynamicManifestsDefault
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.ApplicationGatewayWafDynamicManifestsDefault"
+          />
   - name: applicationSecurityGroups
     uid: '@azure/arm-network.NetworkManagementClient.applicationSecurityGroups'
     package: '@azure/arm-network'
@@ -206,6 +277,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-network.BgpServiceCommunities" />
+  - name: configurationPolicyGroups
+    uid: '@azure/arm-network.NetworkManagementClient.configurationPolicyGroups'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: configurationPolicyGroups
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'configurationPolicyGroups: ConfigurationPolicyGroups'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ConfigurationPolicyGroups" />
   - name: connectionMonitors
     uid: '@azure/arm-network.NetworkManagementClient.connectionMonitors'
     package: '@azure/arm-network'
@@ -218,6 +301,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-network.ConnectionMonitors" />
+  - name: connectivityConfigurations
+    uid: '@azure/arm-network.NetworkManagementClient.connectivityConfigurations'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: connectivityConfigurations
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'connectivityConfigurations: ConnectivityConfigurations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ConnectivityConfigurations" />
   - name: customIPPrefixes
     uid: '@azure/arm-network.NetworkManagementClient.customIPPrefixes'
     package: '@azure/arm-network'
@@ -388,6 +483,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-network.ExpressRouteLinks" />
+  - name: expressRoutePortAuthorizations
+    uid: '@azure/arm-network.NetworkManagementClient.expressRoutePortAuthorizations'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: expressRoutePortAuthorizations
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'expressRoutePortAuthorizations: ExpressRoutePortAuthorizations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ExpressRoutePortAuthorizations" />
   - name: expressRoutePorts
     uid: '@azure/arm-network.NetworkManagementClient.expressRoutePorts'
     package: '@azure/arm-network'
@@ -412,6 +519,19 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-network.ExpressRoutePortsLocations" />
+  - name: expressRouteProviderPortsLocation
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.expressRouteProviderPortsLocation
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: expressRouteProviderPortsLocation
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'expressRouteProviderPortsLocation: ExpressRouteProviderPortsLocation'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ExpressRouteProviderPortsLocation" />
   - name: expressRouteServiceProviders
     uid: '@azure/arm-network.NetworkManagementClient.expressRouteServiceProviders'
     package: '@azure/arm-network'
@@ -678,6 +798,23 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-network.LocalNetworkGateways" />
+  - name: managementGroupNetworkManagerConnections
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.managementGroupNetworkManagerConnections
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: managementGroupNetworkManagerConnections
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        managementGroupNetworkManagerConnections:
+        ManagementGroupNetworkManagerConnections
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.ManagementGroupNetworkManagerConnections" />
   - name: natGateways
     uid: '@azure/arm-network.NetworkManagementClient.natGateways'
     package: '@azure/arm-network'
@@ -702,6 +839,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-network.NatRules" />
+  - name: networkGroups
+    uid: '@azure/arm-network.NetworkManagementClient.networkGroups'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: networkGroups
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'networkGroups: NetworkGroups'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.NetworkGroups" />
   - name: networkInterfaceIPConfigurations
     uid: >-
       @azure/arm-network.NetworkManagementClient.networkInterfaceIPConfigurations
@@ -752,6 +901,47 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-network.NetworkInterfaceTapConfigurations" />
+  - name: networkManagerCommits
+    uid: '@azure/arm-network.NetworkManagementClient.networkManagerCommits'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: networkManagerCommits
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'networkManagerCommits: NetworkManagerCommits'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.NetworkManagerCommits" />
+  - name: networkManagerDeploymentStatusOperations
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.networkManagerDeploymentStatusOperations
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: networkManagerDeploymentStatusOperations
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        networkManagerDeploymentStatusOperations:
+        NetworkManagerDeploymentStatusOperations
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-network.NetworkManagerDeploymentStatusOperations" />
+  - name: networkManagers
+    uid: '@azure/arm-network.NetworkManagementClient.networkManagers'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: networkManagers
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'networkManagers: NetworkManagers'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.NetworkManagers" />
   - name: networkProfiles
     uid: '@azure/arm-network.NetworkManagementClient.networkProfiles'
     package: '@azure/arm-network'
@@ -945,6 +1135,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-network.RouteFilters" />
+  - name: routeMaps
+    uid: '@azure/arm-network.NetworkManagementClient.routeMaps'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: routeMaps
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'routeMaps: RouteMaps'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.RouteMaps" />
   - name: routes
     uid: '@azure/arm-network.NetworkManagementClient.routes'
     package: '@azure/arm-network'
@@ -981,6 +1183,30 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-network.RoutingIntentOperations" />
+  - name: scopeConnections
+    uid: '@azure/arm-network.NetworkManagementClient.scopeConnections'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: scopeConnections
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'scopeConnections: ScopeConnections'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.ScopeConnections" />
+  - name: securityAdminConfigurations
+    uid: '@azure/arm-network.NetworkManagementClient.securityAdminConfigurations'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: securityAdminConfigurations
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'securityAdminConfigurations: SecurityAdminConfigurations'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.SecurityAdminConfigurations" />
   - name: securityPartnerProviders
     uid: '@azure/arm-network.NetworkManagementClient.securityPartnerProviders'
     package: '@azure/arm-network'
@@ -1066,6 +1292,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-network.ServiceTags" />
+  - name: staticMembers
+    uid: '@azure/arm-network.NetworkManagementClient.staticMembers'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: staticMembers
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'staticMembers: StaticMembers'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.StaticMembers" />
   - name: subnets
     uid: '@azure/arm-network.NetworkManagementClient.subnets'
     package: '@azure/arm-network'
@@ -1078,6 +1316,35 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-network.Subnets" />
+  - name: subscriptionId
+    uid: '@azure/arm-network.NetworkManagementClient.subscriptionId'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: subscriptionId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        description: ''
+        type: string
+  - name: subscriptionNetworkManagerConnections
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.subscriptionNetworkManagerConnections
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: subscriptionNetworkManagerConnections
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        subscriptionNetworkManagerConnections:
+        SubscriptionNetworkManagerConnections
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-network.SubscriptionNetworkManagerConnections"
+          />
   - name: usages
     uid: '@azure/arm-network.NetworkManagementClient.usages'
     package: '@azure/arm-network'
@@ -1090,6 +1357,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-network.Usages" />
+  - name: vipSwap
+    uid: '@azure/arm-network.NetworkManagementClient.vipSwap'
+    package: '@azure/arm-network'
+    summary: ''
+    fullName: vipSwap
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'vipSwap: VipSwap'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-network.VipSwap" />
   - name: virtualApplianceSites
     uid: '@azure/arm-network.NetworkManagementClient.virtualApplianceSites'
     package: '@azure/arm-network'
@@ -1422,21 +1701,6 @@ properties:
         description: ''
         type: <xref uid="@azure/arm-network.WebCategories" />
 inheritedProperties:
-  - name: $host
-    uid: '@azure/arm-network.NetworkManagementClient.$host'
-    package: '@azure/arm-network'
-    summary: ''
-    fullName: $host
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: '$host: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [NetworkManagementClientContext.$host](xref:@azure/arm-network.NetworkManagementClientContext.$host)
   - name: pipeline
     uid: '@azure/arm-network.NetworkManagementClient.pipeline'
     package: '@azure/arm-network'
@@ -1449,24 +1713,7 @@ inheritedProperties:
       return:
         description: ''
         type: Pipeline
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [NetworkManagementClientContext.pipeline](xref:@azure/arm-network.NetworkManagementClientContext.pipeline)
-  - name: subscriptionId
-    uid: '@azure/arm-network.NetworkManagementClient.subscriptionId'
-    package: '@azure/arm-network'
-    summary: ''
-    fullName: subscriptionId
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'subscriptionId: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [NetworkManagementClientContext.subscriptionId](xref:@azure/arm-network.NetworkManagementClientContext.subscriptionId)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.pipeline
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
     uid: '@azure/arm-network.NetworkManagementClient.sendOperationRequest'
@@ -1490,9 +1737,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [NetworkManagementClientContext.sendOperationRequest](xref:@azure/arm-network.NetworkManagementClientContext.sendOperationRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-network.NetworkManagementClient.sendRequest'
     package: '@azure/arm-network'
@@ -1510,14 +1755,11 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [NetworkManagementClientContext.sendRequest](xref:@azure/arm-network.NetworkManagementClientContext.sendRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendRequest
 methods:
   - name: >-
       beginDeleteBastionShareableLink(string, string,
-      BastionShareableLinkListRequest,
-      NetworkManagementClientDeleteBastionShareableLinkOptionalParams)
+      BastionShareableLinkListRequest, DeleteBastionShareableLinkOptionalParams)
     uid: '@azure/arm-network.NetworkManagementClient.beginDeleteBastionShareableLink'
     package: '@azure/arm-network'
     summary: >-
@@ -1529,8 +1771,7 @@ methods:
       content: >-
         function beginDeleteBastionShareableLink(resourceGroupName: string,
         bastionHostName: string, bslRequest: BastionShareableLinkListRequest,
-        options?:
-        NetworkManagementClientDeleteBastionShareableLinkOptionalParams):
+        options?: DeleteBastionShareableLinkOptionalParams):
         Promise<PollerLike<PollOperationState<void>, void>>
       parameters:
         - id: resourceGroupName
@@ -1545,16 +1786,14 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-network.NetworkManagementClientDeleteBastionShareableLinkOptionalParams"
-            />
+            uid="@azure/arm-network.DeleteBastionShareableLinkOptionalParams" />
           description: The options parameters.
       return:
         description: ''
         type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
   - name: >-
       beginDeleteBastionShareableLinkAndWait(string, string,
-      BastionShareableLinkListRequest,
-      NetworkManagementClientDeleteBastionShareableLinkOptionalParams)
+      BastionShareableLinkListRequest, DeleteBastionShareableLinkOptionalParams)
     uid: >-
       @azure/arm-network.NetworkManagementClient.beginDeleteBastionShareableLinkAndWait
     package: '@azure/arm-network'
@@ -1568,8 +1807,7 @@ methods:
         function beginDeleteBastionShareableLinkAndWait(resourceGroupName:
         string, bastionHostName: string, bslRequest:
         BastionShareableLinkListRequest, options?:
-        NetworkManagementClientDeleteBastionShareableLinkOptionalParams):
-        Promise<void>
+        DeleteBastionShareableLinkOptionalParams): Promise<void>
       parameters:
         - id: resourceGroupName
           type: string
@@ -1583,8 +1821,7 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-network.NetworkManagementClientDeleteBastionShareableLinkOptionalParams"
-            />
+            uid="@azure/arm-network.DeleteBastionShareableLinkOptionalParams" />
           description: The options parameters.
       return:
         description: ''
@@ -1592,7 +1829,7 @@ methods:
   - name: >-
       beginGeneratevirtualwanvpnserverconfigurationvpnprofile(string, string,
       VirtualWanVpnProfileParameters,
-      NetworkManagementClientGeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams)
+      GeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams)
     uid: >-
       @azure/arm-network.NetworkManagementClient.beginGeneratevirtualwanvpnserverconfigurationvpnprofile
     package: '@azure/arm-network'
@@ -1609,7 +1846,7 @@ methods:
         beginGeneratevirtualwanvpnserverconfigurationvpnprofile(resourceGroupName:
         string, virtualWANName: string, vpnClientParams:
         VirtualWanVpnProfileParameters, options?:
-        NetworkManagementClientGeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams):
+        GeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams):
         Promise<PollerLike<PollOperationState<VpnProfileResponse>,
         VpnProfileResponse>>
       parameters:
@@ -1630,7 +1867,7 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-network.NetworkManagementClientGeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams"
+            uid="@azure/arm-network.GeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams"
             />
           description: The options parameters.
       return:
@@ -1642,7 +1879,7 @@ methods:
   - name: >-
       beginGeneratevirtualwanvpnserverconfigurationvpnprofileAndWait(string,
       string, VirtualWanVpnProfileParameters,
-      NetworkManagementClientGeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams)
+      GeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams)
     uid: >-
       @azure/arm-network.NetworkManagementClient.beginGeneratevirtualwanvpnserverconfigurationvpnprofileAndWait
     package: '@azure/arm-network'
@@ -1659,7 +1896,7 @@ methods:
         beginGeneratevirtualwanvpnserverconfigurationvpnprofileAndWait(resourceGroupName:
         string, virtualWANName: string, vpnClientParams:
         VirtualWanVpnProfileParameters, options?:
-        NetworkManagementClientGeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams):
+        GeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams):
         Promise<VpnProfileResponse>
       parameters:
         - id: resourceGroupName
@@ -1679,7 +1916,7 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-network.NetworkManagementClientGeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams"
+            uid="@azure/arm-network.GeneratevirtualwanvpnserverconfigurationvpnprofileOptionalParams"
             />
           description: The options parameters.
       return:
@@ -1687,7 +1924,7 @@ methods:
         type: Promise&lt;<xref uid="@azure/arm-network.VpnProfileResponse" />&gt;
   - name: >-
       beginListActiveSessionsAndWait(string, string,
-      NetworkManagementClientGetActiveSessionsOptionalParams)
+      GetActiveSessionsOptionalParams)
     uid: '@azure/arm-network.NetworkManagementClient.beginListActiveSessionsAndWait'
     package: '@azure/arm-network'
     summary: Returns the list of currently active sessions on the Bastion.
@@ -1696,8 +1933,7 @@ methods:
     syntax:
       content: >-
         function beginListActiveSessionsAndWait(resourceGroupName: string,
-        bastionHostName: string, options?:
-        NetworkManagementClientGetActiveSessionsOptionalParams):
+        bastionHostName: string, options?: GetActiveSessionsOptionalParams):
         PagedAsyncIterableIterator<BastionActiveSession, BastionActiveSession[],
         PageSettings>
       parameters:
@@ -1708,10 +1944,7 @@ methods:
           type: string
           description: The name of the Bastion Host.
         - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-network.NetworkManagementClientGetActiveSessionsOptionalParams"
-            />
+          type: <xref uid="@azure/arm-network.GetActiveSessionsOptionalParams" />
           description: The options parameters.
       return:
         description: ''
@@ -1721,8 +1954,7 @@ methods:
           uid="@azure/arm-network.BastionActiveSession" />[], PageSettings&gt;
   - name: >-
       beginListPutBastionShareableLinkAndWait(string, string,
-      BastionShareableLinkListRequest,
-      NetworkManagementClientPutBastionShareableLinkOptionalParams)
+      BastionShareableLinkListRequest, PutBastionShareableLinkOptionalParams)
     uid: >-
       @azure/arm-network.NetworkManagementClient.beginListPutBastionShareableLinkAndWait
     package: '@azure/arm-network'
@@ -1736,7 +1968,7 @@ methods:
         function beginListPutBastionShareableLinkAndWait(resourceGroupName:
         string, bastionHostName: string, bslRequest:
         BastionShareableLinkListRequest, options?:
-        NetworkManagementClientPutBastionShareableLinkOptionalParams):
+        PutBastionShareableLinkOptionalParams):
         PagedAsyncIterableIterator<BastionShareableLink, BastionShareableLink[],
         PageSettings>
       parameters:
@@ -1751,8 +1983,7 @@ methods:
           description: Post request for all the Bastion Shareable Link endpoints.
         - id: options
           type: >-
-            <xref
-            uid="@azure/arm-network.NetworkManagementClientPutBastionShareableLinkOptionalParams"
+            <xref uid="@azure/arm-network.PutBastionShareableLinkOptionalParams"
             />
           description: The options parameters.
       return:
@@ -1763,7 +1994,7 @@ methods:
           uid="@azure/arm-network.BastionShareableLink" />[], PageSettings&gt;
   - name: >-
       checkDnsNameAvailability(string, string,
-      NetworkManagementClientCheckDnsNameAvailabilityOptionalParams)
+      CheckDnsNameAvailabilityOptionalParams)
     uid: '@azure/arm-network.NetworkManagementClient.checkDnsNameAvailability'
     package: '@azure/arm-network'
     summary: >-
@@ -1774,8 +2005,7 @@ methods:
     syntax:
       content: >-
         function checkDnsNameAvailability(location: string, domainNameLabel:
-        string, options?:
-        NetworkManagementClientCheckDnsNameAvailabilityOptionalParams):
+        string, options?: CheckDnsNameAvailabilityOptionalParams):
         Promise<DnsNameAvailabilityResult>
       parameters:
         - id: location
@@ -1790,17 +2020,114 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-network.NetworkManagementClientCheckDnsNameAvailabilityOptionalParams"
-            />
+            uid="@azure/arm-network.CheckDnsNameAvailabilityOptionalParams" />
           description: The options parameters.
       return:
         description: ''
         type: >-
           Promise&lt;<xref uid="@azure/arm-network.DnsNameAvailabilityResult"
           />&gt;
+  - name: expressRouteProviderPort(string, ExpressRouteProviderPortOptionalParams)
+    uid: '@azure/arm-network.NetworkManagementClient.expressRouteProviderPort'
+    package: '@azure/arm-network'
+    summary: Retrieves detail of a provider port.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function expressRouteProviderPort(providerport: string, options?:
+        ExpressRouteProviderPortOptionalParams):
+        Promise<ExpressRouteProviderPort>
+      parameters:
+        - id: providerport
+          type: string
+          description: The name of the provider port.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ExpressRouteProviderPortOptionalParams" />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-network.ExpressRouteProviderPort"
+          />&gt;
+  - name: >-
+      listActiveConnectivityConfigurations(string, string,
+      ActiveConfigurationParameter,
+      ListActiveConnectivityConfigurationsOptionalParams)
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.listActiveConnectivityConfigurations
+    package: '@azure/arm-network'
+    summary: Lists active connectivity configurations in a network manager.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listActiveConnectivityConfigurations(resourceGroupName: string,
+        networkManagerName: string, parameters: ActiveConfigurationParameter,
+        options?: ListActiveConnectivityConfigurationsOptionalParams):
+        Promise<ActiveConnectivityConfigurationsListResult>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: networkManagerName
+          type: string
+          description: The name of the network manager.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.ActiveConfigurationParameter" />
+          description: Active Configuration Parameter.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ListActiveConnectivityConfigurationsOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ActiveConnectivityConfigurationsListResult"
+          />&gt;
+  - name: >-
+      listActiveSecurityAdminRules(string, string, ActiveConfigurationParameter,
+      ListActiveSecurityAdminRulesOptionalParams)
+    uid: '@azure/arm-network.NetworkManagementClient.listActiveSecurityAdminRules'
+    package: '@azure/arm-network'
+    summary: Lists active security admin rules in a network manager.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function listActiveSecurityAdminRules(resourceGroupName: string,
+        networkManagerName: string, parameters: ActiveConfigurationParameter,
+        options?: ListActiveSecurityAdminRulesOptionalParams):
+        Promise<ActiveSecurityAdminRulesListResult>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: networkManagerName
+          type: string
+          description: The name of the network manager.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.ActiveConfigurationParameter" />
+          description: Active Configuration Parameter.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ListActiveSecurityAdminRulesOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.ActiveSecurityAdminRulesListResult" />&gt;
   - name: >-
       listBastionShareableLink(string, string, BastionShareableLinkListRequest,
-      NetworkManagementClientGetBastionShareableLinkOptionalParams)
+      GetBastionShareableLinkOptionalParams)
     uid: '@azure/arm-network.NetworkManagementClient.listBastionShareableLink'
     package: '@azure/arm-network'
     summary: >-
@@ -1812,7 +2139,7 @@ methods:
       content: >-
         function listBastionShareableLink(resourceGroupName: string,
         bastionHostName: string, bslRequest: BastionShareableLinkListRequest,
-        options?: NetworkManagementClientGetBastionShareableLinkOptionalParams):
+        options?: GetBastionShareableLinkOptionalParams):
         PagedAsyncIterableIterator<BastionShareableLink, BastionShareableLink[],
         PageSettings>
       parameters:
@@ -1827,8 +2154,7 @@ methods:
           description: Post request for all the Bastion Shareable Link endpoints.
         - id: options
           type: >-
-            <xref
-            uid="@azure/arm-network.NetworkManagementClientGetBastionShareableLinkOptionalParams"
+            <xref uid="@azure/arm-network.GetBastionShareableLinkOptionalParams"
             />
           description: The options parameters.
       return:
@@ -1839,7 +2165,7 @@ methods:
           uid="@azure/arm-network.BastionShareableLink" />[], PageSettings&gt;
   - name: >-
       listDisconnectActiveSessions(string, string, SessionIds,
-      NetworkManagementClientDisconnectActiveSessionsOptionalParams)
+      DisconnectActiveSessionsOptionalParams)
     uid: '@azure/arm-network.NetworkManagementClient.listDisconnectActiveSessions'
     package: '@azure/arm-network'
     summary: Returns the list of currently active sessions on the Bastion.
@@ -1849,7 +2175,7 @@ methods:
       content: >-
         function listDisconnectActiveSessions(resourceGroupName: string,
         bastionHostName: string, sessionIds: SessionIds, options?:
-        NetworkManagementClientDisconnectActiveSessionsOptionalParams):
+        DisconnectActiveSessionsOptionalParams):
         PagedAsyncIterableIterator<BastionSessionState, BastionSessionState[],
         PageSettings>
       parameters:
@@ -1865,8 +2191,7 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-network.NetworkManagementClientDisconnectActiveSessionsOptionalParams"
-            />
+            uid="@azure/arm-network.DisconnectActiveSessionsOptionalParams" />
           description: The options parameters.
       return:
         description: ''
@@ -1875,8 +2200,89 @@ methods:
           uid="@azure/arm-network.BastionSessionState" />, <xref
           uid="@azure/arm-network.BastionSessionState" />[], PageSettings&gt;
   - name: >-
+      listNetworkManagerEffectiveConnectivityConfigurations(string, string,
+      QueryRequestOptions,
+      ListNetworkManagerEffectiveConnectivityConfigurationsOptionalParams)
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.listNetworkManagerEffectiveConnectivityConfigurations
+    package: '@azure/arm-network'
+    summary: >-
+      List all effective connectivity configurations applied on a virtual
+      network.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        listNetworkManagerEffectiveConnectivityConfigurations(resourceGroupName:
+        string, virtualNetworkName: string, parameters: QueryRequestOptions,
+        options?:
+        ListNetworkManagerEffectiveConnectivityConfigurationsOptionalParams):
+        Promise<NetworkManagerEffectiveConnectivityConfigurationListResult>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: virtualNetworkName
+          type: string
+          description: The name of the virtual network.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.QueryRequestOptions" />
+          description: Parameters supplied to list correct page.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ListNetworkManagerEffectiveConnectivityConfigurationsOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.NetworkManagerEffectiveConnectivityConfigurationListResult"
+          />&gt;
+  - name: >-
+      listNetworkManagerEffectiveSecurityAdminRules(string, string,
+      QueryRequestOptions,
+      ListNetworkManagerEffectiveSecurityAdminRulesOptionalParams)
+    uid: >-
+      @azure/arm-network.NetworkManagementClient.listNetworkManagerEffectiveSecurityAdminRules
+    package: '@azure/arm-network'
+    summary: List all effective security admin rules applied on a virtual network.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function
+        listNetworkManagerEffectiveSecurityAdminRules(resourceGroupName: string,
+        virtualNetworkName: string, parameters: QueryRequestOptions, options?:
+        ListNetworkManagerEffectiveSecurityAdminRulesOptionalParams):
+        Promise<NetworkManagerEffectiveSecurityAdminRulesListResult>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: virtualNetworkName
+          type: string
+          description: The name of the virtual network.
+        - id: parameters
+          type: <xref uid="@azure/arm-network.QueryRequestOptions" />
+          description: Parameters supplied to list correct page.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.ListNetworkManagerEffectiveSecurityAdminRulesOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.NetworkManagerEffectiveSecurityAdminRulesListResult"
+          />&gt;
+  - name: >-
       supportedSecurityProviders(string, string,
-      NetworkManagementClientSupportedSecurityProvidersOptionalParams)
+      SupportedSecurityProvidersOptionalParams)
     uid: '@azure/arm-network.NetworkManagementClient.supportedSecurityProviders'
     package: '@azure/arm-network'
     summary: Gives the supported security providers for the virtual wan.
@@ -1886,7 +2292,7 @@ methods:
       content: >-
         function supportedSecurityProviders(resourceGroupName: string,
         virtualWANName: string, options?:
-        NetworkManagementClientSupportedSecurityProvidersOptionalParams):
+        SupportedSecurityProvidersOptionalParams):
         Promise<VirtualWanSecurityProviders>
       parameters:
         - id: resourceGroupName
@@ -1900,12 +2306,11 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-network.NetworkManagementClientSupportedSecurityProvidersOptionalParams"
-            />
+            uid="@azure/arm-network.SupportedSecurityProvidersOptionalParams" />
           description: The options parameters.
       return:
         description: ''
         type: >-
           Promise&lt;<xref uid="@azure/arm-network.VirtualWanSecurityProviders"
           />&gt;
-extends: <xref uid="@azure/arm-network.NetworkManagementClientContext" />
+extends: ServiceClient

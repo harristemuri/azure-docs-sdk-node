@@ -1,0 +1,26 @@
+### YamlMime:TSTypeAlias
+name: LiveEventState
+uid: '@azure/arm-mediaservices.LiveEventState'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Defines values for LiveEventState. \
+
+  [KnownLiveEventState](xref:@azure/arm-mediaservices.KnownLiveEventState) can
+  be used interchangeably with LiveEventState,
+   this enum contains the known values that the service supports.
+  ### Known values supported by the service
+
+  **Stopped**: This is the initial state of the live event after creation
+  (unless autostart was set to true.) No billing occurs in this state. In this
+  state, the live event properties can be updated but streaming is not allowed.
+  \
+
+  **Running**: The live event resources have been allocated, ingest and preview
+  URLs have been generated, and it is capable of receiving live streams. At this
+  point, billing is active. You must explicitly call Stop on the live event
+  resource to halt further billing.
+fullName: LiveEventState
+remarks: ''
+isDeprecated: false
+syntax: |
+  type LiveEventState = string

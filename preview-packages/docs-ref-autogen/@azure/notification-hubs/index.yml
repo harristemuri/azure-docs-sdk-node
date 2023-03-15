@@ -90,6 +90,13 @@ interfaces:
   - '@azure/notification-hubs.WindowsRegistrationDescriptionCommon'
   - '@azure/notification-hubs.WindowsTemplateRegistrationDescription'
   - '@azure/notification-hubs.WindowsTemplateRegistrationDescriptionCommon'
+  - '@azure/notification-hubs.XiaomiInstallation'
+  - '@azure/notification-hubs.XiaomiNotification'
+  - '@azure/notification-hubs.XiaomiRegistrationChannel'
+  - '@azure/notification-hubs.XiaomiRegistrationDescription'
+  - '@azure/notification-hubs.XiaomiRegistrationDescriptionCommon'
+  - '@azure/notification-hubs.XiaomiTemplateRegistrationDescription'
+  - '@azure/notification-hubs.XiaomiTemplateRegistrationDescriptionCommon'
 typeAliases:
   - '@azure/notification-hubs.Installation'
   - '@azure/notification-hubs.JsonPatchOperation'
@@ -502,7 +509,7 @@ functions:
           type: <xref uid="@azure/notification-hubs.NotificationCommon" />
           description: A partial message used to create a message for Firebase.
       return:
-        description: A newly created Firebase.
+        description: A newly created Firebase notification.
         type: <xref uid="@azure/notification-hubs.FcmLegacyNotification" />
   - name: createFcmLegacyRegistrationDescription(GcmRegistrationDescriptionCommon)
     uid: '@azure/notification-hubs.createFcmLegacyRegistrationDescription'
@@ -745,3 +752,82 @@ functions:
       return:
         description: A newly created WNS toast.
         type: <xref uid="@azure/notification-hubs.WindowsNotification" />
+  - name: createXiaomiInstallation(DeviceTokenInstallation)
+    uid: '@azure/notification-hubs.createXiaomiInstallation'
+    package: '@azure/notification-hubs'
+    summary: Creates a Xiaomi based installation.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createXiaomiInstallation(installation:
+        DeviceTokenInstallation): XiaomiInstallation
+      parameters:
+        - id: installation
+          type: <xref uid="@azure/notification-hubs.DeviceTokenInstallation" />
+          description: A partial installation used to create the Xiaomi installation.
+      return:
+        description: The newly created Xiaomi installation.
+        type: <xref uid="@azure/notification-hubs.XiaomiInstallation" />
+  - name: createXiaomiNotification(NotificationCommon)
+    uid: '@azure/notification-hubs.createXiaomiNotification'
+    package: '@azure/notification-hubs'
+    summary: Creates a notification to send to Xiaomi.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createXiaomiNotification(notification: NotificationCommon):
+        XiaomiNotification
+      parameters:
+        - id: notification
+          type: <xref uid="@azure/notification-hubs.NotificationCommon" />
+          description: A partial message used to create a message for Xiaomi.
+      return:
+        description: A newly created Xiaomi notification.
+        type: <xref uid="@azure/notification-hubs.XiaomiNotification" />
+  - name: createXiaomiRegistrationDescription(XiaomiRegistrationDescriptionCommon)
+    uid: '@azure/notification-hubs.createXiaomiRegistrationDescription'
+    package: '@azure/notification-hubs'
+    summary: Creates a Xiaomi registration description.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createXiaomiRegistrationDescription(description:
+        XiaomiRegistrationDescriptionCommon): XiaomiRegistrationDescription
+      parameters:
+        - id: description
+          type: >-
+            <xref
+            uid="@azure/notification-hubs.XiaomiRegistrationDescriptionCommon"
+            />
+          description: A partial Xiaomi registration description.
+      return:
+        description: A created Xiaomi registration description.
+        type: <xref uid="@azure/notification-hubs.XiaomiRegistrationDescription" />
+  - name: >-
+      createXiaomiTemplateRegistrationDescription(XiaomiTemplateRegistrationDescriptionCommon)
+    uid: '@azure/notification-hubs.createXiaomiTemplateRegistrationDescription'
+    package: '@azure/notification-hubs'
+    summary: Creates a Xiaomi template registration description.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createXiaomiTemplateRegistrationDescription(description:
+        XiaomiTemplateRegistrationDescriptionCommon):
+        XiaomiTemplateRegistrationDescription
+      parameters:
+        - id: description
+          type: >-
+            <xref
+            uid="@azure/notification-hubs.XiaomiTemplateRegistrationDescriptionCommon"
+            />
+          description: A partial Xiaomi template registration description.
+      return:
+        description: A created Xiaomi template registration description.
+        type: >-
+          <xref
+          uid="@azure/notification-hubs.XiaomiTemplateRegistrationDescription"
+          />

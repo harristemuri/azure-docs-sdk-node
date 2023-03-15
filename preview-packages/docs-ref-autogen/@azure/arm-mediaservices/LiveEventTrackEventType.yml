@@ -1,0 +1,18 @@
+### YamlMime:TSTypeAlias
+name: LiveEventTrackEventType
+uid: '@azure/arm-mediaservices.LiveEventTrackEventType'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Defines values for LiveEventTrackEventType. \
+
+  [KnownLiveEventTrackEventType](xref:@azure/arm-mediaservices.KnownLiveEventTrackEventType)
+  can be used interchangeably with LiveEventTrackEventType,
+   this enum contains the known values that the service supports.
+  ### Known values supported by the service
+
+  **TrackEvent/IngestHeartbeat**: Track heartbeat received.
+fullName: LiveEventTrackEventType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type LiveEventTrackEventType = string

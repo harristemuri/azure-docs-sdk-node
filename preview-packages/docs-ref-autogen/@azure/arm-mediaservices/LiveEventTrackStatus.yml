@@ -1,0 +1,82 @@
+### YamlMime:TSType
+name: LiveEventTrackStatus
+uid: '@azure/arm-mediaservices.LiveEventTrackStatus'
+package: '@azure/arm-mediaservices'
+summary: The live event track status.
+fullName: LiveEventTrackStatus
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: expectedBitrate
+    uid: '@azure/arm-mediaservices.LiveEventTrackStatus.expectedBitrate'
+    package: '@azure/arm-mediaservices'
+    summary: Expected bitrate for this track.
+    fullName: expectedBitrate
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'expectedBitrate?: number'
+      return:
+        description: ''
+        type: number
+  - name: incomingBitrate
+    uid: '@azure/arm-mediaservices.LiveEventTrackStatus.incomingBitrate'
+    package: '@azure/arm-mediaservices'
+    summary: Average incoming bitrate for last 20 seconds when live event is running.
+    fullName: incomingBitrate
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'incomingBitrate?: number'
+      return:
+        description: ''
+        type: number
+  - name: ingestDrift
+    uid: '@azure/arm-mediaservices.LiveEventTrackStatus.ingestDrift'
+    package: '@azure/arm-mediaservices'
+    summary: Current ingest drift value in seconds for last 1 minute.
+    fullName: ingestDrift
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'ingestDrift?: string'
+      return:
+        description: ''
+        type: string
+  - name: requestReceived
+    uid: '@azure/arm-mediaservices.LiveEventTrackStatus.requestReceived'
+    package: '@azure/arm-mediaservices'
+    summary: Total number of timed metadata request received.
+    fullName: requestReceived
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'requestReceived?: number'
+      return:
+        description: ''
+        type: number
+  - name: requestSucceeded
+    uid: '@azure/arm-mediaservices.LiveEventTrackStatus.requestSucceeded'
+    package: '@azure/arm-mediaservices'
+    summary: Total number of successful timed metadata request received.
+    fullName: requestSucceeded
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'requestSucceeded?: number'
+      return:
+        description: ''
+        type: number
+  - name: trackId
+    uid: '@azure/arm-mediaservices.LiveEventTrackStatus.trackId'
+    package: '@azure/arm-mediaservices'
+    summary: Track Id.
+    fullName: trackId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'trackId?: string'
+      return:
+        description: ''
+        type: string

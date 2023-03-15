@@ -32,10 +32,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'identity?: ManagedIdentity'
+      content: 'identity?: ManagedServiceIdentity'
       return:
         description: ''
-        type: <xref uid="@azure/arm-dashboard.ManagedIdentity" />
+        type: <xref uid="@azure/arm-dashboard.ManagedServiceIdentity" />
   - name: location
     uid: '@azure/arm-dashboard.ManagedGrafana.location'
     package: '@azure/arm-dashboard'

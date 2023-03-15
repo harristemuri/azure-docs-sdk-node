@@ -22,7 +22,7 @@ methods:
       content: >-
         function beginDelete(resourceGroupName: string, options?:
         ResourceGroupsDeleteOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -36,7 +36,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: beginDeleteAndWait(string, ResourceGroupsDeleteOptionalParams)
     uid: '@azure/arm-resources.ResourceGroups.beginDeleteAndWait'
     package: '@azure/arm-resources'
@@ -78,7 +80,7 @@ methods:
         function beginExportTemplate(resourceGroupName: string, parameters:
         ExportTemplateRequest, options?:
         ResourceGroupsExportTemplateOptionalParams):
-        Promise<PollerLike<PollOperationState<ResourceGroupExportResult>,
+        Promise<SimplePollerLike<OperationState<ResourceGroupExportResult>,
         ResourceGroupExportResult>>
       parameters:
         - id: resourceGroupName
@@ -96,7 +98,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-resources.ResourceGroupExportResult" />&gt;, <xref
           uid="@azure/arm-resources.ResourceGroupExportResult" />&gt;&gt;
   - name: >-
@@ -224,32 +226,6 @@ methods:
       parameters:
         - id: options
           type: <xref uid="@azure/arm-resources.ResourceGroupsListOptionalParams" />
-          description: The options parameters.
-      return:
-        description: ''
-        type: >-
-          PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-resources.ResourceGroup" />, <xref
-          uid="@azure/arm-resources.ResourceGroup" />[], PageSettings&gt;
-  - name: listNext(string, ResourceGroupsListNextOptionalParams)
-    uid: '@azure/arm-resources.ResourceGroups.listNext'
-    package: '@azure/arm-resources'
-    summary: ListNext
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listNext(nextLink: string, options?:
-        ResourceGroupsListNextOptionalParams):
-        PagedAsyncIterableIterator<ResourceGroup, ResourceGroup[], PageSettings>
-      parameters:
-        - id: nextLink
-          type: string
-          description: The nextLink from the previous successful call to the List method.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-resources.ResourceGroupsListNextOptionalParams" />
           description: The options parameters.
       return:
         description: ''

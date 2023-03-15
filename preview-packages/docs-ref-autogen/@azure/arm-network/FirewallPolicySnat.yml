@@ -8,6 +8,20 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: autoLearnPrivateRanges
+    uid: '@azure/arm-network.FirewallPolicySnat.autoLearnPrivateRanges'
+    package: '@azure/arm-network'
+    summary: >-
+      The operation mode for automatically learning private ranges to not be
+      SNAT
+    fullName: autoLearnPrivateRanges
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'autoLearnPrivateRanges?: string'
+      return:
+        description: ''
+        type: string
   - name: privateRanges
     uid: '@azure/arm-network.FirewallPolicySnat.privateRanges'
     package: '@azure/arm-network'

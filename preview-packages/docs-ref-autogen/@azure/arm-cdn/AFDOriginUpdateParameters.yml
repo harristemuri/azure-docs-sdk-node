@@ -35,6 +35,18 @@ properties:
       return:
         description: ''
         type: string
+  - name: enforceCertificateNameCheck
+    uid: '@azure/arm-cdn.AFDOriginUpdateParameters.enforceCertificateNameCheck'
+    package: '@azure/arm-cdn'
+    summary: Whether to enable certificate name check at origin level
+    fullName: enforceCertificateNameCheck
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'enforceCertificateNameCheck?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: hostName
     uid: '@azure/arm-cdn.AFDOriginUpdateParameters.hostName'
     package: '@azure/arm-cdn'
@@ -74,6 +86,22 @@ properties:
       return:
         description: ''
         type: number
+  - name: originGroupName
+    uid: '@azure/arm-cdn.AFDOriginUpdateParameters.originGroupName'
+    package: '@azure/arm-cdn'
+    summary: >-
+      The name of the origin group which contains this origin.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: originGroupName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'originGroupName?: string'
+      return:
+        description: ''
+        type: string
   - name: originHostHeader
     uid: '@azure/arm-cdn.AFDOriginUpdateParameters.originHostHeader'
     package: '@azure/arm-cdn'
@@ -114,10 +142,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'sharedPrivateLinkResource?: Record<string, unknown>'
+      content: 'sharedPrivateLinkResource?: SharedPrivateLinkResourceProperties'
       return:
         description: ''
-        type: Record&lt;string, unknown&gt;
+        type: <xref uid="@azure/arm-cdn.SharedPrivateLinkResourceProperties" />
   - name: weight
     uid: '@azure/arm-cdn.AFDOriginUpdateParameters.weight'
     package: '@azure/arm-cdn'

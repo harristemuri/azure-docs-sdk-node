@@ -1,0 +1,36 @@
+### YamlMime:TSType
+name: LiveEventsListGetTrackIngestHeartbeatsHeaders
+uid: '@azure/arm-mediaservices.LiveEventsListGetTrackIngestHeartbeatsHeaders'
+package: '@azure/arm-mediaservices'
+summary: Defines headers for LiveEvents_listGetTrackIngestHeartbeats operation.
+fullName: LiveEventsListGetTrackIngestHeartbeatsHeaders
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: azureAsyncOperation
+    uid: >-
+      @azure/arm-mediaservices.LiveEventsListGetTrackIngestHeartbeatsHeaders.azureAsyncOperation
+    package: '@azure/arm-mediaservices'
+    summary: The URI to poll for completion status.
+    fullName: azureAsyncOperation
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'azureAsyncOperation?: string'
+      return:
+        description: ''
+        type: string
+  - name: location
+    uid: >-
+      @azure/arm-mediaservices.LiveEventsListGetTrackIngestHeartbeatsHeaders.location
+    package: '@azure/arm-mediaservices'
+    summary: The URI to poll for completion status.
+    fullName: location
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'location?: string'
+      return:
+        description: ''
+        type: string

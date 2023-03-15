@@ -243,7 +243,7 @@ methods:
           uid="@azure/arm-devtestlabs.Schedule" />, <xref
           uid="@azure/arm-devtestlabs.Schedule" />[], PageSettings&gt;
   - name: >-
-      update(string, string, string, string, string, UpdateResource,
+      update(string, string, string, string, string, ScheduleFragment,
       ServiceFabricSchedulesUpdateOptionalParams)
     uid: '@azure/arm-devtestlabs.ServiceFabricSchedules.update'
     package: '@azure/arm-devtestlabs'
@@ -254,7 +254,7 @@ methods:
       content: >-
         function update(resourceGroupName: string, labName: string, userName:
         string, serviceFabricName: string, name: string, schedule:
-        UpdateResource, options?: ServiceFabricSchedulesUpdateOptionalParams):
+        ScheduleFragment, options?: ServiceFabricSchedulesUpdateOptionalParams):
         Promise<Schedule>
       parameters:
         - id: resourceGroupName
@@ -273,7 +273,7 @@ methods:
           type: string
           description: The name of the schedule.
         - id: schedule
-          type: <xref uid="@azure/arm-devtestlabs.UpdateResource" />
+          type: <xref uid="@azure/arm-devtestlabs.ScheduleFragment" />
           description: A schedule.
         - id: options
           type: >-

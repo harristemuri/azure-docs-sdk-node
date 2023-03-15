@@ -32,7 +32,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'value?: ComponentVersionData[]'
+      content: 'value?: ComponentVersion[]'
       return:
         description: ''
-        type: <xref uid="@azure/arm-machinelearning.ComponentVersionData" />[]
+        type: <xref uid="@azure/arm-machinelearning.ComponentVersion" />[]

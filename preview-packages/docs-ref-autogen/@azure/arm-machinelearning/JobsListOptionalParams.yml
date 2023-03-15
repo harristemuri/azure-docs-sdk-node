@@ -32,30 +32,6 @@ properties:
       return:
         description: ''
         type: string
-  - name: scheduled
-    uid: '@azure/arm-machinelearning.JobsListOptionalParams.scheduled'
-    package: '@azure/arm-machinelearning'
-    summary: Indicator whether the job is scheduled job.
-    fullName: scheduled
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'scheduled?: boolean'
-      return:
-        description: ''
-        type: boolean
-  - name: scheduleId
-    uid: '@azure/arm-machinelearning.JobsListOptionalParams.scheduleId'
-    package: '@azure/arm-machinelearning'
-    summary: The scheduled id for listing the job triggered from
-    fullName: scheduleId
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'scheduleId?: string'
-      return:
-        description: ''
-        type: string
   - name: skip
     uid: '@azure/arm-machinelearning.JobsListOptionalParams.skip'
     package: '@azure/arm-machinelearning'

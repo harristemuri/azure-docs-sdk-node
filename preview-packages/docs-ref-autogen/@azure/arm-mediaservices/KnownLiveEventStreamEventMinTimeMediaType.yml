@@ -1,0 +1,20 @@
+### YamlMime:TSEnum
+name: KnownLiveEventStreamEventMinTimeMediaType
+uid: '@azure/arm-mediaservices.KnownLiveEventStreamEventMinTimeMediaType'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Known values of
+  [LiveEventStreamEventMinTimeMediaType](xref:@azure/arm-mediaservices.LiveEventStreamEventMinTimeMediaType)
+  that the service accepts.
+fullName: KnownLiveEventStreamEventMinTimeMediaType
+remarks: ''
+isDeprecated: false
+fields:
+  - name: Audio
+    uid: '@azure/arm-mediaservices.KnownLiveEventStreamEventMinTimeMediaType.Audio'
+    package: '@azure/arm-mediaservices'
+    summary: Audio
+  - name: Video
+    uid: '@azure/arm-mediaservices.KnownLiveEventStreamEventMinTimeMediaType.Video'
+    package: '@azure/arm-mediaservices'
+    summary: Video

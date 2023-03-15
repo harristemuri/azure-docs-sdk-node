@@ -1,10 +1,11 @@
 ### YamlMime:TSTypeAlias
-name: AFDProfilesCheckHostNameAvailabilityResponse
-uid: '@azure/arm-cdn.AFDProfilesCheckHostNameAvailabilityResponse'
+name: AfdProfilesCheckHostNameAvailabilityResponse
+uid: '@azure/arm-cdn.AfdProfilesCheckHostNameAvailabilityResponse'
 package: '@azure/arm-cdn'
 summary: Contains response data for the checkHostNameAvailability operation.
-fullName: AFDProfilesCheckHostNameAvailabilityResponse
+fullName: AfdProfilesCheckHostNameAvailabilityResponse
 remarks: ''
 isDeprecated: false
-syntax: |
-  type AFDProfilesCheckHostNameAvailabilityResponse = ValidateCustomDomainOutput
+syntax: >
+  type AfdProfilesCheckHostNameAvailabilityResponse =
+  CheckNameAvailabilityOutput

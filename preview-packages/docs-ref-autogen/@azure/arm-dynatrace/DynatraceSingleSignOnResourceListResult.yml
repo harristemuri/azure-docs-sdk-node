@@ -16,7 +16,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'nextLink: string'
+      content: 'nextLink?: string'
       return:
         description: ''
         type: string

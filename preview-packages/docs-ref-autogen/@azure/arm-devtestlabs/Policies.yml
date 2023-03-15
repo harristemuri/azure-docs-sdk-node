@@ -136,7 +136,7 @@ methods:
           uid="@azure/arm-devtestlabs.Policy" />, <xref
           uid="@azure/arm-devtestlabs.Policy" />[], PageSettings&gt;
   - name: >-
-      update(string, string, string, string, UpdateResource,
+      update(string, string, string, string, PolicyFragment,
       PoliciesUpdateOptionalParams)
     uid: '@azure/arm-devtestlabs.Policies.update'
     package: '@azure/arm-devtestlabs'
@@ -146,7 +146,7 @@ methods:
     syntax:
       content: >-
         function update(resourceGroupName: string, labName: string,
-        policySetName: string, name: string, policy: UpdateResource, options?:
+        policySetName: string, name: string, policy: PolicyFragment, options?:
         PoliciesUpdateOptionalParams): Promise<Policy>
       parameters:
         - id: resourceGroupName
@@ -162,7 +162,7 @@ methods:
           type: string
           description: The name of the policy.
         - id: policy
-          type: <xref uid="@azure/arm-devtestlabs.UpdateResource" />
+          type: <xref uid="@azure/arm-devtestlabs.PolicyFragment" />
           description: A Policy.
         - id: options
           type: <xref uid="@azure/arm-devtestlabs.PoliciesUpdateOptionalParams" />

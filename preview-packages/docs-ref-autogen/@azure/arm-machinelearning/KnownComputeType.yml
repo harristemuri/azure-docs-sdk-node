@@ -12,40 +12,40 @@ fields:
   - name: AKS
     uid: '@azure/arm-machinelearning.KnownComputeType.AKS'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: AKS
   - name: AmlCompute
     uid: '@azure/arm-machinelearning.KnownComputeType.AmlCompute'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: AmlCompute
   - name: ComputeInstance
     uid: '@azure/arm-machinelearning.KnownComputeType.ComputeInstance'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: ComputeInstance
   - name: Databricks
     uid: '@azure/arm-machinelearning.KnownComputeType.Databricks'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Databricks
   - name: DataFactory
     uid: '@azure/arm-machinelearning.KnownComputeType.DataFactory'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: DataFactory
   - name: DataLakeAnalytics
     uid: '@azure/arm-machinelearning.KnownComputeType.DataLakeAnalytics'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: DataLakeAnalytics
   - name: HDInsight
     uid: '@azure/arm-machinelearning.KnownComputeType.HDInsight'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: HDInsight
   - name: Kubernetes
     uid: '@azure/arm-machinelearning.KnownComputeType.Kubernetes'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Kubernetes
   - name: SynapseSpark
     uid: '@azure/arm-machinelearning.KnownComputeType.SynapseSpark'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: SynapseSpark
   - name: VirtualMachine
     uid: '@azure/arm-machinelearning.KnownComputeType.VirtualMachine'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: VirtualMachine

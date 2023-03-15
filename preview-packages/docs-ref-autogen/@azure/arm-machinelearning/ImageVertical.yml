@@ -12,20 +12,6 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
-  - name: dataSettings
-    uid: '@azure/arm-machinelearning.ImageVertical.dataSettings'
-    package: '@azure/arm-machinelearning'
-    summary: >-
-      [Required] Collection of registered Tabular Dataset Ids and other data
-      settings required for training and validating models.
-    fullName: dataSettings
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'dataSettings: ImageVerticalDataSettings'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-machinelearning.ImageVerticalDataSettings" />
   - name: limitSettings
     uid: '@azure/arm-machinelearning.ImageVertical.limitSettings'
     package: '@azure/arm-machinelearning'
@@ -50,3 +36,33 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-machinelearning.ImageSweepSettings" />
+  - name: validationData
+    uid: '@azure/arm-machinelearning.ImageVertical.validationData'
+    package: '@azure/arm-machinelearning'
+    summary: Validation data inputs.
+    fullName: validationData
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'validationData?: MLTableJobInput'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-machinelearning.MLTableJobInput" />
+  - name: validationDataSize
+    uid: '@azure/arm-machinelearning.ImageVertical.validationDataSize'
+    package: '@azure/arm-machinelearning'
+    summary: >-
+      The fraction of training dataset that needs to be set aside for validation
+      purpose.
+
+      Values between (0.0 , 1.0)
+
+      Applied when validation dataset is not provided.
+    fullName: validationDataSize
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'validationDataSize?: number'
+      return:
+        description: ''
+        type: number

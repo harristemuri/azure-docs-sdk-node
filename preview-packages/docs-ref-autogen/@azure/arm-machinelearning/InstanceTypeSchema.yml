@@ -16,10 +16,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'nodeSelector?: {[propertyName: string]: string}'
+      content: 'nodeSelector?: {[propertyName: string]: function}'
       return:
         description: ''
-        type: '{[propertyName: string]: string}'
+        type: '{[propertyName: string]: function}'
   - name: resources
     uid: '@azure/arm-machinelearning.InstanceTypeSchema.resources'
     package: '@azure/arm-machinelearning'

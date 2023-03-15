@@ -47,7 +47,8 @@ properties:
     package: '@azure/arm-mobilenetwork'
     summary: >-
       List of services that can be used as part of this SIM policy. The list
-      must not contain duplicate items and must contain at least one item.
+      must not contain duplicate items and must contain at least one item. The
+      services must be in the same location as the SIM policy.
     fullName: allowedServices
     remarks: ''
     isDeprecated: false
@@ -59,7 +60,9 @@ properties:
   - name: dataNetwork
     uid: '@azure/arm-mobilenetwork.DataNetworkConfiguration.dataNetwork'
     package: '@azure/arm-mobilenetwork'
-    summary: A reference to the data network that these settings apply to
+    summary: >-
+      A reference to the data network that these settings apply to. The data
+      network must be in the same location as the SIM policy.
     fullName: dataNetwork
     remarks: ''
     isDeprecated: false
@@ -98,6 +101,24 @@ properties:
     isDeprecated: false
     syntax:
       content: 'fiveQi?: number'
+      return:
+        description: ''
+        type: number
+  - name: maximumNumberOfBufferedPackets
+    uid: >-
+      @azure/arm-mobilenetwork.DataNetworkConfiguration.maximumNumberOfBufferedPackets
+    package: '@azure/arm-mobilenetwork'
+    summary: >-
+      The maximum number of downlink packets to buffer at the user plane for
+      High Latency Communication - Extended Buffering. See 3GPP TS29.272
+      v15.10.0 section 7.3.188 for a full description. This maximum is not
+      guaranteed because there is a internal limit on buffered packets across
+      all PDU sessions.
+    fullName: maximumNumberOfBufferedPackets
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'maximumNumberOfBufferedPackets?: number'
       return:
         description: ''
         type: number

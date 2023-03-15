@@ -1,0 +1,20 @@
+### YamlMime:TSEnum
+name: KnownLiveEventStreamEventMaxTimeMediaType
+uid: '@azure/arm-mediaservices.KnownLiveEventStreamEventMaxTimeMediaType'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Known values of
+  [LiveEventStreamEventMaxTimeMediaType](xref:@azure/arm-mediaservices.LiveEventStreamEventMaxTimeMediaType)
+  that the service accepts.
+fullName: KnownLiveEventStreamEventMaxTimeMediaType
+remarks: ''
+isDeprecated: false
+fields:
+  - name: Audio
+    uid: '@azure/arm-mediaservices.KnownLiveEventStreamEventMaxTimeMediaType.Audio'
+    package: '@azure/arm-mediaservices'
+    summary: Audio
+  - name: Video
+    uid: '@azure/arm-mediaservices.KnownLiveEventStreamEventMaxTimeMediaType.Video'
+    package: '@azure/arm-mediaservices'
+    summary: Video

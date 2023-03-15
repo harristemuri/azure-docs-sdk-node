@@ -13,24 +13,24 @@ fields:
   - name: Direct
     uid: '@azure/arm-machinelearning.KnownInputDeliveryMode.Direct'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Direct
   - name: Download
     uid: '@azure/arm-machinelearning.KnownInputDeliveryMode.Download'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Download
   - name: EvalDownload
     uid: '@azure/arm-machinelearning.KnownInputDeliveryMode.EvalDownload'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: EvalDownload
   - name: EvalMount
     uid: '@azure/arm-machinelearning.KnownInputDeliveryMode.EvalMount'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: EvalMount
   - name: ReadOnlyMount
     uid: '@azure/arm-machinelearning.KnownInputDeliveryMode.ReadOnlyMount'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: ReadOnlyMount
   - name: ReadWriteMount
     uid: '@azure/arm-machinelearning.KnownInputDeliveryMode.ReadWriteMount'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: ReadWriteMount

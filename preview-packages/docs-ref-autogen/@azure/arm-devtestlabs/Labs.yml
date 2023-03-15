@@ -520,7 +520,7 @@ methods:
           PagedAsyncIterableIterator&lt;<xref
           uid="@azure/arm-devtestlabs.LabVhd" />, <xref
           uid="@azure/arm-devtestlabs.LabVhd" />[], PageSettings&gt;
-  - name: update(string, string, UpdateResource, LabsUpdateOptionalParams)
+  - name: update(string, string, LabFragment, LabsUpdateOptionalParams)
     uid: '@azure/arm-devtestlabs.Labs.update'
     package: '@azure/arm-devtestlabs'
     summary: Allows modifying tags of labs. All other properties will be ignored.
@@ -529,7 +529,7 @@ methods:
     syntax:
       content: >-
         function update(resourceGroupName: string, name: string, lab:
-        UpdateResource, options?: LabsUpdateOptionalParams): Promise<Lab>
+        LabFragment, options?: LabsUpdateOptionalParams): Promise<Lab>
       parameters:
         - id: resourceGroupName
           type: string
@@ -538,7 +538,7 @@ methods:
           type: string
           description: The name of the lab.
         - id: lab
-          type: <xref uid="@azure/arm-devtestlabs.UpdateResource" />
+          type: <xref uid="@azure/arm-devtestlabs.LabFragment" />
           description: A lab.
         - id: options
           type: <xref uid="@azure/arm-devtestlabs.LabsUpdateOptionalParams" />

@@ -1,0 +1,72 @@
+### YamlMime:TSType
+name: LiveEventIngestion
+uid: '@azure/arm-mediaservices.LiveEventIngestion'
+package: '@azure/arm-mediaservices'
+summary: The live event ingestion telemetry data.
+fullName: LiveEventIngestion
+remarks: ''
+isDeprecated: false
+type: interface
+properties:
+  - name: begin
+    uid: '@azure/arm-mediaservices.LiveEventIngestion.begin'
+    package: '@azure/arm-mediaservices'
+    summary: Ingestion begin time in UTC.
+    fullName: begin
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'begin?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: end
+    uid: '@azure/arm-mediaservices.LiveEventIngestion.end'
+    package: '@azure/arm-mediaservices'
+    summary: Ingestion end time in UTC. Empty if it's not stopped yet.
+    fullName: end
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'end?: Date'
+      return:
+        description: ''
+        type: Date
+  - name: endReason
+    uid: '@azure/arm-mediaservices.LiveEventIngestion.endReason'
+    package: '@azure/arm-mediaservices'
+    summary: >-
+      Reason why ingestion stops. Empty if it's not stopped yet. E.g) Service
+      Stopped. No Ingestion.
+    fullName: endReason
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'endReason?: string'
+      return:
+        description: ''
+        type: string
+  - name: ingestInterruptions
+    uid: '@azure/arm-mediaservices.LiveEventIngestion.ingestInterruptions'
+    package: '@azure/arm-mediaservices'
+    summary: IngestInterruption entry list.
+    fullName: ingestInterruptions
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'ingestInterruptions?: LiveEventIngestInterruption[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mediaservices.LiveEventIngestInterruption" />[]
+  - name: streamName
+    uid: '@azure/arm-mediaservices.LiveEventIngestion.streamName'
+    package: '@azure/arm-mediaservices'
+    summary: Ingestion stream name.
+    fullName: streamName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'streamName?: string'
+      return:
+        description: ''
+        type: string

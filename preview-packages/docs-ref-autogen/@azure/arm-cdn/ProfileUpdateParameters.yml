@@ -8,6 +8,20 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: originResponseTimeoutSeconds
+    uid: '@azure/arm-cdn.ProfileUpdateParameters.originResponseTimeoutSeconds'
+    package: '@azure/arm-cdn'
+    summary: >-
+      Send and receive timeout on forwarding request to the origin. When timeout
+      is reached, the request fails and returns.
+    fullName: originResponseTimeoutSeconds
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'originResponseTimeoutSeconds?: number'
+      return:
+        description: ''
+        type: number
   - name: tags
     uid: '@azure/arm-cdn.ProfileUpdateParameters.tags'
     package: '@azure/arm-cdn'

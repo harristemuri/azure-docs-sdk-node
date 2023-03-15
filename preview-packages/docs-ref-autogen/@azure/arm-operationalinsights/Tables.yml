@@ -210,6 +210,36 @@ methods:
       return:
         description: ''
         type: Promise&lt;<xref uid="@azure/arm-operationalinsights.Table" />&gt;
+  - name: cancelSearch(string, string, string, TablesCancelSearchOptionalParams)
+    uid: '@azure/arm-operationalinsights.Tables.cancelSearch'
+    package: '@azure/arm-operationalinsights'
+    summary: Cancel a log analytics workspace search results table query run.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function cancelSearch(resourceGroupName: string, workspaceName: string,
+        tableName: string, options?: TablesCancelSearchOptionalParams):
+        Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: workspaceName
+          type: string
+          description: The name of the workspace.
+        - id: tableName
+          type: string
+          description: The name of the table.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-operationalinsights.TablesCancelSearchOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
   - name: get(string, string, string, TablesGetOptionalParams)
     uid: '@azure/arm-operationalinsights.Tables.get'
     package: '@azure/arm-operationalinsights'

@@ -20,23 +20,6 @@ properties:
       return:
         description: ''
         type: string
-  - name: odataType
-    uid: '@azure/arm-cdn.UrlSigningActionParameters.odataType'
-    package: '@azure/arm-cdn'
-    summary: ''
-    fullName: odataType
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        odataType:
-        "#Microsoft.Azure.Cdn.Models.DeliveryRuleUrlSigningActionParameters"
-      return:
-        description: ''
-        type: >-
-          "#<xref
-          uid="Microsoft.Azure.Cdn.Models.DeliveryRuleUrlSigningActionParameters"
-          />"
   - name: parameterNameOverride
     uid: '@azure/arm-cdn.UrlSigningActionParameters.parameterNameOverride'
     package: '@azure/arm-cdn'
@@ -51,3 +34,15 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-cdn.UrlSigningParamIdentifier" />[]
+  - name: typeName
+    uid: '@azure/arm-cdn.UrlSigningActionParameters.typeName'
+    package: '@azure/arm-cdn'
+    summary: ''
+    fullName: typeName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'typeName: "DeliveryRuleUrlSigningActionParameters"'
+      return:
+        description: ''
+        type: '"DeliveryRuleUrlSigningActionParameters"'

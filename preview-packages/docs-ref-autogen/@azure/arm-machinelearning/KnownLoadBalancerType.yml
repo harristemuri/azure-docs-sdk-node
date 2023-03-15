@@ -13,8 +13,8 @@ fields:
   - name: InternalLoadBalancer
     uid: '@azure/arm-machinelearning.KnownLoadBalancerType.InternalLoadBalancer'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: InternalLoadBalancer
   - name: PublicIp
     uid: '@azure/arm-machinelearning.KnownLoadBalancerType.PublicIp'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: PublicIp

@@ -1,0 +1,24 @@
+### YamlMime:TSTypeAlias
+name: LiveEventStreamEventLevel
+uid: '@azure/arm-mediaservices.LiveEventStreamEventLevel'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Defines values for LiveEventStreamEventLevel. \
+
+  [KnownLiveEventStreamEventLevel](xref:@azure/arm-mediaservices.KnownLiveEventStreamEventLevel)
+  can be used interchangeably with LiveEventStreamEventLevel,
+   this enum contains the known values that the service supports.
+  ### Known values supported by the service
+
+  **Critical** \
+
+  **Error** \
+
+  **Warning** \
+
+  **Information**
+fullName: LiveEventStreamEventLevel
+remarks: ''
+isDeprecated: false
+syntax: |
+  type LiveEventStreamEventLevel = string

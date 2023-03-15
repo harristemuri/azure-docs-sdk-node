@@ -371,7 +371,7 @@ methods:
           PagedAsyncIterableIterator&lt;<xref uid="@azure/arm-devtestlabs.Disk"
           />, <xref uid="@azure/arm-devtestlabs.Disk" />[], PageSettings&gt;
   - name: >-
-      update(string, string, string, string, UpdateResource,
+      update(string, string, string, string, DiskFragment,
       DisksUpdateOptionalParams)
     uid: '@azure/arm-devtestlabs.Disks.update'
     package: '@azure/arm-devtestlabs'
@@ -381,7 +381,7 @@ methods:
     syntax:
       content: >-
         function update(resourceGroupName: string, labName: string, userName:
-        string, name: string, disk: UpdateResource, options?:
+        string, name: string, disk: DiskFragment, options?:
         DisksUpdateOptionalParams): Promise<Disk>
       parameters:
         - id: resourceGroupName
@@ -397,7 +397,7 @@ methods:
           type: string
           description: The name of the disk.
         - id: disk
-          type: <xref uid="@azure/arm-devtestlabs.UpdateResource" />
+          type: <xref uid="@azure/arm-devtestlabs.DiskFragment" />
           description: A Disk.
         - id: options
           type: <xref uid="@azure/arm-devtestlabs.DisksUpdateOptionalParams" />

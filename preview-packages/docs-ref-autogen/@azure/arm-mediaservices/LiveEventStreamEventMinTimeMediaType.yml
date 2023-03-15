@@ -1,0 +1,20 @@
+### YamlMime:TSTypeAlias
+name: LiveEventStreamEventMinTimeMediaType
+uid: '@azure/arm-mediaservices.LiveEventStreamEventMinTimeMediaType'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Defines values for LiveEventStreamEventMinTimeMediaType. \
+
+  [KnownLiveEventStreamEventMinTimeMediaType](xref:@azure/arm-mediaservices.KnownLiveEventStreamEventMinTimeMediaType)
+  can be used interchangeably with LiveEventStreamEventMinTimeMediaType,
+   this enum contains the known values that the service supports.
+  ### Known values supported by the service
+
+  **Audio** \
+
+  **Video**
+fullName: LiveEventStreamEventMinTimeMediaType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type LiveEventStreamEventMinTimeMediaType = string

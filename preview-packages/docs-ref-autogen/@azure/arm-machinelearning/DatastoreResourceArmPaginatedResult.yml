@@ -30,7 +30,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'value?: DatastoreData[]'
+      content: 'value?: Datastore[]'
       return:
         description: ''
-        type: <xref uid="@azure/arm-machinelearning.DatastoreData" />[]
+        type: <xref uid="@azure/arm-machinelearning.Datastore" />[]

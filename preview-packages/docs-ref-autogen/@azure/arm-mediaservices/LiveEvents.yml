@@ -8,6 +8,40 @@ remarks: ''
 isDeprecated: false
 type: interface
 methods:
+  - name: >-
+      asyncOperation(string, string, string,
+      LiveEventsAsyncOperationOptionalParams)
+    uid: '@azure/arm-mediaservices.LiveEvents.asyncOperation'
+    package: '@azure/arm-mediaservices'
+    summary: Get a live event operation status.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function asyncOperation(resourceGroupName: string, accountName: string,
+        operationId: string, options?: LiveEventsAsyncOperationOptionalParams):
+        Promise<AsyncOperationResult>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: operationId
+          type: string
+          description: The ID of an ongoing async operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.LiveEventsAsyncOperationOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-mediaservices.AsyncOperationResult"
+          />&gt;
   - name: beginAllocate(string, string, string, LiveEventsAllocateOptionalParams)
     uid: '@azure/arm-mediaservices.LiveEvents.beginAllocate'
     package: '@azure/arm-mediaservices'
@@ -20,7 +54,7 @@ methods:
       content: >-
         function beginAllocate(resourceGroupName: string, accountName: string,
         liveEventName: string, options?: LiveEventsAllocateOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -38,7 +72,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: >-
       beginAllocateAndWait(string, string, string,
       LiveEventsAllocateOptionalParams)
@@ -85,7 +121,7 @@ methods:
         function beginCreate(resourceGroupName: string, accountName: string,
         liveEventName: string, parameters: LiveEvent, options?:
         LiveEventsCreateOptionalParams):
-        Promise<PollerLike<PollOperationState<LiveEvent>, LiveEvent>>
+        Promise<SimplePollerLike<OperationState<LiveEvent>, LiveEvent>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -107,7 +143,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-mediaservices.LiveEvent" />&gt;, <xref
           uid="@azure/arm-mediaservices.LiveEvent" />&gt;&gt;
   - name: >-
@@ -154,7 +190,7 @@ methods:
       content: >-
         function beginDelete(resourceGroupName: string, accountName: string,
         liveEventName: string, options?: LiveEventsDeleteOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -172,7 +208,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: beginDeleteAndWait(string, string, string, LiveEventsDeleteOptionalParams)
     uid: '@azure/arm-mediaservices.LiveEvents.beginDeleteAndWait'
     package: '@azure/arm-mediaservices'
@@ -202,6 +240,120 @@ methods:
       return:
         description: ''
         type: Promise&lt;void&gt;
+  - name: >-
+      beginListGetStatusAndWait(string, string, string,
+      LiveEventsListGetStatusOptionalParams)
+    uid: '@azure/arm-mediaservices.LiveEvents.beginListGetStatusAndWait'
+    package: '@azure/arm-mediaservices'
+    summary: Gets status telemetry of a live event.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListGetStatusAndWait(resourceGroupName: string,
+        accountName: string, liveEventName: string, options?:
+        LiveEventsListGetStatusOptionalParams):
+        PagedAsyncIterableIterator<LiveEventStatus, LiveEventStatus[],
+        PageSettings>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: liveEventName
+          type: string
+          description: The name of the live event, maximum length is 32.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.LiveEventsListGetStatusOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-mediaservices.LiveEventStatus" />, <xref
+          uid="@azure/arm-mediaservices.LiveEventStatus" />[], PageSettings&gt;
+  - name: >-
+      beginListGetStreamEventsAndWait(string, string, string,
+      LiveEventsListGetStreamEventsOptionalParams)
+    uid: '@azure/arm-mediaservices.LiveEvents.beginListGetStreamEventsAndWait'
+    package: '@azure/arm-mediaservices'
+    summary: Get stream events telemetry of a live event.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListGetStreamEventsAndWait(resourceGroupName: string,
+        accountName: string, liveEventName: string, options?:
+        LiveEventsListGetStreamEventsOptionalParams):
+        PagedAsyncIterableIterator<LiveEventStreamEvent, LiveEventStreamEvent[],
+        PageSettings>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: liveEventName
+          type: string
+          description: The name of the live event, maximum length is 32.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.LiveEventsListGetStreamEventsOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-mediaservices.LiveEventStreamEvent" />, <xref
+          uid="@azure/arm-mediaservices.LiveEventStreamEvent" />[],
+          PageSettings&gt;
+  - name: >-
+      beginListGetTrackIngestHeartbeatsAndWait(string, string, string,
+      LiveEventsListGetTrackIngestHeartbeatsOptionalParams)
+    uid: >-
+      @azure/arm-mediaservices.LiveEvents.beginListGetTrackIngestHeartbeatsAndWait
+    package: '@azure/arm-mediaservices'
+    summary: Get track ingest heartbeat events telemetry of a live event.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginListGetTrackIngestHeartbeatsAndWait(resourceGroupName:
+        string, accountName: string, liveEventName: string, options?:
+        LiveEventsListGetTrackIngestHeartbeatsOptionalParams):
+        PagedAsyncIterableIterator<LiveEventTrackEvent, LiveEventTrackEvent[],
+        PageSettings>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: liveEventName
+          type: string
+          description: The name of the live event, maximum length is 32.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.LiveEventsListGetTrackIngestHeartbeatsOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-mediaservices.LiveEventTrackEvent" />, <xref
+          uid="@azure/arm-mediaservices.LiveEventTrackEvent" />[],
+          PageSettings&gt;
   - name: beginReset(string, string, string, LiveEventsResetOptionalParams)
     uid: '@azure/arm-mediaservices.LiveEvents.beginReset'
     package: '@azure/arm-mediaservices'
@@ -219,7 +371,7 @@ methods:
       content: >-
         function beginReset(resourceGroupName: string, accountName: string,
         liveEventName: string, options?: LiveEventsResetOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -237,7 +389,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: beginResetAndWait(string, string, string, LiveEventsResetOptionalParams)
     uid: '@azure/arm-mediaservices.LiveEvents.beginResetAndWait'
     package: '@azure/arm-mediaservices'
@@ -288,7 +442,7 @@ methods:
       content: >-
         function beginStart(resourceGroupName: string, accountName: string,
         liveEventName: string, options?: LiveEventsStartOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -306,7 +460,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: beginStartAndWait(string, string, string, LiveEventsStartOptionalParams)
     uid: '@azure/arm-mediaservices.LiveEvents.beginStartAndWait'
     package: '@azure/arm-mediaservices'
@@ -353,7 +509,7 @@ methods:
         function beginStop(resourceGroupName: string, accountName: string,
         liveEventName: string, parameters: LiveEventActionInput, options?:
         LiveEventsStopOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -372,7 +528,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: >-
       beginStopAndWait(string, string, string, LiveEventActionInput,
       LiveEventsStopOptionalParams)
@@ -418,7 +576,7 @@ methods:
         function beginUpdate(resourceGroupName: string, accountName: string,
         liveEventName: string, parameters: LiveEvent, options?:
         LiveEventsUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<LiveEvent>, LiveEvent>>
+        Promise<SimplePollerLike<OperationState<LiveEvent>, LiveEvent>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -440,7 +598,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-mediaservices.LiveEvent" />&gt;, <xref
           uid="@azure/arm-mediaservices.LiveEvent" />&gt;&gt;
   - name: >-
@@ -531,3 +689,38 @@ methods:
           PagedAsyncIterableIterator&lt;<xref
           uid="@azure/arm-mediaservices.LiveEvent" />, <xref
           uid="@azure/arm-mediaservices.LiveEvent" />[], PageSettings&gt;
+  - name: >-
+      operationLocation(string, string, string, string,
+      LiveEventsOperationLocationOptionalParams)
+    uid: '@azure/arm-mediaservices.LiveEvents.operationLocation'
+    package: '@azure/arm-mediaservices'
+    summary: Get a live event operation status.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function operationLocation(resourceGroupName: string, accountName:
+        string, liveEventName: string, operationId: string, options?:
+        LiveEventsOperationLocationOptionalParams): Promise<LiveEvent>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group within the Azure subscription.
+        - id: accountName
+          type: string
+          description: The Media Services account name.
+        - id: liveEventName
+          type: string
+          description: The name of the live event, maximum length is 32.
+        - id: operationId
+          type: string
+          description: The ID of an ongoing async operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mediaservices.LiveEventsOperationLocationOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@azure/arm-mediaservices.LiveEvent" />&gt;

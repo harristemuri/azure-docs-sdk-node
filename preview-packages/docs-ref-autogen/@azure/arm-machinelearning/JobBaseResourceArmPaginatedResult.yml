@@ -30,7 +30,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'value?: JobBaseData[]'
+      content: 'value?: JobBase[]'
       return:
         description: ''
-        type: <xref uid="@azure/arm-machinelearning.JobBaseData" />[]
+        type: <xref uid="@azure/arm-machinelearning.JobBase" />[]

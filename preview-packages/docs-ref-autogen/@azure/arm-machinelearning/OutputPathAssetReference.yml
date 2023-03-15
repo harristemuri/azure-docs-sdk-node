@@ -1,4 +1,4 @@
-### YamlMime:TSTypeAlias
+### YamlMime:TSType
 name: OutputPathAssetReference
 uid: '@azure/arm-machinelearning.OutputPathAssetReference'
 package: '@azure/arm-machinelearning'
@@ -6,9 +6,44 @@ summary: Reference to an asset via its path in a job output.
 fullName: OutputPathAssetReference
 remarks: ''
 isDeprecated: false
-syntax: |
-  type OutputPathAssetReference = AssetReferenceBase & {
-    jobId?: string,
-    path?: string,
-    referenceType: "OutputPath",
-  }
+type: interface
+properties:
+  - name: jobId
+    uid: '@azure/arm-machinelearning.OutputPathAssetReference.jobId'
+    package: '@azure/arm-machinelearning'
+    summary: ARM resource ID of the job.
+    fullName: jobId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'jobId?: string'
+      return:
+        description: ''
+        type: string
+  - name: path
+    uid: '@azure/arm-machinelearning.OutputPathAssetReference.path'
+    package: '@azure/arm-machinelearning'
+    summary: The path of the file/directory in the job output.
+    fullName: path
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'path?: string'
+      return:
+        description: ''
+        type: string
+  - name: referenceType
+    uid: '@azure/arm-machinelearning.OutputPathAssetReference.referenceType'
+    package: '@azure/arm-machinelearning'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: referenceType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'referenceType: "OutputPath"'
+      return:
+        description: ''
+        type: '"OutputPath"'
+extends: <xref uid="@azure/arm-machinelearning.AssetReferenceBase" />

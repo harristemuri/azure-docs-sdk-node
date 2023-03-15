@@ -2,75 +2,45 @@
 name: ScheduleBase
 uid: '@azure/arm-machinelearning.ScheduleBase'
 package: '@azure/arm-machinelearning'
-summary: Base definition of a schedule
+summary: ''
 fullName: ScheduleBase
 remarks: ''
 isDeprecated: false
 type: interface
 properties:
-  - name: endTime
-    uid: '@azure/arm-machinelearning.ScheduleBase.endTime'
+  - name: id
+    uid: '@azure/arm-machinelearning.ScheduleBase.id'
     package: '@azure/arm-machinelearning'
-    summary: |-
-      Specifies end time of schedule in ISO 8601 format.
-      If not present, the schedule will run indefinitely
-    fullName: endTime
+    summary: A system assigned id for the schedule.
+    fullName: id
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'endTime?: Date'
-      return:
-        description: ''
-        type: Date
-  - name: scheduleStatus
-    uid: '@azure/arm-machinelearning.ScheduleBase.scheduleStatus'
-    package: '@azure/arm-machinelearning'
-    summary: Specifies the schedule's status
-    fullName: scheduleStatus
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'scheduleStatus?: string'
+      content: 'id?: string'
       return:
         description: ''
         type: string
-  - name: scheduleType
-    uid: '@azure/arm-machinelearning.ScheduleBase.scheduleType'
+  - name: provisioningStatus
+    uid: '@azure/arm-machinelearning.ScheduleBase.provisioningStatus'
     package: '@azure/arm-machinelearning'
-    summary: >-
-      Polymorphic discriminator, which specifies the different types this object
-      can be
-    fullName: scheduleType
+    summary: The current deployment state of schedule.
+    fullName: provisioningStatus
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'scheduleType: "Cron" | "Recurrence"'
+      content: 'provisioningStatus?: string'
       return:
         description: ''
-        type: '"Cron" | "Recurrence"'
-  - name: startTime
-    uid: '@azure/arm-machinelearning.ScheduleBase.startTime'
+        type: string
+  - name: status
+    uid: '@azure/arm-machinelearning.ScheduleBase.status'
     package: '@azure/arm-machinelearning'
-    summary: Specifies start time of schedule in ISO 8601 format.
-    fullName: startTime
+    summary: Is the schedule enabled or disabled?
+    fullName: status
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'startTime?: Date'
-      return:
-        description: ''
-        type: Date
-  - name: timeZone
-    uid: '@azure/arm-machinelearning.ScheduleBase.timeZone'
-    package: '@azure/arm-machinelearning'
-    summary: |-
-      Specifies time zone in which the schedule runs.
-      TimeZone should follow Windows time zone format.
-    fullName: timeZone
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'timeZone?: string'
+      content: 'status?: string'
       return:
         description: ''
         type: string

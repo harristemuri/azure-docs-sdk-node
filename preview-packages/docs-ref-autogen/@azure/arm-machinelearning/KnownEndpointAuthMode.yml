@@ -13,12 +13,12 @@ fields:
   - name: AADToken
     uid: '@azure/arm-machinelearning.KnownEndpointAuthMode.AADToken'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: AADToken
   - name: AMLToken
     uid: '@azure/arm-machinelearning.KnownEndpointAuthMode.AMLToken'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: AMLToken
   - name: Key
     uid: '@azure/arm-machinelearning.KnownEndpointAuthMode.Key'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Key

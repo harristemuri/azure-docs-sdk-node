@@ -12,9 +12,9 @@ properties:
     uid: '@azure/arm-mobilenetwork.PlatformConfiguration.azureStackEdgeDevice'
     package: '@azure/arm-mobilenetwork'
     summary: >-
-      The Azure Stack Edge device where where the packet core is deployed. If
-      the device is part of a fault tolerant pair, either device in the pair can
-      be specified.
+      The Azure Stack Edge device where the packet core is deployed. If the
+      device is part of a fault tolerant pair, either device in the pair can be
+      specified.
     fullName: azureStackEdgeDevice
     remarks: ''
     isDeprecated: false
@@ -23,6 +23,38 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-mobilenetwork.AzureStackEdgeDeviceResourceId" />
+  - name: azureStackEdgeDevices
+    uid: '@azure/arm-mobilenetwork.PlatformConfiguration.azureStackEdgeDevices'
+    package: '@azure/arm-mobilenetwork'
+    summary: >-
+      The Azure Stack Edge devices where the packet core is deployed. If the
+      packet core is deployed across multiple devices, all devices will appear
+      in this list.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: azureStackEdgeDevices
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'azureStackEdgeDevices?: AzureStackEdgeDeviceResourceId[]'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-mobilenetwork.AzureStackEdgeDeviceResourceId"
+          />[]
+  - name: azureStackHciCluster
+    uid: '@azure/arm-mobilenetwork.PlatformConfiguration.azureStackHciCluster'
+    package: '@azure/arm-mobilenetwork'
+    summary: The Azure Stack HCI cluster where the packet core is deployed.
+    fullName: azureStackHciCluster
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'azureStackHciCluster?: AzureStackHCIClusterResourceId'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mobilenetwork.AzureStackHCIClusterResourceId" />
   - name: connectedCluster
     uid: '@azure/arm-mobilenetwork.PlatformConfiguration.connectedCluster'
     package: '@azure/arm-mobilenetwork'

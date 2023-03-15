@@ -9,7 +9,7 @@ isDeprecated: false
 type: interface
 methods:
   - name: >-
-      beginCreateOrUpdate(string, string, string, OnlineEndpointData,
+      beginCreateOrUpdate(string, string, string, OnlineEndpoint,
       OnlineEndpointsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.OnlineEndpoints.beginCreateOrUpdate'
     package: '@azure/arm-machinelearning'
@@ -19,10 +19,9 @@ methods:
     syntax:
       content: >-
         function beginCreateOrUpdate(resourceGroupName: string, workspaceName:
-        string, endpointName: string, body: OnlineEndpointData, options?:
+        string, endpointName: string, body: OnlineEndpoint, options?:
         OnlineEndpointsCreateOrUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<OnlineEndpointData>,
-        OnlineEndpointData>>
+        Promise<PollerLike<PollOperationState<OnlineEndpoint>, OnlineEndpoint>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -34,7 +33,7 @@ methods:
           type: string
           description: Online Endpoint name.
         - id: body
-          type: <xref uid="@azure/arm-machinelearning.OnlineEndpointData" />
+          type: <xref uid="@azure/arm-machinelearning.OnlineEndpoint" />
           description: Online Endpoint entity to apply during operation.
         - id: options
           type: >-
@@ -46,10 +45,10 @@ methods:
         description: ''
         type: >-
           Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-machinelearning.OnlineEndpointData" />&gt;, <xref
-          uid="@azure/arm-machinelearning.OnlineEndpointData" />&gt;&gt;
+          uid="@azure/arm-machinelearning.OnlineEndpoint" />&gt;, <xref
+          uid="@azure/arm-machinelearning.OnlineEndpoint" />&gt;&gt;
   - name: >-
-      beginCreateOrUpdateAndWait(string, string, string, OnlineEndpointData,
+      beginCreateOrUpdateAndWait(string, string, string, OnlineEndpoint,
       OnlineEndpointsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.OnlineEndpoints.beginCreateOrUpdateAndWait'
     package: '@azure/arm-machinelearning'
@@ -59,9 +58,9 @@ methods:
     syntax:
       content: >-
         function beginCreateOrUpdateAndWait(resourceGroupName: string,
-        workspaceName: string, endpointName: string, body: OnlineEndpointData,
+        workspaceName: string, endpointName: string, body: OnlineEndpoint,
         options?: OnlineEndpointsCreateOrUpdateOptionalParams):
-        Promise<OnlineEndpointData>
+        Promise<OnlineEndpoint>
       parameters:
         - id: resourceGroupName
           type: string
@@ -73,7 +72,7 @@ methods:
           type: string
           description: Online Endpoint name.
         - id: body
-          type: <xref uid="@azure/arm-machinelearning.OnlineEndpointData" />
+          type: <xref uid="@azure/arm-machinelearning.OnlineEndpoint" />
           description: Online Endpoint entity to apply during operation.
         - id: options
           type: >-
@@ -84,7 +83,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.OnlineEndpointData"
+          Promise&lt;<xref uid="@azure/arm-machinelearning.OnlineEndpoint"
           />&gt;
   - name: beginDelete(string, string, string, OnlineEndpointsDeleteOptionalParams)
     uid: '@azure/arm-machinelearning.OnlineEndpoints.beginDelete'
@@ -231,7 +230,7 @@ methods:
         type: Promise&lt;void&gt;
   - name: >-
       beginUpdate(string, string, string,
-      PartialOnlineEndpointPartialTrackedResource,
+      PartialMinimalTrackedResourceWithIdentity,
       OnlineEndpointsUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.OnlineEndpoints.beginUpdate'
     package: '@azure/arm-machinelearning'
@@ -241,10 +240,9 @@ methods:
     syntax:
       content: >-
         function beginUpdate(resourceGroupName: string, workspaceName: string,
-        endpointName: string, body: PartialOnlineEndpointPartialTrackedResource,
+        endpointName: string, body: PartialMinimalTrackedResourceWithIdentity,
         options?: OnlineEndpointsUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<OnlineEndpointData>,
-        OnlineEndpointData>>
+        Promise<PollerLike<PollOperationState<OnlineEndpoint>, OnlineEndpoint>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -258,7 +256,7 @@ methods:
         - id: body
           type: >-
             <xref
-            uid="@azure/arm-machinelearning.PartialOnlineEndpointPartialTrackedResource"
+            uid="@azure/arm-machinelearning.PartialMinimalTrackedResourceWithIdentity"
             />
           description: Online Endpoint entity to apply during operation.
         - id: options
@@ -271,11 +269,11 @@ methods:
         description: ''
         type: >-
           Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-machinelearning.OnlineEndpointData" />&gt;, <xref
-          uid="@azure/arm-machinelearning.OnlineEndpointData" />&gt;&gt;
+          uid="@azure/arm-machinelearning.OnlineEndpoint" />&gt;, <xref
+          uid="@azure/arm-machinelearning.OnlineEndpoint" />&gt;&gt;
   - name: >-
       beginUpdateAndWait(string, string, string,
-      PartialOnlineEndpointPartialTrackedResource,
+      PartialMinimalTrackedResourceWithIdentity,
       OnlineEndpointsUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.OnlineEndpoints.beginUpdateAndWait'
     package: '@azure/arm-machinelearning'
@@ -286,8 +284,8 @@ methods:
       content: >-
         function beginUpdateAndWait(resourceGroupName: string, workspaceName:
         string, endpointName: string, body:
-        PartialOnlineEndpointPartialTrackedResource, options?:
-        OnlineEndpointsUpdateOptionalParams): Promise<OnlineEndpointData>
+        PartialMinimalTrackedResourceWithIdentity, options?:
+        OnlineEndpointsUpdateOptionalParams): Promise<OnlineEndpoint>
       parameters:
         - id: resourceGroupName
           type: string
@@ -301,7 +299,7 @@ methods:
         - id: body
           type: >-
             <xref
-            uid="@azure/arm-machinelearning.PartialOnlineEndpointPartialTrackedResource"
+            uid="@azure/arm-machinelearning.PartialMinimalTrackedResourceWithIdentity"
             />
           description: Online Endpoint entity to apply during operation.
         - id: options
@@ -313,7 +311,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.OnlineEndpointData"
+          Promise&lt;<xref uid="@azure/arm-machinelearning.OnlineEndpoint"
           />&gt;
   - name: get(string, string, string, OnlineEndpointsGetOptionalParams)
     uid: '@azure/arm-machinelearning.OnlineEndpoints.get'
@@ -325,7 +323,7 @@ methods:
       content: >-
         function get(resourceGroupName: string, workspaceName: string,
         endpointName: string, options?: OnlineEndpointsGetOptionalParams):
-        Promise<OnlineEndpointData>
+        Promise<OnlineEndpoint>
       parameters:
         - id: resourceGroupName
           type: string
@@ -344,7 +342,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.OnlineEndpointData"
+          Promise&lt;<xref uid="@azure/arm-machinelearning.OnlineEndpoint"
           />&gt;
   - name: getToken(string, string, string, OnlineEndpointsGetTokenOptionalParams)
     uid: '@azure/arm-machinelearning.OnlineEndpoints.getToken'
@@ -390,7 +388,7 @@ methods:
       content: >-
         function list(resourceGroupName: string, workspaceName: string,
         options?: OnlineEndpointsListOptionalParams):
-        PagedAsyncIterableIterator<OnlineEndpointData, OnlineEndpointData[],
+        PagedAsyncIterableIterator<OnlineEndpoint, OnlineEndpoint[],
         PageSettings>
       parameters:
         - id: resourceGroupName
@@ -409,9 +407,8 @@ methods:
         description: ''
         type: >-
           PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-machinelearning.OnlineEndpointData" />, <xref
-          uid="@azure/arm-machinelearning.OnlineEndpointData" />[],
-          PageSettings&gt;
+          uid="@azure/arm-machinelearning.OnlineEndpoint" />, <xref
+          uid="@azure/arm-machinelearning.OnlineEndpoint" />[], PageSettings&gt;
   - name: listKeys(string, string, string, OnlineEndpointsListKeysOptionalParams)
     uid: '@azure/arm-machinelearning.OnlineEndpoints.listKeys'
     package: '@azure/arm-machinelearning'

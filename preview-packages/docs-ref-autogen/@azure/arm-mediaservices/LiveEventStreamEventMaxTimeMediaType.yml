@@ -1,0 +1,20 @@
+### YamlMime:TSTypeAlias
+name: LiveEventStreamEventMaxTimeMediaType
+uid: '@azure/arm-mediaservices.LiveEventStreamEventMaxTimeMediaType'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Defines values for LiveEventStreamEventMaxTimeMediaType. \
+
+  [KnownLiveEventStreamEventMaxTimeMediaType](xref:@azure/arm-mediaservices.KnownLiveEventStreamEventMaxTimeMediaType)
+  can be used interchangeably with LiveEventStreamEventMaxTimeMediaType,
+   this enum contains the known values that the service supports.
+  ### Known values supported by the service
+
+  **Audio** \
+
+  **Video**
+fullName: LiveEventStreamEventMaxTimeMediaType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type LiveEventStreamEventMaxTimeMediaType = string

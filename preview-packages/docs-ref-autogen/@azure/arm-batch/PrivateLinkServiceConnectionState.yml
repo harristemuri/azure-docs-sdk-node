@@ -8,19 +8,19 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
-  - name: actionRequired
-    uid: '@azure/arm-batch.PrivateLinkServiceConnectionState.actionRequired'
+  - name: actionsRequired
+    uid: '@azure/arm-batch.PrivateLinkServiceConnectionState.actionsRequired'
     package: '@azure/arm-batch'
     summary: >-
       Action required on the private connection state
 
       NOTE: This property will not be serialized. It can only be populated by
       the server.
-    fullName: actionRequired
+    fullName: actionsRequired
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'actionRequired?: string'
+      content: 'actionsRequired?: string'
       return:
         description: ''
         type: string

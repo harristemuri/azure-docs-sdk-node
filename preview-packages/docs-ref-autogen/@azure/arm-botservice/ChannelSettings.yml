@@ -106,6 +106,18 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: requireTermsAgreement
+    uid: '@azure/arm-botservice.ChannelSettings.requireTermsAgreement'
+    package: '@azure/arm-botservice'
+    summary: Whether customer needs to agree to new terms.
+    fullName: requireTermsAgreement
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'requireTermsAgreement?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: sites
     uid: '@azure/arm-botservice.ChannelSettings.sites'
     package: '@azure/arm-botservice'

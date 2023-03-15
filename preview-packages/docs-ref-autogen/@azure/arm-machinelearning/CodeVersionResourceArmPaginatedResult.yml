@@ -30,7 +30,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'value?: CodeVersionData[]'
+      content: 'value?: CodeVersion[]'
       return:
         description: ''
-        type: <xref uid="@azure/arm-machinelearning.CodeVersionData" />[]
+        type: <xref uid="@azure/arm-machinelearning.CodeVersion" />[]

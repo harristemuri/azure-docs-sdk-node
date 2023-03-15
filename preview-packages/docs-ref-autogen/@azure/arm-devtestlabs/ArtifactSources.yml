@@ -130,7 +130,7 @@ methods:
           uid="@azure/arm-devtestlabs.ArtifactSource" />, <xref
           uid="@azure/arm-devtestlabs.ArtifactSource" />[], PageSettings&gt;
   - name: >-
-      update(string, string, string, UpdateResource,
+      update(string, string, string, ArtifactSourceFragment,
       ArtifactSourcesUpdateOptionalParams)
     uid: '@azure/arm-devtestlabs.ArtifactSources.update'
     package: '@azure/arm-devtestlabs'
@@ -142,7 +142,7 @@ methods:
     syntax:
       content: >-
         function update(resourceGroupName: string, labName: string, name:
-        string, artifactSource: UpdateResource, options?:
+        string, artifactSource: ArtifactSourceFragment, options?:
         ArtifactSourcesUpdateOptionalParams): Promise<ArtifactSource>
       parameters:
         - id: resourceGroupName
@@ -155,7 +155,7 @@ methods:
           type: string
           description: The name of the artifact source.
         - id: artifactSource
-          type: <xref uid="@azure/arm-devtestlabs.UpdateResource" />
+          type: <xref uid="@azure/arm-devtestlabs.ArtifactSourceFragment" />
           description: Properties of an artifact source.
         - id: options
           type: >-

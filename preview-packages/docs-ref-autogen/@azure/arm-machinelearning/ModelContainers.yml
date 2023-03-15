@@ -9,7 +9,7 @@ isDeprecated: false
 type: interface
 methods:
   - name: >-
-      createOrUpdate(string, string, string, ModelContainerData,
+      createOrUpdate(string, string, string, ModelContainer,
       ModelContainersCreateOrUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.ModelContainers.createOrUpdate'
     package: '@azure/arm-machinelearning'
@@ -19,9 +19,8 @@ methods:
     syntax:
       content: >-
         function createOrUpdate(resourceGroupName: string, workspaceName:
-        string, name: string, body: ModelContainerData, options?:
-        ModelContainersCreateOrUpdateOptionalParams):
-        Promise<ModelContainerData>
+        string, name: string, body: ModelContainer, options?:
+        ModelContainersCreateOrUpdateOptionalParams): Promise<ModelContainer>
       parameters:
         - id: resourceGroupName
           type: string
@@ -33,7 +32,7 @@ methods:
           type: string
           description: Container name. This is case-sensitive.
         - id: body
-          type: <xref uid="@azure/arm-machinelearning.ModelContainerData" />
+          type: <xref uid="@azure/arm-machinelearning.ModelContainer" />
           description: Container entity to create or update.
         - id: options
           type: >-
@@ -44,7 +43,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.ModelContainerData"
+          Promise&lt;<xref uid="@azure/arm-machinelearning.ModelContainer"
           />&gt;
   - name: delete(string, string, string, ModelContainersDeleteOptionalParams)
     uid: '@azure/arm-machinelearning.ModelContainers.delete'
@@ -85,7 +84,7 @@ methods:
       content: >-
         function get(resourceGroupName: string, workspaceName: string, name:
         string, options?: ModelContainersGetOptionalParams):
-        Promise<ModelContainerData>
+        Promise<ModelContainer>
       parameters:
         - id: resourceGroupName
           type: string
@@ -104,7 +103,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.ModelContainerData"
+          Promise&lt;<xref uid="@azure/arm-machinelearning.ModelContainer"
           />&gt;
   - name: list(string, string, ModelContainersListOptionalParams)
     uid: '@azure/arm-machinelearning.ModelContainers.list'
@@ -116,7 +115,7 @@ methods:
       content: >-
         function list(resourceGroupName: string, workspaceName: string,
         options?: ModelContainersListOptionalParams):
-        PagedAsyncIterableIterator<ModelContainerData, ModelContainerData[],
+        PagedAsyncIterableIterator<ModelContainer, ModelContainer[],
         PageSettings>
       parameters:
         - id: resourceGroupName
@@ -135,6 +134,5 @@ methods:
         description: ''
         type: >-
           PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-machinelearning.ModelContainerData" />, <xref
-          uid="@azure/arm-machinelearning.ModelContainerData" />[],
-          PageSettings&gt;
+          uid="@azure/arm-machinelearning.ModelContainer" />, <xref
+          uid="@azure/arm-machinelearning.ModelContainer" />[], PageSettings&gt;

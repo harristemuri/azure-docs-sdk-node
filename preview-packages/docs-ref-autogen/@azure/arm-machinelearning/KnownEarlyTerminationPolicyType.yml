@@ -13,13 +13,13 @@ fields:
   - name: Bandit
     uid: '@azure/arm-machinelearning.KnownEarlyTerminationPolicyType.Bandit'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Bandit
   - name: MedianStopping
     uid: '@azure/arm-machinelearning.KnownEarlyTerminationPolicyType.MedianStopping'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: MedianStopping
   - name: TruncationSelection
     uid: >-
       @azure/arm-machinelearning.KnownEarlyTerminationPolicyType.TruncationSelection
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: TruncationSelection

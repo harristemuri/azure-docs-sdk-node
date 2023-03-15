@@ -1024,7 +1024,7 @@ methods:
           Promise&lt;<xref uid="@azure/arm-devtestlabs.ApplicableSchedule"
           />&gt;
   - name: >-
-      update(string, string, string, UpdateResource,
+      update(string, string, string, LabVirtualMachineFragment,
       VirtualMachinesUpdateOptionalParams)
     uid: '@azure/arm-devtestlabs.VirtualMachines.update'
     package: '@azure/arm-devtestlabs'
@@ -1036,7 +1036,7 @@ methods:
     syntax:
       content: >-
         function update(resourceGroupName: string, labName: string, name:
-        string, labVirtualMachine: UpdateResource, options?:
+        string, labVirtualMachine: LabVirtualMachineFragment, options?:
         VirtualMachinesUpdateOptionalParams): Promise<LabVirtualMachine>
       parameters:
         - id: resourceGroupName
@@ -1049,7 +1049,7 @@ methods:
           type: string
           description: The name of the virtual machine.
         - id: labVirtualMachine
-          type: <xref uid="@azure/arm-devtestlabs.UpdateResource" />
+          type: <xref uid="@azure/arm-devtestlabs.LabVirtualMachineFragment" />
           description: A virtual machine.
         - id: options
           type: >-

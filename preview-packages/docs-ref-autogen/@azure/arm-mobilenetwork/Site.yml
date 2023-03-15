@@ -2,7 +2,9 @@
 name: Site
 uid: '@azure/arm-mobilenetwork.Site'
 package: '@azure/arm-mobilenetwork'
-summary: Site resource.
+summary: >-
+  Site resource. Must be created in the same location as its parent mobile
+  network.
 fullName: Site
 remarks: ''
 isDeprecated: false
@@ -12,8 +14,11 @@ properties:
     uid: '@azure/arm-mobilenetwork.Site.networkFunctions'
     package: '@azure/arm-mobilenetwork'
     summary: >-
-      An array of IDs of the network functions deployed on the site, maintained
-      by the user.
+      An array of IDs of the network functions deployed in the site. Deleting
+      the site will delete any network functions that are deployed in the site.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: networkFunctions
     remarks: ''
     isDeprecated: false

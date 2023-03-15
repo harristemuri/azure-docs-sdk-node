@@ -1,0 +1,34 @@
+### YamlMime:TSTypeAlias
+name: LiveEventStreamEventType
+uid: '@azure/arm-mediaservices.LiveEventStreamEventType'
+package: '@azure/arm-mediaservices'
+summary: >-
+  Defines values for LiveEventStreamEventType. \
+
+  [KnownLiveEventStreamEventType](xref:@azure/arm-mediaservices.KnownLiveEventStreamEventType)
+  can be used interchangeably with LiveEventStreamEventType,
+   this enum contains the known values that the service supports.
+  ### Known values supported by the service
+
+  **StreamEvent/BeginIngest**: Ingest session begins. \
+
+  **StreamEvent/EndIngest**: Ingest session ends. \
+
+  **StreamEvent/FirstChunkReceived**: First fragment received on ingest media
+  track. \
+
+  **StreamEvent/ChunkDropped**: Fragment dropped. \
+
+  **StreamEvent/UnalignedKeyFrames**: Unaligned video keyframes detected. \
+
+  **StreamEvent/UnalignedPresentation**: Unaligned presentation detected,
+  meaning two fragments across two quality levels are not time aligned. \
+
+  **StreamEvent/Discontinuity**: Timestamp discontinuity detected. \
+
+  **StreamEvent/InvalidConnection**: Ingest session denied.
+fullName: LiveEventStreamEventType
+remarks: ''
+isDeprecated: false
+syntax: |
+  type LiveEventStreamEventType = string

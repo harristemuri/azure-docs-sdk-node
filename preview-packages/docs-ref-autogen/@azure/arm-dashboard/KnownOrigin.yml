@@ -12,12 +12,12 @@ fields:
   - name: System
     uid: '@azure/arm-dashboard.KnownOrigin.System'
     package: '@azure/arm-dashboard'
-    summary: ''
+    summary: System
   - name: User
     uid: '@azure/arm-dashboard.KnownOrigin.User'
     package: '@azure/arm-dashboard'
-    summary: ''
+    summary: User
   - name: UserSystem
     uid: '@azure/arm-dashboard.KnownOrigin.UserSystem'
     package: '@azure/arm-dashboard'
-    summary: ''
+    summary: UserSystem

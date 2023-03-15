@@ -103,6 +103,22 @@ properties:
       return:
         description: ''
         type: number
+  - name: privateEndpointStatus
+    uid: '@azure/arm-cdn.DeepCreatedOrigin.privateEndpointStatus'
+    package: '@azure/arm-cdn'
+    summary: >-
+      The approval status for the connection to the Private Link
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: privateEndpointStatus
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'privateEndpointStatus?: string'
+      return:
+        description: ''
+        type: string
   - name: privateLinkAlias
     uid: '@azure/arm-cdn.DeepCreatedOrigin.privateLinkAlias'
     package: '@azure/arm-cdn'
