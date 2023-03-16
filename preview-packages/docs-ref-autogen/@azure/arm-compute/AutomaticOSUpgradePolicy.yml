@@ -40,3 +40,18 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: useRollingUpgradePolicy
+    uid: '@azure/arm-compute.AutomaticOSUpgradePolicy.useRollingUpgradePolicy'
+    package: '@azure/arm-compute'
+    summary: >-
+      Indicates whether rolling upgrade policy should be used during Auto OS
+      Upgrade. Default value is false. Auto OS Upgrade will fallback to the
+      default policy if no policy is defined on the VMSS.
+    fullName: useRollingUpgradePolicy
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'useRollingUpgradePolicy?: boolean'
+      return:
+        description: ''
+        type: boolean

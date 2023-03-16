@@ -9,7 +9,7 @@ isDeprecated: false
 type: interface
 methods:
   - name: >-
-      createOrUpdate(string, string, string, string, CodeVersionData,
+      createOrUpdate(string, string, string, string, CodeVersion,
       CodeVersionsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.CodeVersions.createOrUpdate'
     package: '@azure/arm-machinelearning'
@@ -19,8 +19,8 @@ methods:
     syntax:
       content: >-
         function createOrUpdate(resourceGroupName: string, workspaceName:
-        string, name: string, version: string, body: CodeVersionData, options?:
-        CodeVersionsCreateOrUpdateOptionalParams): Promise<CodeVersionData>
+        string, name: string, version: string, body: CodeVersion, options?:
+        CodeVersionsCreateOrUpdateOptionalParams): Promise<CodeVersion>
       parameters:
         - id: resourceGroupName
           type: string
@@ -35,7 +35,7 @@ methods:
           type: string
           description: Version identifier. This is case-sensitive.
         - id: body
-          type: <xref uid="@azure/arm-machinelearning.CodeVersionData" />
+          type: <xref uid="@azure/arm-machinelearning.CodeVersion" />
           description: Version entity to create or update.
         - id: options
           type: >-
@@ -45,9 +45,7 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.CodeVersionData"
-          />&gt;
+        type: Promise&lt;<xref uid="@azure/arm-machinelearning.CodeVersion" />&gt;
   - name: delete(string, string, string, string, CodeVersionsDeleteOptionalParams)
     uid: '@azure/arm-machinelearning.CodeVersions.delete'
     package: '@azure/arm-machinelearning'
@@ -90,7 +88,7 @@ methods:
       content: >-
         function get(resourceGroupName: string, workspaceName: string, name:
         string, version: string, options?: CodeVersionsGetOptionalParams):
-        Promise<CodeVersionData>
+        Promise<CodeVersion>
       parameters:
         - id: resourceGroupName
           type: string
@@ -111,9 +109,7 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.CodeVersionData"
-          />&gt;
+        type: Promise&lt;<xref uid="@azure/arm-machinelearning.CodeVersion" />&gt;
   - name: list(string, string, string, CodeVersionsListOptionalParams)
     uid: '@azure/arm-machinelearning.CodeVersions.list'
     package: '@azure/arm-machinelearning'
@@ -124,8 +120,7 @@ methods:
       content: >-
         function list(resourceGroupName: string, workspaceName: string, name:
         string, options?: CodeVersionsListOptionalParams):
-        PagedAsyncIterableIterator<CodeVersionData, CodeVersionData[],
-        PageSettings>
+        PagedAsyncIterableIterator<CodeVersion, CodeVersion[], PageSettings>
       parameters:
         - id: resourceGroupName
           type: string
@@ -145,6 +140,5 @@ methods:
         description: ''
         type: >-
           PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-machinelearning.CodeVersionData" />, <xref
-          uid="@azure/arm-machinelearning.CodeVersionData" />[],
-          PageSettings&gt;
+          uid="@azure/arm-machinelearning.CodeVersion" />, <xref
+          uid="@azure/arm-machinelearning.CodeVersion" />[], PageSettings&gt;

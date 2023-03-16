@@ -88,7 +88,7 @@ methods:
           Promise&lt;<xref uid="@azure/arm-compute.LogAnalyticsOperationResult"
           />&gt;
   - name: >-
-      beginExportThrottledRequests(string, LogAnalyticsInputBase,
+      beginExportThrottledRequests(string, ThrottledRequestsInput,
       LogAnalyticsExportThrottledRequestsOptionalParams)
     uid: '@azure/arm-compute.LogAnalytics.beginExportThrottledRequests'
     package: '@azure/arm-compute'
@@ -100,7 +100,7 @@ methods:
     syntax:
       content: >-
         function beginExportThrottledRequests(location: string, parameters:
-        LogAnalyticsInputBase, options?:
+        ThrottledRequestsInput, options?:
         LogAnalyticsExportThrottledRequestsOptionalParams):
         Promise<PollerLike<PollOperationState<LogAnalyticsOperationResult>,
         LogAnalyticsOperationResult>>
@@ -109,7 +109,7 @@ methods:
           type: string
           description: The location upon which virtual-machine-sizes is queried.
         - id: parameters
-          type: <xref uid="@azure/arm-compute.LogAnalyticsInputBase" />
+          type: <xref uid="@azure/arm-compute.ThrottledRequestsInput" />
           description: Parameters supplied to the LogAnalytics getThrottledRequests Api.
         - id: options
           type: >-
@@ -124,7 +124,7 @@ methods:
           uid="@azure/arm-compute.LogAnalyticsOperationResult" />&gt;, <xref
           uid="@azure/arm-compute.LogAnalyticsOperationResult" />&gt;&gt;
   - name: >-
-      beginExportThrottledRequestsAndWait(string, LogAnalyticsInputBase,
+      beginExportThrottledRequestsAndWait(string, ThrottledRequestsInput,
       LogAnalyticsExportThrottledRequestsOptionalParams)
     uid: '@azure/arm-compute.LogAnalytics.beginExportThrottledRequestsAndWait'
     package: '@azure/arm-compute'
@@ -136,7 +136,7 @@ methods:
     syntax:
       content: >-
         function beginExportThrottledRequestsAndWait(location: string,
-        parameters: LogAnalyticsInputBase, options?:
+        parameters: ThrottledRequestsInput, options?:
         LogAnalyticsExportThrottledRequestsOptionalParams):
         Promise<LogAnalyticsOperationResult>
       parameters:
@@ -144,7 +144,7 @@ methods:
           type: string
           description: The location upon which virtual-machine-sizes is queried.
         - id: parameters
-          type: <xref uid="@azure/arm-compute.LogAnalyticsInputBase" />
+          type: <xref uid="@azure/arm-compute.ThrottledRequestsInput" />
           description: Parameters supplied to the LogAnalytics getThrottledRequests Api.
         - id: options
           type: >-

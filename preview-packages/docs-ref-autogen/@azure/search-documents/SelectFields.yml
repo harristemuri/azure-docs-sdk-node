@@ -1,0 +1,13 @@
+### YamlMime:TSTypeAlias
+name: SelectFields
+uid: '@azure/search-documents.SelectFields'
+package: '@azure/search-documents'
+summary: |-
+  Produces a union of valid Cognitive Search OData $select paths for T
+  using a post-order traversal of the field tree rooted at T.
+fullName: SelectFields<T>
+remarks: ''
+isDeprecated: false
+syntax: >-
+  type SelectFields<T> = (T extends Elem[] ? (Elem extends object ?
+  SelectFields<Elem> : never) : Object[(keyof T) & string] & string)

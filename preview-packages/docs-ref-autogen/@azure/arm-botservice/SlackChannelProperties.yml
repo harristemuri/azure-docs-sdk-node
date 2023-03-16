@@ -112,9 +112,6 @@ properties:
     summary: >-
       Whether to register the settings before OAuth validation is performed.
       Recommended to True.
-
-      NOTE: This property will not be serialized. It can only be populated by
-      the server.
     fullName: registerBeforeOAuthFlow
     remarks: ''
     isDeprecated: false

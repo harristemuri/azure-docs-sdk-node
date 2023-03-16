@@ -28,7 +28,7 @@ constructors:
             subscription.
         - id: subscriptionId
           type: string
-          description: The subscription Id.
+          description: The ID of the target subscription.
         - id: options
           type: >-
             <xref
@@ -36,6 +36,30 @@ constructors:
             />
           description: The parameter options
 properties:
+  - name: $host
+    uid: '@azure/arm-recoveryservices.RecoveryServicesClient.$host'
+    package: '@azure/arm-recoveryservices'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
+  - name: apiVersion
+    uid: '@azure/arm-recoveryservices.RecoveryServicesClient.apiVersion'
+    package: '@azure/arm-recoveryservices'
+    summary: ''
+    fullName: apiVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion: string'
+      return:
+        description: ''
+        type: string
   - name: operations
     uid: '@azure/arm-recoveryservices.RecoveryServicesClient.operations'
     package: '@azure/arm-recoveryservices'
@@ -99,6 +123,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-recoveryservices.ReplicationUsages" />
+  - name: subscriptionId
+    uid: '@azure/arm-recoveryservices.RecoveryServicesClient.subscriptionId'
+    package: '@azure/arm-recoveryservices'
+    summary: ''
+    fullName: subscriptionId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        description: ''
+        type: string
   - name: usages
     uid: '@azure/arm-recoveryservices.RecoveryServicesClient.usages'
     package: '@azure/arm-recoveryservices'
@@ -148,36 +184,6 @@ properties:
         description: ''
         type: <xref uid="@azure/arm-recoveryservices.Vaults" />
 inheritedProperties:
-  - name: $host
-    uid: '@azure/arm-recoveryservices.RecoveryServicesClient.$host'
-    package: '@azure/arm-recoveryservices'
-    summary: ''
-    fullName: $host
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: '$host: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [RecoveryServicesClientContext.$host](xref:@azure/arm-recoveryservices.RecoveryServicesClientContext.$host)
-  - name: apiVersion
-    uid: '@azure/arm-recoveryservices.RecoveryServicesClient.apiVersion'
-    package: '@azure/arm-recoveryservices'
-    summary: ''
-    fullName: apiVersion
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'apiVersion: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [RecoveryServicesClientContext.apiVersion](xref:@azure/arm-recoveryservices.RecoveryServicesClientContext.apiVersion)
   - name: pipeline
     uid: '@azure/arm-recoveryservices.RecoveryServicesClient.pipeline'
     package: '@azure/arm-recoveryservices'
@@ -190,24 +196,7 @@ inheritedProperties:
       return:
         description: ''
         type: Pipeline
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [RecoveryServicesClientContext.pipeline](xref:@azure/arm-recoveryservices.RecoveryServicesClientContext.pipeline)
-  - name: subscriptionId
-    uid: '@azure/arm-recoveryservices.RecoveryServicesClient.subscriptionId'
-    package: '@azure/arm-recoveryservices'
-    summary: ''
-    fullName: subscriptionId
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'subscriptionId: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [RecoveryServicesClientContext.subscriptionId](xref:@azure/arm-recoveryservices.RecoveryServicesClientContext.subscriptionId)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.pipeline
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
     uid: '@azure/arm-recoveryservices.RecoveryServicesClient.sendOperationRequest'
@@ -231,9 +220,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [RecoveryServicesClientContext.sendOperationRequest](xref:@azure/arm-recoveryservices.RecoveryServicesClientContext.sendOperationRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-recoveryservices.RecoveryServicesClient.sendRequest'
     package: '@azure/arm-recoveryservices'
@@ -251,13 +238,11 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [RecoveryServicesClientContext.sendRequest](xref:@azure/arm-recoveryservices.RecoveryServicesClientContext.sendRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendRequest
 methods:
   - name: >-
       getOperationResult(string, string, string,
-      RecoveryServicesClientGetOperationResultOptionalParams)
+      GetOperationResultOptionalParams)
     uid: '@azure/arm-recoveryservices.RecoveryServicesClient.getOperationResult'
     package: '@azure/arm-recoveryservices'
     summary: Gets the operation result for a resource.
@@ -267,13 +252,11 @@ methods:
       content: >-
         function getOperationResult(resourceGroupName: string, vaultName:
         string, operationId: string, options?:
-        RecoveryServicesClientGetOperationResultOptionalParams): Promise<Vault>
+        GetOperationResultOptionalParams): Promise<Vault>
       parameters:
         - id: resourceGroupName
           type: string
-          description: |-
-            The name of the resource group where the recovery services vault is
-                                     present.
+          description: The name of the resource group. The name is case insensitive.
         - id: vaultName
           type: string
           description: The name of the recovery services vault.
@@ -283,7 +266,7 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-recoveryservices.RecoveryServicesClientGetOperationResultOptionalParams"
+            uid="@azure/arm-recoveryservices.GetOperationResultOptionalParams"
             />
           description: The options parameters.
       return:
@@ -291,7 +274,7 @@ methods:
         type: Promise&lt;<xref uid="@azure/arm-recoveryservices.Vault" />&gt;
   - name: >-
       getOperationStatus(string, string, string,
-      RecoveryServicesClientGetOperationStatusOptionalParams)
+      GetOperationStatusOptionalParams)
     uid: '@azure/arm-recoveryservices.RecoveryServicesClient.getOperationStatus'
     package: '@azure/arm-recoveryservices'
     summary: Gets the operation status for a resource.
@@ -301,14 +284,11 @@ methods:
       content: >-
         function getOperationStatus(resourceGroupName: string, vaultName:
         string, operationId: string, options?:
-        RecoveryServicesClientGetOperationStatusOptionalParams):
-        Promise<OperationResource>
+        GetOperationStatusOptionalParams): Promise<OperationResource>
       parameters:
         - id: resourceGroupName
           type: string
-          description: |-
-            The name of the resource group where the recovery services vault is
-                                     present.
+          description: The name of the resource group. The name is case insensitive.
         - id: vaultName
           type: string
           description: The name of the recovery services vault.
@@ -318,7 +298,7 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-recoveryservices.RecoveryServicesClientGetOperationStatusOptionalParams"
+            uid="@azure/arm-recoveryservices.GetOperationStatusOptionalParams"
             />
           description: The options parameters.
       return:
@@ -326,4 +306,4 @@ methods:
         type: >-
           Promise&lt;<xref uid="@azure/arm-recoveryservices.OperationResource"
           />&gt;
-extends: <xref uid="@azure/arm-recoveryservices.RecoveryServicesClientContext" />
+extends: ServiceClient

@@ -8,6 +8,21 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: filter
+    uid: '@azure/arm-compute.VirtualMachinesListAllOptionalParams.filter'
+    package: '@azure/arm-compute'
+    summary: >-
+      The system query option to filter VMs returned in the response. Allowed
+      value is 'virtualMachineScaleSet/id' eq
+      /subscriptions/{subId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Compute/virtualMachineScaleSets/{vmssName}'
+    fullName: filter
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'filter?: string'
+      return:
+        description: ''
+        type: string
   - name: statusOnly
     uid: '@azure/arm-compute.VirtualMachinesListAllOptionalParams.statusOnly'
     package: '@azure/arm-compute'

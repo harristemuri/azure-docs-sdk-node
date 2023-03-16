@@ -23,15 +23,15 @@ fields:
   - name: LightGBMClassifier
     uid: '@azure/arm-machinelearning.KnownStackMetaLearnerType.LightGBMClassifier'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: LightGBMClassifier
   - name: LightGBMRegressor
     uid: '@azure/arm-machinelearning.KnownStackMetaLearnerType.LightGBMRegressor'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: LightGBMRegressor
   - name: LinearRegression
     uid: '@azure/arm-machinelearning.KnownStackMetaLearnerType.LinearRegression'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: LinearRegression
   - name: LogisticRegression
     uid: '@azure/arm-machinelearning.KnownStackMetaLearnerType.LogisticRegression'
     package: '@azure/arm-machinelearning'
@@ -45,4 +45,4 @@ fields:
   - name: None
     uid: '@azure/arm-machinelearning.KnownStackMetaLearnerType.None'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: None

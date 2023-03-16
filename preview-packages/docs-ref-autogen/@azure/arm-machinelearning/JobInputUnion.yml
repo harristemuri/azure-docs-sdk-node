@@ -11,8 +11,8 @@ syntax: |
     | JobInput
     | MLTableJobInput
     | CustomModelJobInput
-    | LiteralJobInput
     | MLFlowModelJobInput
+    | LiteralJobInput
     | TritonModelJobInput
     | UriFileJobInput
     | UriFolderJobInput

@@ -24,9 +24,10 @@ properties:
     uid: '@azure/arm-compute.CreationData.galleryImageReference'
     package: '@azure/arm-compute'
     summary: >-
-      Required if creating from a Gallery Image. The id of the
-      ImageDiskReference will be the ARM id of the shared galley image version
-      from which to create a disk.
+      Required if creating from a Gallery Image. The
+      id/sharedGalleryImageId/communityGalleryImageId of the ImageDiskReference
+      will be the ARM id of the shared galley image version from which to create
+      a disk.
     fullName: galleryImageReference
     remarks: ''
     isDeprecated: false
@@ -38,7 +39,7 @@ properties:
   - name: imageReference
     uid: '@azure/arm-compute.CreationData.imageReference'
     package: '@azure/arm-compute'
-    summary: Disk source information.
+    summary: Disk source information for PIR or user images.
     fullName: imageReference
     remarks: ''
     isDeprecated: false
@@ -61,6 +62,35 @@ properties:
       return:
         description: ''
         type: number
+  - name: performancePlus
+    uid: '@azure/arm-compute.CreationData.performancePlus'
+    package: '@azure/arm-compute'
+    summary: >-
+      Set this flag to true to get a boost on the performance target of the disk
+      deployed, see here on the respective performance target. This flag can
+      only be set on disk creation time and cannot be disabled after enabled.
+    fullName: performancePlus
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'performancePlus?: boolean'
+      return:
+        description: ''
+        type: boolean
+  - name: securityDataUri
+    uid: '@azure/arm-compute.CreationData.securityDataUri'
+    package: '@azure/arm-compute'
+    summary: >-
+      If createOption is ImportSecure, this is the URI of a blob to be imported
+      into VM guest state.
+    fullName: securityDataUri
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'securityDataUri?: string'
+      return:
+        description: ''
+        type: string
   - name: sourceResourceId
     uid: '@azure/arm-compute.CreationData.sourceResourceId'
     package: '@azure/arm-compute'

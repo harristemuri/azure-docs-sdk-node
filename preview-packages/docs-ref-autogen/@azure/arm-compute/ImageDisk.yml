@@ -45,10 +45,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'diskEncryptionSet?: SubResource'
+      content: 'diskEncryptionSet?: DiskEncryptionSetParameters'
       return:
         description: ''
-        type: <xref uid="@azure/arm-compute.SubResource" />
+        type: <xref uid="@azure/arm-compute.DiskEncryptionSetParameters" />
   - name: diskSizeGB
     uid: '@azure/arm-compute.ImageDisk.diskSizeGB'
     package: '@azure/arm-compute'

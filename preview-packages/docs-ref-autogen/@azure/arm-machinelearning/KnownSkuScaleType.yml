@@ -12,12 +12,12 @@ fields:
   - name: Automatic
     uid: '@azure/arm-machinelearning.KnownSkuScaleType.Automatic'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Automatically scales node count.
   - name: Manual
     uid: '@azure/arm-machinelearning.KnownSkuScaleType.Manual'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Node count scaled upon user request.
   - name: None
     uid: '@azure/arm-machinelearning.KnownSkuScaleType.None'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Fixed set of nodes.

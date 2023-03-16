@@ -13,8 +13,8 @@ fields:
   - name: PremiumLRS
     uid: '@azure/arm-machinelearning.KnownStorageAccountType.PremiumLRS'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: PremiumLRS
   - name: StandardLRS
     uid: '@azure/arm-machinelearning.KnownStorageAccountType.StandardLRS'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: StandardLRS

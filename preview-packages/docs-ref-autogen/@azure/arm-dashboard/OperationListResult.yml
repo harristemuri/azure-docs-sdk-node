@@ -3,7 +3,7 @@ name: OperationListResult
 uid: '@azure/arm-dashboard.OperationListResult'
 package: '@azure/arm-dashboard'
 summary: >-
-  A list of REST API operations supported by Microsoft.Dashboard provider. It
+  A list of REST API operations supported by an Azure Resource Provider. It
   contains an URL link to get the next set of results.
 fullName: OperationListResult
 remarks: ''
@@ -14,7 +14,7 @@ properties:
     uid: '@azure/arm-dashboard.OperationListResult.nextLink'
     package: '@azure/arm-dashboard'
     summary: >-
-      URL to get the next set of operation list results if there are any.
+      URL to get the next set of operation list results (if there are any).
 
       NOTE: This property will not be serialized. It can only be populated by
       the server.
@@ -30,7 +30,7 @@ properties:
     uid: '@azure/arm-dashboard.OperationListResult.value'
     package: '@azure/arm-dashboard'
     summary: >-
-      List of operations supported by the Microsoft.Dashboard provider.
+      List of operations supported by the resource provider
 
       NOTE: This property will not be serialized. It can only be populated by
       the server.
@@ -38,7 +38,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'value?: OperationResult[]'
+      content: 'value?: Operation[]'
       return:
         description: ''
-        type: <xref uid="@azure/arm-dashboard.OperationResult" />[]
+        type: <xref uid="@azure/arm-dashboard.Operation" />[]

@@ -1,4 +1,4 @@
-### YamlMime:TSTypeAlias
+### YamlMime:TSType
 name: UserIdentity
 uid: '@azure/arm-machinelearning.UserIdentity'
 package: '@azure/arm-machinelearning'
@@ -6,5 +6,20 @@ summary: User identity configuration.
 fullName: UserIdentity
 remarks: ''
 isDeprecated: false
-syntax: |
-  type UserIdentity = IdentityConfiguration & { identityType: "UserIdentity" }
+type: interface
+properties:
+  - name: identityType
+    uid: '@azure/arm-machinelearning.UserIdentity.identityType'
+    package: '@azure/arm-machinelearning'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: identityType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'identityType: "UserIdentity"'
+      return:
+        description: ''
+        type: '"UserIdentity"'
+extends: <xref uid="@azure/arm-machinelearning.IdentityConfiguration" />

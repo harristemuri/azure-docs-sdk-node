@@ -1,12 +1,12 @@
 ### YamlMime:TSTypeAlias
-name: Weekday
-uid: '@azure/arm-machinelearning.Weekday'
+name: WeekDay
+uid: '@azure/arm-machinelearning.WeekDay'
 package: '@azure/arm-machinelearning'
 summary: >-
-  Defines values for Weekday. \
+  Defines values for WeekDay. \
 
-  [KnownWeekday](xref:@azure/arm-machinelearning.KnownWeekday) can be used
-  interchangeably with Weekday,
+  [KnownWeekDay](xref:@azure/arm-machinelearning.KnownWeekDay) can be used
+  interchangeably with WeekDay,
    this enum contains the known values that the service supports.
   ### Known values supported by the service
 
@@ -23,8 +23,8 @@ summary: >-
   **Saturday**: Saturday weekday \
 
   **Sunday**: Sunday weekday
-fullName: Weekday
+fullName: WeekDay
 remarks: ''
 isDeprecated: false
 syntax: |
-  type Weekday = string
+  type WeekDay = string

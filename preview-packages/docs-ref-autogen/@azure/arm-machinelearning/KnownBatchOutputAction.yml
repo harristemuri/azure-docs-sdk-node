@@ -13,8 +13,8 @@ fields:
   - name: AppendRow
     uid: '@azure/arm-machinelearning.KnownBatchOutputAction.AppendRow'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: AppendRow
   - name: SummaryOnly
     uid: '@azure/arm-machinelearning.KnownBatchOutputAction.SummaryOnly'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: SummaryOnly

@@ -7,4 +7,4 @@ fullName: ImagesUpdateResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type ImagesUpdateResponse = Image
+  type ImagesUpdateResponse = Image_2

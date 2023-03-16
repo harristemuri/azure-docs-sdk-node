@@ -57,15 +57,17 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'protectedSettings?: string'
+      content: 'protectedSettings?: any'
       return:
         description: ''
-        type: string
+        type: any
   - name: protectedSettingsFromKeyVault
     uid: >-
       @azure/arm-compute.CloudServiceExtensionProperties.protectedSettingsFromKeyVault
     package: '@azure/arm-compute'
-    summary: ''
+    summary: >-
+      Protected settings for the extension, referenced using KeyVault which are
+      encrypted before sent to the role instance.
     fullName: protectedSettingsFromKeyVault
     remarks: ''
     isDeprecated: false
@@ -128,10 +130,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'settings?: string'
+      content: 'settings?: any'
       return:
         description: ''
-        type: string
+        type: any
   - name: type
     uid: '@azure/arm-compute.CloudServiceExtensionProperties.type'
     package: '@azure/arm-compute'

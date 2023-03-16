@@ -24,8 +24,8 @@ properties:
     uid: '@azure/arm-cdn.GeoFilter.countryCodes'
     package: '@azure/arm-cdn'
     summary: >-
-      Two letter country codes defining user country access in a geo filter,
-      e.g. AU, MX, US.
+      Two letter country or region codes defining user country or region access
+      in a geo filter, e.g. AU, MX, US.
     fullName: countryCodes
     remarks: ''
     isDeprecated: false

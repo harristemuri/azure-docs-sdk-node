@@ -7,4 +7,4 @@ fullName: DataVersionsGetResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type DataVersionsGetResponse = DataVersionBaseData
+  type DataVersionsGetResponse = DataVersionBase

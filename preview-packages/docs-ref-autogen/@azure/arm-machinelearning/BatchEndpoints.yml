@@ -9,7 +9,7 @@ isDeprecated: false
 type: interface
 methods:
   - name: >-
-      beginCreateOrUpdate(string, string, string, BatchEndpointData,
+      beginCreateOrUpdate(string, string, string, BatchEndpoint,
       BatchEndpointsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.BatchEndpoints.beginCreateOrUpdate'
     package: '@azure/arm-machinelearning'
@@ -19,10 +19,9 @@ methods:
     syntax:
       content: >-
         function beginCreateOrUpdate(resourceGroupName: string, workspaceName:
-        string, endpointName: string, body: BatchEndpointData, options?:
+        string, endpointName: string, body: BatchEndpoint, options?:
         BatchEndpointsCreateOrUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<BatchEndpointData>,
-        BatchEndpointData>>
+        Promise<PollerLike<PollOperationState<BatchEndpoint>, BatchEndpoint>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -34,7 +33,7 @@ methods:
           type: string
           description: Name for the Batch inference endpoint.
         - id: body
-          type: <xref uid="@azure/arm-machinelearning.BatchEndpointData" />
+          type: <xref uid="@azure/arm-machinelearning.BatchEndpoint" />
           description: Batch inference endpoint definition object.
         - id: options
           type: >-
@@ -46,10 +45,10 @@ methods:
         description: ''
         type: >-
           Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-machinelearning.BatchEndpointData" />&gt;, <xref
-          uid="@azure/arm-machinelearning.BatchEndpointData" />&gt;&gt;
+          uid="@azure/arm-machinelearning.BatchEndpoint" />&gt;, <xref
+          uid="@azure/arm-machinelearning.BatchEndpoint" />&gt;&gt;
   - name: >-
-      beginCreateOrUpdateAndWait(string, string, string, BatchEndpointData,
+      beginCreateOrUpdateAndWait(string, string, string, BatchEndpoint,
       BatchEndpointsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.BatchEndpoints.beginCreateOrUpdateAndWait'
     package: '@azure/arm-machinelearning'
@@ -59,9 +58,9 @@ methods:
     syntax:
       content: >-
         function beginCreateOrUpdateAndWait(resourceGroupName: string,
-        workspaceName: string, endpointName: string, body: BatchEndpointData,
+        workspaceName: string, endpointName: string, body: BatchEndpoint,
         options?: BatchEndpointsCreateOrUpdateOptionalParams):
-        Promise<BatchEndpointData>
+        Promise<BatchEndpoint>
       parameters:
         - id: resourceGroupName
           type: string
@@ -73,7 +72,7 @@ methods:
           type: string
           description: Name for the Batch inference endpoint.
         - id: body
-          type: <xref uid="@azure/arm-machinelearning.BatchEndpointData" />
+          type: <xref uid="@azure/arm-machinelearning.BatchEndpoint" />
           description: Batch inference endpoint definition object.
         - id: options
           type: >-
@@ -83,9 +82,7 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.BatchEndpointData"
-          />&gt;
+        type: Promise&lt;<xref uid="@azure/arm-machinelearning.BatchEndpoint" />&gt;
   - name: beginDelete(string, string, string, BatchEndpointsDeleteOptionalParams)
     uid: '@azure/arm-machinelearning.BatchEndpoints.beginDelete'
     package: '@azure/arm-machinelearning'
@@ -150,7 +147,7 @@ methods:
         type: Promise&lt;void&gt;
   - name: >-
       beginUpdate(string, string, string,
-      PartialBatchEndpointPartialTrackedResource,
+      PartialMinimalTrackedResourceWithIdentity,
       BatchEndpointsUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.BatchEndpoints.beginUpdate'
     package: '@azure/arm-machinelearning'
@@ -160,10 +157,9 @@ methods:
     syntax:
       content: >-
         function beginUpdate(resourceGroupName: string, workspaceName: string,
-        endpointName: string, body: PartialBatchEndpointPartialTrackedResource,
+        endpointName: string, body: PartialMinimalTrackedResourceWithIdentity,
         options?: BatchEndpointsUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<BatchEndpointData>,
-        BatchEndpointData>>
+        Promise<PollerLike<PollOperationState<BatchEndpoint>, BatchEndpoint>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -177,7 +173,7 @@ methods:
         - id: body
           type: >-
             <xref
-            uid="@azure/arm-machinelearning.PartialBatchEndpointPartialTrackedResource"
+            uid="@azure/arm-machinelearning.PartialMinimalTrackedResourceWithIdentity"
             />
           description: Mutable batch inference endpoint definition object.
         - id: options
@@ -190,11 +186,11 @@ methods:
         description: ''
         type: >-
           Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-machinelearning.BatchEndpointData" />&gt;, <xref
-          uid="@azure/arm-machinelearning.BatchEndpointData" />&gt;&gt;
+          uid="@azure/arm-machinelearning.BatchEndpoint" />&gt;, <xref
+          uid="@azure/arm-machinelearning.BatchEndpoint" />&gt;&gt;
   - name: >-
       beginUpdateAndWait(string, string, string,
-      PartialBatchEndpointPartialTrackedResource,
+      PartialMinimalTrackedResourceWithIdentity,
       BatchEndpointsUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.BatchEndpoints.beginUpdateAndWait'
     package: '@azure/arm-machinelearning'
@@ -205,8 +201,8 @@ methods:
       content: >-
         function beginUpdateAndWait(resourceGroupName: string, workspaceName:
         string, endpointName: string, body:
-        PartialBatchEndpointPartialTrackedResource, options?:
-        BatchEndpointsUpdateOptionalParams): Promise<BatchEndpointData>
+        PartialMinimalTrackedResourceWithIdentity, options?:
+        BatchEndpointsUpdateOptionalParams): Promise<BatchEndpoint>
       parameters:
         - id: resourceGroupName
           type: string
@@ -220,7 +216,7 @@ methods:
         - id: body
           type: >-
             <xref
-            uid="@azure/arm-machinelearning.PartialBatchEndpointPartialTrackedResource"
+            uid="@azure/arm-machinelearning.PartialMinimalTrackedResourceWithIdentity"
             />
           description: Mutable batch inference endpoint definition object.
         - id: options
@@ -231,9 +227,7 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.BatchEndpointData"
-          />&gt;
+        type: Promise&lt;<xref uid="@azure/arm-machinelearning.BatchEndpoint" />&gt;
   - name: get(string, string, string, BatchEndpointsGetOptionalParams)
     uid: '@azure/arm-machinelearning.BatchEndpoints.get'
     package: '@azure/arm-machinelearning'
@@ -244,7 +238,7 @@ methods:
       content: >-
         function get(resourceGroupName: string, workspaceName: string,
         endpointName: string, options?: BatchEndpointsGetOptionalParams):
-        Promise<BatchEndpointData>
+        Promise<BatchEndpoint>
       parameters:
         - id: resourceGroupName
           type: string
@@ -262,9 +256,7 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.BatchEndpointData"
-          />&gt;
+        type: Promise&lt;<xref uid="@azure/arm-machinelearning.BatchEndpoint" />&gt;
   - name: list(string, string, BatchEndpointsListOptionalParams)
     uid: '@azure/arm-machinelearning.BatchEndpoints.list'
     package: '@azure/arm-machinelearning'
@@ -275,8 +267,7 @@ methods:
       content: >-
         function list(resourceGroupName: string, workspaceName: string,
         options?: BatchEndpointsListOptionalParams):
-        PagedAsyncIterableIterator<BatchEndpointData, BatchEndpointData[],
-        PageSettings>
+        PagedAsyncIterableIterator<BatchEndpoint, BatchEndpoint[], PageSettings>
       parameters:
         - id: resourceGroupName
           type: string
@@ -293,9 +284,8 @@ methods:
         description: ''
         type: >-
           PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-machinelearning.BatchEndpointData" />, <xref
-          uid="@azure/arm-machinelearning.BatchEndpointData" />[],
-          PageSettings&gt;
+          uid="@azure/arm-machinelearning.BatchEndpoint" />, <xref
+          uid="@azure/arm-machinelearning.BatchEndpoint" />[], PageSettings&gt;
   - name: listKeys(string, string, string, BatchEndpointsListKeysOptionalParams)
     uid: '@azure/arm-machinelearning.BatchEndpoints.listKeys'
     package: '@azure/arm-machinelearning'

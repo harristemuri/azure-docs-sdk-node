@@ -11,7 +11,7 @@ properties:
   - name: action
     uid: '@azure/arm-machinelearning.ComputeStartStopSchedule.action'
     package: '@azure/arm-machinelearning'
-    summary: The compute power action.
+    summary: '[Required] The compute power action.'
     fullName: action
     remarks: ''
     isDeprecated: false
@@ -20,11 +20,23 @@ properties:
       return:
         description: ''
         type: string
+  - name: cron
+    uid: '@azure/arm-machinelearning.ComputeStartStopSchedule.cron'
+    package: '@azure/arm-machinelearning'
+    summary: Required if triggerType is Cron.
+    fullName: cron
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'cron?: CronTrigger'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-machinelearning.CronTrigger" />
   - name: id
     uid: '@azure/arm-machinelearning.ComputeStartStopSchedule.id'
     package: '@azure/arm-machinelearning'
     summary: >-
-      Schedule id.
+      A system assigned id for the schedule.
 
       NOTE: This property will not be serialized. It can only be populated by
       the server.
@@ -52,15 +64,51 @@ properties:
       return:
         description: ''
         type: string
+  - name: recurrence
+    uid: '@azure/arm-machinelearning.ComputeStartStopSchedule.recurrence'
+    package: '@azure/arm-machinelearning'
+    summary: Required if triggerType is Recurrence.
+    fullName: recurrence
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'recurrence?: RecurrenceTrigger'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-machinelearning.RecurrenceTrigger" />
   - name: schedule
     uid: '@azure/arm-machinelearning.ComputeStartStopSchedule.schedule'
     package: '@azure/arm-machinelearning'
-    summary: Base definition of a schedule
+    summary: '[Deprecated] Not used any more.'
     fullName: schedule
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'schedule?: ScheduleBaseUnion'
+      content: 'schedule?: ScheduleBase'
       return:
         description: ''
-        type: <xref uid="@azure/arm-machinelearning.ScheduleBaseUnion" />
+        type: <xref uid="@azure/arm-machinelearning.ScheduleBase" />
+  - name: status
+    uid: '@azure/arm-machinelearning.ComputeStartStopSchedule.status'
+    package: '@azure/arm-machinelearning'
+    summary: Is the schedule enabled or disabled?
+    fullName: status
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'status?: string'
+      return:
+        description: ''
+        type: string
+  - name: triggerType
+    uid: '@azure/arm-machinelearning.ComputeStartStopSchedule.triggerType'
+    package: '@azure/arm-machinelearning'
+    summary: '[Required] The schedule trigger type.'
+    fullName: triggerType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'triggerType?: string'
+      return:
+        description: ''
+        type: string

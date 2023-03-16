@@ -38,6 +38,18 @@ constructors:
             />
           description: The parameter options
 properties:
+  - name: $host
+    uid: '@azure/arm-compute.ComputeManagementClient.$host'
+    package: '@azure/arm-compute'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
   - name: availabilitySets
     uid: '@azure/arm-compute.ComputeManagementClient.availabilitySets'
     package: '@azure/arm-compute'
@@ -458,6 +470,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-compute.SshPublicKeys" />
+  - name: subscriptionId
+    uid: '@azure/arm-compute.ComputeManagementClient.subscriptionId'
+    package: '@azure/arm-compute'
+    summary: ''
+    fullName: subscriptionId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        description: ''
+        type: string
   - name: usageOperations
     uid: '@azure/arm-compute.ComputeManagementClient.usageOperations'
     package: '@azure/arm-compute'
@@ -635,21 +659,6 @@ properties:
         description: ''
         type: <xref uid="@azure/arm-compute.VirtualMachineSizes" />
 inheritedProperties:
-  - name: $host
-    uid: '@azure/arm-compute.ComputeManagementClient.$host'
-    package: '@azure/arm-compute'
-    summary: ''
-    fullName: $host
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: '$host: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ComputeManagementClientContext.$host](xref:@azure/arm-compute.ComputeManagementClientContext.$host)
   - name: pipeline
     uid: '@azure/arm-compute.ComputeManagementClient.pipeline'
     package: '@azure/arm-compute'
@@ -662,24 +671,7 @@ inheritedProperties:
       return:
         description: ''
         type: Pipeline
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ComputeManagementClientContext.pipeline](xref:@azure/arm-compute.ComputeManagementClientContext.pipeline)
-  - name: subscriptionId
-    uid: '@azure/arm-compute.ComputeManagementClient.subscriptionId'
-    package: '@azure/arm-compute'
-    summary: ''
-    fullName: subscriptionId
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'subscriptionId: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ComputeManagementClientContext.subscriptionId](xref:@azure/arm-compute.ComputeManagementClientContext.subscriptionId)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.pipeline
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
     uid: '@azure/arm-compute.ComputeManagementClient.sendOperationRequest'
@@ -703,9 +695,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ComputeManagementClientContext.sendOperationRequest](xref:@azure/arm-compute.ComputeManagementClientContext.sendOperationRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-compute.ComputeManagementClient.sendRequest'
     package: '@azure/arm-compute'
@@ -723,7 +713,5 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ComputeManagementClientContext.sendRequest](xref:@azure/arm-compute.ComputeManagementClientContext.sendRequest)
-extends: <xref uid="@azure/arm-compute.ComputeManagementClientContext" />
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendRequest
+extends: ServiceClient

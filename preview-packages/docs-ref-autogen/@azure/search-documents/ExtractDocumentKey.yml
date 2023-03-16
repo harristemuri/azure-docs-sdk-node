@@ -1,0 +1,10 @@
+### YamlMime:TSTypeAlias
+name: ExtractDocumentKey
+uid: '@azure/search-documents.ExtractDocumentKey'
+package: '@azure/search-documents'
+summary: ''
+fullName: ExtractDocumentKey<Model>
+remarks: ''
+isDeprecated: false
+syntax: |
+  type ExtractDocumentKey<Model> = Object

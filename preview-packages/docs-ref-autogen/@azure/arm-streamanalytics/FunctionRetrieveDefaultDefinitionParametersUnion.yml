@@ -9,7 +9,5 @@ isDeprecated: false
 syntax: |
   type FunctionRetrieveDefaultDefinitionParametersUnion =
     | FunctionRetrieveDefaultDefinitionParameters
-    | AzureMachineLearningStudioFunctionRetrieveDefaultDefinitionParameters
-    | AzureMachineLearningServiceFunctionRetrieveDefaultDefinitionParameters
+    | AzureMachineLearningWebServiceFunctionRetrieveDefaultDefinitionParameters
     | JavaScriptFunctionRetrieveDefaultDefinitionParameters
-    | CSharpFunctionRetrieveDefaultDefinitionParameters

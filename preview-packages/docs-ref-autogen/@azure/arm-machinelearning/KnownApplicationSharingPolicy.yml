@@ -13,8 +13,8 @@ fields:
   - name: Personal
     uid: '@azure/arm-machinelearning.KnownApplicationSharingPolicy.Personal'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Personal
   - name: Shared
     uid: '@azure/arm-machinelearning.KnownApplicationSharingPolicy.Shared'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Shared

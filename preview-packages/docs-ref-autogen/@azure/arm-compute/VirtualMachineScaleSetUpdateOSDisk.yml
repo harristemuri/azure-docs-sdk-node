@@ -22,13 +22,34 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-compute.CachingTypes" />
+  - name: deleteOption
+    uid: '@azure/arm-compute.VirtualMachineScaleSetUpdateOSDisk.deleteOption'
+    package: '@azure/arm-compute'
+    summary: >-
+      Specifies whether OS Disk should be deleted or detached upon VMSS Flex
+      deletion (This feature is available for VMSS with Flexible
+      OrchestrationMode only). <br><br> Possible values: <br><br> **Delete** If
+      this value is used, the OS disk is deleted when VMSS Flex VM is
+      deleted.<br><br> **Detach** If this value is used, the OS disk is retained
+      after VMSS Flex VM is deleted. <br><br> The default value is set to
+      **Delete**. For an Ephemeral OS Disk, the default value is set to
+      **Delete**. User cannot change the delete option for Ephemeral OS Disk.
+    fullName: deleteOption
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'deleteOption?: string'
+      return:
+        description: ''
+        type: string
   - name: diskSizeGB
     uid: '@azure/arm-compute.VirtualMachineScaleSetUpdateOSDisk.diskSizeGB'
     package: '@azure/arm-compute'
     summary: >-
-      Specifies the size of the operating system disk in gigabytes. This element
-      can be used to overwrite the size of the disk in a virtual machine image.
-      <br><br> This value cannot be larger than 1023 GB
+      Specifies the size of an empty data disk in gigabytes. This element can be
+      used to overwrite the size of the disk in a virtual machine image.
+      <br><br> diskSizeGB is the number of bytes x 1024^3 for the disk and the
+      value cannot be larger than 1023
     fullName: diskSizeGB
     remarks: ''
     isDeprecated: false

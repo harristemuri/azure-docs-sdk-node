@@ -6,5 +6,7 @@ summary: Contains response data for the createOrUpdate operation.
 fullName: MediaservicesCreateOrUpdateResponse
 remarks: ''
 isDeprecated: false
-syntax: |
-  type MediaservicesCreateOrUpdateResponse = MediaService
+syntax: >
+  type MediaservicesCreateOrUpdateResponse = MediaservicesCreateOrUpdateHeaders
+  &
+    MediaService

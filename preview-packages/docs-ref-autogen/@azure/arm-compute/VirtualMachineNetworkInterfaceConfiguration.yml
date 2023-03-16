@@ -21,6 +21,21 @@ properties:
       return:
         description: ''
         type: string
+  - name: disableTcpStateTracking
+    uid: >-
+      @azure/arm-compute.VirtualMachineNetworkInterfaceConfiguration.disableTcpStateTracking
+    package: '@azure/arm-compute'
+    summary: >-
+      Specifies whether the network interface is disabled for tcp state
+      tracking.
+    fullName: disableTcpStateTracking
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'disableTcpStateTracking?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: dnsSettings
     uid: '@azure/arm-compute.VirtualMachineNetworkInterfaceConfiguration.dnsSettings'
     package: '@azure/arm-compute'

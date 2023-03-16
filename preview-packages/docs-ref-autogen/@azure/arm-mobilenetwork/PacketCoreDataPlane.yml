@@ -2,7 +2,9 @@
 name: PacketCoreDataPlane
 uid: '@azure/arm-mobilenetwork.PacketCoreDataPlane'
 package: '@azure/arm-mobilenetwork'
-summary: Packet core data plane resource.
+summary: >-
+  Packet core data plane resource. Must be created in the same location as its
+  parent packet core control plane.
 fullName: PacketCoreDataPlane
 remarks: ''
 isDeprecated: false

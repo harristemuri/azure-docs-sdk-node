@@ -13,12 +13,12 @@ fields:
   - name: Completed
     uid: '@azure/arm-machinelearning.KnownProvisioningStatus.Completed'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Completed
   - name: Failed
     uid: '@azure/arm-machinelearning.KnownProvisioningStatus.Failed'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Failed
   - name: Provisioning
     uid: '@azure/arm-machinelearning.KnownProvisioningStatus.Provisioning'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Provisioning

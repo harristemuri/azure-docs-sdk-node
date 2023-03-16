@@ -19,14 +19,16 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        name: "RemoteAddress" | "RequestMethod" | "QueryString" | "PostArgs" |
-        "RequestUri" | "RequestHeader" | "RequestBody" | "RequestScheme" |
-        "UrlPath" | "UrlFileExtension" | "UrlFileName" | "HttpVersion" |
-        "Cookies" | "IsDevice"
+        name: "ClientPort" | "RemoteAddress" | "RequestMethod" | "QueryString" |
+        "PostArgs" | "RequestUri" | "RequestHeader" | "RequestBody" |
+        "RequestScheme" | "UrlPath" | "UrlFileExtension" | "UrlFileName" |
+        "HttpVersion" | "Cookies" | "IsDevice" | "SocketAddr" | "ServerPort" |
+        "HostName" | "SslProtocol"
       return:
         description: ''
         type: >-
-          "RemoteAddress" | "RequestMethod" | "QueryString" | "PostArgs" |
-          "RequestUri" | "RequestHeader" | "RequestBody" | "RequestScheme" |
-          "UrlPath" | "UrlFileExtension" | "UrlFileName" | "HttpVersion" |
-          "Cookies" | "IsDevice"
+          "ClientPort" | "RemoteAddress" | "RequestMethod" | "QueryString" |
+          "PostArgs" | "RequestUri" | "RequestHeader" | "RequestBody" |
+          "RequestScheme" | "UrlPath" | "UrlFileExtension" | "UrlFileName" |
+          "HttpVersion" | "Cookies" | "IsDevice" | "SocketAddr" | "ServerPort" |
+          "HostName" | "SslProtocol"

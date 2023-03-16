@@ -1,10 +1,25 @@
-### YamlMime:TSTypeAlias
+### YamlMime:TSType
 name: DefaultScaleSettings
 uid: '@azure/arm-machinelearning.DefaultScaleSettings'
 package: '@azure/arm-machinelearning'
-summary: ''
+summary: Online deployment scaling configuration.
 fullName: DefaultScaleSettings
 remarks: ''
 isDeprecated: false
-syntax: |
-  type DefaultScaleSettings = OnlineScaleSettings & { scaleType: "Default" }
+type: interface
+properties:
+  - name: scaleType
+    uid: '@azure/arm-machinelearning.DefaultScaleSettings.scaleType'
+    package: '@azure/arm-machinelearning'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: scaleType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'scaleType: "Default"'
+      return:
+        description: ''
+        type: '"Default"'
+extends: <xref uid="@azure/arm-machinelearning.OnlineScaleSettings" />

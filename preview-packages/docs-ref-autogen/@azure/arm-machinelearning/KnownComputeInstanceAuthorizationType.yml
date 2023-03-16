@@ -13,4 +13,4 @@ fields:
   - name: Personal
     uid: '@azure/arm-machinelearning.KnownComputeInstanceAuthorizationType.Personal'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Personal

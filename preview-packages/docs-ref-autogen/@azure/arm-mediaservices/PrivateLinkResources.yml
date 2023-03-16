@@ -11,7 +11,7 @@ methods:
   - name: get(string, string, string, PrivateLinkResourcesGetOptionalParams)
     uid: '@azure/arm-mediaservices.PrivateLinkResources.get'
     package: '@azure/arm-mediaservices'
-    summary: Get group ID.
+    summary: Get details of a group ID.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -43,7 +43,7 @@ methods:
   - name: list(string, string, PrivateLinkResourcesListOptionalParams)
     uid: '@azure/arm-mediaservices.PrivateLinkResources.list'
     package: '@azure/arm-mediaservices'
-    summary: Get list of group IDs.
+    summary: List supported group IDs.
     remarks: ''
     isDeprecated: false
     syntax:

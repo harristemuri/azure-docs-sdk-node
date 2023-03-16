@@ -2,7 +2,7 @@
 name: ContactProfileLink
 uid: '@azure/arm-orbital.ContactProfileLink'
 package: '@azure/arm-orbital'
-summary: Contact Profile link
+summary: Contact Profile Link
 fullName: ContactProfileLink
 remarks: ''
 isDeprecated: false
@@ -56,6 +56,18 @@ properties:
       return:
         description: ''
         type: number
+  - name: name
+    uid: '@azure/arm-orbital.ContactProfileLink.name'
+    package: '@azure/arm-orbital'
+    summary: Link name
+    fullName: name
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string
   - name: polarization
     uid: '@azure/arm-orbital.ContactProfileLink.polarization'
     package: '@azure/arm-orbital'

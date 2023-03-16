@@ -63,3 +63,23 @@ properties:
       return:
         description: ''
         type: string
+  - name: userAssignedIdentities
+    uid: '@azure/arm-compute.EncryptionSetIdentity.userAssignedIdentities'
+    package: '@azure/arm-compute'
+    summary: >-
+      The list of user identities associated with the disk encryption set. The
+      user identity dictionary key references will be ARM resource ids in the
+      form:
+      '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.ManagedIdentity/userAssignedIdentities/{identityName}'.
+    fullName: userAssignedIdentities
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        userAssignedIdentities?: {[propertyName: string]:
+        UserAssignedIdentitiesValue}
+      return:
+        description: ''
+        type: >-
+          {[propertyName: string]: <xref
+          uid="@azure/arm-compute.UserAssignedIdentitiesValue" />}

@@ -239,6 +239,67 @@ methods:
         description: ''
         type: Promise&lt;void&gt;
   - name: >-
+      beginUpdate(string, string, RedisUpdateParameters,
+      RedisUpdateOptionalParams)
+    uid: '@azure/arm-rediscache.Redis.beginUpdate'
+    package: '@azure/arm-rediscache'
+    summary: Update an existing Redis cache.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdate(resourceGroupName: string, name: string,
+        parameters: RedisUpdateParameters, options?: RedisUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<RedisResource>, RedisResource>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: name
+          type: string
+          description: The name of the Redis cache.
+        - id: parameters
+          type: <xref uid="@azure/arm-rediscache.RedisUpdateParameters" />
+          description: Parameters supplied to the Update Redis operation.
+        - id: options
+          type: <xref uid="@azure/arm-rediscache.RedisUpdateOptionalParams" />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-rediscache.RedisResource" />&gt;, <xref
+          uid="@azure/arm-rediscache.RedisResource" />&gt;&gt;
+  - name: >-
+      beginUpdateAndWait(string, string, RedisUpdateParameters,
+      RedisUpdateOptionalParams)
+    uid: '@azure/arm-rediscache.Redis.beginUpdateAndWait'
+    package: '@azure/arm-rediscache'
+    summary: Update an existing Redis cache.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdateAndWait(resourceGroupName: string, name: string,
+        parameters: RedisUpdateParameters, options?: RedisUpdateOptionalParams):
+        Promise<RedisResource>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: name
+          type: string
+          description: The name of the Redis cache.
+        - id: parameters
+          type: <xref uid="@azure/arm-rediscache.RedisUpdateParameters" />
+          description: Parameters supplied to the Update Redis operation.
+        - id: options
+          type: <xref uid="@azure/arm-rediscache.RedisUpdateOptionalParams" />
+          description: The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@azure/arm-rediscache.RedisResource" />&gt;
+  - name: >-
       checkNameAvailability(CheckNameAvailabilityParameters,
       RedisCheckNameAvailabilityOptionalParams)
     uid: '@azure/arm-rediscache.Redis.checkNameAvailability'
@@ -474,30 +535,3 @@ methods:
       return:
         description: ''
         type: Promise&lt;<xref uid="@azure/arm-rediscache.RedisAccessKeys" />&gt;
-  - name: update(string, string, RedisUpdateParameters, RedisUpdateOptionalParams)
-    uid: '@azure/arm-rediscache.Redis.update'
-    package: '@azure/arm-rediscache'
-    summary: Update an existing Redis cache.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function update(resourceGroupName: string, name: string, parameters:
-        RedisUpdateParameters, options?: RedisUpdateOptionalParams):
-        Promise<RedisResource>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group.
-        - id: name
-          type: string
-          description: The name of the Redis cache.
-        - id: parameters
-          type: <xref uid="@azure/arm-rediscache.RedisUpdateParameters" />
-          description: Parameters supplied to the Update Redis operation.
-        - id: options
-          type: <xref uid="@azure/arm-rediscache.RedisUpdateOptionalParams" />
-          description: The options parameters.
-      return:
-        description: ''
-        type: Promise&lt;<xref uid="@azure/arm-rediscache.RedisResource" />&gt;

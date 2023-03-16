@@ -24,7 +24,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'audience: string'
+      content: 'audience?: string'
       return:
         description: ''
         type: string

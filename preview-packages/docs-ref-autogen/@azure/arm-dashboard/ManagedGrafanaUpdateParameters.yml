@@ -16,10 +16,24 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'identity?: ManagedIdentity'
+      content: 'identity?: ManagedServiceIdentity'
       return:
         description: ''
-        type: <xref uid="@azure/arm-dashboard.ManagedIdentity" />
+        type: <xref uid="@azure/arm-dashboard.ManagedServiceIdentity" />
+  - name: properties
+    uid: '@azure/arm-dashboard.ManagedGrafanaUpdateParameters.properties'
+    package: '@azure/arm-dashboard'
+    summary: Properties specific to the managed grafana resource.
+    fullName: properties
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'properties?: ManagedGrafanaPropertiesUpdateParameters'
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-dashboard.ManagedGrafanaPropertiesUpdateParameters" />
   - name: tags
     uid: '@azure/arm-dashboard.ManagedGrafanaUpdateParameters.tags'
     package: '@azure/arm-dashboard'

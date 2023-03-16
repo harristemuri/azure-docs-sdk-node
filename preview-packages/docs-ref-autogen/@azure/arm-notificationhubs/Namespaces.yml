@@ -385,8 +385,7 @@ methods:
       content: >-
         function listKeys(resourceGroupName: string, namespaceName: string,
         authorizationRuleName: string, options?:
-        NamespacesListKeysOptionalParams):
-        Promise<SharedAccessAuthorizationRuleListResult>
+        NamespacesListKeysOptionalParams): Promise<ResourceListKeys>
       parameters:
         - id: resourceGroupName
           type: string
@@ -408,8 +407,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-notificationhubs.SharedAccessAuthorizationRuleListResult"
+          Promise&lt;<xref uid="@azure/arm-notificationhubs.ResourceListKeys"
           />&gt;
   - name: >-
       patch(string, string, NamespacePatchParameters,

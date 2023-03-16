@@ -15,6 +15,7 @@ enums:
 classes:
   - '@azure/arm-botservice.AzureBotService'
 interfaces:
+  - '@azure/arm-botservice.AcsChatChannel'
   - '@azure/arm-botservice.AlexaChannel'
   - '@azure/arm-botservice.AlexaChannelProperties'
   - '@azure/arm-botservice.AzureBotServiceOptionalParams'
@@ -59,6 +60,8 @@ interfaces:
   - '@azure/arm-botservice.ConnectionSettingParameter'
   - '@azure/arm-botservice.ConnectionSettingProperties'
   - '@azure/arm-botservice.ConnectionSettingResponseList'
+  - '@azure/arm-botservice.CreateEmailSignInUrlResponse'
+  - '@azure/arm-botservice.CreateEmailSignInUrlResponseProperties'
   - '@azure/arm-botservice.DirectLine'
   - '@azure/arm-botservice.DirectLineChannel'
   - '@azure/arm-botservice.DirectLineChannelProperties'
@@ -66,8 +69,10 @@ interfaces:
   - '@azure/arm-botservice.DirectLineSite'
   - '@azure/arm-botservice.DirectLineSpeechChannel'
   - '@azure/arm-botservice.DirectLineSpeechChannelProperties'
+  - '@azure/arm-botservice.Email'
   - '@azure/arm-botservice.EmailChannel'
   - '@azure/arm-botservice.EmailChannelProperties'
+  - '@azure/arm-botservice.EmailCreateSignInUrlOptionalParams'
   - '@azure/arm-botservice.ErrorBody'
   - '@azure/arm-botservice.ErrorModel'
   - '@azure/arm-botservice.FacebookChannel'
@@ -82,8 +87,10 @@ interfaces:
   - '@azure/arm-botservice.LineChannelProperties'
   - '@azure/arm-botservice.LineRegistration'
   - '@azure/arm-botservice.ListChannelWithKeysResponse'
+  - '@azure/arm-botservice.M365Extensions'
   - '@azure/arm-botservice.MsTeamsChannel'
   - '@azure/arm-botservice.MsTeamsChannelProperties'
+  - '@azure/arm-botservice.Omnichannel'
   - '@azure/arm-botservice.OperationDisplayInfo'
   - '@azure/arm-botservice.OperationEntity'
   - '@azure/arm-botservice.OperationEntityListResult'
@@ -93,6 +100,7 @@ interfaces:
   - '@azure/arm-botservice.Operations'
   - '@azure/arm-botservice.OperationsListNextOptionalParams'
   - '@azure/arm-botservice.OperationsListOptionalParams'
+  - '@azure/arm-botservice.OutlookChannel'
   - '@azure/arm-botservice.PrivateEndpoint'
   - '@azure/arm-botservice.PrivateEndpointConnection'
   - '@azure/arm-botservice.PrivateEndpointConnectionListResult'
@@ -107,7 +115,12 @@ interfaces:
   - '@azure/arm-botservice.PrivateLinkResources'
   - '@azure/arm-botservice.PrivateLinkResourcesListByBotResourceOptionalParams'
   - '@azure/arm-botservice.PrivateLinkServiceConnectionState'
+  - '@azure/arm-botservice.QnAMakerEndpointKeys'
+  - '@azure/arm-botservice.QnAMakerEndpointKeysGetOptionalParams'
+  - '@azure/arm-botservice.QnAMakerEndpointKeysRequestBody'
+  - '@azure/arm-botservice.QnAMakerEndpointKeysResponse'
   - '@azure/arm-botservice.Resource'
+  - '@azure/arm-botservice.SearchAssistant'
   - '@azure/arm-botservice.ServiceProvider'
   - '@azure/arm-botservice.ServiceProviderParameter'
   - '@azure/arm-botservice.ServiceProviderParameterMetadata'
@@ -125,6 +138,10 @@ interfaces:
   - '@azure/arm-botservice.SmsChannelProperties'
   - '@azure/arm-botservice.TelegramChannel'
   - '@azure/arm-botservice.TelegramChannelProperties'
+  - '@azure/arm-botservice.TelephonyChannel'
+  - '@azure/arm-botservice.TelephonyChannelProperties'
+  - '@azure/arm-botservice.TelephonyChannelResourceApiConfiguration'
+  - '@azure/arm-botservice.TelephonyPhoneNumbers'
   - '@azure/arm-botservice.WebChatChannel'
   - '@azure/arm-botservice.WebChatChannelProperties'
   - '@azure/arm-botservice.WebChatSite'
@@ -153,6 +170,8 @@ typeAliases:
   - '@azure/arm-botservice.ChannelsListWithKeysResponse'
   - '@azure/arm-botservice.ChannelsUpdateResponse'
   - '@azure/arm-botservice.DirectLineRegenerateKeysResponse'
+  - '@azure/arm-botservice.EmailChannelAuthMethod'
+  - '@azure/arm-botservice.EmailCreateSignInUrlResponse'
   - '@azure/arm-botservice.HostSettingsGetResponse'
   - '@azure/arm-botservice.Key'
   - '@azure/arm-botservice.Kind'
@@ -168,6 +187,7 @@ typeAliases:
   - '@azure/arm-botservice.PrivateEndpointServiceConnectionStatus'
   - '@azure/arm-botservice.PrivateLinkResourcesListByBotResourceResponse'
   - '@azure/arm-botservice.PublicNetworkAccess'
+  - '@azure/arm-botservice.QnAMakerEndpointKeysGetResponse'
   - '@azure/arm-botservice.RegenerateKeysChannelName'
   - '@azure/arm-botservice.SkuName'
   - '@azure/arm-botservice.SkuTier'
@@ -176,8 +196,8 @@ functions:
     uid: '@azure/arm-botservice.getContinuationToken'
     package: '@azure/arm-botservice'
     summary: |-
-      Given a result page from a pageable operation, returns a
-      continuation token that can be used to begin paging from
+      Given the last `.value` produced by the `byPage` iterator,
+      returns a continuation token that can be used to begin paging from
       that point later.
     remarks: ''
     isDeprecated: false
@@ -186,7 +206,11 @@ functions:
       parameters:
         - id: page
           type: unknown
-          description: A result object from calling .byPage() on a paged operation.
+          description: >-
+            An object from accessing `value` on the IteratorResult from a
+            `byPage` iterator.
       return:
-        description: The continuation token that can be passed into byPage().
+        description: >-
+          The continuation token that can be passed into byPage() during future
+          calls.
         type: string | undefined

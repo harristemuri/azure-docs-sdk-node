@@ -8,6 +8,18 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: content
+    uid: '@azure/container-registry.DownloadManifestResult.content'
+    package: '@azure/container-registry'
+    summary: The manifest stream that was downloaded.
+    fullName: content
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'content: ReadableStream'
+      return:
+        description: ''
+        type: ReadableStream
   - name: digest
     uid: '@azure/container-registry.DownloadManifestResult.digest'
     package: '@azure/container-registry'
@@ -20,27 +32,17 @@ properties:
       return:
         description: ''
         type: string
-  - name: manifest
-    uid: '@azure/container-registry.DownloadManifestResult.manifest'
+  - name: mediaType
+    uid: '@azure/container-registry.DownloadManifestResult.mediaType'
     package: '@azure/container-registry'
-    summary: The OCI manifest that was downloaded.
-    fullName: manifest
+    summary: >-
+      Media type of the downloaded manifest as indicated by the Content-Type
+      response header.
+    fullName: mediaType
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'manifest: OciManifest'
+      content: 'mediaType: string'
       return:
         description: ''
-        type: <xref uid="@azure/container-registry.OciManifest" />
-  - name: manifestStream
-    uid: '@azure/container-registry.DownloadManifestResult.manifestStream'
-    package: '@azure/container-registry'
-    summary: The manifest stream that was downloaded.
-    fullName: manifestStream
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'manifestStream: ReadableStream'
-      return:
-        description: ''
-        type: ReadableStream
+        type: string

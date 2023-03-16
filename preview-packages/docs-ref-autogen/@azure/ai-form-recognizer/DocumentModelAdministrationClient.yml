@@ -162,10 +162,10 @@ constructors:
           description: optional settings for configuring all methods in the client
 methods:
   - name: >-
-      beginBuildModel(string, string, DocumentModelBuildMode,
-      BeginBuildModelOptions)
+      beginBuildDocumentModel(string, string, DocumentModelBuildMode,
+      BeginBuildDocumentModelOptions)
     uid: >-
-      @azure/ai-form-recognizer.DocumentModelAdministrationClient.beginBuildModel
+      @azure/ai-form-recognizer.DocumentModelAdministrationClient.beginBuildDocumentModel
     package: '@azure/ai-form-recognizer'
     summary: >-
       Build a new model with a given ID from a set of input documents and
@@ -206,7 +206,8 @@ methods:
       const containerUrl = "<training data container SAS URL>";
 
 
-      const poller = await client.beginBuildModel(modelId, containerUrl, {
+      const poller = await client.beginBuildDocumentModel(modelId, containerUrl,
+      {
         // Optionally, a text description may be attached to the model
         description: "This is an example model!"
       });
@@ -223,7 +224,7 @@ methods:
       const {
         modelId, // identical to the modelId given when creating the model
         description, // identical to the description given when creating the model
-        createdDateTime, // the Date (timestamp) that the model was created
+        createdOn, // the Date (timestamp) that the model was created
         docTypes // information about the document types in the model and their field schemas
       } = modelDetails;
 
@@ -232,9 +233,9 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function beginBuildModel(modelId: string, containerUrl: string,
-        buildMode: DocumentModelBuildMode, options?: BeginBuildModelOptions):
-        Promise<DocumentModelPoller>
+        function beginBuildDocumentModel(modelId: string, containerUrl: string,
+        buildMode: DocumentModelBuildMode, options?:
+        BeginBuildDocumentModelOptions): Promise<DocumentModelPoller>
       parameters:
         - id: modelId
           type: string
@@ -250,7 +251,9 @@ methods:
             the mode to use when building the model (see
             `DocumentModelBuildMode`)
         - id: options
-          type: <xref uid="@azure/ai-form-recognizer.BeginBuildModelOptions" />
+          type: >-
+            <xref uid="@azure/ai-form-recognizer.BeginBuildDocumentModelOptions"
+            />
           description: optional settings for the model build operation
       return:
         description: >-
@@ -259,9 +262,11 @@ methods:
         type: >-
           Promise&lt;<xref uid="@azure/ai-form-recognizer.DocumentModelPoller"
           />&gt;
-  - name: beginComposeModel(string, Iterable<string>, BeginComposeModelOptions)
+  - name: >-
+      beginComposeDocumentModel(string, Iterable<string>,
+      BeginComposeDocumentModelOptions)
     uid: >-
-      @azure/ai-form-recognizer.DocumentModelAdministrationClient.beginComposeModel
+      @azure/ai-form-recognizer.DocumentModelAdministrationClient.beginComposeDocumentModel
     package: '@azure/ai-form-recognizer'
     summary: >-
       Creates a single composed model from several pre-existing submodels.
@@ -293,7 +298,8 @@ methods:
 
       // conforming to any of the above document types
 
-      const poller = await client.beginComposeModel(modelId, subModelIds, {
+      const poller = await client.beginComposeDocumentModel(modelId,
+      subModelIds, {
         description: "This is a composed model that can handle several document types."
       });
 
@@ -309,7 +315,7 @@ methods:
       const {
         modelId, // identical to the modelId given when creating the model
         description, // identical to the description given when creating the model
-        createdDateTime, // the Date (timestamp) that the model was created
+        createdOn, // the Date (timestamp) that the model was created
         docTypes // information about the document types of the composed submodels
       } = modelDetails;
 
@@ -318,8 +324,8 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function beginComposeModel(modelId: string, componentModelIds:
-        Iterable<string>, options?: BeginComposeModelOptions):
+        function beginComposeDocumentModel(modelId: string, componentModelIds:
+        Iterable<string>, options?: BeginComposeDocumentModelOptions):
         Promise<DocumentModelPoller>
       parameters:
         - id: modelId
@@ -331,7 +337,9 @@ methods:
             an Iterable of strings representing the unique model IDs of the
             models to compose
         - id: options
-          type: <xref uid="@azure/ai-form-recognizer.BeginComposeModelOptions" />
+          type: >-
+            <xref
+            uid="@azure/ai-form-recognizer.BeginComposeDocumentModelOptions" />
           description: optional settings for model creation
       return:
         description: >-
@@ -397,7 +405,7 @@ methods:
       const {
         modelId, // identical to the modelId given when creating the copy authorization
         description, // identical to the description given when creating the copy authorization
-        createdDateTime, // the Date (timestamp) that the model was created
+        createdOn, // the Date (timestamp) that the model was created
         docTypes // information about the document types of the model (identical to the original, source model)
       } = modelDetails;
 
@@ -428,8 +436,9 @@ methods:
         type: >-
           Promise&lt;<xref uid="@azure/ai-form-recognizer.DocumentModelPoller"
           />&gt;
-  - name: deleteModel(string, DeleteModelOptions)
-    uid: '@azure/ai-form-recognizer.DocumentModelAdministrationClient.deleteModel'
+  - name: deleteDocumentModel(string, DeleteDocumentModelOptions)
+    uid: >-
+      @azure/ai-form-recognizer.DocumentModelAdministrationClient.deleteDocumentModel
     package: '@azure/ai-form-recognizer'
     summary: >-
       Deletes a model with the given ID from the client's resource, if it
@@ -448,14 +457,14 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function deleteModel(modelId: string, options?: DeleteModelOptions):
-        Promise<void>
+        function deleteDocumentModel(modelId: string, options?:
+        DeleteDocumentModelOptions): Promise<void>
       parameters:
         - id: modelId
           type: string
           description: the unique ID of the model to delete from the resource
         - id: options
-          type: <xref uid="@azure/ai-form-recognizer.DeleteModelOptions" />
+          type: <xref uid="@azure/ai-form-recognizer.DeleteDocumentModelOptions" />
           description: optional settings for the request
       return:
         description: ''
@@ -512,8 +521,9 @@ methods:
         type: >-
           Promise&lt;<xref uid="@azure/ai-form-recognizer.CopyAuthorization"
           />&gt;
-  - name: getModel(string, GetModelOptions)
-    uid: '@azure/ai-form-recognizer.DocumentModelAdministrationClient.getModel'
+  - name: getDocumentModel(string, GetModelOptions)
+    uid: >-
+      @azure/ai-form-recognizer.DocumentModelAdministrationClient.getDocumentModel
     package: '@azure/ai-form-recognizer'
     summary: >-
       Retrieves information about a model
@@ -531,12 +541,12 @@ methods:
       `getModel` method could return any model, even
 
       one that failed to create due to errors. In the new service versions,
-      `getModel` and `listModels` _only produce
+      `getDocumentModel` and `listDocumentModels`
 
-      successfully created models_ (i.e. models that are "ready" for use).
-      Failed models are now retrieved through the
+      _only produce successfully created models_ (i.e. models that are "ready"
+      for use). Failed models are now retrieved
 
-      "operations" APIs, see
+      through the "operations" APIs, see
       [getOperation](xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.getOperation)
       and
       [listOperations](xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.listOperations).
@@ -553,9 +563,9 @@ methods:
 
 
       const {
-        modelId, // identical to the modelId given when calling `getModel`
+        modelId, // identical to the modelId given when calling `getDocumentModel`
         description, // a textual description of the model, if provided during model creation
-        createdDateTime, // the Date (timestamp) that the model was created
+        createdOn, // the Date (timestamp) that the model was created
         // information about the document types in the model and their field schemas
         docTypes: {
           // the document type of the prebuilt business card model
@@ -569,14 +579,14 @@ methods:
             fieldConfidence
           }
         }
-      } = await client.getModel(modelId);
+      } = await client.getDocumentModel(modelId);
 
       ```
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
-        function getModel(modelId: string, options?: GetModelOptions):
+        function getDocumentModel(modelId: string, options?: GetModelOptions):
         Promise<DocumentModelDetails>
       parameters:
         - id: modelId
@@ -627,8 +637,8 @@ methods:
             kind, // the operation kind, one of "documentModelBuild", "documentModelCompose", or "documentModelCopyTo"
             status, // the status of the operation, one of "notStarted", "running", "failed", "succeeded", or "canceled"
             percentCompleted, // a number between 0 and 100 representing the progress of the operation
-            createdDateTime, // a Date object that reflects the time when the operation was started
-            lastUpdatedDateTime, // a Date object that reflects the time when the operation state was last modified
+            createdOn, // a Date object that reflects the time when the operation was started
+            lastUpdatedOn, // a Date object that reflects the time when the operation state was last modified
           } = await client.getOperation(operationId);
           ```
         type: >-
@@ -669,8 +679,9 @@ methods:
         type: >-
           Promise&lt;<xref uid="@azure/ai-form-recognizer.ResourceDetails"
           />&gt;
-  - name: listModels(ListModelsOptions)
-    uid: '@azure/ai-form-recognizer.DocumentModelAdministrationClient.listModels'
+  - name: listDocumentModels(ListModelsOptions)
+    uid: >-
+      @azure/ai-form-recognizer.DocumentModelAdministrationClient.listDocumentModels
     package: '@azure/ai-form-recognizer'
     summary: >-
       List summaries of models in the resource. Custom as well as prebuilt
@@ -687,7 +698,7 @@ methods:
 
 
       To access the full information about the model, use
-      [getModel](xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.getModel).
+      [getDocumentModel](xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.getDocumentModel).
 
 
       ### **Breaking Change**
@@ -697,12 +708,12 @@ methods:
       `listModels` method would return all models, even
 
       those that failed to create due to errors. In the new service versions,
-      `listModels` and `getModels` _only produce
+      `listDocumentModels` and `getDocumentModel`
 
-      successfully created models_ (i.e. models that are "ready" for use).
-      Failed models are now retrieved through the
+      _only produce successfully created models_ (i.e. models that are "ready"
+      for use). Failed models are now retrieved
 
-      "operations" APIs, see
+      through the "operations" APIs, see
       [getOperation](xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.getOperation)
       and
       [listOperations](xref:@azure/ai-form-recognizer.DocumentModelAdministrationClient.listOperations).
@@ -716,14 +727,14 @@ methods:
 
       ```javascript
 
-      for await (const summary of client.listModels()) {
+      for await (const summary of client.listDocumentModels()) {
         const {
           modelId, // The model's unique ID
           description, // a textual description of the model, if provided during model creation
         } = summary;
 
-        // You can get the full model info using `getModel`
-        const model = await client.getModel(modelId);
+        // You can get the full model info using `getDocumentModel`
+        const model = await client.getDocumentModel(modelId);
       }
 
       ```
@@ -734,10 +745,10 @@ methods:
 
       ```javascript
 
-      // The listModels method is paged, and you can iterate by page using the
-      `byPage` method.
+      // The listDocumentModels method is paged, and you can iterate by page
+      using the `byPage` method.
 
-      const pages = client.listModels().byPage();
+      const pages = client.listDocumentModels().byPage();
 
 
       for await (const page of pages) {
@@ -748,8 +759,8 @@ methods:
             description, // a textual description of the model, if provided during model creation
           } = summary;
 
-          // You can get the full model info using `getModel`
-          const model = await client.getModel(modelId);
+          // You can get the full model info using `getDocumentModel`
+          const model = await client.getDocumentModel(modelId);
         }
       }
 
@@ -758,7 +769,7 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function listModels(options?: ListModelsOptions):
+        function listDocumentModels(options?: ListModelsOptions):
         PagedAsyncIterableIterator<DocumentModelSummary, DocumentModelSummary[],
         PageSettings>
       parameters:

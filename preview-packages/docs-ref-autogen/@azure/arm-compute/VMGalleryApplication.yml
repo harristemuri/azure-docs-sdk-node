@@ -24,6 +24,20 @@ properties:
       return:
         description: ''
         type: string
+  - name: enableAutomaticUpgrade
+    uid: '@azure/arm-compute.VMGalleryApplication.enableAutomaticUpgrade'
+    package: '@azure/arm-compute'
+    summary: >-
+      If set to true, when a new Gallery Application version is available in
+      PIR/SIG, it will be automatically updated for the VM/VMSS
+    fullName: enableAutomaticUpgrade
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'enableAutomaticUpgrade?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: order
     uid: '@azure/arm-compute.VMGalleryApplication.order'
     package: '@azure/arm-compute'
@@ -62,3 +76,17 @@ properties:
       return:
         description: ''
         type: string
+  - name: treatFailureAsDeploymentFailure
+    uid: '@azure/arm-compute.VMGalleryApplication.treatFailureAsDeploymentFailure'
+    package: '@azure/arm-compute'
+    summary: >-
+      Optional, If true, any failure for any operation in the VmApplication will
+      fail the deployment
+    fullName: treatFailureAsDeploymentFailure
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'treatFailureAsDeploymentFailure?: boolean'
+      return:
+        description: ''
+        type: boolean

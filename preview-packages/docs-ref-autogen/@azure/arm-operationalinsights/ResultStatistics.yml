@@ -40,3 +40,19 @@ properties:
       return:
         description: ''
         type: number
+  - name: scannedGb
+    uid: '@azure/arm-operationalinsights.ResultStatistics.scannedGb'
+    package: '@azure/arm-operationalinsights'
+    summary: >-
+      Search job: Amount of scanned data.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: scannedGb
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'scannedGb?: number'
+      return:
+        description: ''
+        type: number

@@ -12,12 +12,12 @@ fields:
   - name: Local
     uid: '@azure/arm-machinelearning.KnownAutosave.Local'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Local
   - name: None
     uid: '@azure/arm-machinelearning.KnownAutosave.None'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: None
   - name: Remote
     uid: '@azure/arm-machinelearning.KnownAutosave.Remote'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Remote

@@ -13,12 +13,12 @@ fields:
   - name: DenseProd
     uid: '@azure/arm-machinelearning.KnownClusterPurpose.DenseProd'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: DenseProd
   - name: DevTest
     uid: '@azure/arm-machinelearning.KnownClusterPurpose.DevTest'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: DevTest
   - name: FastProd
     uid: '@azure/arm-machinelearning.KnownClusterPurpose.FastProd'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: FastProd

@@ -68,10 +68,6 @@ fields:
     uid: '@azure/arm-machinelearning.KnownJobStatus.Running'
     package: '@azure/arm-machinelearning'
     summary: The job started to run in the compute target.
-  - name: Scheduled
-    uid: '@azure/arm-machinelearning.KnownJobStatus.Scheduled'
-    package: '@azure/arm-machinelearning'
-    summary: The job is in a scheduled state. Job is not in any active state.
   - name: Starting
     uid: '@azure/arm-machinelearning.KnownJobStatus.Starting'
     package: '@azure/arm-machinelearning'

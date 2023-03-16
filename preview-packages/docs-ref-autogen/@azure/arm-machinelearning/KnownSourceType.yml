@@ -12,12 +12,12 @@ fields:
   - name: Dataset
     uid: '@azure/arm-machinelearning.KnownSourceType.Dataset'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Dataset
   - name: Datastore
     uid: '@azure/arm-machinelearning.KnownSourceType.Datastore'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Datastore
   - name: URI
     uid: '@azure/arm-machinelearning.KnownSourceType.URI'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: URI

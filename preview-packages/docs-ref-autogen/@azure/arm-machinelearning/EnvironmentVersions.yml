@@ -9,7 +9,7 @@ isDeprecated: false
 type: interface
 methods:
   - name: >-
-      createOrUpdate(string, string, string, string, EnvironmentVersionData,
+      createOrUpdate(string, string, string, string, EnvironmentVersion,
       EnvironmentVersionsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.EnvironmentVersions.createOrUpdate'
     package: '@azure/arm-machinelearning'
@@ -19,9 +19,9 @@ methods:
     syntax:
       content: >-
         function createOrUpdate(resourceGroupName: string, workspaceName:
-        string, name: string, version: string, body: EnvironmentVersionData,
+        string, name: string, version: string, body: EnvironmentVersion,
         options?: EnvironmentVersionsCreateOrUpdateOptionalParams):
-        Promise<EnvironmentVersionData>
+        Promise<EnvironmentVersion>
       parameters:
         - id: resourceGroupName
           type: string
@@ -36,7 +36,7 @@ methods:
           type: string
           description: Version of EnvironmentVersion.
         - id: body
-          type: <xref uid="@azure/arm-machinelearning.EnvironmentVersionData" />
+          type: <xref uid="@azure/arm-machinelearning.EnvironmentVersion" />
           description: Definition of EnvironmentVersion.
         - id: options
           type: >-
@@ -47,8 +47,8 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-machinelearning.EnvironmentVersionData" />&gt;
+          Promise&lt;<xref uid="@azure/arm-machinelearning.EnvironmentVersion"
+          />&gt;
   - name: >-
       delete(string, string, string, string,
       EnvironmentVersionsDeleteOptionalParams)
@@ -94,7 +94,7 @@ methods:
       content: >-
         function get(resourceGroupName: string, workspaceName: string, name:
         string, version: string, options?:
-        EnvironmentVersionsGetOptionalParams): Promise<EnvironmentVersionData>
+        EnvironmentVersionsGetOptionalParams): Promise<EnvironmentVersion>
       parameters:
         - id: resourceGroupName
           type: string
@@ -117,8 +117,8 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-machinelearning.EnvironmentVersionData" />&gt;
+          Promise&lt;<xref uid="@azure/arm-machinelearning.EnvironmentVersion"
+          />&gt;
   - name: list(string, string, string, EnvironmentVersionsListOptionalParams)
     uid: '@azure/arm-machinelearning.EnvironmentVersions.list'
     package: '@azure/arm-machinelearning'
@@ -129,8 +129,8 @@ methods:
       content: >-
         function list(resourceGroupName: string, workspaceName: string, name:
         string, options?: EnvironmentVersionsListOptionalParams):
-        PagedAsyncIterableIterator<EnvironmentVersionData,
-        EnvironmentVersionData[], PageSettings>
+        PagedAsyncIterableIterator<EnvironmentVersion, EnvironmentVersion[],
+        PageSettings>
       parameters:
         - id: resourceGroupName
           type: string
@@ -151,6 +151,6 @@ methods:
         description: ''
         type: >-
           PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-machinelearning.EnvironmentVersionData" />, <xref
-          uid="@azure/arm-machinelearning.EnvironmentVersionData" />[],
+          uid="@azure/arm-machinelearning.EnvironmentVersion" />, <xref
+          uid="@azure/arm-machinelearning.EnvironmentVersion" />[],
           PageSettings&gt;

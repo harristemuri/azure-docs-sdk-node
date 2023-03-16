@@ -11,7 +11,14 @@ methods:
   - name: beginDelete(string, string, string, CertificateDeleteOptionalParams)
     uid: '@azure/arm-batch.CertificateOperations.beginDelete'
     package: '@azure/arm-batch'
-    summary: Deletes the specified certificate.
+    summary: >-
+      Warning: This operation is deprecated and will be removed after February,
+      2024. Please use the
+
+      [Azure KeyVault
+
+      Extension](https://learn.microsoft.com/azure/batch/batch-certificate-migration-guide)
+      instead.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -44,7 +51,14 @@ methods:
       CertificateDeleteOptionalParams)
     uid: '@azure/arm-batch.CertificateOperations.beginDeleteAndWait'
     package: '@azure/arm-batch'
-    summary: Deletes the specified certificate.
+    summary: >-
+      Warning: This operation is deprecated and will be removed after February,
+      2024. Please use the
+
+      [Azure KeyVault
+
+      Extension](https://learn.microsoft.com/azure/batch/batch-certificate-migration-guide)
+      instead.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -94,6 +108,15 @@ methods:
       then you can try again to
 
       delete the certificate.
+
+
+      Warning: This operation is deprecated and will be removed after February,
+      2024. Please use the
+
+      [Azure KeyVault
+
+      Extension](https://learn.microsoft.com/azure/batch/batch-certificate-migration-guide)
+      instead.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -131,7 +154,14 @@ methods:
       CertificateCreateOptionalParams)
     uid: '@azure/arm-batch.CertificateOperations.create'
     package: '@azure/arm-batch'
-    summary: Creates a new certificate inside the specified account.
+    summary: >-
+      Warning: This operation is deprecated and will be removed after February,
+      2024. Please use the
+
+      [Azure KeyVault
+
+      Extension](https://learn.microsoft.com/azure/batch/batch-certificate-migration-guide)
+      instead.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -168,7 +198,14 @@ methods:
   - name: get(string, string, string, CertificateGetOptionalParams)
     uid: '@azure/arm-batch.CertificateOperations.get'
     package: '@azure/arm-batch'
-    summary: Gets information about the specified certificate.
+    summary: >-
+      Warning: This operation is deprecated and will be removed after February,
+      2024. Please use the
+
+      [Azure KeyVault
+
+      Extension](https://learn.microsoft.com/azure/batch/batch-certificate-migration-guide)
+      instead.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -201,7 +238,14 @@ methods:
       CertificateListByBatchAccountOptionalParams)
     uid: '@azure/arm-batch.CertificateOperations.listByBatchAccount'
     package: '@azure/arm-batch'
-    summary: Lists all of the certificates in the specified account.
+    summary: >-
+      Warning: This operation is deprecated and will be removed after February,
+      2024. Please use the
+
+      [Azure KeyVault
+
+      Extension](https://learn.microsoft.com/azure/batch/batch-certificate-migration-guide)
+      instead.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -232,7 +276,14 @@ methods:
       CertificateUpdateOptionalParams)
     uid: '@azure/arm-batch.CertificateOperations.update'
     package: '@azure/arm-batch'
-    summary: Updates the properties of an existing certificate.
+    summary: >-
+      Warning: This operation is deprecated and will be removed after February,
+      2024. Please use the
+
+      [Azure KeyVault
+
+      Extension](https://learn.microsoft.com/azure/batch/batch-certificate-migration-guide)
+      instead.
     remarks: ''
     isDeprecated: false
     syntax:

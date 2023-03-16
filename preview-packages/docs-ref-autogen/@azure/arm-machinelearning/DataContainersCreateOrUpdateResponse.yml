@@ -7,4 +7,4 @@ fullName: DataContainersCreateOrUpdateResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type DataContainersCreateOrUpdateResponse = DataContainerData
+  type DataContainersCreateOrUpdateResponse = DataContainer

@@ -24,6 +24,20 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: enableVMAgentPlatformUpdates
+    uid: '@azure/arm-compute.LinuxConfiguration.enableVMAgentPlatformUpdates'
+    package: '@azure/arm-compute'
+    summary: >-
+      Indicates whether VMAgent Platform Updates is enabled for the Linux
+      virtual machine. Default value is false.
+    fullName: enableVMAgentPlatformUpdates
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'enableVMAgentPlatformUpdates?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: patchSettings
     uid: '@azure/arm-compute.LinuxConfiguration.patchSettings'
     package: '@azure/arm-compute'

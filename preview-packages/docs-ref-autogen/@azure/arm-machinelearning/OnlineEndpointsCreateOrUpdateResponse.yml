@@ -7,4 +7,4 @@ fullName: OnlineEndpointsCreateOrUpdateResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type OnlineEndpointsCreateOrUpdateResponse = OnlineEndpointData
+  type OnlineEndpointsCreateOrUpdateResponse = OnlineEndpoint

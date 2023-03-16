@@ -7,4 +7,4 @@ fullName: CodeVersionsCreateOrUpdateResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type CodeVersionsCreateOrUpdateResponse = CodeVersionData
+  type CodeVersionsCreateOrUpdateResponse = CodeVersion

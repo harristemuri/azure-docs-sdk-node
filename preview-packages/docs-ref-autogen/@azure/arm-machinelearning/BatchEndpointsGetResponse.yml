@@ -7,4 +7,4 @@ fullName: BatchEndpointsGetResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type BatchEndpointsGetResponse = BatchEndpointData
+  type BatchEndpointsGetResponse = BatchEndpoint

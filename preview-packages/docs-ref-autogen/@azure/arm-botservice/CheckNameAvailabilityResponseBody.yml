@@ -10,6 +10,18 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: absCode
+    uid: '@azure/arm-botservice.CheckNameAvailabilityResponseBody.absCode'
+    package: '@azure/arm-botservice'
+    summary: response code from ABS
+    fullName: absCode
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'absCode?: string'
+      return:
+        description: ''
+        type: string
   - name: message
     uid: '@azure/arm-botservice.CheckNameAvailabilityResponseBody.message'
     package: '@azure/arm-botservice'

@@ -16,9 +16,7 @@ summary: >-
 
   **AzureDataLakeGen2** \
 
-  **AzureFile** \
-
-  **Hdfs**
+  **AzureFile**
 fullName: DatastoreType
 remarks: ''
 isDeprecated: false

@@ -12,8 +12,10 @@ methods:
     uid: '@azure/arm-cdn.Profiles.beginCreate'
     package: '@azure/arm-cdn'
     summary: >-
-      Creates a new CDN profile with a profile name under the specified
-      subscription and resource group.
+      Creates a new Azure Front Door Standard or Azure Front Door Premium or CDN
+      profile with a profile
+
+      name under the specified subscription and resource group.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -27,7 +29,10 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium or
+            CDN profile
+                               which is unique within the resource group.
         - id: profile
           type: <xref uid="@azure/arm-cdn.Profile" />
           description: Profile properties needed to create a new profile.
@@ -44,8 +49,10 @@ methods:
     uid: '@azure/arm-cdn.Profiles.beginCreateAndWait'
     package: '@azure/arm-cdn'
     summary: >-
-      Creates a new CDN profile with a profile name under the specified
-      subscription and resource group.
+      Creates a new Azure Front Door Standard or Azure Front Door Premium or CDN
+      profile with a profile
+
+      name under the specified subscription and resource group.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -59,7 +66,10 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium or
+            CDN profile
+                               which is unique within the resource group.
         - id: profile
           type: <xref uid="@azure/arm-cdn.Profile" />
           description: Profile properties needed to create a new profile.
@@ -73,11 +83,13 @@ methods:
     uid: '@azure/arm-cdn.Profiles.beginDelete'
     package: '@azure/arm-cdn'
     summary: >-
-      Deletes an existing CDN profile with the specified parameters. Deleting a
-      profile will result in the
+      Deletes an existing  Azure Front Door Standard or Azure Front Door Premium
+      or CDN profile with the
 
-      deletion of all of the sub-resources including endpoints, origins and
-      custom domains.
+      specified parameters. Deleting a profile will result in the deletion of
+      all of the sub-resources
+
+      including endpoints, origins and custom domains.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -91,7 +103,10 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium or
+            CDN profile
+                               which is unique within the resource group.
         - id: options
           type: <xref uid="@azure/arm-cdn.ProfilesDeleteOptionalParams" />
           description: The options parameters.
@@ -102,11 +117,13 @@ methods:
     uid: '@azure/arm-cdn.Profiles.beginDeleteAndWait'
     package: '@azure/arm-cdn'
     summary: >-
-      Deletes an existing CDN profile with the specified parameters. Deleting a
-      profile will result in the
+      Deletes an existing  Azure Front Door Standard or Azure Front Door Premium
+      or CDN profile with the
 
-      deletion of all of the sub-resources including endpoints, origins and
-      custom domains.
+      specified parameters. Deleting a profile will result in the deletion of
+      all of the sub-resources
+
+      including endpoints, origins and custom domains.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -119,7 +136,10 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium or
+            CDN profile
+                               which is unique within the resource group.
         - id: options
           type: <xref uid="@azure/arm-cdn.ProfilesDeleteOptionalParams" />
           description: The options parameters.
@@ -132,10 +152,11 @@ methods:
     uid: '@azure/arm-cdn.Profiles.beginUpdate'
     package: '@azure/arm-cdn'
     summary: >-
-      Updates an existing CDN profile with the specified profile name under the
-      specified subscription and
+      Updates an existing Azure Front Door Standard or Azure Front Door Premium
+      or CDN profile with the
 
-      resource group.
+      specified profile name under the specified subscription and resource
+      group.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -150,7 +171,10 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium or
+            CDN profile
+                               which is unique within the resource group.
         - id: profileUpdateParameters
           type: <xref uid="@azure/arm-cdn.ProfileUpdateParameters" />
           description: Profile properties needed to update an existing profile.
@@ -169,10 +193,11 @@ methods:
     uid: '@azure/arm-cdn.Profiles.beginUpdateAndWait'
     package: '@azure/arm-cdn'
     summary: >-
-      Updates an existing CDN profile with the specified profile name under the
-      specified subscription and
+      Updates an existing Azure Front Door Standard or Azure Front Door Premium
+      or CDN profile with the
 
-      resource group.
+      specified profile name under the specified subscription and resource
+      group.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -186,7 +211,10 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium or
+            CDN profile
+                               which is unique within the resource group.
         - id: profileUpdateParameters
           type: <xref uid="@azure/arm-cdn.ProfileUpdateParameters" />
           description: Profile properties needed to update an existing profile.
@@ -234,10 +262,10 @@ methods:
     uid: '@azure/arm-cdn.Profiles.get'
     package: '@azure/arm-cdn'
     summary: >-
-      Gets a CDN profile with the specified profile name under the specified
-      subscription and resource
+      Gets an Azure Front Door Standard or Azure Front Door Premium or CDN
+      profile with the specified
 
-      group.
+      profile name under the specified subscription and resource group.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -250,7 +278,10 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium or
+            CDN profile
+                               which is unique within the resource group.
         - id: options
           type: <xref uid="@azure/arm-cdn.ProfilesGetOptionalParams" />
           description: The options parameters.
@@ -260,7 +291,11 @@ methods:
   - name: list(ProfilesListOptionalParams)
     uid: '@azure/arm-cdn.Profiles.list'
     package: '@azure/arm-cdn'
-    summary: Lists all of the CDN profiles within an Azure subscription.
+    summary: >-
+      Lists all of the Azure Front Door Standard, Azure Front Door Premium, and
+      CDN profiles within an
+
+      Azure subscription.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -279,7 +314,11 @@ methods:
   - name: listByResourceGroup(string, ProfilesListByResourceGroupOptionalParams)
     uid: '@azure/arm-cdn.Profiles.listByResourceGroup'
     package: '@azure/arm-cdn'
-    summary: Lists all of the CDN profiles within a resource group.
+    summary: >-
+      Lists all of the Azure Front Door Standard, Azure Front Door Premium, and
+      CDN profiles within a
+
+      resource group.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -305,8 +344,10 @@ methods:
     uid: '@azure/arm-cdn.Profiles.listResourceUsage'
     package: '@azure/arm-cdn'
     summary: >-
-      Checks the quota and actual usage of endpoints under the given CDN
-      profile.
+      Checks the quota and actual usage of endpoints under the given Azure Front
+      Door Standard or Azure
+
+      Front Door Premium or CDN profile.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -320,7 +361,10 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium or
+            CDN profile
+                               which is unique within the resource group.
         - id: options
           type: >-
             <xref uid="@azure/arm-cdn.ProfilesListResourceUsageOptionalParams"
@@ -355,7 +399,10 @@ methods:
           description: Name of the Resource group within the Azure subscription.
         - id: profileName
           type: string
-          description: Name of the CDN profile which is unique within the resource group.
+          description: >-
+            Name of the Azure Front Door Standard or Azure Front Door Premium or
+            CDN profile
+                               which is unique within the resource group.
         - id: options
           type: >-
             <xref

@@ -60,30 +60,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-containerservice.AgentPools" />
-  - name: fleetMembers
-    uid: '@azure/arm-containerservice.ContainerServiceClient.fleetMembers'
+  - name: apiVersion
+    uid: '@azure/arm-containerservice.ContainerServiceClient.apiVersion'
     package: '@azure/arm-containerservice'
     summary: ''
-    fullName: fleetMembers
+    fullName: apiVersion
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'fleetMembers: FleetMembers'
+      content: 'apiVersion: string'
       return:
         description: ''
-        type: <xref uid="@azure/arm-containerservice.FleetMembers" />
-  - name: fleets
-    uid: '@azure/arm-containerservice.ContainerServiceClient.fleets'
-    package: '@azure/arm-containerservice'
-    summary: ''
-    fullName: fleets
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'fleets: Fleets'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-containerservice.Fleets" />
+        type: string
   - name: maintenanceConfigurations
     uid: >-
       @azure/arm-containerservice.ContainerServiceClient.maintenanceConfigurations
@@ -109,18 +97,6 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-containerservice.ManagedClusters" />
-  - name: managedClusterSnapshots
-    uid: '@azure/arm-containerservice.ContainerServiceClient.managedClusterSnapshots'
-    package: '@azure/arm-containerservice'
-    summary: ''
-    fullName: managedClusterSnapshots
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'managedClusterSnapshots: ManagedClusterSnapshots'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-containerservice.ManagedClusterSnapshots" />
   - name: operations
     uid: '@azure/arm-containerservice.ContainerServiceClient.operations'
     package: '@azure/arm-containerservice'
@@ -195,31 +171,6 @@ properties:
       return:
         description: ''
         type: string
-  - name: trustedAccessRoleBindings
-    uid: >-
-      @azure/arm-containerservice.ContainerServiceClient.trustedAccessRoleBindings
-    package: '@azure/arm-containerservice'
-    summary: ''
-    fullName: trustedAccessRoleBindings
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'trustedAccessRoleBindings: TrustedAccessRoleBindings'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-containerservice.TrustedAccessRoleBindings" />
-  - name: trustedAccessRoles
-    uid: '@azure/arm-containerservice.ContainerServiceClient.trustedAccessRoles'
-    package: '@azure/arm-containerservice'
-    summary: ''
-    fullName: trustedAccessRoles
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'trustedAccessRoles: TrustedAccessRoles'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-containerservice.TrustedAccessRoles" />
 inheritedProperties:
   - name: pipeline
     uid: '@azure/arm-containerservice.ContainerServiceClient.pipeline'

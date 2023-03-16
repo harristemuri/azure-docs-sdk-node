@@ -19,12 +19,12 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        type: "Raw" | "Microsoft.Storage/Blob" | "Microsoft.ServiceBus/EventHub"
-        | "Microsoft.EventHub/EventHub" | "Microsoft.Devices/IotHubs"
+        type: "Microsoft.Storage/Blob" | "Microsoft.ServiceBus/EventHub" |
+        "Microsoft.EventHub/EventHub" | "Microsoft.Devices/IotHubs"
       return:
         description: ''
         type: >-
-          "Raw" | "<xref uid="Microsoft.Storage/Blob" />" | "<xref
+          "<xref uid="Microsoft.Storage/Blob" />" | "<xref
           uid="Microsoft.ServiceBus/EventHub" />" | "<xref
           uid="Microsoft.EventHub/EventHub" />" | "<xref
           uid="Microsoft.Devices/IotHubs" />"

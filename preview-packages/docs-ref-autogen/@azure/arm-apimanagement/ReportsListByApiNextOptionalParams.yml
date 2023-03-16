@@ -7,43 +7,6 @@ fullName: ReportsListByApiNextOptionalParams
 remarks: ''
 isDeprecated: false
 type: interface
-properties:
-  - name: orderby
-    uid: '@azure/arm-apimanagement.ReportsListByApiNextOptionalParams.orderby'
-    package: '@azure/arm-apimanagement'
-    summary: OData order by query option.
-    fullName: orderby
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'orderby?: string'
-      return:
-        description: ''
-        type: string
-  - name: skip
-    uid: '@azure/arm-apimanagement.ReportsListByApiNextOptionalParams.skip'
-    package: '@azure/arm-apimanagement'
-    summary: Number of records to skip.
-    fullName: skip
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'skip?: number'
-      return:
-        description: ''
-        type: number
-  - name: top
-    uid: '@azure/arm-apimanagement.ReportsListByApiNextOptionalParams.top'
-    package: '@azure/arm-apimanagement'
-    summary: Number of records to return.
-    fullName: top
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'top?: number'
-      return:
-        description: ''
-        type: number
 inheritedProperties:
   - name: abortSignal
     uid: '@azure/arm-apimanagement.ReportsListByApiNextOptionalParams.abortSignal'

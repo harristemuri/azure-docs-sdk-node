@@ -38,6 +38,18 @@ constructors:
             uid="@azure/arm-apimanagement.ApiManagementClientOptionalParams" />
           description: The parameter options
 properties:
+  - name: $host
+    uid: '@azure/arm-apimanagement.ApiManagementClient.$host'
+    package: '@azure/arm-apimanagement'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
   - name: api
     uid: '@azure/arm-apimanagement.ApiManagementClient.api'
     package: '@azure/arm-apimanagement'
@@ -254,6 +266,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-apimanagement.ApiTagDescription" />
+  - name: apiVersion
+    uid: '@azure/arm-apimanagement.ApiManagementClient.apiVersion'
+    package: '@azure/arm-apimanagement'
+    summary: ''
+    fullName: apiVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion: string'
+      return:
+        description: ''
+        type: string
   - name: apiVersionSet
     uid: '@azure/arm-apimanagement.ApiManagementClient.apiVersionSet'
     package: '@azure/arm-apimanagement'
@@ -434,6 +458,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-apimanagement.GatewayHostnameConfiguration" />
+  - name: globalSchema
+    uid: '@azure/arm-apimanagement.ApiManagementClient.globalSchema'
+    package: '@azure/arm-apimanagement'
+    summary: ''
+    fullName: globalSchema
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'globalSchema: GlobalSchema'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-apimanagement.GlobalSchema" />
   - name: group
     uid: '@azure/arm-apimanagement.ApiManagementClient.group'
     package: '@azure/arm-apimanagement'
@@ -802,6 +838,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-apimanagement.Subscription" />
+  - name: subscriptionId
+    uid: '@azure/arm-apimanagement.ApiManagementClient.subscriptionId'
+    package: '@azure/arm-apimanagement'
+    summary: ''
+    fullName: subscriptionId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        description: ''
+        type: string
   - name: tag
     uid: '@azure/arm-apimanagement.ApiManagementClient.tag'
     package: '@azure/arm-apimanagement'
@@ -935,36 +983,6 @@ properties:
         description: ''
         type: <xref uid="@azure/arm-apimanagement.UserSubscription" />
 inheritedProperties:
-  - name: $host
-    uid: '@azure/arm-apimanagement.ApiManagementClient.$host'
-    package: '@azure/arm-apimanagement'
-    summary: ''
-    fullName: $host
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: '$host: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ApiManagementClientContext.$host](xref:@azure/arm-apimanagement.ApiManagementClientContext.$host)
-  - name: apiVersion
-    uid: '@azure/arm-apimanagement.ApiManagementClient.apiVersion'
-    package: '@azure/arm-apimanagement'
-    summary: ''
-    fullName: apiVersion
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'apiVersion: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ApiManagementClientContext.apiVersion](xref:@azure/arm-apimanagement.ApiManagementClientContext.apiVersion)
   - name: pipeline
     uid: '@azure/arm-apimanagement.ApiManagementClient.pipeline'
     package: '@azure/arm-apimanagement'
@@ -977,24 +995,7 @@ inheritedProperties:
       return:
         description: ''
         type: Pipeline
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ApiManagementClientContext.pipeline](xref:@azure/arm-apimanagement.ApiManagementClientContext.pipeline)
-  - name: subscriptionId
-    uid: '@azure/arm-apimanagement.ApiManagementClient.subscriptionId'
-    package: '@azure/arm-apimanagement'
-    summary: ''
-    fullName: subscriptionId
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'subscriptionId: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ApiManagementClientContext.subscriptionId](xref:@azure/arm-apimanagement.ApiManagementClientContext.subscriptionId)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.pipeline
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
     uid: '@azure/arm-apimanagement.ApiManagementClient.sendOperationRequest'
@@ -1018,9 +1019,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ApiManagementClientContext.sendOperationRequest](xref:@azure/arm-apimanagement.ApiManagementClientContext.sendOperationRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-apimanagement.ApiManagementClient.sendRequest'
     package: '@azure/arm-apimanagement'
@@ -1038,9 +1037,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ApiManagementClientContext.sendRequest](xref:@azure/arm-apimanagement.ApiManagementClientContext.sendRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendRequest
 methods:
   - name: >-
       beginPerformConnectivityCheckAsync(string, string,
@@ -1128,4 +1125,4 @@ methods:
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-apimanagement.ConnectivityCheckResponse" />&gt;
-extends: <xref uid="@azure/arm-apimanagement.ApiManagementClientContext" />
+extends: ServiceClient

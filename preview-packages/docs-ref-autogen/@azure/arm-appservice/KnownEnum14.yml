@@ -12,12 +12,20 @@ fields:
   - name: All
     uid: '@azure/arm-appservice.KnownEnum14.All'
     package: '@azure/arm-appservice'
-    summary: ''
+    summary: All
   - name: Linux
     uid: '@azure/arm-appservice.KnownEnum14.Linux'
     package: '@azure/arm-appservice'
-    summary: ''
+    summary: Linux
+  - name: LinuxFunctions
+    uid: '@azure/arm-appservice.KnownEnum14.LinuxFunctions'
+    package: '@azure/arm-appservice'
+    summary: LinuxFunctions
   - name: Windows
     uid: '@azure/arm-appservice.KnownEnum14.Windows'
     package: '@azure/arm-appservice'
-    summary: ''
+    summary: Windows
+  - name: WindowsFunctions
+    uid: '@azure/arm-appservice.KnownEnum14.WindowsFunctions'
+    package: '@azure/arm-appservice'
+    summary: WindowsFunctions

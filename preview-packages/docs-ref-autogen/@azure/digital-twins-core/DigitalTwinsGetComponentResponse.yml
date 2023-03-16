@@ -7,11 +7,5 @@ fullName: DigitalTwinsGetComponentResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type DigitalTwinsGetComponentResponse = DigitalTwinsGetComponentHeaders & {
-    _response: coreHttp.HttpResponse & {
-      bodyAsText: string,
-      parsedBody: any,
-      parsedHeaders: DigitalTwinsGetComponentHeaders,
-    },
-    body: any,
-  }
+  type DigitalTwinsGetComponentResponse = DigitalTwinsGetComponentHeaders &
+    Record<string, unknown>

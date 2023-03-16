@@ -7,4 +7,4 @@ fullName: EnvironmentVersionsGetResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type EnvironmentVersionsGetResponse = EnvironmentVersionData
+  type EnvironmentVersionsGetResponse = EnvironmentVersion

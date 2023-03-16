@@ -12,8 +12,8 @@ fields:
   - name: Dedicated
     uid: '@azure/arm-machinelearning.KnownVmPriority.Dedicated'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Dedicated
   - name: LowPriority
     uid: '@azure/arm-machinelearning.KnownVmPriority.LowPriority'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: LowPriority

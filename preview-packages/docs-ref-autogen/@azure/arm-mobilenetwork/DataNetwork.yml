@@ -2,7 +2,9 @@
 name: DataNetwork
 uid: '@azure/arm-mobilenetwork.DataNetwork'
 package: '@azure/arm-mobilenetwork'
-summary: Data network resource.
+summary: >-
+  Data network resource. Must be created in the same location as its parent
+  mobile network.
 fullName: DataNetwork
 remarks: ''
 isDeprecated: false

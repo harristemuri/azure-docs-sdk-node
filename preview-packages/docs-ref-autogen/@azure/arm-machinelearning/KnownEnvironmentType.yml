@@ -13,8 +13,8 @@ fields:
   - name: Curated
     uid: '@azure/arm-machinelearning.KnownEnvironmentType.Curated'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Curated
   - name: UserCreated
     uid: '@azure/arm-machinelearning.KnownEnvironmentType.UserCreated'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: UserCreated

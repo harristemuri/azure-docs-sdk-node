@@ -13,32 +13,32 @@ fields:
   - name: CreateFailed
     uid: '@azure/arm-machinelearning.KnownOperationStatus.CreateFailed'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: CreateFailed
   - name: DeleteFailed
     uid: '@azure/arm-machinelearning.KnownOperationStatus.DeleteFailed'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: DeleteFailed
   - name: InProgress
     uid: '@azure/arm-machinelearning.KnownOperationStatus.InProgress'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: InProgress
   - name: ReimageFailed
     uid: '@azure/arm-machinelearning.KnownOperationStatus.ReimageFailed'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: ReimageFailed
   - name: RestartFailed
     uid: '@azure/arm-machinelearning.KnownOperationStatus.RestartFailed'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: RestartFailed
   - name: StartFailed
     uid: '@azure/arm-machinelearning.KnownOperationStatus.StartFailed'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: StartFailed
   - name: StopFailed
     uid: '@azure/arm-machinelearning.KnownOperationStatus.StopFailed'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: StopFailed
   - name: Succeeded
     uid: '@azure/arm-machinelearning.KnownOperationStatus.Succeeded'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Succeeded

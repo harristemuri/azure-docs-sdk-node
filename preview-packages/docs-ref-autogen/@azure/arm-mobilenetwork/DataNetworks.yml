@@ -13,7 +13,11 @@ methods:
       DataNetworksCreateOrUpdateOptionalParams)
     uid: '@azure/arm-mobilenetwork.DataNetworks.beginCreateOrUpdate'
     package: '@azure/arm-mobilenetwork'
-    summary: Creates or updates a data network.
+    summary: >-
+      Creates or updates a data network. Must be created in the same location as
+      its parent mobile
+
+      network.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -52,7 +56,11 @@ methods:
       DataNetworksCreateOrUpdateOptionalParams)
     uid: '@azure/arm-mobilenetwork.DataNetworks.beginCreateOrUpdateAndWait'
     package: '@azure/arm-mobilenetwork'
-    summary: Creates or updates a data network.
+    summary: >-
+      Creates or updates a data network. Must be created in the same location as
+      its parent mobile
+
+      network.
     remarks: ''
     isDeprecated: false
     syntax:

@@ -28,7 +28,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'type: "Microsoft.Cdn/Profiles/Endpoints"'
+      content: 'type: string'
       return:
         description: ''
-        type: '"<xref uid="Microsoft.Cdn/Profiles/Endpoints" />"'
+        type: string

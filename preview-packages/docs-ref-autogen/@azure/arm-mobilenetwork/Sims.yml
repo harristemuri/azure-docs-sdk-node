@@ -9,6 +9,211 @@ isDeprecated: false
 type: interface
 methods:
   - name: >-
+      beginBulkDelete(string, string, SimDeleteList,
+      SimsBulkDeleteOptionalParams)
+    uid: '@azure/arm-mobilenetwork.Sims.beginBulkDelete'
+    package: '@azure/arm-mobilenetwork'
+    summary: Bulk delete SIMs from a SIM group.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginBulkDelete(resourceGroupName: string, simGroupName:
+        string, parameters: SimDeleteList, options?:
+        SimsBulkDeleteOptionalParams):
+        Promise<PollerLike<PollOperationState<AsyncOperationStatus>,
+        AsyncOperationStatus>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: simGroupName
+          type: string
+          description: The name of the SIM Group.
+        - id: parameters
+          type: <xref uid="@azure/arm-mobilenetwork.SimDeleteList" />
+          description: Parameters supplied to the bulk SIM delete operation.
+        - id: options
+          type: <xref uid="@azure/arm-mobilenetwork.SimsBulkDeleteOptionalParams" />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-mobilenetwork.AsyncOperationStatus" />&gt;, <xref
+          uid="@azure/arm-mobilenetwork.AsyncOperationStatus" />&gt;&gt;
+  - name: >-
+      beginBulkDeleteAndWait(string, string, SimDeleteList,
+      SimsBulkDeleteOptionalParams)
+    uid: '@azure/arm-mobilenetwork.Sims.beginBulkDeleteAndWait'
+    package: '@azure/arm-mobilenetwork'
+    summary: Bulk delete SIMs from a SIM group.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginBulkDeleteAndWait(resourceGroupName: string, simGroupName:
+        string, parameters: SimDeleteList, options?:
+        SimsBulkDeleteOptionalParams): Promise<AsyncOperationStatus>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: simGroupName
+          type: string
+          description: The name of the SIM Group.
+        - id: parameters
+          type: <xref uid="@azure/arm-mobilenetwork.SimDeleteList" />
+          description: Parameters supplied to the bulk SIM delete operation.
+        - id: options
+          type: <xref uid="@azure/arm-mobilenetwork.SimsBulkDeleteOptionalParams" />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-mobilenetwork.AsyncOperationStatus"
+          />&gt;
+  - name: >-
+      beginBulkUpload(string, string, SimUploadList,
+      SimsBulkUploadOptionalParams)
+    uid: '@azure/arm-mobilenetwork.Sims.beginBulkUpload'
+    package: '@azure/arm-mobilenetwork'
+    summary: Bulk upload SIMs to a SIM group.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginBulkUpload(resourceGroupName: string, simGroupName:
+        string, parameters: SimUploadList, options?:
+        SimsBulkUploadOptionalParams):
+        Promise<PollerLike<PollOperationState<AsyncOperationStatus>,
+        AsyncOperationStatus>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: simGroupName
+          type: string
+          description: The name of the SIM Group.
+        - id: parameters
+          type: <xref uid="@azure/arm-mobilenetwork.SimUploadList" />
+          description: Parameters supplied to the bulk SIM upload operation.
+        - id: options
+          type: <xref uid="@azure/arm-mobilenetwork.SimsBulkUploadOptionalParams" />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-mobilenetwork.AsyncOperationStatus" />&gt;, <xref
+          uid="@azure/arm-mobilenetwork.AsyncOperationStatus" />&gt;&gt;
+  - name: >-
+      beginBulkUploadAndWait(string, string, SimUploadList,
+      SimsBulkUploadOptionalParams)
+    uid: '@azure/arm-mobilenetwork.Sims.beginBulkUploadAndWait'
+    package: '@azure/arm-mobilenetwork'
+    summary: Bulk upload SIMs to a SIM group.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginBulkUploadAndWait(resourceGroupName: string, simGroupName:
+        string, parameters: SimUploadList, options?:
+        SimsBulkUploadOptionalParams): Promise<AsyncOperationStatus>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: simGroupName
+          type: string
+          description: The name of the SIM Group.
+        - id: parameters
+          type: <xref uid="@azure/arm-mobilenetwork.SimUploadList" />
+          description: Parameters supplied to the bulk SIM upload operation.
+        - id: options
+          type: <xref uid="@azure/arm-mobilenetwork.SimsBulkUploadOptionalParams" />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-mobilenetwork.AsyncOperationStatus"
+          />&gt;
+  - name: >-
+      beginBulkUploadEncrypted(string, string, EncryptedSimUploadList,
+      SimsBulkUploadEncryptedOptionalParams)
+    uid: '@azure/arm-mobilenetwork.Sims.beginBulkUploadEncrypted'
+    package: '@azure/arm-mobilenetwork'
+    summary: >-
+      Bulk upload SIMs in encrypted form to a SIM group. The SIM credentials
+      must be encrypted.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginBulkUploadEncrypted(resourceGroupName: string,
+        simGroupName: string, parameters: EncryptedSimUploadList, options?:
+        SimsBulkUploadEncryptedOptionalParams):
+        Promise<PollerLike<PollOperationState<AsyncOperationStatus>,
+        AsyncOperationStatus>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: simGroupName
+          type: string
+          description: The name of the SIM Group.
+        - id: parameters
+          type: <xref uid="@azure/arm-mobilenetwork.EncryptedSimUploadList" />
+          description: Parameters supplied to the encrypted SIMs upload operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mobilenetwork.SimsBulkUploadEncryptedOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-mobilenetwork.AsyncOperationStatus" />&gt;, <xref
+          uid="@azure/arm-mobilenetwork.AsyncOperationStatus" />&gt;&gt;
+  - name: >-
+      beginBulkUploadEncryptedAndWait(string, string, EncryptedSimUploadList,
+      SimsBulkUploadEncryptedOptionalParams)
+    uid: '@azure/arm-mobilenetwork.Sims.beginBulkUploadEncryptedAndWait'
+    package: '@azure/arm-mobilenetwork'
+    summary: >-
+      Bulk upload SIMs in encrypted form to a SIM group. The SIM credentials
+      must be encrypted.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginBulkUploadEncryptedAndWait(resourceGroupName: string,
+        simGroupName: string, parameters: EncryptedSimUploadList, options?:
+        SimsBulkUploadEncryptedOptionalParams): Promise<AsyncOperationStatus>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: simGroupName
+          type: string
+          description: The name of the SIM Group.
+        - id: parameters
+          type: <xref uid="@azure/arm-mobilenetwork.EncryptedSimUploadList" />
+          description: Parameters supplied to the encrypted SIMs upload operation.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-mobilenetwork.SimsBulkUploadEncryptedOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref uid="@azure/arm-mobilenetwork.AsyncOperationStatus"
+          />&gt;
+  - name: >-
       beginCreateOrUpdate(string, string, string, Sim,
       SimsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-mobilenetwork.Sims.beginCreateOrUpdate'
@@ -160,16 +365,16 @@ methods:
       return:
         description: ''
         type: Promise&lt;<xref uid="@azure/arm-mobilenetwork.Sim" />&gt;
-  - name: listBySimGroup(string, string, SimsListBySimGroupOptionalParams)
-    uid: '@azure/arm-mobilenetwork.Sims.listBySimGroup'
+  - name: listByGroup(string, string, SimsListByGroupOptionalParams)
+    uid: '@azure/arm-mobilenetwork.Sims.listByGroup'
     package: '@azure/arm-mobilenetwork'
     summary: Gets all the SIMs in a SIM group.
     remarks: ''
     isDeprecated: false
     syntax:
       content: >-
-        function listBySimGroup(resourceGroupName: string, simGroupName: string,
-        options?: SimsListBySimGroupOptionalParams):
+        function listByGroup(resourceGroupName: string, simGroupName: string,
+        options?: SimsListByGroupOptionalParams):
         PagedAsyncIterableIterator<Sim, Sim[], PageSettings>
       parameters:
         - id: resourceGroupName
@@ -180,8 +385,8 @@ methods:
           description: The name of the SIM Group.
         - id: options
           type: >-
-            <xref
-            uid="@azure/arm-mobilenetwork.SimsListBySimGroupOptionalParams" />
+            <xref uid="@azure/arm-mobilenetwork.SimsListByGroupOptionalParams"
+            />
           description: The options parameters.
       return:
         description: ''

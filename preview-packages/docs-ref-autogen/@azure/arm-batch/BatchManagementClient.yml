@@ -35,6 +35,30 @@ constructors:
           type: <xref uid="@azure/arm-batch.BatchManagementClientOptionalParams" />
           description: The parameter options
 properties:
+  - name: $host
+    uid: '@azure/arm-batch.BatchManagementClient.$host'
+    package: '@azure/arm-batch'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
+  - name: apiVersion
+    uid: '@azure/arm-batch.BatchManagementClient.apiVersion'
+    package: '@azure/arm-batch'
+    summary: ''
+    fullName: apiVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion: string'
+      return:
+        description: ''
+        type: string
   - name: applicationOperations
     uid: '@azure/arm-batch.BatchManagementClient.applicationOperations'
     package: '@azure/arm-batch'
@@ -143,52 +167,6 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-batch.PrivateLinkResourceOperations" />
-inheritedProperties:
-  - name: $host
-    uid: '@azure/arm-batch.BatchManagementClient.$host'
-    package: '@azure/arm-batch'
-    summary: ''
-    fullName: $host
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: '$host: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [BatchManagementClientContext.$host](xref:@azure/arm-batch.BatchManagementClientContext.$host)
-  - name: apiVersion
-    uid: '@azure/arm-batch.BatchManagementClient.apiVersion'
-    package: '@azure/arm-batch'
-    summary: ''
-    fullName: apiVersion
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'apiVersion: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [BatchManagementClientContext.apiVersion](xref:@azure/arm-batch.BatchManagementClientContext.apiVersion)
-  - name: pipeline
-    uid: '@azure/arm-batch.BatchManagementClient.pipeline'
-    package: '@azure/arm-batch'
-    summary: The pipeline used by this client to make requests
-    fullName: pipeline
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'pipeline: Pipeline'
-      return:
-        description: ''
-        type: Pipeline
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [BatchManagementClientContext.pipeline](xref:@azure/arm-batch.BatchManagementClientContext.pipeline)
   - name: subscriptionId
     uid: '@azure/arm-batch.BatchManagementClient.subscriptionId'
     package: '@azure/arm-batch'
@@ -201,9 +179,20 @@ inheritedProperties:
       return:
         description: ''
         type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [BatchManagementClientContext.subscriptionId](xref:@azure/arm-batch.BatchManagementClientContext.subscriptionId)
+inheritedProperties:
+  - name: pipeline
+    uid: '@azure/arm-batch.BatchManagementClient.pipeline'
+    package: '@azure/arm-batch'
+    summary: The pipeline used by this client to make requests
+    fullName: pipeline
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'pipeline: Pipeline'
+      return:
+        description: ''
+        type: Pipeline
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.pipeline
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
     uid: '@azure/arm-batch.BatchManagementClient.sendOperationRequest'
@@ -227,9 +216,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [BatchManagementClientContext.sendOperationRequest](xref:@azure/arm-batch.BatchManagementClientContext.sendOperationRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-batch.BatchManagementClient.sendRequest'
     package: '@azure/arm-batch'
@@ -247,7 +234,5 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [BatchManagementClientContext.sendRequest](xref:@azure/arm-batch.BatchManagementClientContext.sendRequest)
-extends: <xref uid="@azure/arm-batch.BatchManagementClientContext" />
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendRequest
+extends: ServiceClient

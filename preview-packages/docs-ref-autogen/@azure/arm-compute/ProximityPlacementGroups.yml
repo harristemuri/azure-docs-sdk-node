@@ -161,7 +161,7 @@ methods:
           uid="@azure/arm-compute.ProximityPlacementGroup" />[],
           PageSettings&gt;
   - name: >-
-      update(string, string, UpdateResource,
+      update(string, string, ProximityPlacementGroupUpdate,
       ProximityPlacementGroupsUpdateOptionalParams)
     uid: '@azure/arm-compute.ProximityPlacementGroups.update'
     package: '@azure/arm-compute'
@@ -171,7 +171,7 @@ methods:
     syntax:
       content: >-
         function update(resourceGroupName: string, proximityPlacementGroupName:
-        string, parameters: UpdateResource, options?:
+        string, parameters: ProximityPlacementGroupUpdate, options?:
         ProximityPlacementGroupsUpdateOptionalParams):
         Promise<ProximityPlacementGroup>
       parameters:
@@ -182,7 +182,7 @@ methods:
           type: string
           description: The name of the proximity placement group.
         - id: parameters
-          type: <xref uid="@azure/arm-compute.UpdateResource" />
+          type: <xref uid="@azure/arm-compute.ProximityPlacementGroupUpdate" />
           description: >-
             Parameters supplied to the Update Proximity Placement Group
             operation.

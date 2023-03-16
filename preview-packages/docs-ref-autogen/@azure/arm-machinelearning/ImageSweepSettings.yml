@@ -20,18 +20,6 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-machinelearning.EarlyTerminationPolicyUnion" />
-  - name: limits
-    uid: '@azure/arm-machinelearning.ImageSweepSettings.limits'
-    package: '@azure/arm-machinelearning'
-    summary: '[Required] Limit settings for model sweeping and hyperparameter sweeping.'
-    fullName: limits
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'limits: ImageSweepLimitSettings'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-machinelearning.ImageSweepLimitSettings" />
   - name: samplingAlgorithm
     uid: '@azure/arm-machinelearning.ImageSweepSettings.samplingAlgorithm'
     package: '@azure/arm-machinelearning'

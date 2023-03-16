@@ -122,55 +122,9 @@ methods:
         description: ''
         type: Promise&lt;void&gt;
   - name: >-
-      beginListAvailableContacts(string, string, ResourceReference, string,
-      Date, Date, SpacecraftsListAvailableContactsOptionalParams)
-    uid: '@azure/arm-orbital.Spacecrafts.beginListAvailableContacts'
-    package: '@azure/arm-orbital'
-    summary: Return list of available contacts
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function beginListAvailableContacts(resourceGroupName: string,
-        spacecraftName: string, contactProfile: ResourceReference,
-        groundStationName: string, startTime: Date, endTime: Date, options?:
-        SpacecraftsListAvailableContactsOptionalParams):
-        Promise<PollerLike<PollOperationState<AvailableContactsListResult>,
-        AvailableContactsListResult>>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group. The name is case insensitive.
-        - id: spacecraftName
-          type: string
-          description: Spacecraft ID
-        - id: contactProfile
-          type: <xref uid="@azure/arm-orbital.ResourceReference" />
-          description: The reference to the contact profile resource.
-        - id: groundStationName
-          type: string
-          description: Name of Azure Ground Station.
-        - id: startTime
-          type: Date
-          description: Start time of a contact.
-        - id: endTime
-          type: Date
-          description: End time of a contact.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-orbital.SpacecraftsListAvailableContactsOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-orbital.AvailableContactsListResult" />&gt;, <xref
-          uid="@azure/arm-orbital.AvailableContactsListResult" />&gt;&gt;
-  - name: >-
-      beginListAvailableContactsAndWait(string, string, ResourceReference,
-      string, Date, Date, SpacecraftsListAvailableContactsOptionalParams)
+      beginListAvailableContactsAndWait(string, string,
+      ContactParametersContactProfile, string, Date, Date,
+      SpacecraftsListAvailableContactsOptionalParams)
     uid: '@azure/arm-orbital.Spacecrafts.beginListAvailableContactsAndWait'
     package: '@azure/arm-orbital'
     summary: Return list of available contacts
@@ -179,10 +133,11 @@ methods:
     syntax:
       content: >-
         function beginListAvailableContactsAndWait(resourceGroupName: string,
-        spacecraftName: string, contactProfile: ResourceReference,
+        spacecraftName: string, contactProfile: ContactParametersContactProfile,
         groundStationName: string, startTime: Date, endTime: Date, options?:
         SpacecraftsListAvailableContactsOptionalParams):
-        Promise<AvailableContactsListResult>
+        PagedAsyncIterableIterator<AvailableContacts, AvailableContacts[],
+        PageSettings>
       parameters:
         - id: resourceGroupName
           type: string
@@ -191,7 +146,7 @@ methods:
           type: string
           description: Spacecraft ID
         - id: contactProfile
-          type: <xref uid="@azure/arm-orbital.ResourceReference" />
+          type: <xref uid="@azure/arm-orbital.ContactParametersContactProfile" />
           description: The reference to the contact profile resource.
         - id: groundStationName
           type: string
@@ -211,8 +166,75 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref uid="@azure/arm-orbital.AvailableContactsListResult"
-          />&gt;
+          PagedAsyncIterableIterator&lt;<xref
+          uid="@azure/arm-orbital.AvailableContacts" />, <xref
+          uid="@azure/arm-orbital.AvailableContacts" />[], PageSettings&gt;
+  - name: >-
+      beginUpdateTags(string, string, TagsObject,
+      SpacecraftsUpdateTagsOptionalParams)
+    uid: '@azure/arm-orbital.Spacecrafts.beginUpdateTags'
+    package: '@azure/arm-orbital'
+    summary: Updates the specified spacecraft tags.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, spacecraftName:
+        string, parameters: TagsObject, options?:
+        SpacecraftsUpdateTagsOptionalParams):
+        Promise<PollerLike<PollOperationState<Spacecraft>, Spacecraft>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: spacecraftName
+          type: string
+          description: Spacecraft ID
+        - id: parameters
+          type: <xref uid="@azure/arm-orbital.TagsObject" />
+          description: Parameters supplied to update spacecraft tags.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-orbital.SpacecraftsUpdateTagsOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-orbital.Spacecraft" />&gt;, <xref
+          uid="@azure/arm-orbital.Spacecraft" />&gt;&gt;
+  - name: >-
+      beginUpdateTagsAndWait(string, string, TagsObject,
+      SpacecraftsUpdateTagsOptionalParams)
+    uid: '@azure/arm-orbital.Spacecrafts.beginUpdateTagsAndWait'
+    package: '@azure/arm-orbital'
+    summary: Updates the specified spacecraft tags.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdateTagsAndWait(resourceGroupName: string,
+        spacecraftName: string, parameters: TagsObject, options?:
+        SpacecraftsUpdateTagsOptionalParams): Promise<Spacecraft>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: spacecraftName
+          type: string
+          description: Spacecraft ID
+        - id: parameters
+          type: <xref uid="@azure/arm-orbital.TagsObject" />
+          description: Parameters supplied to update spacecraft tags.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-orbital.SpacecraftsUpdateTagsOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@azure/arm-orbital.Spacecraft" />&gt;
   - name: get(string, string, SpacecraftsGetOptionalParams)
     uid: '@azure/arm-orbital.Spacecrafts.get'
     package: '@azure/arm-orbital'
@@ -284,34 +306,3 @@ methods:
           PagedAsyncIterableIterator&lt;<xref
           uid="@azure/arm-orbital.Spacecraft" />, <xref
           uid="@azure/arm-orbital.Spacecraft" />[], PageSettings&gt;
-  - name: >-
-      updateTags(string, string, TagsObject,
-      SpacecraftsUpdateTagsOptionalParams)
-    uid: '@azure/arm-orbital.Spacecrafts.updateTags'
-    package: '@azure/arm-orbital'
-    summary: Updates the specified spacecraft tags.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function updateTags(resourceGroupName: string, spacecraftName: string,
-        parameters: TagsObject, options?: SpacecraftsUpdateTagsOptionalParams):
-        Promise<Spacecraft>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group. The name is case insensitive.
-        - id: spacecraftName
-          type: string
-          description: Spacecraft ID
-        - id: parameters
-          type: <xref uid="@azure/arm-orbital.TagsObject" />
-          description: Parameters supplied to update spacecraft tags.
-        - id: options
-          type: >-
-            <xref uid="@azure/arm-orbital.SpacecraftsUpdateTagsOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: Promise&lt;<xref uid="@azure/arm-orbital.Spacecraft" />&gt;

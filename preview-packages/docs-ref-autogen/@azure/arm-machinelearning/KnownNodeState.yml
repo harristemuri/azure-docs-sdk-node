@@ -12,24 +12,24 @@ fields:
   - name: Idle
     uid: '@azure/arm-machinelearning.KnownNodeState.Idle'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Idle
   - name: Leaving
     uid: '@azure/arm-machinelearning.KnownNodeState.Leaving'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Leaving
   - name: Preempted
     uid: '@azure/arm-machinelearning.KnownNodeState.Preempted'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Preempted
   - name: Preparing
     uid: '@azure/arm-machinelearning.KnownNodeState.Preparing'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Preparing
   - name: Running
     uid: '@azure/arm-machinelearning.KnownNodeState.Running'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Running
   - name: Unusable
     uid: '@azure/arm-machinelearning.KnownNodeState.Unusable'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Unusable

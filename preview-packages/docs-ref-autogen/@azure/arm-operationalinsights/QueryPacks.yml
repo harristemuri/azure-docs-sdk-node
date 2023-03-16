@@ -48,6 +48,44 @@ methods:
         type: >-
           Promise&lt;<xref
           uid="@azure/arm-operationalinsights.LogAnalyticsQueryPack" />&gt;
+  - name: >-
+      createOrUpdateWithoutName(string, LogAnalyticsQueryPack,
+      QueryPacksCreateOrUpdateWithoutNameOptionalParams)
+    uid: '@azure/arm-operationalinsights.QueryPacks.createOrUpdateWithoutName'
+    package: '@azure/arm-operationalinsights'
+    summary: >-
+      Creates a Log Analytics QueryPack. Note: You cannot specify a different
+      value for InstrumentationKey
+
+      nor AppId in the Put operation.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function createOrUpdateWithoutName(resourceGroupName: string,
+        logAnalyticsQueryPackPayload: LogAnalyticsQueryPack, options?:
+        QueryPacksCreateOrUpdateWithoutNameOptionalParams):
+        Promise<LogAnalyticsQueryPack>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: logAnalyticsQueryPackPayload
+          type: <xref uid="@azure/arm-operationalinsights.LogAnalyticsQueryPack" />
+          description: |-
+            Properties that need to be specified to create or update a Log
+                                                Analytics QueryPack.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-operationalinsights.QueryPacksCreateOrUpdateWithoutNameOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-operationalinsights.LogAnalyticsQueryPack" />&gt;
   - name: delete(string, string, QueryPacksDeleteOptionalParams)
     uid: '@azure/arm-operationalinsights.QueryPacks.delete'
     package: '@azure/arm-operationalinsights'

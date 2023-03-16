@@ -7,4 +7,5 @@ fullName: WorkspaceConnectionsGetResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type WorkspaceConnectionsGetResponse = WorkspaceConnection
+  type WorkspaceConnectionsGetResponse =
+    WorkspaceConnectionPropertiesV2BasicResource

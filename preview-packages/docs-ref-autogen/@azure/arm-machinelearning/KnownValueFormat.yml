@@ -12,4 +12,4 @@ fields:
   - name: Json
     uid: '@azure/arm-machinelearning.KnownValueFormat.Json'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Json

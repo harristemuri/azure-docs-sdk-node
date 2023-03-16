@@ -7,6 +7,25 @@ fullName: DownloadManifestOptions
 remarks: ''
 isDeprecated: false
 type: interface
+properties:
+  - name: mediaType
+    uid: '@azure/container-registry.DownloadManifestOptions.mediaType'
+    package: '@azure/container-registry'
+    summary: >-
+      Media type of the manifest to download. Refer to
+      [KnownManifestMediaType](xref:@azure/container-registry.KnownManifestMediaType)
+      for known media types.
+
+      Defaults to
+      [OciManifest](xref:@azure/container-registry.KnownManifestMediaType.OciManifest).
+    fullName: mediaType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'mediaType?: string | string[]'
+      return:
+        description: ''
+        type: string | string[]
 inheritedProperties:
   - name: abortSignal
     uid: '@azure/container-registry.DownloadManifestOptions.abortSignal'

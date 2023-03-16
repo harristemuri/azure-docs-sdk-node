@@ -9,7 +9,7 @@ isDeprecated: false
 type: interface
 methods:
   - name: >-
-      createOrUpdate(string, string, string, DatastoreData,
+      createOrUpdate(string, string, string, Datastore,
       DatastoresCreateOrUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.Datastores.createOrUpdate'
     package: '@azure/arm-machinelearning'
@@ -19,8 +19,8 @@ methods:
     syntax:
       content: >-
         function createOrUpdate(resourceGroupName: string, workspaceName:
-        string, name: string, body: DatastoreData, options?:
-        DatastoresCreateOrUpdateOptionalParams): Promise<DatastoreData>
+        string, name: string, body: Datastore, options?:
+        DatastoresCreateOrUpdateOptionalParams): Promise<Datastore>
       parameters:
         - id: resourceGroupName
           type: string
@@ -32,7 +32,7 @@ methods:
           type: string
           description: Datastore name.
         - id: body
-          type: <xref uid="@azure/arm-machinelearning.DatastoreData" />
+          type: <xref uid="@azure/arm-machinelearning.Datastore" />
           description: Datastore entity to create or update.
         - id: options
           type: >-
@@ -42,7 +42,7 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;<xref uid="@azure/arm-machinelearning.DatastoreData" />&gt;
+        type: Promise&lt;<xref uid="@azure/arm-machinelearning.Datastore" />&gt;
   - name: delete(string, string, string, DatastoresDeleteOptionalParams)
     uid: '@azure/arm-machinelearning.Datastores.delete'
     package: '@azure/arm-machinelearning'
@@ -80,7 +80,7 @@ methods:
     syntax:
       content: >-
         function get(resourceGroupName: string, workspaceName: string, name:
-        string, options?: DatastoresGetOptionalParams): Promise<DatastoreData>
+        string, options?: DatastoresGetOptionalParams): Promise<Datastore>
       parameters:
         - id: resourceGroupName
           type: string
@@ -98,7 +98,7 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;<xref uid="@azure/arm-machinelearning.DatastoreData" />&gt;
+        type: Promise&lt;<xref uid="@azure/arm-machinelearning.Datastore" />&gt;
   - name: list(string, string, DatastoresListOptionalParams)
     uid: '@azure/arm-machinelearning.Datastores.list'
     package: '@azure/arm-machinelearning'
@@ -109,7 +109,7 @@ methods:
       content: >-
         function list(resourceGroupName: string, workspaceName: string,
         options?: DatastoresListOptionalParams):
-        PagedAsyncIterableIterator<DatastoreData, DatastoreData[], PageSettings>
+        PagedAsyncIterableIterator<Datastore, Datastore[], PageSettings>
       parameters:
         - id: resourceGroupName
           type: string
@@ -126,8 +126,8 @@ methods:
         description: ''
         type: >-
           PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-machinelearning.DatastoreData" />, <xref
-          uid="@azure/arm-machinelearning.DatastoreData" />[], PageSettings&gt;
+          uid="@azure/arm-machinelearning.Datastore" />, <xref
+          uid="@azure/arm-machinelearning.Datastore" />[], PageSettings&gt;
   - name: listSecrets(string, string, string, DatastoresListSecretsOptionalParams)
     uid: '@azure/arm-machinelearning.Datastores.listSecrets'
     package: '@azure/arm-machinelearning'

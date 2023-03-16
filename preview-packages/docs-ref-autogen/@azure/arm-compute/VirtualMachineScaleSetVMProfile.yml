@@ -97,6 +97,22 @@ properties:
         type: >-
           <xref uid="@azure/arm-compute.VirtualMachineScaleSetExtensionProfile"
           />
+  - name: hardwareProfile
+    uid: '@azure/arm-compute.VirtualMachineScaleSetVMProfile.hardwareProfile'
+    package: '@azure/arm-compute'
+    summary: >-
+      Specifies the hardware profile related details of a scale set.
+      <br><br>Minimum api-version: 2021-11-01.
+    fullName: hardwareProfile
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'hardwareProfile?: VirtualMachineScaleSetHardwareProfile'
+      return:
+        description: ''
+        type: >-
+          <xref uid="@azure/arm-compute.VirtualMachineScaleSetHardwareProfile"
+          />
   - name: licenseType
     uid: '@azure/arm-compute.VirtualMachineScaleSetVMProfile.licenseType'
     package: '@azure/arm-compute'
@@ -187,6 +203,22 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-compute.SecurityProfile" />
+  - name: serviceArtifactReference
+    uid: >-
+      @azure/arm-compute.VirtualMachineScaleSetVMProfile.serviceArtifactReference
+    package: '@azure/arm-compute'
+    summary: >-
+      Specifies the service artifact reference id used to set same image version
+      for all virtual machines in the scale set when using 'latest' image
+      version. Minimum api-version: 2022-11-01
+    fullName: serviceArtifactReference
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'serviceArtifactReference?: ServiceArtifactReference'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-compute.ServiceArtifactReference" />
   - name: storageProfile
     uid: '@azure/arm-compute.VirtualMachineScaleSetVMProfile.storageProfile'
     package: '@azure/arm-compute'

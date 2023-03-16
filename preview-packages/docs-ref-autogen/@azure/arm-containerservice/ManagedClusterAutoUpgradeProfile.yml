@@ -8,21 +8,6 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
-  - name: nodeOSUpgradeChannel
-    uid: >-
-      @azure/arm-containerservice.ManagedClusterAutoUpgradeProfile.nodeOSUpgradeChannel
-    package: '@azure/arm-containerservice'
-    summary: >-
-      The default is Unmanaged, but may change to either NodeImage or
-      SecurityPatch at GA.
-    fullName: nodeOSUpgradeChannel
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'nodeOSUpgradeChannel?: string'
-      return:
-        description: ''
-        type: string
   - name: upgradeChannel
     uid: >-
       @azure/arm-containerservice.ManagedClusterAutoUpgradeProfile.upgradeChannel

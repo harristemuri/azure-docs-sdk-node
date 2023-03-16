@@ -8,6 +8,18 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: expand
+    uid: '@azure/arm-compute.GalleriesGetOptionalParams.expand'
+    package: '@azure/arm-compute'
+    summary: The expand query option to apply on the operation.
+    fullName: expand
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'expand?: string'
+      return:
+        description: ''
+        type: string
   - name: select
     uid: '@azure/arm-compute.GalleriesGetOptionalParams.select'
     package: '@azure/arm-compute'

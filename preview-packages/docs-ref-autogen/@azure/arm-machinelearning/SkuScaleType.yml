@@ -10,11 +10,11 @@ summary: >-
    this enum contains the known values that the service supports.
   ### Known values supported by the service
 
-  **Automatic** \
+  **Automatic**: Automatically scales node count. \
 
-  **Manual** \
+  **Manual**: Node count scaled upon user request. \
 
-  **None**
+  **None**: Fixed set of nodes.
 fullName: SkuScaleType
 remarks: ''
 isDeprecated: false

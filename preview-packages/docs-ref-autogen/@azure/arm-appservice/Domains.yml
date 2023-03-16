@@ -417,6 +417,31 @@ methods:
       return:
         description: ''
         type: Promise&lt;void&gt;
+  - name: transferOut(string, string, DomainsTransferOutOptionalParams)
+    uid: '@azure/arm-appservice.Domains.transferOut'
+    package: '@azure/arm-appservice'
+    summary: Transfer out domain to another registrar
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function transferOut(resourceGroupName: string, domainName: string,
+        options?: DomainsTransferOutOptionalParams): Promise<Domain>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: Name of the resource group to which the resource belongs.
+        - id: domainName
+          type: string
+          description: Name of domain.
+        - id: options
+          type: >-
+            <xref uid="@azure/arm-appservice.DomainsTransferOutOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@azure/arm-appservice.Domain" />&gt;
   - name: update(string, string, DomainPatchResource, DomainsUpdateOptionalParams)
     uid: '@azure/arm-appservice.Domains.update'
     package: '@azure/arm-appservice'

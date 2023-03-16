@@ -10,9 +10,9 @@ summary: >-
    this enum contains the known values that the service supports.
   ### Known values supported by the service
 
-  **Enabled**: Schedule is enabled \
+  **Enabled** \
 
-  **Disabled**: Schedule is disabled
+  **Disabled**
 fullName: ScheduleStatus
 remarks: ''
 isDeprecated: false

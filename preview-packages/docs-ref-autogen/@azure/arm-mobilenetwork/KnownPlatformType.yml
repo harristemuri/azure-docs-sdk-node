@@ -14,13 +14,12 @@ fields:
     package: '@azure/arm-mobilenetwork'
     summary: >-
       If this option is chosen, you must set one of "azureStackEdgeDevice",
-      "connectedCluster" or "customLocation". If multiple are set then
-      "customLocation" will take precedence over "connectedCluster" which takes
-      precedence over "azureStackEdgeDevice".
-  - name: BaseVM
-    uid: '@azure/arm-mobilenetwork.KnownPlatformType.BaseVM'
+      "connectedCluster" or "customLocation". If multiple are set, they must be
+      consistent with each other.
+  - name: ThreePAzureStackHCI
+    uid: '@azure/arm-mobilenetwork.KnownPlatformType.ThreePAzureStackHCI'
     package: '@azure/arm-mobilenetwork'
     summary: >-
-      If this option is chosen, you must set one of "connectedCluster" or
-      "customLocation". If multiple are set then "customLocation" will take
-      precedence over "connectedCluster".
+      If this option is chosen, you must set one of "azureStackHciCluster",
+      "connectedCluster" or "customLocation". If multiple are set, they must be
+      consistent with each other.

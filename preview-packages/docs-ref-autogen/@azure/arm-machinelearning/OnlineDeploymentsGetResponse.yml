@@ -7,4 +7,4 @@ fullName: OnlineDeploymentsGetResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type OnlineDeploymentsGetResponse = OnlineDeploymentData
+  type OnlineDeploymentsGetResponse = OnlineDeployment

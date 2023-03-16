@@ -47,10 +47,7 @@ summary: >-
   **Paused**: The job is paused by users. Some adjustment to labeling jobs can
   be made only in paused state. \
 
-  **Unknown**: Default job status if not mapped to all other statuses \
-
-  **Scheduled**: The job is in a scheduled state. Job is not in any active
-  state.
+  **Unknown**: Default job status if not mapped to all other statuses
 fullName: JobStatus
 remarks: ''
 isDeprecated: false

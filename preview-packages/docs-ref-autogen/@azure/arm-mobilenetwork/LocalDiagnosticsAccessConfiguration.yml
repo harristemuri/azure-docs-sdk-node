@@ -10,6 +10,19 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: authenticationType
+    uid: >-
+      @azure/arm-mobilenetwork.LocalDiagnosticsAccessConfiguration.authenticationType
+    package: '@azure/arm-mobilenetwork'
+    summary: How to authenticate users who access local diagnostics APIs.
+    fullName: authenticationType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'authenticationType: string'
+      return:
+        description: ''
+        type: string
   - name: httpsServerCertificate
     uid: >-
       @azure/arm-mobilenetwork.LocalDiagnosticsAccessConfiguration.httpsServerCertificate
@@ -21,7 +34,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'httpsServerCertificate?: KeyVaultCertificate'
+      content: 'httpsServerCertificate?: HttpsServerCertificate'
       return:
         description: ''
-        type: <xref uid="@azure/arm-mobilenetwork.KeyVaultCertificate" />
+        type: <xref uid="@azure/arm-mobilenetwork.HttpsServerCertificate" />

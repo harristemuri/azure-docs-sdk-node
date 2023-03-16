@@ -13,5 +13,6 @@ syntax: |
     | BaiduNotification
     | BrowserNotification
     | FcmLegacyNotification
+    | XiaomiNotification
     | WindowsNotification
     | TemplateNotification

@@ -7,11 +7,5 @@ fullName: DigitalTwinsGetByIdResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type DigitalTwinsGetByIdResponse = DigitalTwinsGetByIdHeaders & {
-    _response: coreHttp.HttpResponse & {
-      bodyAsText: string,
-      parsedBody: any,
-      parsedHeaders: DigitalTwinsGetByIdHeaders,
-    },
-    body: any,
-  }
+  type DigitalTwinsGetByIdResponse = DigitalTwinsGetByIdHeaders &
+    Record<string, unknown>

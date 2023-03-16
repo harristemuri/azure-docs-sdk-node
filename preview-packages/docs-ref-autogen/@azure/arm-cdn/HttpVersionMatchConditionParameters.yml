@@ -32,23 +32,6 @@ properties:
       return:
         description: ''
         type: boolean
-  - name: odataType
-    uid: '@azure/arm-cdn.HttpVersionMatchConditionParameters.odataType'
-    package: '@azure/arm-cdn'
-    summary: ''
-    fullName: odataType
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        odataType:
-        "#Microsoft.Azure.Cdn.Models.DeliveryRuleHttpVersionConditionParameters"
-      return:
-        description: ''
-        type: >-
-          "#<xref
-          uid="Microsoft.Azure.Cdn.Models.DeliveryRuleHttpVersionConditionParameters"
-          />"
   - name: operator
     uid: '@azure/arm-cdn.HttpVersionMatchConditionParameters.operator'
     package: '@azure/arm-cdn'
@@ -61,3 +44,27 @@ properties:
       return:
         description: ''
         type: string
+  - name: transforms
+    uid: '@azure/arm-cdn.HttpVersionMatchConditionParameters.transforms'
+    package: '@azure/arm-cdn'
+    summary: List of transforms
+    fullName: transforms
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'transforms?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: typeName
+    uid: '@azure/arm-cdn.HttpVersionMatchConditionParameters.typeName'
+    package: '@azure/arm-cdn'
+    summary: ''
+    fullName: typeName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'typeName: "DeliveryRuleHttpVersionConditionParameters"'
+      return:
+        description: ''
+        type: '"DeliveryRuleHttpVersionConditionParameters"'

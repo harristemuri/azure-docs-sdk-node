@@ -64,6 +64,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-compute.CloudServiceProperties" />
+  - name: systemData
+    uid: '@azure/arm-compute.CloudService.systemData'
+    package: '@azure/arm-compute'
+    summary: The system meta data relating to this resource.
+    fullName: systemData
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'systemData?: SystemData'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-compute.SystemData" />
   - name: tags
     uid: '@azure/arm-compute.CloudService.tags'
     package: '@azure/arm-compute'
@@ -92,3 +104,18 @@ properties:
       return:
         description: ''
         type: string
+  - name: zones
+    uid: '@azure/arm-compute.CloudService.zones'
+    package: '@azure/arm-compute'
+    summary: >-
+      List of logical availability zone of the resource. List should contain
+      only 1 zone where cloud service should be provisioned. This field is
+      optional.
+    fullName: zones
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'zones?: string[]'
+      return:
+        description: ''
+        type: string[]

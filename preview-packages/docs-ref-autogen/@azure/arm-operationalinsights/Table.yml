@@ -88,7 +88,11 @@ properties:
   - name: resultStatistics
     uid: '@azure/arm-operationalinsights.Table.resultStatistics'
     package: '@azure/arm-operationalinsights'
-    summary: Search job execution statistics.
+    summary: >-
+      Search job execution statistics.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
     fullName: resultStatistics
     remarks: ''
     isDeprecated: false
@@ -111,6 +115,23 @@ properties:
       return:
         description: ''
         type: number
+  - name: retentionInDaysAsDefault
+    uid: '@azure/arm-operationalinsights.Table.retentionInDaysAsDefault'
+    package: '@azure/arm-operationalinsights'
+    summary: >-
+      True - Value originates from workspace retention in days, False - Customer
+      specific.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: retentionInDaysAsDefault
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'retentionInDaysAsDefault?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: schema
     uid: '@azure/arm-operationalinsights.Table.schema'
     package: '@azure/arm-operationalinsights'
@@ -165,6 +186,22 @@ properties:
       return:
         description: ''
         type: number
+  - name: totalRetentionInDaysAsDefault
+    uid: '@azure/arm-operationalinsights.Table.totalRetentionInDaysAsDefault'
+    package: '@azure/arm-operationalinsights'
+    summary: >-
+      True - Value originates from retention in days, False - Customer specific.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: totalRetentionInDaysAsDefault
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'totalRetentionInDaysAsDefault?: boolean'
+      return:
+        description: ''
+        type: boolean
 inheritedProperties:
   - name: id
     uid: '@azure/arm-operationalinsights.Table.id'

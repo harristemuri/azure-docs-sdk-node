@@ -9,7 +9,7 @@ isDeprecated: false
 type: interface
 methods:
   - name: >-
-      beginCreateOrUpdate(string, string, string, string, BatchDeploymentData,
+      beginCreateOrUpdate(string, string, string, string, BatchDeployment,
       BatchDeploymentsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.BatchDeployments.beginCreateOrUpdate'
     package: '@azure/arm-machinelearning'
@@ -20,10 +20,10 @@ methods:
       content: >-
         function beginCreateOrUpdate(resourceGroupName: string, workspaceName:
         string, endpointName: string, deploymentName: string, body:
-        BatchDeploymentData, options?:
+        BatchDeployment, options?:
         BatchDeploymentsCreateOrUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<BatchDeploymentData>,
-        BatchDeploymentData>>
+        Promise<PollerLike<PollOperationState<BatchDeployment>,
+        BatchDeployment>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -38,7 +38,7 @@ methods:
           type: string
           description: The identifier for the Batch inference deployment.
         - id: body
-          type: <xref uid="@azure/arm-machinelearning.BatchDeploymentData" />
+          type: <xref uid="@azure/arm-machinelearning.BatchDeployment" />
           description: Batch inference deployment definition object.
         - id: options
           type: >-
@@ -50,11 +50,11 @@ methods:
         description: ''
         type: >-
           Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-machinelearning.BatchDeploymentData" />&gt;, <xref
-          uid="@azure/arm-machinelearning.BatchDeploymentData" />&gt;&gt;
+          uid="@azure/arm-machinelearning.BatchDeployment" />&gt;, <xref
+          uid="@azure/arm-machinelearning.BatchDeployment" />&gt;&gt;
   - name: >-
       beginCreateOrUpdateAndWait(string, string, string, string,
-      BatchDeploymentData, BatchDeploymentsCreateOrUpdateOptionalParams)
+      BatchDeployment, BatchDeploymentsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.BatchDeployments.beginCreateOrUpdateAndWait'
     package: '@azure/arm-machinelearning'
     summary: Creates/updates a batch inference deployment (asynchronous).
@@ -64,9 +64,8 @@ methods:
       content: >-
         function beginCreateOrUpdateAndWait(resourceGroupName: string,
         workspaceName: string, endpointName: string, deploymentName: string,
-        body: BatchDeploymentData, options?:
-        BatchDeploymentsCreateOrUpdateOptionalParams):
-        Promise<BatchDeploymentData>
+        body: BatchDeployment, options?:
+        BatchDeploymentsCreateOrUpdateOptionalParams): Promise<BatchDeployment>
       parameters:
         - id: resourceGroupName
           type: string
@@ -81,7 +80,7 @@ methods:
           type: string
           description: The identifier for the Batch inference deployment.
         - id: body
-          type: <xref uid="@azure/arm-machinelearning.BatchDeploymentData" />
+          type: <xref uid="@azure/arm-machinelearning.BatchDeployment" />
           description: Batch inference deployment definition object.
         - id: options
           type: >-
@@ -92,7 +91,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.BatchDeploymentData"
+          Promise&lt;<xref uid="@azure/arm-machinelearning.BatchDeployment"
           />&gt;
   - name: >-
       beginDelete(string, string, string, string,
@@ -167,7 +166,7 @@ methods:
         type: Promise&lt;void&gt;
   - name: >-
       beginUpdate(string, string, string, string,
-      PartialBatchDeploymentPartialTrackedResource,
+      PartialBatchDeploymentPartialMinimalTrackedResourceWithProperties,
       BatchDeploymentsUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.BatchDeployments.beginUpdate'
     package: '@azure/arm-machinelearning'
@@ -178,10 +177,10 @@ methods:
       content: >-
         function beginUpdate(resourceGroupName: string, workspaceName: string,
         endpointName: string, deploymentName: string, body:
-        PartialBatchDeploymentPartialTrackedResource, options?:
-        BatchDeploymentsUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<BatchDeploymentData>,
-        BatchDeploymentData>>
+        PartialBatchDeploymentPartialMinimalTrackedResourceWithProperties,
+        options?: BatchDeploymentsUpdateOptionalParams):
+        Promise<PollerLike<PollOperationState<BatchDeployment>,
+        BatchDeployment>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -198,7 +197,7 @@ methods:
         - id: body
           type: >-
             <xref
-            uid="@azure/arm-machinelearning.PartialBatchDeploymentPartialTrackedResource"
+            uid="@azure/arm-machinelearning.PartialBatchDeploymentPartialMinimalTrackedResourceWithProperties"
             />
           description: Batch inference deployment definition object.
         - id: options
@@ -211,11 +210,11 @@ methods:
         description: ''
         type: >-
           Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-machinelearning.BatchDeploymentData" />&gt;, <xref
-          uid="@azure/arm-machinelearning.BatchDeploymentData" />&gt;&gt;
+          uid="@azure/arm-machinelearning.BatchDeployment" />&gt;, <xref
+          uid="@azure/arm-machinelearning.BatchDeployment" />&gt;&gt;
   - name: >-
       beginUpdateAndWait(string, string, string, string,
-      PartialBatchDeploymentPartialTrackedResource,
+      PartialBatchDeploymentPartialMinimalTrackedResourceWithProperties,
       BatchDeploymentsUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.BatchDeployments.beginUpdateAndWait'
     package: '@azure/arm-machinelearning'
@@ -226,8 +225,9 @@ methods:
       content: >-
         function beginUpdateAndWait(resourceGroupName: string, workspaceName:
         string, endpointName: string, deploymentName: string, body:
-        PartialBatchDeploymentPartialTrackedResource, options?:
-        BatchDeploymentsUpdateOptionalParams): Promise<BatchDeploymentData>
+        PartialBatchDeploymentPartialMinimalTrackedResourceWithProperties,
+        options?: BatchDeploymentsUpdateOptionalParams):
+        Promise<BatchDeployment>
       parameters:
         - id: resourceGroupName
           type: string
@@ -244,7 +244,7 @@ methods:
         - id: body
           type: >-
             <xref
-            uid="@azure/arm-machinelearning.PartialBatchDeploymentPartialTrackedResource"
+            uid="@azure/arm-machinelearning.PartialBatchDeploymentPartialMinimalTrackedResourceWithProperties"
             />
           description: Batch inference deployment definition object.
         - id: options
@@ -256,7 +256,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.BatchDeploymentData"
+          Promise&lt;<xref uid="@azure/arm-machinelearning.BatchDeployment"
           />&gt;
   - name: get(string, string, string, string, BatchDeploymentsGetOptionalParams)
     uid: '@azure/arm-machinelearning.BatchDeployments.get'
@@ -268,7 +268,7 @@ methods:
       content: >-
         function get(resourceGroupName: string, workspaceName: string,
         endpointName: string, deploymentName: string, options?:
-        BatchDeploymentsGetOptionalParams): Promise<BatchDeploymentData>
+        BatchDeploymentsGetOptionalParams): Promise<BatchDeployment>
       parameters:
         - id: resourceGroupName
           type: string
@@ -291,7 +291,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.BatchDeploymentData"
+          Promise&lt;<xref uid="@azure/arm-machinelearning.BatchDeployment"
           />&gt;
   - name: list(string, string, string, BatchDeploymentsListOptionalParams)
     uid: '@azure/arm-machinelearning.BatchDeployments.list'
@@ -303,7 +303,7 @@ methods:
       content: >-
         function list(resourceGroupName: string, workspaceName: string,
         endpointName: string, options?: BatchDeploymentsListOptionalParams):
-        PagedAsyncIterableIterator<BatchDeploymentData, BatchDeploymentData[],
+        PagedAsyncIterableIterator<BatchDeployment, BatchDeployment[],
         PageSettings>
       parameters:
         - id: resourceGroupName
@@ -325,6 +325,6 @@ methods:
         description: ''
         type: >-
           PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-machinelearning.BatchDeploymentData" />, <xref
-          uid="@azure/arm-machinelearning.BatchDeploymentData" />[],
+          uid="@azure/arm-machinelearning.BatchDeployment" />, <xref
+          uid="@azure/arm-machinelearning.BatchDeployment" />[],
           PageSettings&gt;

@@ -20,7 +20,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'error?: ErrorModel'
+      content: 'error?: ErrorResponseModelError'
       return:
         description: ''
-        type: <xref uid="@azure/arm-purview.ErrorModel" />
+        type: <xref uid="@azure/arm-purview.ErrorResponseModelError" />

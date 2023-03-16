@@ -32,23 +32,6 @@ properties:
       return:
         description: ''
         type: boolean
-  - name: odataType
-    uid: '@azure/arm-cdn.RequestSchemeMatchConditionParameters.odataType'
-    package: '@azure/arm-cdn'
-    summary: ''
-    fullName: odataType
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        odataType:
-        "#Microsoft.Azure.Cdn.Models.DeliveryRuleRequestSchemeConditionParameters"
-      return:
-        description: ''
-        type: >-
-          "#<xref
-          uid="Microsoft.Azure.Cdn.Models.DeliveryRuleRequestSchemeConditionParameters"
-          />"
   - name: operator
     uid: '@azure/arm-cdn.RequestSchemeMatchConditionParameters.operator'
     package: '@azure/arm-cdn'
@@ -61,3 +44,27 @@ properties:
       return:
         description: ''
         type: '"Equal"'
+  - name: transforms
+    uid: '@azure/arm-cdn.RequestSchemeMatchConditionParameters.transforms'
+    package: '@azure/arm-cdn'
+    summary: List of transforms
+    fullName: transforms
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'transforms?: string[]'
+      return:
+        description: ''
+        type: string[]
+  - name: typeName
+    uid: '@azure/arm-cdn.RequestSchemeMatchConditionParameters.typeName'
+    package: '@azure/arm-cdn'
+    summary: ''
+    fullName: typeName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'typeName: "DeliveryRuleRequestSchemeConditionParameters"'
+      return:
+        description: ''
+        type: '"DeliveryRuleRequestSchemeConditionParameters"'

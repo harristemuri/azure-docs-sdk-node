@@ -37,6 +37,30 @@ constructors:
             />
           description: The parameter options
 properties:
+  - name: $host
+    uid: '@azure/arm-streamanalytics.StreamAnalyticsManagementClient.$host'
+    package: '@azure/arm-streamanalytics'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
+  - name: apiVersion
+    uid: '@azure/arm-streamanalytics.StreamAnalyticsManagementClient.apiVersion'
+    package: '@azure/arm-streamanalytics'
+    summary: ''
+    fullName: apiVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion: string'
+      return:
+        description: ''
+        type: string
   - name: clusters
     uid: '@azure/arm-streamanalytics.StreamAnalyticsManagementClient.clusters'
     package: '@azure/arm-streamanalytics'
@@ -122,6 +146,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-streamanalytics.StreamingJobs" />
+  - name: subscriptionId
+    uid: '@azure/arm-streamanalytics.StreamAnalyticsManagementClient.subscriptionId'
+    package: '@azure/arm-streamanalytics'
+    summary: ''
+    fullName: subscriptionId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        description: ''
+        type: string
   - name: subscriptions
     uid: '@azure/arm-streamanalytics.StreamAnalyticsManagementClient.subscriptions'
     package: '@azure/arm-streamanalytics'
@@ -147,21 +183,6 @@ properties:
         description: ''
         type: <xref uid="@azure/arm-streamanalytics.Transformations" />
 inheritedProperties:
-  - name: $host
-    uid: '@azure/arm-streamanalytics.StreamAnalyticsManagementClient.$host'
-    package: '@azure/arm-streamanalytics'
-    summary: ''
-    fullName: $host
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: '$host: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [StreamAnalyticsManagementClientContext.$host](xref:@azure/arm-streamanalytics.StreamAnalyticsManagementClientContext.$host)
   - name: pipeline
     uid: '@azure/arm-streamanalytics.StreamAnalyticsManagementClient.pipeline'
     package: '@azure/arm-streamanalytics'
@@ -174,24 +195,7 @@ inheritedProperties:
       return:
         description: ''
         type: Pipeline
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [StreamAnalyticsManagementClientContext.pipeline](xref:@azure/arm-streamanalytics.StreamAnalyticsManagementClientContext.pipeline)
-  - name: subscriptionId
-    uid: '@azure/arm-streamanalytics.StreamAnalyticsManagementClient.subscriptionId'
-    package: '@azure/arm-streamanalytics'
-    summary: ''
-    fullName: subscriptionId
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'subscriptionId: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [StreamAnalyticsManagementClientContext.subscriptionId](xref:@azure/arm-streamanalytics.StreamAnalyticsManagementClientContext.subscriptionId)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.pipeline
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
     uid: >-
@@ -216,9 +220,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [StreamAnalyticsManagementClientContext.sendOperationRequest](xref:@azure/arm-streamanalytics.StreamAnalyticsManagementClientContext.sendOperationRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-streamanalytics.StreamAnalyticsManagementClient.sendRequest'
     package: '@azure/arm-streamanalytics'
@@ -236,9 +238,5 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [StreamAnalyticsManagementClientContext.sendRequest](xref:@azure/arm-streamanalytics.StreamAnalyticsManagementClientContext.sendRequest)
-extends: >-
-  <xref uid="@azure/arm-streamanalytics.StreamAnalyticsManagementClientContext"
-  />
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendRequest
+extends: ServiceClient

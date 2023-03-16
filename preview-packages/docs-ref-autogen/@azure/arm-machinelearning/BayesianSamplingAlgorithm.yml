@@ -1,4 +1,4 @@
-### YamlMime:TSTypeAlias
+### YamlMime:TSType
 name: BayesianSamplingAlgorithm
 uid: '@azure/arm-machinelearning.BayesianSamplingAlgorithm'
 package: '@azure/arm-machinelearning'
@@ -6,7 +6,20 @@ summary: Defines a Sampling Algorithm that generates values based on previous va
 fullName: BayesianSamplingAlgorithm
 remarks: ''
 isDeprecated: false
-syntax: |
-  type BayesianSamplingAlgorithm = SamplingAlgorithm & {
-    samplingAlgorithmType: "Bayesian",
-  }
+type: interface
+properties:
+  - name: samplingAlgorithmType
+    uid: '@azure/arm-machinelearning.BayesianSamplingAlgorithm.samplingAlgorithmType'
+    package: '@azure/arm-machinelearning'
+    summary: >-
+      Polymorphic discriminator, which specifies the different types this object
+      can be
+    fullName: samplingAlgorithmType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'samplingAlgorithmType: "Bayesian"'
+      return:
+        description: ''
+        type: '"Bayesian"'
+extends: <xref uid="@azure/arm-machinelearning.SamplingAlgorithm" />
