@@ -1,7 +1,7 @@
 {
   "Name": "@azure/data-tables",
-  "Version": "13.2.2-alpha.20230307.1",
-  "DevVersion": "13.2.2-alpha.20230317.1",
+  "Version": "13.2.2-alpha.20230317.2",
+  "DevVersion": "13.2.2-alpha.20230317.2",
   "DirectoryPath": "sdk/tables/data-tables",
   "ServiceDirectory": "tables",
   "ReadMePath": "sdk/tables/data-tables/README.md",
