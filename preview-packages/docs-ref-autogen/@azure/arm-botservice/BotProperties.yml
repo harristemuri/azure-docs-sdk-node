@@ -174,10 +174,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'endpoint: string'
+      content: 'endpoint: null | string'
       return:
         description: ''
-        type: string
+        type: null | string
   - name: endpointVersion
     uid: '@azure/arm-botservice.BotProperties.endpointVersion'
     package: '@azure/arm-botservice'
@@ -449,6 +449,18 @@ properties:
     isDeprecated: false
     syntax:
       content: 'storageResourceId?: string'
+      return:
+        description: ''
+        type: string
+  - name: tenantId
+    uid: '@azure/arm-botservice.BotProperties.tenantId'
+    package: '@azure/arm-botservice'
+    summary: The Tenant Id for the bot
+    fullName: tenantId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'tenantId?: string'
       return:
         description: ''
         type: string

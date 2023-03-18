@@ -10,19 +10,19 @@ summary: >-
    this enum contains the known values that the service supports.
   ### Known values supported by the service
 
-  **Literal** \
+  **literal** \
 
-  **UriFile** \
+  **uri_file** \
 
-  **UriFolder** \
+  **uri_folder** \
 
-  **MLTable** \
+  **mltable** \
 
-  **CustomModel** \
+  **custom_model** \
 
-  **MLFlowModel** \
+  **mlflow_model** \
 
-  **TritonModel**
+  **triton_model**
 fullName: JobInputType
 remarks: ''
 isDeprecated: false

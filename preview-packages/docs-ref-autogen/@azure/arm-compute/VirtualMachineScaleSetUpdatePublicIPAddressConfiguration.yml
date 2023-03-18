@@ -67,3 +67,16 @@ properties:
       return:
         description: ''
         type: string
+  - name: publicIPPrefix
+    uid: >-
+      @azure/arm-compute.VirtualMachineScaleSetUpdatePublicIPAddressConfiguration.publicIPPrefix
+    package: '@azure/arm-compute'
+    summary: The PublicIPPrefix from which to allocate publicIP addresses.
+    fullName: publicIPPrefix
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'publicIPPrefix?: SubResource'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-compute.SubResource" />

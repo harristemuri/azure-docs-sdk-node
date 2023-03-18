@@ -13,8 +13,8 @@ fields:
   - name: Random
     uid: '@azure/arm-machinelearning.KnownRandomSamplingAlgorithmRule.Random'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Random
   - name: Sobol
     uid: '@azure/arm-machinelearning.KnownRandomSamplingAlgorithmRule.Sobol'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Sobol

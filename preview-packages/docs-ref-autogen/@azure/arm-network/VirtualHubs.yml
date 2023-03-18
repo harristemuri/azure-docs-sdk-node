@@ -23,7 +23,7 @@ methods:
         function beginCreateOrUpdate(resourceGroupName: string, virtualHubName:
         string, virtualHubParameters: VirtualHub, options?:
         VirtualHubsCreateOrUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<VirtualHub>, VirtualHub>>
+        Promise<SimplePollerLike<OperationState<VirtualHub>, VirtualHub>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -42,7 +42,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-network.VirtualHub" />&gt;, <xref
           uid="@azure/arm-network.VirtualHub" />&gt;&gt;
   - name: >-
@@ -88,7 +88,7 @@ methods:
       content: >-
         function beginDelete(resourceGroupName: string, virtualHubName: string,
         options?: VirtualHubsDeleteOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -101,7 +101,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: beginDeleteAndWait(string, string, VirtualHubsDeleteOptionalParams)
     uid: '@azure/arm-network.VirtualHubs.beginDeleteAndWait'
     package: '@azure/arm-network'
@@ -140,7 +142,7 @@ methods:
         function beginGetEffectiveVirtualHubRoutes(resourceGroupName: string,
         virtualHubName: string, options?:
         VirtualHubsGetEffectiveVirtualHubRoutesOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -156,7 +158,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: >-
       beginGetEffectiveVirtualHubRoutesAndWait(string, string,
       VirtualHubsGetEffectiveVirtualHubRoutesOptionalParams)
@@ -183,6 +187,160 @@ methods:
           type: >-
             <xref
             uid="@azure/arm-network.VirtualHubsGetEffectiveVirtualHubRoutesOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginGetInboundRoutes(string, string, GetInboundRoutesParameters,
+      VirtualHubsGetInboundRoutesOptionalParams)
+    uid: '@azure/arm-network.VirtualHubs.beginGetInboundRoutes'
+    package: '@azure/arm-network'
+    summary: >-
+      Gets the inbound routes configured for the Virtual Hub on a particular
+      connection.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginGetInboundRoutes(resourceGroupName: string,
+        virtualHubName: string, getInboundRoutesParameters:
+        GetInboundRoutesParameters, options?:
+        VirtualHubsGetInboundRoutesOptionalParams):
+        Promise<SimplePollerLike<OperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name of the VirtualHub.
+        - id: virtualHubName
+          type: string
+          description: The name of the VirtualHub.
+        - id: getInboundRoutesParameters
+          type: <xref uid="@azure/arm-network.GetInboundRoutesParameters" />
+          description: |-
+            Parameters supplied to get the inbound routes for a connection
+                                              resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.VirtualHubsGetInboundRoutesOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
+  - name: >-
+      beginGetInboundRoutesAndWait(string, string, GetInboundRoutesParameters,
+      VirtualHubsGetInboundRoutesOptionalParams)
+    uid: '@azure/arm-network.VirtualHubs.beginGetInboundRoutesAndWait'
+    package: '@azure/arm-network'
+    summary: >-
+      Gets the inbound routes configured for the Virtual Hub on a particular
+      connection.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginGetInboundRoutesAndWait(resourceGroupName: string,
+        virtualHubName: string, getInboundRoutesParameters:
+        GetInboundRoutesParameters, options?:
+        VirtualHubsGetInboundRoutesOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name of the VirtualHub.
+        - id: virtualHubName
+          type: string
+          description: The name of the VirtualHub.
+        - id: getInboundRoutesParameters
+          type: <xref uid="@azure/arm-network.GetInboundRoutesParameters" />
+          description: |-
+            Parameters supplied to get the inbound routes for a connection
+                                              resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.VirtualHubsGetInboundRoutesOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;void&gt;
+  - name: >-
+      beginGetOutboundRoutes(string, string, GetOutboundRoutesParameters,
+      VirtualHubsGetOutboundRoutesOptionalParams)
+    uid: '@azure/arm-network.VirtualHubs.beginGetOutboundRoutes'
+    package: '@azure/arm-network'
+    summary: >-
+      Gets the outbound routes configured for the Virtual Hub on a particular
+      connection.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginGetOutboundRoutes(resourceGroupName: string,
+        virtualHubName: string, getOutboundRoutesParameters:
+        GetOutboundRoutesParameters, options?:
+        VirtualHubsGetOutboundRoutesOptionalParams):
+        Promise<SimplePollerLike<OperationState<void>, void>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name of the VirtualHub.
+        - id: virtualHubName
+          type: string
+          description: The name of the VirtualHub.
+        - id: getOutboundRoutesParameters
+          type: <xref uid="@azure/arm-network.GetOutboundRoutesParameters" />
+          description: |-
+            Parameters supplied to get the outbound routes for a connection
+                                               resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.VirtualHubsGetOutboundRoutesOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
+  - name: >-
+      beginGetOutboundRoutesAndWait(string, string, GetOutboundRoutesParameters,
+      VirtualHubsGetOutboundRoutesOptionalParams)
+    uid: '@azure/arm-network.VirtualHubs.beginGetOutboundRoutesAndWait'
+    package: '@azure/arm-network'
+    summary: >-
+      Gets the outbound routes configured for the Virtual Hub on a particular
+      connection.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginGetOutboundRoutesAndWait(resourceGroupName: string,
+        virtualHubName: string, getOutboundRoutesParameters:
+        GetOutboundRoutesParameters, options?:
+        VirtualHubsGetOutboundRoutesOptionalParams): Promise<void>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The resource group name of the VirtualHub.
+        - id: virtualHubName
+          type: string
+          description: The name of the VirtualHub.
+        - id: getOutboundRoutesParameters
+          type: <xref uid="@azure/arm-network.GetOutboundRoutesParameters" />
+          description: |-
+            Parameters supplied to get the outbound routes for a connection
+                                               resource.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.VirtualHubsGetOutboundRoutesOptionalParams"
             />
           description: The options parameters.
       return:

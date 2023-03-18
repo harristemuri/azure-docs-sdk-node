@@ -12,8 +12,8 @@ fields:
   - name: Mount
     uid: '@azure/arm-machinelearning.KnownMountAction.Mount'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Mount
   - name: Unmount
     uid: '@azure/arm-machinelearning.KnownMountAction.Unmount'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Unmount

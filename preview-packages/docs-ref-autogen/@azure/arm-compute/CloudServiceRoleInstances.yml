@@ -28,10 +28,10 @@ methods:
           description: Name of the role instance.
         - id: resourceGroupName
           type: string
-          description: ''
+          description: Name of the resource group.
         - id: cloudServiceName
           type: string
-          description: ''
+          description: Name of the cloud service.
         - id: options
           type: >-
             <xref
@@ -60,10 +60,10 @@ methods:
           description: Name of the role instance.
         - id: resourceGroupName
           type: string
-          description: ''
+          description: Name of the resource group.
         - id: cloudServiceName
           type: string
-          description: ''
+          description: Name of the cloud service.
         - id: options
           type: >-
             <xref
@@ -100,10 +100,10 @@ methods:
           description: Name of the role instance.
         - id: resourceGroupName
           type: string
-          description: ''
+          description: Name of the resource group.
         - id: cloudServiceName
           type: string
-          description: ''
+          description: Name of the cloud service.
         - id: options
           type: >-
             <xref
@@ -139,10 +139,10 @@ methods:
           description: Name of the role instance.
         - id: resourceGroupName
           type: string
-          description: ''
+          description: Name of the resource group.
         - id: cloudServiceName
           type: string
-          description: ''
+          description: Name of the cloud service.
         - id: options
           type: >-
             <xref
@@ -176,10 +176,10 @@ methods:
           description: Name of the role instance.
         - id: resourceGroupName
           type: string
-          description: ''
+          description: Name of the resource group.
         - id: cloudServiceName
           type: string
-          description: ''
+          description: Name of the cloud service.
         - id: options
           type: >-
             <xref
@@ -212,10 +212,10 @@ methods:
           description: Name of the role instance.
         - id: resourceGroupName
           type: string
-          description: ''
+          description: Name of the resource group.
         - id: cloudServiceName
           type: string
-          description: ''
+          description: Name of the cloud service.
         - id: options
           type: >-
             <xref
@@ -249,10 +249,10 @@ methods:
           description: Name of the role instance.
         - id: resourceGroupName
           type: string
-          description: ''
+          description: Name of the resource group.
         - id: cloudServiceName
           type: string
-          description: ''
+          description: Name of the cloud service.
         - id: options
           type: >-
             <xref
@@ -285,10 +285,10 @@ methods:
           description: Name of the role instance.
         - id: resourceGroupName
           type: string
-          description: ''
+          description: Name of the resource group.
         - id: cloudServiceName
           type: string
-          description: ''
+          description: Name of the cloud service.
         - id: options
           type: >-
             <xref
@@ -315,10 +315,10 @@ methods:
           description: Name of the role instance.
         - id: resourceGroupName
           type: string
-          description: ''
+          description: Name of the resource group.
         - id: cloudServiceName
           type: string
-          description: ''
+          description: Name of the cloud service.
         - id: options
           type: >-
             <xref
@@ -350,10 +350,10 @@ methods:
           description: Name of the role instance.
         - id: resourceGroupName
           type: string
-          description: ''
+          description: Name of the resource group.
         - id: cloudServiceName
           type: string
-          description: ''
+          description: Name of the cloud service.
         - id: options
           type: >-
             <xref
@@ -383,10 +383,10 @@ methods:
           description: Name of the role instance.
         - id: resourceGroupName
           type: string
-          description: ''
+          description: Name of the resource group.
         - id: cloudServiceName
           type: string
-          description: ''
+          description: Name of the cloud service.
         - id: options
           type: >-
             <xref
@@ -418,10 +418,10 @@ methods:
       parameters:
         - id: resourceGroupName
           type: string
-          description: ''
+          description: Name of the resource group.
         - id: cloudServiceName
           type: string
-          description: ''
+          description: Name of the cloud service.
         - id: options
           type: >-
             <xref

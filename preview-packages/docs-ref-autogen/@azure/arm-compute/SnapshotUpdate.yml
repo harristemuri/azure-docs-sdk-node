@@ -8,6 +8,20 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: dataAccessAuthMode
+    uid: '@azure/arm-compute.SnapshotUpdate.dataAccessAuthMode'
+    package: '@azure/arm-compute'
+    summary: >-
+      Additional authentication requirements when exporting or uploading to a
+      disk or snapshot.
+    fullName: dataAccessAuthMode
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'dataAccessAuthMode?: string'
+      return:
+        description: ''
+        type: string
   - name: diskAccessId
     uid: '@azure/arm-compute.SnapshotUpdate.diskAccessId'
     package: '@azure/arm-compute'
@@ -116,6 +130,20 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-compute.SnapshotSku" />
+  - name: supportedCapabilities
+    uid: '@azure/arm-compute.SnapshotUpdate.supportedCapabilities'
+    package: '@azure/arm-compute'
+    summary: >-
+      List of supported capabilities for the image from which the OS disk was
+      created.
+    fullName: supportedCapabilities
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'supportedCapabilities?: SupportedCapabilities'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-compute.SupportedCapabilities" />
   - name: supportsHibernation
     uid: '@azure/arm-compute.SnapshotUpdate.supportsHibernation'
     package: '@azure/arm-compute'

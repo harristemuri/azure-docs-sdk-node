@@ -123,20 +123,6 @@ properties:
       return:
         description: ''
         type: string
-  - name: diagnosticLogSettings
-    uid: '@azure/arm-cosmosdb.DatabaseAccountUpdateParameters.diagnosticLogSettings'
-    package: '@azure/arm-cosmosdb'
-    summary: >-
-      The Object representing the different Diagnostic log settings for the
-      Cosmos DB Account.
-    fullName: diagnosticLogSettings
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'diagnosticLogSettings?: DiagnosticLogSettings'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-cosmosdb.DiagnosticLogSettings" />
   - name: disableKeyBasedMetadataWriteAccess
     uid: >-
       @azure/arm-cosmosdb.DatabaseAccountUpdateParameters.disableKeyBasedMetadataWriteAccess
@@ -218,21 +204,6 @@ properties:
     isDeprecated: false
     syntax:
       content: 'enableFreeTier?: boolean'
-      return:
-        description: ''
-        type: boolean
-  - name: enableMaterializedViews
-    uid: >-
-      @azure/arm-cosmosdb.DatabaseAccountUpdateParameters.enableMaterializedViews
-    package: '@azure/arm-cosmosdb'
-    summary: >-
-      Flag to indicate whether to enable MaterializedViews on the Cosmos DB
-      account
-    fullName: enableMaterializedViews
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'enableMaterializedViews?: boolean'
       return:
         description: ''
         type: boolean
@@ -356,6 +327,20 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-cosmosdb.Location" />[]
+  - name: minimalTlsVersion
+    uid: '@azure/arm-cosmosdb.DatabaseAccountUpdateParameters.minimalTlsVersion'
+    package: '@azure/arm-cosmosdb'
+    summary: >-
+      Indicates the minimum allowed Tls version. The default is Tls 1.0, except
+      for Cassandra and Mongo API's, which only work with Tls 1.2.
+    fullName: minimalTlsVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'minimalTlsVersion?: string'
+      return:
+        description: ''
+        type: string
   - name: networkAclBypass
     uid: '@azure/arm-cosmosdb.DatabaseAccountUpdateParameters.networkAclBypass'
     package: '@azure/arm-cosmosdb'

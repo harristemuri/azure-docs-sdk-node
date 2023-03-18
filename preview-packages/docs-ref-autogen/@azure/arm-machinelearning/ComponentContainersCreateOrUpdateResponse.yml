@@ -7,4 +7,4 @@ fullName: ComponentContainersCreateOrUpdateResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type ComponentContainersCreateOrUpdateResponse = ComponentContainerData
+  type ComponentContainersCreateOrUpdateResponse = ComponentContainer

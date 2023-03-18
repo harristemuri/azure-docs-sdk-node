@@ -13,7 +13,11 @@ methods:
       AttachedDataNetworksCreateOrUpdateOptionalParams)
     uid: '@azure/arm-mobilenetwork.AttachedDataNetworks.beginCreateOrUpdate'
     package: '@azure/arm-mobilenetwork'
-    summary: Creates or updates an attached data network.
+    summary: >-
+      Creates or updates an attached data network. Must be created in the same
+      location as its parent
+
+      packet core data plane.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -59,7 +63,11 @@ methods:
       AttachedDataNetwork, AttachedDataNetworksCreateOrUpdateOptionalParams)
     uid: '@azure/arm-mobilenetwork.AttachedDataNetworks.beginCreateOrUpdateAndWait'
     package: '@azure/arm-mobilenetwork'
-    summary: Creates or updates an attached data network.
+    summary: >-
+      Creates or updates an attached data network. Must be created in the same
+      location as its parent
+
+      packet core data plane.
     remarks: ''
     isDeprecated: false
     syntax:

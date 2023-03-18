@@ -14,8 +14,8 @@ properties:
     uid: '@azure/arm-mobilenetwork.PinholeTimeouts.icmp'
     package: '@azure/arm-mobilenetwork'
     summary: >-
-      Pinhole timeout for ICMP pinholes in seconds. Default for ICMP Echo is 60
-      seconds, as per RFC 5508 section 3.2.
+      Pinhole timeout for ICMP pinholes in seconds. Default for ICMP Echo is 30
+      seconds.
     fullName: icmp
     remarks: ''
     isDeprecated: false
@@ -27,9 +27,7 @@ properties:
   - name: tcp
     uid: '@azure/arm-mobilenetwork.PinholeTimeouts.tcp'
     package: '@azure/arm-mobilenetwork'
-    summary: >-
-      Pinhole timeout for TCP pinholes in seconds. Default for TCP is 2 hours 4
-      minutes, as per RFC 5382 section 5.
+    summary: Pinhole timeout for TCP pinholes in seconds. Default for TCP is 3 minutes.
     fullName: tcp
     remarks: ''
     isDeprecated: false
@@ -42,8 +40,8 @@ properties:
     uid: '@azure/arm-mobilenetwork.PinholeTimeouts.udp'
     package: '@azure/arm-mobilenetwork'
     summary: >-
-      Pinhole timeout for UDP pinholes in seconds. Default for UDP is 5 minutes,
-      as per RFC 4787 section 4.3.
+      Pinhole timeout for UDP pinholes in seconds. Default for UDP is 30
+      seconds.
     fullName: udp
     remarks: ''
     isDeprecated: false

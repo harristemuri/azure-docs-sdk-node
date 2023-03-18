@@ -19,17 +19,21 @@ properties:
     isDeprecated: false
     syntax:
       content: >-
-        channelName: "AlexaChannel" | "FacebookChannel" | "EmailChannel" |
-        "MsTeamsChannel" | "SkypeChannel" | "KikChannel" | "WebChatChannel" |
-        "DirectLineChannel" | "TelegramChannel" | "SmsChannel" | "SlackChannel"
-        | "LineChannel" | "DirectLineSpeechChannel"
+        channelName: "AcsChatChannel" | "AlexaChannel" | "FacebookChannel" |
+        "EmailChannel" | "OutlookChannel" | "MsTeamsChannel" | "SkypeChannel" |
+        "KikChannel" | "WebChatChannel" | "DirectLineChannel" |
+        "TelegramChannel" | "SmsChannel" | "SlackChannel" | "LineChannel" |
+        "DirectLineSpeechChannel" | "Omnichannel" | "TelephonyChannel" |
+        "SearchAssistant" | "M365Extensions"
       return:
         description: ''
         type: >-
-          "AlexaChannel" | "FacebookChannel" | "EmailChannel" | "MsTeamsChannel"
-          | "SkypeChannel" | "KikChannel" | "WebChatChannel" |
-          "DirectLineChannel" | "TelegramChannel" | "SmsChannel" |
-          "SlackChannel" | "LineChannel" | "DirectLineSpeechChannel"
+          "AcsChatChannel" | "AlexaChannel" | "FacebookChannel" | "EmailChannel"
+          | "OutlookChannel" | "MsTeamsChannel" | "SkypeChannel" | "KikChannel"
+          | "WebChatChannel" | "DirectLineChannel" | "TelegramChannel" |
+          "SmsChannel" | "SlackChannel" | "LineChannel" |
+          "DirectLineSpeechChannel" | "Omnichannel" | "TelephonyChannel" |
+          "SearchAssistant" | "M365Extensions"
   - name: etag
     uid: '@azure/arm-botservice.Channel.etag'
     package: '@azure/arm-botservice'

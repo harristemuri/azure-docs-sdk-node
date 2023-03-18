@@ -35,6 +35,25 @@ properties:
       return:
         description: ''
         type: string
+  - name: deleteOption
+    uid: '@azure/arm-compute.VirtualMachineScaleSetDataDisk.deleteOption'
+    package: '@azure/arm-compute'
+    summary: >-
+      Specifies whether data disk should be deleted or detached upon VMSS Flex
+      deletion (This feature is available for VMSS with Flexible
+      OrchestrationMode only).<br><br> Possible values: <br><br> **Delete** If
+      this value is used, the data disk is deleted when the VMSS Flex VM is
+      deleted.<br><br> **Detach** If this value is used, the data disk is
+      retained after VMSS Flex VM is deleted.<br><br> The default value is set
+      to **Delete**.
+    fullName: deleteOption
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'deleteOption?: string'
+      return:
+        description: ''
+        type: string
   - name: diskIopsReadWrite
     uid: '@azure/arm-compute.VirtualMachineScaleSetDataDisk.diskIopsReadWrite'
     package: '@azure/arm-compute'
@@ -71,7 +90,8 @@ properties:
     summary: >-
       Specifies the size of an empty data disk in gigabytes. This element can be
       used to overwrite the size of the disk in a virtual machine image.
-      <br><br> This value cannot be larger than 1023 GB
+      <br><br> diskSizeGB is the number of bytes x 1024^3 for the disk and the
+      value cannot be larger than 1023
     fullName: diskSizeGB
     remarks: ''
     isDeprecated: false

@@ -9,7 +9,6 @@ isDeprecated: false
 syntax: |
   type OutputDataSourceUnion =
     | OutputDataSource
-    | RawOutputDatasource
     | BlobOutputDataSource
     | AzureTableOutputDataSource
     | EventHubOutputDataSource
@@ -17,7 +16,6 @@ syntax: |
     | AzureSqlDatabaseOutputDataSource
     | AzureSynapseOutputDataSource
     | DocumentDbOutputDataSource
-    | AzureFunctionOutputDataSource
     | ServiceBusQueueOutputDataSource
     | ServiceBusTopicOutputDataSource
     | PowerBIOutputDataSource

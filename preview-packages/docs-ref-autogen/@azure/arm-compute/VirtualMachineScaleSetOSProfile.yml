@@ -56,6 +56,22 @@ properties:
       return:
         description: ''
         type: string
+  - name: allowExtensionOperations
+    uid: >-
+      @azure/arm-compute.VirtualMachineScaleSetOSProfile.allowExtensionOperations
+    package: '@azure/arm-compute'
+    summary: >-
+      Specifies whether extension operations should be allowed on the virtual
+      machine scale set. <br><br>This may only be set to False when no
+      extensions are present on the virtual machine scale set.
+    fullName: allowExtensionOperations
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'allowExtensionOperations?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: computerNamePrefix
     uid: '@azure/arm-compute.VirtualMachineScaleSetOSProfile.computerNamePrefix'
     package: '@azure/arm-compute'
@@ -104,6 +120,19 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-compute.LinuxConfiguration" />
+  - name: requireGuestProvisionSignal
+    uid: >-
+      @azure/arm-compute.VirtualMachineScaleSetOSProfile.requireGuestProvisionSignal
+    package: '@azure/arm-compute'
+    summary: Optional property which must either be set to True or omitted.
+    fullName: requireGuestProvisionSignal
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'requireGuestProvisionSignal?: boolean'
+      return:
+        description: ''
+        type: boolean
   - name: secrets
     uid: '@azure/arm-compute.VirtualMachineScaleSetOSProfile.secrets'
     package: '@azure/arm-compute'

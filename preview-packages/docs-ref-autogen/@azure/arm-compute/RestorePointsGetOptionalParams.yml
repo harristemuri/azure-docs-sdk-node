@@ -7,6 +7,21 @@ fullName: RestorePointsGetOptionalParams
 remarks: ''
 isDeprecated: false
 type: interface
+properties:
+  - name: expand
+    uid: '@azure/arm-compute.RestorePointsGetOptionalParams.expand'
+    package: '@azure/arm-compute'
+    summary: >-
+      The expand expression to apply on the operation. 'InstanceView' retrieves
+      information about the run-time state of a restore point.
+    fullName: expand
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'expand?: string'
+      return:
+        description: ''
+        type: string
 inheritedProperties:
   - name: abortSignal
     uid: '@azure/arm-compute.RestorePointsGetOptionalParams.abortSignal'

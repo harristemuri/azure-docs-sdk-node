@@ -21,3 +21,16 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: verifyClientRevocation
+    uid: >-
+      @azure/arm-network.ApplicationGatewayClientAuthConfiguration.verifyClientRevocation
+    package: '@azure/arm-network'
+    summary: Verify client certificate revocation status.
+    fullName: verifyClientRevocation
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'verifyClientRevocation?: string'
+      return:
+        description: ''
+        type: string

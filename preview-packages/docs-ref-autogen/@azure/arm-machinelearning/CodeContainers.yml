@@ -9,7 +9,7 @@ isDeprecated: false
 type: interface
 methods:
   - name: >-
-      createOrUpdate(string, string, string, CodeContainerData,
+      createOrUpdate(string, string, string, CodeContainer,
       CodeContainersCreateOrUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.CodeContainers.createOrUpdate'
     package: '@azure/arm-machinelearning'
@@ -19,8 +19,8 @@ methods:
     syntax:
       content: >-
         function createOrUpdate(resourceGroupName: string, workspaceName:
-        string, name: string, body: CodeContainerData, options?:
-        CodeContainersCreateOrUpdateOptionalParams): Promise<CodeContainerData>
+        string, name: string, body: CodeContainer, options?:
+        CodeContainersCreateOrUpdateOptionalParams): Promise<CodeContainer>
       parameters:
         - id: resourceGroupName
           type: string
@@ -32,7 +32,7 @@ methods:
           type: string
           description: Container name. This is case-sensitive.
         - id: body
-          type: <xref uid="@azure/arm-machinelearning.CodeContainerData" />
+          type: <xref uid="@azure/arm-machinelearning.CodeContainer" />
           description: Container entity to create or update.
         - id: options
           type: >-
@@ -42,9 +42,7 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.CodeContainerData"
-          />&gt;
+        type: Promise&lt;<xref uid="@azure/arm-machinelearning.CodeContainer" />&gt;
   - name: delete(string, string, string, CodeContainersDeleteOptionalParams)
     uid: '@azure/arm-machinelearning.CodeContainers.delete'
     package: '@azure/arm-machinelearning'
@@ -84,7 +82,7 @@ methods:
       content: >-
         function get(resourceGroupName: string, workspaceName: string, name:
         string, options?: CodeContainersGetOptionalParams):
-        Promise<CodeContainerData>
+        Promise<CodeContainer>
       parameters:
         - id: resourceGroupName
           type: string
@@ -102,9 +100,7 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.CodeContainerData"
-          />&gt;
+        type: Promise&lt;<xref uid="@azure/arm-machinelearning.CodeContainer" />&gt;
   - name: list(string, string, CodeContainersListOptionalParams)
     uid: '@azure/arm-machinelearning.CodeContainers.list'
     package: '@azure/arm-machinelearning'
@@ -115,8 +111,7 @@ methods:
       content: >-
         function list(resourceGroupName: string, workspaceName: string,
         options?: CodeContainersListOptionalParams):
-        PagedAsyncIterableIterator<CodeContainerData, CodeContainerData[],
-        PageSettings>
+        PagedAsyncIterableIterator<CodeContainer, CodeContainer[], PageSettings>
       parameters:
         - id: resourceGroupName
           type: string
@@ -133,6 +128,5 @@ methods:
         description: ''
         type: >-
           PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-machinelearning.CodeContainerData" />, <xref
-          uid="@azure/arm-machinelearning.CodeContainerData" />[],
-          PageSettings&gt;
+          uid="@azure/arm-machinelearning.CodeContainer" />, <xref
+          uid="@azure/arm-machinelearning.CodeContainer" />[], PageSettings&gt;

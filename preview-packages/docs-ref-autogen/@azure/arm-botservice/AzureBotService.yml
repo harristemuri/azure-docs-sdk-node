@@ -103,6 +103,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.DirectLine" />
+  - name: email
+    uid: '@azure/arm-botservice.AzureBotService.email'
+    package: '@azure/arm-botservice'
+    summary: ''
+    fullName: email
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'email: Email'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-botservice.Email" />
   - name: hostSettings
     uid: '@azure/arm-botservice.AzureBotService.hostSettings'
     package: '@azure/arm-botservice'
@@ -163,6 +175,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-botservice.PrivateLinkResources" />
+  - name: qnAMakerEndpointKeys
+    uid: '@azure/arm-botservice.AzureBotService.qnAMakerEndpointKeys'
+    package: '@azure/arm-botservice'
+    summary: ''
+    fullName: qnAMakerEndpointKeys
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'qnAMakerEndpointKeys: QnAMakerEndpointKeys'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-botservice.QnAMakerEndpointKeys" />
   - name: subscriptionId
     uid: '@azure/arm-botservice.AzureBotService.subscriptionId'
     package: '@azure/arm-botservice'

@@ -9,7 +9,7 @@ isDeprecated: false
 type: interface
 methods:
   - name: >-
-      createOrUpdate(string, string, string, string, DataVersionBaseData,
+      createOrUpdate(string, string, string, string, DataVersionBase,
       DataVersionsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.DataVersions.createOrUpdate'
     package: '@azure/arm-machinelearning'
@@ -19,9 +19,8 @@ methods:
     syntax:
       content: >-
         function createOrUpdate(resourceGroupName: string, workspaceName:
-        string, name: string, version: string, body: DataVersionBaseData,
-        options?: DataVersionsCreateOrUpdateOptionalParams):
-        Promise<DataVersionBaseData>
+        string, name: string, version: string, body: DataVersionBase, options?:
+        DataVersionsCreateOrUpdateOptionalParams): Promise<DataVersionBase>
       parameters:
         - id: resourceGroupName
           type: string
@@ -36,7 +35,7 @@ methods:
           type: string
           description: Version identifier.
         - id: body
-          type: <xref uid="@azure/arm-machinelearning.DataVersionBaseData" />
+          type: <xref uid="@azure/arm-machinelearning.DataVersionBase" />
           description: Version entity to create or update.
         - id: options
           type: >-
@@ -47,7 +46,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.DataVersionBaseData"
+          Promise&lt;<xref uid="@azure/arm-machinelearning.DataVersionBase"
           />&gt;
   - name: delete(string, string, string, string, DataVersionsDeleteOptionalParams)
     uid: '@azure/arm-machinelearning.DataVersions.delete'
@@ -91,7 +90,7 @@ methods:
       content: >-
         function get(resourceGroupName: string, workspaceName: string, name:
         string, version: string, options?: DataVersionsGetOptionalParams):
-        Promise<DataVersionBaseData>
+        Promise<DataVersionBase>
       parameters:
         - id: resourceGroupName
           type: string
@@ -113,7 +112,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.DataVersionBaseData"
+          Promise&lt;<xref uid="@azure/arm-machinelearning.DataVersionBase"
           />&gt;
   - name: list(string, string, string, DataVersionsListOptionalParams)
     uid: '@azure/arm-machinelearning.DataVersions.list'
@@ -125,7 +124,7 @@ methods:
       content: >-
         function list(resourceGroupName: string, workspaceName: string, name:
         string, options?: DataVersionsListOptionalParams):
-        PagedAsyncIterableIterator<DataVersionBaseData, DataVersionBaseData[],
+        PagedAsyncIterableIterator<DataVersionBase, DataVersionBase[],
         PageSettings>
       parameters:
         - id: resourceGroupName
@@ -146,6 +145,6 @@ methods:
         description: ''
         type: >-
           PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-machinelearning.DataVersionBaseData" />, <xref
-          uid="@azure/arm-machinelearning.DataVersionBaseData" />[],
+          uid="@azure/arm-machinelearning.DataVersionBase" />, <xref
+          uid="@azure/arm-machinelearning.DataVersionBase" />[],
           PageSettings&gt;

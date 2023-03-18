@@ -29,10 +29,7 @@ constructors:
             subscription.
         - id: subscriptionId
           type: string
-          description: >-
-            Gets subscription credentials which uniquely identify Microsoft
-            Azure
-                                  subscription. The subscription ID forms part of the URI for every service call.
+          description: The ID of the target subscription.
         - id: options
           type: >-
             <xref
@@ -88,6 +85,30 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-dashboard.Operations" />
+  - name: privateEndpointConnections
+    uid: '@azure/arm-dashboard.DashboardManagementClient.privateEndpointConnections'
+    package: '@azure/arm-dashboard'
+    summary: ''
+    fullName: privateEndpointConnections
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'privateEndpointConnections: PrivateEndpointConnections'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-dashboard.PrivateEndpointConnections" />
+  - name: privateLinkResources
+    uid: '@azure/arm-dashboard.DashboardManagementClient.privateLinkResources'
+    package: '@azure/arm-dashboard'
+    summary: ''
+    fullName: privateLinkResources
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'privateLinkResources: PrivateLinkResources'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-dashboard.PrivateLinkResources" />
   - name: subscriptionId
     uid: '@azure/arm-dashboard.DashboardManagementClient.subscriptionId'
     package: '@azure/arm-dashboard'

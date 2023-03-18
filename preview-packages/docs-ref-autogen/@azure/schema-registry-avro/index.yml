@@ -4,7 +4,6 @@ name: '@azure/schema-registry-avro'
 summary: ''
 type: package
 classes:
-  - '@azure/schema-registry-avro.AvroError'
   - '@azure/schema-registry-avro.AvroSerializer'
 interfaces:
   - '@azure/schema-registry-avro.AvroSerializerOptions'

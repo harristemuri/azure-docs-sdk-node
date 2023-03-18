@@ -40,22 +40,6 @@ properties:
       return:
         description: ''
         type: boolean
-  - name: status
-    uid: '@azure/arm-cosmosdb.LocationProperties.status'
-    package: '@azure/arm-cosmosdb'
-    summary: >-
-      The current status of location in Azure.
-
-      NOTE: This property will not be serialized. It can only be populated by
-      the server.
-    fullName: status
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'status?: string'
-      return:
-        description: ''
-        type: string
   - name: supportsAvailabilityZone
     uid: '@azure/arm-cosmosdb.LocationProperties.supportsAvailabilityZone'
     package: '@azure/arm-cosmosdb'

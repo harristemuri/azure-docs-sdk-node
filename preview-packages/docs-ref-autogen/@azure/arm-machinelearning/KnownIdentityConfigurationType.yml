@@ -13,12 +13,12 @@ fields:
   - name: AMLToken
     uid: '@azure/arm-machinelearning.KnownIdentityConfigurationType.AMLToken'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: AMLToken
   - name: Managed
     uid: '@azure/arm-machinelearning.KnownIdentityConfigurationType.Managed'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Managed
   - name: UserIdentity
     uid: '@azure/arm-machinelearning.KnownIdentityConfigurationType.UserIdentity'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: UserIdentity

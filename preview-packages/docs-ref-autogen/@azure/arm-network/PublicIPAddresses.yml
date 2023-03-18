@@ -21,7 +21,7 @@ methods:
         function beginCreateOrUpdate(resourceGroupName: string,
         publicIpAddressName: string, parameters: PublicIPAddress, options?:
         PublicIPAddressesCreateOrUpdateOptionalParams):
-        Promise<PollerLike<PollOperationState<PublicIPAddress>,
+        Promise<SimplePollerLike<OperationState<PublicIPAddress>,
         PublicIPAddress>>
       parameters:
         - id: resourceGroupName
@@ -44,7 +44,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-network.PublicIPAddress" />&gt;, <xref
           uid="@azure/arm-network.PublicIPAddress" />&gt;&gt;
   - name: >-
@@ -81,6 +81,73 @@ methods:
       return:
         description: ''
         type: Promise&lt;<xref uid="@azure/arm-network.PublicIPAddress" />&gt;
+  - name: >-
+      beginDdosProtectionStatus(string, string,
+      PublicIPAddressesDdosProtectionStatusOptionalParams)
+    uid: '@azure/arm-network.PublicIPAddresses.beginDdosProtectionStatus'
+    package: '@azure/arm-network'
+    summary: Gets the Ddos Protection Status of a Public IP Address
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDdosProtectionStatus(resourceGroupName: string,
+        publicIpAddressName: string, options?:
+        PublicIPAddressesDdosProtectionStatusOptionalParams):
+        Promise<SimplePollerLike<OperationState<PublicIpDdosProtectionStatusResult>,
+        PublicIpDdosProtectionStatusResult>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: publicIpAddressName
+          type: string
+          description: The name of the public IP address.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.PublicIPAddressesDdosProtectionStatusOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
+          uid="@azure/arm-network.PublicIpDdosProtectionStatusResult" />&gt;,
+          <xref uid="@azure/arm-network.PublicIpDdosProtectionStatusResult"
+          />&gt;&gt;
+  - name: >-
+      beginDdosProtectionStatusAndWait(string, string,
+      PublicIPAddressesDdosProtectionStatusOptionalParams)
+    uid: '@azure/arm-network.PublicIPAddresses.beginDdosProtectionStatusAndWait'
+    package: '@azure/arm-network'
+    summary: Gets the Ddos Protection Status of a Public IP Address
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginDdosProtectionStatusAndWait(resourceGroupName: string,
+        publicIpAddressName: string, options?:
+        PublicIPAddressesDdosProtectionStatusOptionalParams):
+        Promise<PublicIpDdosProtectionStatusResult>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group.
+        - id: publicIpAddressName
+          type: string
+          description: The name of the public IP address.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-network.PublicIPAddressesDdosProtectionStatusOptionalParams"
+            />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-network.PublicIpDdosProtectionStatusResult" />&gt;
   - name: beginDelete(string, string, PublicIPAddressesDeleteOptionalParams)
     uid: '@azure/arm-network.PublicIPAddresses.beginDelete'
     package: '@azure/arm-network'
@@ -91,7 +158,7 @@ methods:
       content: >-
         function beginDelete(resourceGroupName: string, publicIpAddressName:
         string, options?: PublicIPAddressesDeleteOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<void>, void>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -106,7 +173,9 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;void&gt;,
+          void&gt;&gt;
   - name: beginDeleteAndWait(string, string, PublicIPAddressesDeleteOptionalParams)
     uid: '@azure/arm-network.PublicIPAddresses.beginDeleteAndWait'
     package: '@azure/arm-network'

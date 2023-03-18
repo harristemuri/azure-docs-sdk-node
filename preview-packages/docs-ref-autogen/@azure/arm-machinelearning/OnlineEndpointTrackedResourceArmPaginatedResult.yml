@@ -32,7 +32,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'value?: OnlineEndpointData[]'
+      content: 'value?: OnlineEndpoint[]'
       return:
         description: ''
-        type: <xref uid="@azure/arm-machinelearning.OnlineEndpointData" />[]
+        type: <xref uid="@azure/arm-machinelearning.OnlineEndpoint" />[]

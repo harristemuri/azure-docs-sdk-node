@@ -8,20 +8,6 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
-  - name: binding
-    uid: '@azure/arm-streamanalytics.FunctionProperties.binding'
-    package: '@azure/arm-streamanalytics'
-    summary: >-
-      The physical binding of the function. For example, in the Azure Machine
-      Learning web service’s case, this describes the endpoint.
-    fullName: binding
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'binding?: FunctionBindingUnion'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-streamanalytics.FunctionBindingUnion" />
   - name: etag
     uid: '@azure/arm-streamanalytics.FunctionProperties.etag'
     package: '@azure/arm-streamanalytics'
@@ -41,30 +27,6 @@ properties:
       return:
         description: ''
         type: string
-  - name: inputs
-    uid: '@azure/arm-streamanalytics.FunctionProperties.inputs'
-    package: '@azure/arm-streamanalytics'
-    summary: ''
-    fullName: inputs
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'inputs?: FunctionInput[]'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-streamanalytics.FunctionInput" />[]
-  - name: output
-    uid: '@azure/arm-streamanalytics.FunctionProperties.output'
-    package: '@azure/arm-streamanalytics'
-    summary: Describes the output of a function.
-    fullName: output
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'output?: FunctionOutput'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-streamanalytics.FunctionOutput" />
   - name: type
     uid: '@azure/arm-streamanalytics.FunctionProperties.type'
     package: '@azure/arm-streamanalytics'
@@ -75,7 +37,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'type: "Scalar" | "Aggregate"'
+      content: 'type: "Scalar"'
       return:
         description: ''
-        type: '"Scalar" | "Aggregate"'
+        type: '"Scalar"'

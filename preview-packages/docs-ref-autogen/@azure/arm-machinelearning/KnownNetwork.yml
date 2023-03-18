@@ -12,8 +12,8 @@ fields:
   - name: Bridge
     uid: '@azure/arm-machinelearning.KnownNetwork.Bridge'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Bridge
   - name: Host
     uid: '@azure/arm-machinelearning.KnownNetwork.Host'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Host

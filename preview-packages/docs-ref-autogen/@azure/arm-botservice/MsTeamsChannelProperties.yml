@@ -20,15 +20,15 @@ properties:
       return:
         description: ''
         type: boolean
-  - name: callingWebHook
-    uid: '@azure/arm-botservice.MsTeamsChannelProperties.callingWebHook'
+  - name: callingWebhook
+    uid: '@azure/arm-botservice.MsTeamsChannelProperties.callingWebhook'
     package: '@azure/arm-botservice'
     summary: Webhook for Microsoft Teams channel calls
-    fullName: callingWebHook
+    fullName: callingWebhook
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'callingWebHook?: string'
+      content: 'callingWebhook?: string'
       return:
         description: ''
         type: string

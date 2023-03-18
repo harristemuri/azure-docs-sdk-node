@@ -13,8 +13,8 @@ fields:
   - name: Resizing
     uid: '@azure/arm-machinelearning.KnownAllocationState.Resizing'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Resizing
   - name: Steady
     uid: '@azure/arm-machinelearning.KnownAllocationState.Steady'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Steady

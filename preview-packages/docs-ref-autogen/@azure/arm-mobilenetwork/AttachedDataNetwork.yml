@@ -2,7 +2,9 @@
 name: AttachedDataNetwork
 uid: '@azure/arm-mobilenetwork.AttachedDataNetwork'
 package: '@azure/arm-mobilenetwork'
-summary: Attached data network resource.
+summary: >-
+  Attached data network resource. Must be created in the same location as its
+  parent packet core data plane.
 fullName: AttachedDataNetwork
 remarks: ''
 isDeprecated: false
@@ -11,12 +13,15 @@ properties:
   - name: dnsAddresses
     uid: '@azure/arm-mobilenetwork.AttachedDataNetwork.dnsAddresses'
     package: '@azure/arm-mobilenetwork'
-    summary: The DNS servers to signal to UEs to use for this attached data network.
+    summary: >-
+      The DNS servers to signal to UEs to use for this attached data network.
+      This configuration is mandatory - if you don't want DNS servers, you must
+      provide an empty array.
     fullName: dnsAddresses
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'dnsAddresses?: string[]'
+      content: 'dnsAddresses: string[]'
       return:
         description: ''
         type: string[]

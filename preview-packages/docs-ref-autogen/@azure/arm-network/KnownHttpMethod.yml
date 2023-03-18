@@ -12,4 +12,4 @@ fields:
   - name: Get
     uid: '@azure/arm-network.KnownHttpMethod.Get'
     package: '@azure/arm-network'
-    summary: ''
+    summary: Get

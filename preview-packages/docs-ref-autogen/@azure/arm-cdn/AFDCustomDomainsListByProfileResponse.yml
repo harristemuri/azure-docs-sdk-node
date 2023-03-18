@@ -1,10 +1,10 @@
 ### YamlMime:TSTypeAlias
-name: AFDCustomDomainsListByProfileResponse
-uid: '@azure/arm-cdn.AFDCustomDomainsListByProfileResponse'
+name: AfdCustomDomainsListByProfileResponse
+uid: '@azure/arm-cdn.AfdCustomDomainsListByProfileResponse'
 package: '@azure/arm-cdn'
 summary: Contains response data for the listByProfile operation.
-fullName: AFDCustomDomainsListByProfileResponse
+fullName: AfdCustomDomainsListByProfileResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type AFDCustomDomainsListByProfileResponse = AFDDomainListResult
+  type AfdCustomDomainsListByProfileResponse = AFDDomainListResult

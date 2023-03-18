@@ -38,18 +38,6 @@ properties:
       return:
         description: ''
         type: string
-  - name: ebpfDataplane
-    uid: '@azure/arm-containerservice.ContainerServiceNetworkProfile.ebpfDataplane'
-    package: '@azure/arm-containerservice'
-    summary: The eBPF dataplane used for building the Kubernetes network.
-    fullName: ebpfDataplane
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'ebpfDataplane?: string'
-      return:
-        description: ''
-        type: string
   - name: ipFamilies
     uid: '@azure/arm-containerservice.ContainerServiceNetworkProfile.ipFamilies'
     package: '@azure/arm-containerservice'
@@ -65,26 +53,6 @@ properties:
       return:
         description: ''
         type: string[]
-  - name: kubeProxyConfig
-    uid: '@azure/arm-containerservice.ContainerServiceNetworkProfile.kubeProxyConfig'
-    package: '@azure/arm-containerservice'
-    summary: >-
-      Holds configuration customizations for kube-proxy. Any values not defined
-      will use the kube-proxy defaulting behavior. See
-      https://v<version>.docs.kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/
-      where <version> is represented by a <major version>-<minor version>
-      string. Kubernetes version 1.23 would be '1-23'.
-    fullName: kubeProxyConfig
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'kubeProxyConfig?: ContainerServiceNetworkProfileKubeProxyConfig'
-      return:
-        description: ''
-        type: >-
-          <xref
-          uid="@azure/arm-containerservice.ContainerServiceNetworkProfileKubeProxyConfig"
-          />
   - name: loadBalancerProfile
     uid: >-
       @azure/arm-containerservice.ContainerServiceNetworkProfile.loadBalancerProfile
@@ -151,19 +119,6 @@ properties:
     isDeprecated: false
     syntax:
       content: 'networkPlugin?: string'
-      return:
-        description: ''
-        type: string
-  - name: networkPluginMode
-    uid: >-
-      @azure/arm-containerservice.ContainerServiceNetworkProfile.networkPluginMode
-    package: '@azure/arm-containerservice'
-    summary: Network plugin mode used for building the Kubernetes network.
-    fullName: networkPluginMode
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'networkPluginMode?: string'
       return:
         description: ''
         type: string

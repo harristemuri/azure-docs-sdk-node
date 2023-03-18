@@ -17,8 +17,7 @@ methods:
     syntax:
       content: >-
         function get(location: string, publicGalleryName: string, options?:
-        CommunityGalleriesGetOptionalParams):
-        Promise<PirCommunityGalleryResource>
+        CommunityGalleriesGetOptionalParams): Promise<CommunityGallery>
       parameters:
         - id: location
           type: string
@@ -33,6 +32,4 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: >-
-          Promise&lt;<xref uid="@azure/arm-compute.PirCommunityGalleryResource"
-          />&gt;
+        type: Promise&lt;<xref uid="@azure/arm-compute.CommunityGallery" />&gt;

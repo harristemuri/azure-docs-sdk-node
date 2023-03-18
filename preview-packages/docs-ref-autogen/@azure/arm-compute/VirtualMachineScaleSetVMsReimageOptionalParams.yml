@@ -45,10 +45,12 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'vmScaleSetVMReimageInput?: VirtualMachineReimageParameters'
+      content: 'vmScaleSetVMReimageInput?: VirtualMachineScaleSetVMReimageParameters'
       return:
         description: ''
-        type: <xref uid="@azure/arm-compute.VirtualMachineReimageParameters" />
+        type: >-
+          <xref
+          uid="@azure/arm-compute.VirtualMachineScaleSetVMReimageParameters" />
 inheritedProperties:
   - name: abortSignal
     uid: >-

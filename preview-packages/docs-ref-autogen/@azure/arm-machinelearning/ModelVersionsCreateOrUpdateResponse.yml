@@ -7,4 +7,4 @@ fullName: ModelVersionsCreateOrUpdateResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type ModelVersionsCreateOrUpdateResponse = ModelVersionData
+  type ModelVersionsCreateOrUpdateResponse = ModelVersion

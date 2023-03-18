@@ -12,12 +12,12 @@ fields:
   - name: LowPriority
     uid: '@azure/arm-machinelearning.KnownVMTier.LowPriority'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: LowPriority
   - name: Spot
     uid: '@azure/arm-machinelearning.KnownVMTier.Spot'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Spot
   - name: Standard
     uid: '@azure/arm-machinelearning.KnownVMTier.Standard'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Standard

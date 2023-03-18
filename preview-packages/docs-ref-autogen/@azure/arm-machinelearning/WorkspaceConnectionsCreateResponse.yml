@@ -7,4 +7,5 @@ fullName: WorkspaceConnectionsCreateResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type WorkspaceConnectionsCreateResponse = WorkspaceConnection
+  type WorkspaceConnectionsCreateResponse =
+    WorkspaceConnectionPropertiesV2BasicResource

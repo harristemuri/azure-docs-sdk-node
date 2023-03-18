@@ -31,7 +31,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'value?: DataVersionBaseData[]'
+      content: 'value?: DataVersionBase[]'
       return:
         description: ''
-        type: <xref uid="@azure/arm-machinelearning.DataVersionBaseData" />[]
+        type: <xref uid="@azure/arm-machinelearning.DataVersionBase" />[]

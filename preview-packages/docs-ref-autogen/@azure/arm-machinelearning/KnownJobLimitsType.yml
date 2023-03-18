@@ -12,8 +12,8 @@ fields:
   - name: Command
     uid: '@azure/arm-machinelearning.KnownJobLimitsType.Command'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Command
   - name: Sweep
     uid: '@azure/arm-machinelearning.KnownJobLimitsType.Sweep'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Sweep

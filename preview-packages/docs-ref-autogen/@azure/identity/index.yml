@@ -62,6 +62,7 @@ interfaces:
   - '@azure/identity.UsernamePasswordCredentialOptions'
   - '@azure/identity.VisualStudioCodeCredentialOptions'
   - '@azure/identity.WorkloadIdentityCredentialOptions'
+  - '@azure/identity.WorkloadIdentityDefaultCredentialOptions'
 typeAliases:
   - '@azure/identity.BrowserLoginStyle'
   - '@azure/identity.ClientCertificateCredentialPEMConfiguration'

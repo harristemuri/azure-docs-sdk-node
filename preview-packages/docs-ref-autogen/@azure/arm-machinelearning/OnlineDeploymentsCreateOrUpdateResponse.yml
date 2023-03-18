@@ -7,4 +7,4 @@ fullName: OnlineDeploymentsCreateOrUpdateResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type OnlineDeploymentsCreateOrUpdateResponse = OnlineDeploymentData
+  type OnlineDeploymentsCreateOrUpdateResponse = OnlineDeployment

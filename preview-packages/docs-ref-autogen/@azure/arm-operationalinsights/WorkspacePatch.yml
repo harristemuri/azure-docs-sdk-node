@@ -83,6 +83,18 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: identity
+    uid: '@azure/arm-operationalinsights.WorkspacePatch.identity'
+    package: '@azure/arm-operationalinsights'
+    summary: The identity of the resource.
+    fullName: identity
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'identity?: Identity'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-operationalinsights.Identity" />
   - name: modifiedDate
     uid: '@azure/arm-operationalinsights.WorkspacePatch.modifiedDate'
     package: '@azure/arm-operationalinsights'

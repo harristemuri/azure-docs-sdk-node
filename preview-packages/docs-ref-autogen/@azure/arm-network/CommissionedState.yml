@@ -16,11 +16,15 @@ summary: >-
 
   **Commissioning** \
 
+  **CommissionedNoInternetAdvertise** \
+
   **Commissioned** \
 
   **Decommissioning** \
 
-  **Deprovisioning**
+  **Deprovisioning** \
+
+  **Deprovisioned**
 fullName: CommissionedState
 remarks: ''
 isDeprecated: false

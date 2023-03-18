@@ -9,7 +9,7 @@ isDeprecated: false
 type: interface
 methods:
   - name: >-
-      createOrUpdate(string, string, string, string, ComponentVersionData,
+      createOrUpdate(string, string, string, string, ComponentVersion,
       ComponentVersionsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.ComponentVersions.createOrUpdate'
     package: '@azure/arm-machinelearning'
@@ -19,9 +19,9 @@ methods:
     syntax:
       content: >-
         function createOrUpdate(resourceGroupName: string, workspaceName:
-        string, name: string, version: string, body: ComponentVersionData,
-        options?: ComponentVersionsCreateOrUpdateOptionalParams):
-        Promise<ComponentVersionData>
+        string, name: string, version: string, body: ComponentVersion, options?:
+        ComponentVersionsCreateOrUpdateOptionalParams):
+        Promise<ComponentVersion>
       parameters:
         - id: resourceGroupName
           type: string
@@ -36,7 +36,7 @@ methods:
           type: string
           description: Version identifier.
         - id: body
-          type: <xref uid="@azure/arm-machinelearning.ComponentVersionData" />
+          type: <xref uid="@azure/arm-machinelearning.ComponentVersion" />
           description: Version entity to create or update.
         - id: options
           type: >-
@@ -47,7 +47,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.ComponentVersionData"
+          Promise&lt;<xref uid="@azure/arm-machinelearning.ComponentVersion"
           />&gt;
   - name: >-
       delete(string, string, string, string,
@@ -94,7 +94,7 @@ methods:
       content: >-
         function get(resourceGroupName: string, workspaceName: string, name:
         string, version: string, options?: ComponentVersionsGetOptionalParams):
-        Promise<ComponentVersionData>
+        Promise<ComponentVersion>
       parameters:
         - id: resourceGroupName
           type: string
@@ -117,7 +117,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.ComponentVersionData"
+          Promise&lt;<xref uid="@azure/arm-machinelearning.ComponentVersion"
           />&gt;
   - name: list(string, string, string, ComponentVersionsListOptionalParams)
     uid: '@azure/arm-machinelearning.ComponentVersions.list'
@@ -129,7 +129,7 @@ methods:
       content: >-
         function list(resourceGroupName: string, workspaceName: string, name:
         string, options?: ComponentVersionsListOptionalParams):
-        PagedAsyncIterableIterator<ComponentVersionData, ComponentVersionData[],
+        PagedAsyncIterableIterator<ComponentVersion, ComponentVersion[],
         PageSettings>
       parameters:
         - id: resourceGroupName
@@ -151,6 +151,6 @@ methods:
         description: ''
         type: >-
           PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-machinelearning.ComponentVersionData" />, <xref
-          uid="@azure/arm-machinelearning.ComponentVersionData" />[],
+          uid="@azure/arm-machinelearning.ComponentVersion" />, <xref
+          uid="@azure/arm-machinelearning.ComponentVersion" />[],
           PageSettings&gt;

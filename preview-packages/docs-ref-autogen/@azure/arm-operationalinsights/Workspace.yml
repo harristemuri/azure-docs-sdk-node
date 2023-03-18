@@ -57,15 +57,15 @@ properties:
       return:
         description: ''
         type: string
-  - name: eTag
-    uid: '@azure/arm-operationalinsights.Workspace.eTag'
+  - name: etag
+    uid: '@azure/arm-operationalinsights.Workspace.etag'
     package: '@azure/arm-operationalinsights'
-    summary: The ETag of the workspace.
-    fullName: eTag
+    summary: The etag of the workspace.
+    fullName: etag
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'eTag?: string'
+      content: 'etag?: string'
       return:
         description: ''
         type: string
@@ -95,6 +95,18 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: identity
+    uid: '@azure/arm-operationalinsights.Workspace.identity'
+    package: '@azure/arm-operationalinsights'
+    summary: The identity of the resource.
+    fullName: identity
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'identity?: Identity'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-operationalinsights.Identity" />
   - name: modifiedDate
     uid: '@azure/arm-operationalinsights.Workspace.modifiedDate'
     package: '@azure/arm-operationalinsights'

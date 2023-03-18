@@ -20,6 +20,18 @@ properties:
       return:
         description: ''
         type: boolean
+  - name: identity
+    uid: '@azure/arm-rediscache.RedisCreateParameters.identity'
+    package: '@azure/arm-rediscache'
+    summary: The identity of the resource.
+    fullName: identity
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'identity?: ManagedServiceIdentity'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-rediscache.ManagedServiceIdentity" />
   - name: location
     uid: '@azure/arm-rediscache.RedisCreateParameters.location'
     package: '@azure/arm-rediscache'
@@ -83,8 +95,10 @@ properties:
     uid: '@azure/arm-rediscache.RedisCreateParameters.redisVersion'
     package: '@azure/arm-rediscache'
     summary: >-
-      Redis version. Only major version will be used in PUT/PATCH request with
-      current valid values: (4, 6)
+      Redis version. This should be in the form 'major[.minor]' (only 'major' is
+      required) or the value 'latest' which refers to the latest stable Redis
+      version that is available. Supported versions: 4.0, 6.0 (latest). Default
+      value is 'latest'.
     fullName: redisVersion
     remarks: ''
     isDeprecated: false
@@ -145,8 +159,8 @@ properties:
     uid: '@azure/arm-rediscache.RedisCreateParameters.staticIP'
     package: '@azure/arm-rediscache'
     summary: >-
-      Static IP address. Required when deploying a Redis cache inside an
-      existing Azure Virtual Network.
+      Static IP address. Optionally, may be specified when deploying a Redis
+      cache inside an existing Azure Virtual Network; auto assigned by default.
     fullName: staticIP
     remarks: ''
     isDeprecated: false

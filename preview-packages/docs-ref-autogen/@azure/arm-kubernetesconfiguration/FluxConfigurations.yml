@@ -31,15 +31,14 @@ methods:
         - id: clusterRp
           type: string
           description: >-
-            The Kubernetes cluster RP - either Microsoft.ContainerService (for
-            AKS clusters) or
-                             Microsoft.Kubernetes (for OnPrem K8S clusters).
+            The Kubernetes cluster RP - i.e. Microsoft.ContainerService,
+            Microsoft.Kubernetes,
+                             Microsoft.HybridContainerService.
         - id: clusterResourceName
           type: string
-          description: >-
-            The Kubernetes cluster resource name - either managedClusters (for
-            AKS
-                                       clusters) or connectedClusters (for OnPrem K8S clusters).
+          description: |-
+            The Kubernetes cluster resource name - i.e. managedClusters,
+                                       connectedClusters, provisionedClusters.
         - id: clusterName
           type: string
           description: The name of the kubernetes cluster.
@@ -85,15 +84,14 @@ methods:
         - id: clusterRp
           type: string
           description: >-
-            The Kubernetes cluster RP - either Microsoft.ContainerService (for
-            AKS clusters) or
-                             Microsoft.Kubernetes (for OnPrem K8S clusters).
+            The Kubernetes cluster RP - i.e. Microsoft.ContainerService,
+            Microsoft.Kubernetes,
+                             Microsoft.HybridContainerService.
         - id: clusterResourceName
           type: string
-          description: >-
-            The Kubernetes cluster resource name - either managedClusters (for
-            AKS
-                                       clusters) or connectedClusters (for OnPrem K8S clusters).
+          description: |-
+            The Kubernetes cluster resource name - i.e. managedClusters,
+                                       connectedClusters, provisionedClusters.
         - id: clusterName
           type: string
           description: The name of the kubernetes cluster.
@@ -139,15 +137,14 @@ methods:
         - id: clusterRp
           type: string
           description: >-
-            The Kubernetes cluster RP - either Microsoft.ContainerService (for
-            AKS clusters) or
-                             Microsoft.Kubernetes (for OnPrem K8S clusters).
+            The Kubernetes cluster RP - i.e. Microsoft.ContainerService,
+            Microsoft.Kubernetes,
+                             Microsoft.HybridContainerService.
         - id: clusterResourceName
           type: string
-          description: >-
-            The Kubernetes cluster resource name - either managedClusters (for
-            AKS
-                                       clusters) or connectedClusters (for OnPrem K8S clusters).
+          description: |-
+            The Kubernetes cluster resource name - i.e. managedClusters,
+                                       connectedClusters, provisionedClusters.
         - id: clusterName
           type: string
           description: The name of the kubernetes cluster.
@@ -188,15 +185,14 @@ methods:
         - id: clusterRp
           type: string
           description: >-
-            The Kubernetes cluster RP - either Microsoft.ContainerService (for
-            AKS clusters) or
-                             Microsoft.Kubernetes (for OnPrem K8S clusters).
+            The Kubernetes cluster RP - i.e. Microsoft.ContainerService,
+            Microsoft.Kubernetes,
+                             Microsoft.HybridContainerService.
         - id: clusterResourceName
           type: string
-          description: >-
-            The Kubernetes cluster resource name - either managedClusters (for
-            AKS
-                                       clusters) or connectedClusters (for OnPrem K8S clusters).
+          description: |-
+            The Kubernetes cluster resource name - i.e. managedClusters,
+                                       connectedClusters, provisionedClusters.
         - id: clusterName
           type: string
           description: The name of the kubernetes cluster.
@@ -235,15 +231,14 @@ methods:
         - id: clusterRp
           type: string
           description: >-
-            The Kubernetes cluster RP - either Microsoft.ContainerService (for
-            AKS clusters) or
-                             Microsoft.Kubernetes (for OnPrem K8S clusters).
+            The Kubernetes cluster RP - i.e. Microsoft.ContainerService,
+            Microsoft.Kubernetes,
+                             Microsoft.HybridContainerService.
         - id: clusterResourceName
           type: string
-          description: >-
-            The Kubernetes cluster resource name - either managedClusters (for
-            AKS
-                                       clusters) or connectedClusters (for OnPrem K8S clusters).
+          description: |-
+            The Kubernetes cluster resource name - i.e. managedClusters,
+                                       connectedClusters, provisionedClusters.
         - id: clusterName
           type: string
           description: The name of the kubernetes cluster.
@@ -290,15 +285,14 @@ methods:
         - id: clusterRp
           type: string
           description: >-
-            The Kubernetes cluster RP - either Microsoft.ContainerService (for
-            AKS clusters) or
-                             Microsoft.Kubernetes (for OnPrem K8S clusters).
+            The Kubernetes cluster RP - i.e. Microsoft.ContainerService,
+            Microsoft.Kubernetes,
+                             Microsoft.HybridContainerService.
         - id: clusterResourceName
           type: string
-          description: >-
-            The Kubernetes cluster resource name - either managedClusters (for
-            AKS
-                                       clusters) or connectedClusters (for OnPrem K8S clusters).
+          description: |-
+            The Kubernetes cluster resource name - i.e. managedClusters,
+                                       connectedClusters, provisionedClusters.
         - id: clusterName
           type: string
           description: The name of the kubernetes cluster.
@@ -342,15 +336,14 @@ methods:
         - id: clusterRp
           type: string
           description: >-
-            The Kubernetes cluster RP - either Microsoft.ContainerService (for
-            AKS clusters) or
-                             Microsoft.Kubernetes (for OnPrem K8S clusters).
+            The Kubernetes cluster RP - i.e. Microsoft.ContainerService,
+            Microsoft.Kubernetes,
+                             Microsoft.HybridContainerService.
         - id: clusterResourceName
           type: string
-          description: >-
-            The Kubernetes cluster resource name - either managedClusters (for
-            AKS
-                                       clusters) or connectedClusters (for OnPrem K8S clusters).
+          description: |-
+            The Kubernetes cluster resource name - i.e. managedClusters,
+                                       connectedClusters, provisionedClusters.
         - id: clusterName
           type: string
           description: The name of the kubernetes cluster.
@@ -388,15 +381,14 @@ methods:
         - id: clusterRp
           type: string
           description: >-
-            The Kubernetes cluster RP - either Microsoft.ContainerService (for
-            AKS clusters) or
-                             Microsoft.Kubernetes (for OnPrem K8S clusters).
+            The Kubernetes cluster RP - i.e. Microsoft.ContainerService,
+            Microsoft.Kubernetes,
+                             Microsoft.HybridContainerService.
         - id: clusterResourceName
           type: string
-          description: >-
-            The Kubernetes cluster resource name - either managedClusters (for
-            AKS
-                                       clusters) or connectedClusters (for OnPrem K8S clusters).
+          description: |-
+            The Kubernetes cluster resource name - i.e. managedClusters,
+                                       connectedClusters, provisionedClusters.
         - id: clusterName
           type: string
           description: The name of the kubernetes cluster.

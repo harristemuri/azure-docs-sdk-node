@@ -10,6 +10,35 @@ fullName: >-
 remarks: ''
 isDeprecated: false
 type: interface
+properties:
+  - name: placementGroupId
+    uid: >-
+      @azure/arm-compute.VirtualMachineScaleSetsForceRecoveryServiceFabricPlatformUpdateDomainWalkOptionalParams.placementGroupId
+    package: '@azure/arm-compute'
+    summary: The placement group id for which the manual recovery walk is requested.
+    fullName: placementGroupId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'placementGroupId?: string'
+      return:
+        description: ''
+        type: string
+  - name: zone
+    uid: >-
+      @azure/arm-compute.VirtualMachineScaleSetsForceRecoveryServiceFabricPlatformUpdateDomainWalkOptionalParams.zone
+    package: '@azure/arm-compute'
+    summary: >-
+      The zone in which the manual recovery walk is requested for cross zone
+      virtual machine scale set
+    fullName: zone
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'zone?: string'
+      return:
+        description: ''
+        type: string
 inheritedProperties:
   - name: abortSignal
     uid: >-

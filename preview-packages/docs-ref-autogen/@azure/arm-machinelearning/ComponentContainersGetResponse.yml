@@ -7,4 +7,4 @@ fullName: ComponentContainersGetResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type ComponentContainersGetResponse = ComponentContainerData
+  type ComponentContainersGetResponse = ComponentContainer

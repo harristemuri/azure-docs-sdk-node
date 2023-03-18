@@ -34,6 +34,20 @@ properties:
       return:
         description: ''
         type: string
+  - name: federatedClientId
+    uid: '@azure/arm-compute.DiskEncryptionSetUpdate.federatedClientId'
+    package: '@azure/arm-compute'
+    summary: >-
+      Multi-tenant application client id to access key vault in a different
+      tenant. Setting the value to 'None' will clear the property.
+    fullName: federatedClientId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'federatedClientId?: string'
+      return:
+        description: ''
+        type: string
   - name: identity
     uid: '@azure/arm-compute.DiskEncryptionSetUpdate.identity'
     package: '@azure/arm-compute'

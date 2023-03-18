@@ -22,6 +22,20 @@ properties:
       return:
         description: ''
         type: string
+  - name: targetColumnName
+    uid: '@azure/arm-machinelearning.AutoMLVertical.targetColumnName'
+    package: '@azure/arm-machinelearning'
+    summary: |-
+      Target column name: This is prediction values column.
+      Also known as label column name in context of classification tasks.
+    fullName: targetColumnName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'targetColumnName?: string'
+      return:
+        description: ''
+        type: string
   - name: taskType
     uid: '@azure/arm-machinelearning.AutoMLVertical.taskType'
     package: '@azure/arm-machinelearning'
@@ -44,3 +58,15 @@ properties:
           "ImageClassificationMultilabel" | "ImageInstanceSegmentation" |
           "ImageObjectDetection" | "Regression" | "TextClassification" |
           "TextClassificationMultilabel" | "TextNER"
+  - name: trainingData
+    uid: '@azure/arm-machinelearning.AutoMLVertical.trainingData'
+    package: '@azure/arm-machinelearning'
+    summary: '[Required] Training data input.'
+    fullName: trainingData
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'trainingData: MLTableJobInput'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-machinelearning.MLTableJobInput" />

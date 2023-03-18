@@ -22,3 +22,8 @@ syntax: |
     | "LineChannel"
     | "DirectLineSpeechChannel"
     | "OutlookChannel"
+    | "Omnichannel"
+    | "TelephonyChannel"
+    | "AcsChatChannel"
+    | "SearchAssistant"
+    | "M365Extensions"

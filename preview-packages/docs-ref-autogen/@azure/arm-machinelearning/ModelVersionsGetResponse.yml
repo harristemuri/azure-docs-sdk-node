@@ -7,4 +7,4 @@ fullName: ModelVersionsGetResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type ModelVersionsGetResponse = ModelVersionData
+  type ModelVersionsGetResponse = ModelVersion

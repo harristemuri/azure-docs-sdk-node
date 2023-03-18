@@ -92,3 +92,15 @@ properties:
       return:
         description: ''
         type: string
+  - name: name
+    uid: '@azure/arm-orbital.ContactProfileLinkChannel.name'
+    package: '@azure/arm-orbital'
+    summary: Channel name
+    fullName: name
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'name: string'
+      return:
+        description: ''
+        type: string

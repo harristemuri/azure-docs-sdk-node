@@ -12,8 +12,8 @@ fields:
   - name: Primary
     uid: '@azure/arm-machinelearning.KnownKeyType.Primary'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Primary
   - name: Secondary
     uid: '@azure/arm-machinelearning.KnownKeyType.Secondary'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Secondary

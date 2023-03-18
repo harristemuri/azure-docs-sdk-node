@@ -20,5 +20,7 @@ syntax: |
     | GcmTemplateRegistrationDescription
     | MpnsRegistrationDescription
     | MpnsTemplateRegistrationDescription
+    | XiaomiRegistrationDescription
+    | XiaomiTemplateRegistrationDescription
     | WindowsRegistrationDescription
     | WindowsTemplateRegistrationDescription

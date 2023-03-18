@@ -7,4 +7,4 @@ fullName: CodeContainersCreateOrUpdateResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type CodeContainersCreateOrUpdateResponse = CodeContainerData
+  type CodeContainersCreateOrUpdateResponse = CodeContainer

@@ -82,10 +82,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'endpoints?: AccountEndpoints'
+      content: 'endpoints?: AccountPropertiesEndpoints'
       return:
         description: ''
-        type: <xref uid="@azure/arm-purview.AccountEndpoints" />
+        type: <xref uid="@azure/arm-purview.AccountPropertiesEndpoints" />
   - name: friendlyName
     uid: '@azure/arm-purview.AccountProperties.friendlyName'
     package: '@azure/arm-purview'
@@ -126,10 +126,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'managedResources?: ManagedResources'
+      content: 'managedResources?: AccountPropertiesManagedResources'
       return:
         description: ''
-        type: <xref uid="@azure/arm-purview.ManagedResources" />
+        type: <xref uid="@azure/arm-purview.AccountPropertiesManagedResources" />
   - name: privateEndpointConnections
     uid: '@azure/arm-purview.AccountProperties.privateEndpointConnections'
     package: '@azure/arm-purview'

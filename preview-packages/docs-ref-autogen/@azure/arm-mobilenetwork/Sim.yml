@@ -90,7 +90,9 @@ properties:
   - name: simPolicy
     uid: '@azure/arm-mobilenetwork.Sim.simPolicy'
     package: '@azure/arm-mobilenetwork'
-    summary: The SIM policy used by this SIM.
+    summary: >-
+      The SIM policy used by this SIM. The SIM policy must be in the same
+      location as the SIM.
     fullName: simPolicy
     remarks: ''
     isDeprecated: false
@@ -115,6 +117,24 @@ properties:
       return:
         description: ''
         type: string
+  - name: siteProvisioningState
+    uid: '@azure/arm-mobilenetwork.Sim.siteProvisioningState'
+    package: '@azure/arm-mobilenetwork'
+    summary: >-
+      A dictionary of sites to the provisioning state of this SIM on that site.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: siteProvisioningState
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'siteProvisioningState?: {[propertyName: string]: SiteProvisioningState}'
+      return:
+        description: ''
+        type: >-
+          {[propertyName: string]: <xref
+          uid="@azure/arm-mobilenetwork.SiteProvisioningState" />}
   - name: staticIpConfiguration
     uid: '@azure/arm-mobilenetwork.Sim.staticIpConfiguration'
     package: '@azure/arm-mobilenetwork'
@@ -130,6 +150,39 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-mobilenetwork.SimStaticIpProperties" />[]
+  - name: vendorKeyFingerprint
+    uid: '@azure/arm-mobilenetwork.Sim.vendorKeyFingerprint'
+    package: '@azure/arm-mobilenetwork'
+    summary: >-
+      The public key fingerprint of the SIM vendor who provided this SIM, if
+      any.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: vendorKeyFingerprint
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'vendorKeyFingerprint?: string'
+      return:
+        description: ''
+        type: string
+  - name: vendorName
+    uid: '@azure/arm-mobilenetwork.Sim.vendorName'
+    package: '@azure/arm-mobilenetwork'
+    summary: >-
+      The name of the SIM vendor who provided this SIM, if any.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: vendorName
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'vendorName?: string'
+      return:
+        description: ''
+        type: string
 inheritedProperties:
   - name: id
     uid: '@azure/arm-mobilenetwork.Sim.id'

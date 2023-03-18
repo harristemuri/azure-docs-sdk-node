@@ -28,7 +28,8 @@ properties:
     summary: >-
       The default data network to use if the UE does not explicitly specify it.
       Configuration for this object must exist in the
-      `dataNetworkConfigurations` map.
+      `dataNetworkConfigurations` map. The data network must be in the same
+      location as the SIM policy.
     fullName: defaultDataNetwork
     remarks: ''
     isDeprecated: false
@@ -40,7 +41,9 @@ properties:
   - name: slice
     uid: '@azure/arm-mobilenetwork.SliceConfiguration.slice'
     package: '@azure/arm-mobilenetwork'
-    summary: A reference to the slice that these settings apply to
+    summary: >-
+      A reference to the slice that these settings apply to. The slice must be
+      in the same location as the SIM policy.
     fullName: slice
     remarks: ''
     isDeprecated: false

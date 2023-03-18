@@ -7,4 +7,4 @@ fullName: JobsCreateOrUpdateResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type JobsCreateOrUpdateResponse = JobBaseData
+  type JobsCreateOrUpdateResponse = JobBase

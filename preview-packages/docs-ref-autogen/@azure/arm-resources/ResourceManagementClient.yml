@@ -36,6 +36,30 @@ constructors:
             uid="@azure/arm-resources.ResourceManagementClientOptionalParams" />
           description: The parameter options
 properties:
+  - name: $host
+    uid: '@azure/arm-resources.ResourceManagementClient.$host'
+    package: '@azure/arm-resources'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
+  - name: apiVersion
+    uid: '@azure/arm-resources.ResourceManagementClient.apiVersion'
+    package: '@azure/arm-resources'
+    summary: ''
+    fullName: apiVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion: string'
+      return:
+        description: ''
+        type: string
   - name: deploymentOperations
     uid: '@azure/arm-resources.ResourceManagementClient.deploymentOperations'
     package: '@azure/arm-resources'
@@ -120,6 +144,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-resources.Resources" />
+  - name: subscriptionId
+    uid: '@azure/arm-resources.ResourceManagementClient.subscriptionId'
+    package: '@azure/arm-resources'
+    summary: ''
+    fullName: subscriptionId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        description: ''
+        type: string
   - name: tagsOperations
     uid: '@azure/arm-resources.ResourceManagementClient.tagsOperations'
     package: '@azure/arm-resources'
@@ -133,36 +169,6 @@ properties:
         description: ''
         type: <xref uid="@azure/arm-resources.TagsOperations" />
 inheritedProperties:
-  - name: $host
-    uid: '@azure/arm-resources.ResourceManagementClient.$host'
-    package: '@azure/arm-resources'
-    summary: ''
-    fullName: $host
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: '$host: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ResourceManagementClientContext.$host](xref:@azure/arm-resources.ResourceManagementClientContext.$host)
-  - name: apiVersion
-    uid: '@azure/arm-resources.ResourceManagementClient.apiVersion'
-    package: '@azure/arm-resources'
-    summary: ''
-    fullName: apiVersion
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'apiVersion: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ResourceManagementClientContext.apiVersion](xref:@azure/arm-resources.ResourceManagementClientContext.apiVersion)
   - name: pipeline
     uid: '@azure/arm-resources.ResourceManagementClient.pipeline'
     package: '@azure/arm-resources'
@@ -175,24 +181,7 @@ inheritedProperties:
       return:
         description: ''
         type: Pipeline
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ResourceManagementClientContext.pipeline](xref:@azure/arm-resources.ResourceManagementClientContext.pipeline)
-  - name: subscriptionId
-    uid: '@azure/arm-resources.ResourceManagementClient.subscriptionId'
-    package: '@azure/arm-resources'
-    summary: ''
-    fullName: subscriptionId
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'subscriptionId: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ResourceManagementClientContext.subscriptionId](xref:@azure/arm-resources.ResourceManagementClientContext.subscriptionId)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.pipeline
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
     uid: '@azure/arm-resources.ResourceManagementClient.sendOperationRequest'
@@ -216,9 +205,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ResourceManagementClientContext.sendOperationRequest](xref:@azure/arm-resources.ResourceManagementClientContext.sendOperationRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-resources.ResourceManagementClient.sendRequest'
     package: '@azure/arm-resources'
@@ -236,7 +223,5 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ResourceManagementClientContext.sendRequest](xref:@azure/arm-resources.ResourceManagementClientContext.sendRequest)
-extends: <xref uid="@azure/arm-resources.ResourceManagementClientContext" />
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendRequest
+extends: ServiceClient

@@ -17,7 +17,20 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'cognitiveServiceRegion: string'
+      content: 'cognitiveServiceRegion?: string'
+      return:
+        description: ''
+        type: string
+  - name: cognitiveServiceResourceId
+    uid: >-
+      @azure/arm-botservice.DirectLineSpeechChannelProperties.cognitiveServiceResourceId
+    package: '@azure/arm-botservice'
+    summary: The cognitive service id with this channel registration.
+    fullName: cognitiveServiceResourceId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'cognitiveServiceResourceId?: string'
       return:
         description: ''
         type: string
@@ -32,7 +45,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'cognitiveServiceSubscriptionKey: string'
+      content: 'cognitiveServiceSubscriptionKey?: string'
       return:
         description: ''
         type: string

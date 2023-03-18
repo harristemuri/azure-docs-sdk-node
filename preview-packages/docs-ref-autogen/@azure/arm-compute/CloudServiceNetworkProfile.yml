@@ -23,6 +23,24 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-compute.LoadBalancerConfiguration" />[]
+  - name: slotType
+    uid: '@azure/arm-compute.CloudServiceNetworkProfile.slotType'
+    package: '@azure/arm-compute'
+    summary: >-
+      Slot type for the cloud service.
+
+      Possible values are <br /><br />**Production**<br /><br />**Staging**<br
+      /><br />
+
+      If not specified, the default value is Production.
+    fullName: slotType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'slotType?: string'
+      return:
+        description: ''
+        type: string
   - name: swappableCloudService
     uid: '@azure/arm-compute.CloudServiceNetworkProfile.swappableCloudService'
     package: '@azure/arm-compute'

@@ -12,9 +12,7 @@ summary: >-
 
   **None** \
 
-  **Cassandra** \
-
-  **Ldap**
+  **Cassandra**
 fullName: AuthenticationMethod
 remarks: ''
 isDeprecated: false

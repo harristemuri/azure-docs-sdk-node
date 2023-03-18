@@ -65,7 +65,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'vm: Resource'
+      content: 'vm: Vm'
       return:
         description: ''
-        type: <xref uid="@azure/arm-network.Resource" />
+        type: <xref uid="@azure/arm-network.Vm" />

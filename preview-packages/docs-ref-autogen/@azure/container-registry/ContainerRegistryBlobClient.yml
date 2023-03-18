@@ -41,7 +41,7 @@ constructors:
     syntax:
       content: >-
         new ContainerRegistryBlobClient(endpoint: string, repositoryName:
-        string, credential: TokenCredential, options:
+        string, credential: TokenCredential, options?:
         ContainerRegistryBlobClientOptions)
       parameters:
         - id: endpoint
@@ -152,7 +152,19 @@ methods:
   - name: downloadManifest(string, DownloadManifestOptions)
     uid: '@azure/container-registry.ContainerRegistryBlobClient.downloadManifest'
     package: '@azure/container-registry'
-    summary: Downloads the manifest for an OCI artifact
+    summary: >-
+      Downloads the manifest for an OCI artifact.
+
+
+      If the manifest downloaded was of type
+      [OciManifest](xref:@azure/container-registry.KnownManifestMediaType.OciManifest),
+      the downloaded manifest will be of type
+      [DownloadOciImageManifestResult](xref:@azure/container-registry.DownloadOciImageManifestResult).
+
+      You can use
+      [isDownloadOciImageManifestResult](xref:@azure/container-registry.isDownloadOciImageManifestResult)
+      to determine whether this is the case. If so, the strongly typed
+      deserialized manifest will be available through the `manifest` property.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -171,7 +183,7 @@ methods:
         type: >-
           Promise&lt;<xref
           uid="@azure/container-registry.DownloadManifestResult" />&gt;
-  - name: uploadBlob(ReadableStream, UploadBlobOptions)
+  - name: uploadBlob(Buffer | ReadableStream, UploadBlobOptions)
     uid: '@azure/container-registry.ContainerRegistryBlobClient.uploadBlob'
     package: '@azure/container-registry'
     summary: Upload an artifact blob.
@@ -179,12 +191,12 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function uploadBlob(blobStream: ReadableStream, options?:
+        function uploadBlob(blob: Buffer | ReadableStream, options?:
         UploadBlobOptions): Promise<UploadBlobResult>
       parameters:
-        - id: blobStream
-          type: ReadableStream
-          description: the stream containing the blob data.
+        - id: blob
+          type: Buffer | ReadableStream
+          description: ''
         - id: options
           type: <xref uid="@azure/container-registry.UploadBlobOptions" />
           description: ''
@@ -194,7 +206,7 @@ methods:
           Promise&lt;<xref uid="@azure/container-registry.UploadBlobResult"
           />&gt;
   - name: >-
-      uploadManifest(() => ReadableStream | ReadableStream | OciManifest,
+      uploadManifest(Buffer | ReadableStream | OciImageManifest,
       UploadManifestOptions)
     uid: '@azure/container-registry.ContainerRegistryBlobClient.uploadManifest'
     package: '@azure/container-registry'
@@ -203,14 +215,14 @@ methods:
     isDeprecated: false
     syntax:
       content: >-
-        function uploadManifest(manifest: () => ReadableStream | ReadableStream
-        | OciManifest, options?: UploadManifestOptions):
+        function uploadManifest(manifest: Buffer | ReadableStream |
+        OciImageManifest, options?: UploadManifestOptions):
         Promise<UploadManifestResult>
       parameters:
         - id: manifest
           type: >-
-            () =&gt; ReadableStream | ReadableStream | <xref
-            uid="@azure/container-registry.OciManifest" />
+            Buffer | ReadableStream | <xref
+            uid="@azure/container-registry.OciImageManifest" />
           description: >-
             the manifest to upload. If a resettable stream (a factory function
             that returns a stream) is provided, it may be called multiple times.

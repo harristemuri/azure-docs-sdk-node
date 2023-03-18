@@ -63,34 +63,6 @@ properties:
       return:
         description: ''
         type: string
-  - name: clusterExtensionType
-    uid: >-
-      @azure/arm-kubernetesconfiguration.SourceControlConfigurationClient.clusterExtensionType
-    package: '@azure/arm-kubernetesconfiguration'
-    summary: ''
-    fullName: clusterExtensionType
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'clusterExtensionType: ClusterExtensionType'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-kubernetesconfiguration.ClusterExtensionType" />
-  - name: clusterExtensionTypes
-    uid: >-
-      @azure/arm-kubernetesconfiguration.SourceControlConfigurationClient.clusterExtensionTypes
-    package: '@azure/arm-kubernetesconfiguration'
-    summary: ''
-    fullName: clusterExtensionTypes
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'clusterExtensionTypes: ClusterExtensionTypes'
-      return:
-        description: ''
-        type: >-
-          <xref uid="@azure/arm-kubernetesconfiguration.ClusterExtensionTypes"
-          />
   - name: extensions
     uid: >-
       @azure/arm-kubernetesconfiguration.SourceControlConfigurationClient.extensions
@@ -104,21 +76,6 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-kubernetesconfiguration.Extensions" />
-  - name: extensionTypeVersions
-    uid: >-
-      @azure/arm-kubernetesconfiguration.SourceControlConfigurationClient.extensionTypeVersions
-    package: '@azure/arm-kubernetesconfiguration'
-    summary: ''
-    fullName: extensionTypeVersions
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'extensionTypeVersions: ExtensionTypeVersions'
-      return:
-        description: ''
-        type: >-
-          <xref uid="@azure/arm-kubernetesconfiguration.ExtensionTypeVersions"
-          />
   - name: fluxConfigOperationStatus
     uid: >-
       @azure/arm-kubernetesconfiguration.SourceControlConfigurationClient.fluxConfigOperationStatus
@@ -147,21 +104,6 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-kubernetesconfiguration.FluxConfigurations" />
-  - name: locationExtensionTypes
-    uid: >-
-      @azure/arm-kubernetesconfiguration.SourceControlConfigurationClient.locationExtensionTypes
-    package: '@azure/arm-kubernetesconfiguration'
-    summary: ''
-    fullName: locationExtensionTypes
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'locationExtensionTypes: LocationExtensionTypes'
-      return:
-        description: ''
-        type: >-
-          <xref uid="@azure/arm-kubernetesconfiguration.LocationExtensionTypes"
-          />
   - name: operations
     uid: >-
       @azure/arm-kubernetesconfiguration.SourceControlConfigurationClient.operations

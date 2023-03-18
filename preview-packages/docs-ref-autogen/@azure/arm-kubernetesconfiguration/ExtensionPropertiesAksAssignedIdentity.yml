@@ -51,7 +51,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'type?: "SystemAssigned"'
+      content: 'type?: AKSIdentityType'
       return:
         description: ''
-        type: '"SystemAssigned"'
+        type: <xref uid="@azure/arm-kubernetesconfiguration.AKSIdentityType" />

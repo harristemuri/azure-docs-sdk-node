@@ -8,9 +8,7 @@ remarks: ''
 isDeprecated: false
 type: interface
 methods:
-  - name: >-
-      listByLocation(string,
-      OperationsHealthOperationsListByLocationOptionalParams)
+  - name: listByLocation(string, OperationsHealthListByLocationOptionalParams)
     uid: '@azure/arm-sql.OperationsHealthOperations.listByLocation'
     package: '@azure/arm-sql'
     summary: Gets a service operation health status.
@@ -19,7 +17,7 @@ methods:
     syntax:
       content: >-
         function listByLocation(locationName: string, options?:
-        OperationsHealthOperationsListByLocationOptionalParams):
+        OperationsHealthListByLocationOptionalParams):
         PagedAsyncIterableIterator<OperationsHealth, OperationsHealth[],
         PageSettings>
       parameters:
@@ -29,8 +27,7 @@ methods:
         - id: options
           type: >-
             <xref
-            uid="@azure/arm-sql.OperationsHealthOperationsListByLocationOptionalParams"
-            />
+            uid="@azure/arm-sql.OperationsHealthListByLocationOptionalParams" />
           description: The options parameters.
       return:
         description: ''

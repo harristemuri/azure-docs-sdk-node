@@ -12,16 +12,16 @@ fields:
   - name: CreatedAtAsc
     uid: '@azure/arm-machinelearning.KnownOrderString.CreatedAtAsc'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: CreatedAtAsc
   - name: CreatedAtDesc
     uid: '@azure/arm-machinelearning.KnownOrderString.CreatedAtDesc'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: CreatedAtDesc
   - name: UpdatedAtAsc
     uid: '@azure/arm-machinelearning.KnownOrderString.UpdatedAtAsc'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: UpdatedAtAsc
   - name: UpdatedAtDesc
     uid: '@azure/arm-machinelearning.KnownOrderString.UpdatedAtDesc'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: UpdatedAtDesc

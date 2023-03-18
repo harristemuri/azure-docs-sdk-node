@@ -7,21 +7,6 @@ fullName: SharedGalleryImagesListNextOptionalParams
 remarks: ''
 isDeprecated: false
 type: interface
-properties:
-  - name: sharedTo
-    uid: '@azure/arm-compute.SharedGalleryImagesListNextOptionalParams.sharedTo'
-    package: '@azure/arm-compute'
-    summary: >-
-      The query parameter to decide what shared galleries to fetch when doing
-      listing operations.
-    fullName: sharedTo
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'sharedTo?: string'
-      return:
-        description: ''
-        type: string
 inheritedProperties:
   - name: abortSignal
     uid: '@azure/arm-compute.SharedGalleryImagesListNextOptionalParams.abortSignal'

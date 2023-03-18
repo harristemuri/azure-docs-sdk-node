@@ -19,10 +19,23 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'diskEncryptionSet?: SubResource'
+      content: 'diskEncryptionSet?: DiskEncryptionSetParameters'
       return:
         description: ''
-        type: <xref uid="@azure/arm-compute.SubResource" />
+        type: <xref uid="@azure/arm-compute.DiskEncryptionSetParameters" />
+  - name: securityProfile
+    uid: >-
+      @azure/arm-compute.VirtualMachineScaleSetManagedDiskParameters.securityProfile
+    package: '@azure/arm-compute'
+    summary: Specifies the security profile for the managed disk.
+    fullName: securityProfile
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'securityProfile?: VMDiskSecurityProfile'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-compute.VMDiskSecurityProfile" />
   - name: storageAccountType
     uid: >-
       @azure/arm-compute.VirtualMachineScaleSetManagedDiskParameters.storageAccountType

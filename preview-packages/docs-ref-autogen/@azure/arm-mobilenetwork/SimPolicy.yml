@@ -13,7 +13,8 @@ properties:
     package: '@azure/arm-mobilenetwork'
     summary: >-
       The default slice to use if the UE does not explicitly specify it. This
-      slice must exist in the `sliceConfigurations` map.
+      slice must exist in the `sliceConfigurations` map. The slice must be in
+      the same location as the SIM policy.
     fullName: defaultSlice
     remarks: ''
     isDeprecated: false
@@ -64,6 +65,25 @@ properties:
       return:
         description: ''
         type: number
+  - name: siteProvisioningState
+    uid: '@azure/arm-mobilenetwork.SimPolicy.siteProvisioningState'
+    package: '@azure/arm-mobilenetwork'
+    summary: >-
+      A dictionary of sites to the provisioning state of this SIM policy on that
+      site.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: siteProvisioningState
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'siteProvisioningState?: {[propertyName: string]: SiteProvisioningState}'
+      return:
+        description: ''
+        type: >-
+          {[propertyName: string]: <xref
+          uid="@azure/arm-mobilenetwork.SiteProvisioningState" />}
   - name: sliceConfigurations
     uid: '@azure/arm-mobilenetwork.SimPolicy.sliceConfigurations'
     package: '@azure/arm-mobilenetwork'

@@ -21,6 +21,19 @@ properties:
       return:
         description: ''
         type: string
+  - name: apiVersion
+    uid: >-
+      @azure/arm-streamanalytics.StreamAnalyticsManagementClientOptionalParams.apiVersion
+    package: '@azure/arm-streamanalytics'
+    summary: Api Version
+    fullName: apiVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion?: string'
+      return:
+        description: ''
+        type: string
   - name: endpoint
     uid: >-
       @azure/arm-streamanalytics.StreamAnalyticsManagementClientOptionalParams.endpoint

@@ -28,19 +28,19 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'osDiskImage?: GalleryDiskImage'
+      content: 'osDiskImage?: GalleryOSDiskImage'
       return:
         description: ''
-        type: <xref uid="@azure/arm-compute.GalleryDiskImage" />
+        type: <xref uid="@azure/arm-compute.GalleryOSDiskImage" />
   - name: source
     uid: '@azure/arm-compute.GalleryImageVersionStorageProfile.source'
     package: '@azure/arm-compute'
-    summary: The gallery artifact version source.
+    summary: The source of the gallery artifact version.
     fullName: source
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'source?: GalleryArtifactVersionSource'
+      content: 'source?: GalleryArtifactVersionFullSource'
       return:
         description: ''
-        type: <xref uid="@azure/arm-compute.GalleryArtifactVersionSource" />
+        type: <xref uid="@azure/arm-compute.GalleryArtifactVersionFullSource" />

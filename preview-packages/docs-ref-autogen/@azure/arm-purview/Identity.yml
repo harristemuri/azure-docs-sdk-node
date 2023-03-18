@@ -52,3 +52,17 @@ properties:
       return:
         description: ''
         type: string
+  - name: userAssignedIdentities
+    uid: '@azure/arm-purview.Identity.userAssignedIdentities'
+    package: '@azure/arm-purview'
+    summary: User Assigned Identities
+    fullName: userAssignedIdentities
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'userAssignedIdentities?: {[propertyName: string]: UserAssignedIdentity}'
+      return:
+        description: ''
+        type: >-
+          {[propertyName: string]: <xref
+          uid="@azure/arm-purview.UserAssignedIdentity" />}

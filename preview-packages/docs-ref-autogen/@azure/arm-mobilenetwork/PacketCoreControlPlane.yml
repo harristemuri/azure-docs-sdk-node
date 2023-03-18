@@ -31,10 +31,10 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'coreNetworkTechnology?: string'
+      content: 'coreNetworkTechnology?: CoreNetworkType'
       return:
         description: ''
-        type: string
+        type: <xref uid="@azure/arm-mobilenetwork.CoreNetworkType" />
   - name: identity
     uid: '@azure/arm-mobilenetwork.PacketCoreControlPlane.identity'
     package: '@azure/arm-mobilenetwork'
@@ -49,6 +49,22 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-mobilenetwork.ManagedServiceIdentity" />
+  - name: installation
+    uid: '@azure/arm-mobilenetwork.PacketCoreControlPlane.installation'
+    package: '@azure/arm-mobilenetwork'
+    summary: >-
+      The installation state of the packet core control plane resource.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: installation
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'installation?: Installation'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mobilenetwork.Installation" />
   - name: interopSettings
     uid: '@azure/arm-mobilenetwork.PacketCoreControlPlane.interopSettings'
     package: '@azure/arm-mobilenetwork'
@@ -73,24 +89,12 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'localDiagnosticsAccess?: LocalDiagnosticsAccessConfiguration'
+      content: 'localDiagnosticsAccess: LocalDiagnosticsAccessConfiguration'
       return:
         description: ''
         type: >-
           <xref
           uid="@azure/arm-mobilenetwork.LocalDiagnosticsAccessConfiguration" />
-  - name: mobileNetwork
-    uid: '@azure/arm-mobilenetwork.PacketCoreControlPlane.mobileNetwork'
-    package: '@azure/arm-mobilenetwork'
-    summary: Mobile network in which this packet core control plane is deployed.
-    fullName: mobileNetwork
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'mobileNetwork: MobileNetworkResourceId'
-      return:
-        description: ''
-        type: <xref uid="@azure/arm-mobilenetwork.MobileNetworkResourceId" />
   - name: platform
     uid: '@azure/arm-mobilenetwork.PacketCoreControlPlane.platform'
     package: '@azure/arm-mobilenetwork'
@@ -99,7 +103,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'platform?: PlatformConfiguration'
+      content: 'platform: PlatformConfiguration'
       return:
         description: ''
         type: <xref uid="@azure/arm-mobilenetwork.PlatformConfiguration" />
@@ -119,6 +123,37 @@ properties:
       return:
         description: ''
         type: string
+  - name: rollbackVersion
+    uid: '@azure/arm-mobilenetwork.PacketCoreControlPlane.rollbackVersion'
+    package: '@azure/arm-mobilenetwork'
+    summary: >-
+      The previous version of the packet core software that was deployed. Used
+      when performing the rollback action.
+
+      NOTE: This property will not be serialized. It can only be populated by
+      the server.
+    fullName: rollbackVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'rollbackVersion?: string'
+      return:
+        description: ''
+        type: string
+  - name: sites
+    uid: '@azure/arm-mobilenetwork.PacketCoreControlPlane.sites'
+    package: '@azure/arm-mobilenetwork'
+    summary: >-
+      Site(s) under which this packet core control plane should be deployed. The
+      sites must be in the same location as the packet core control plane.
+    fullName: sites
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'sites: SiteResourceId[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/arm-mobilenetwork.SiteResourceId" />[]
   - name: sku
     uid: '@azure/arm-mobilenetwork.PacketCoreControlPlane.sku'
     package: '@azure/arm-mobilenetwork'
@@ -133,6 +168,22 @@ properties:
       return:
         description: ''
         type: string
+  - name: ueMtu
+    uid: '@azure/arm-mobilenetwork.PacketCoreControlPlane.ueMtu'
+    package: '@azure/arm-mobilenetwork'
+    summary: >-
+      The MTU (in bytes) signaled to the UE. The same MTU is set on the user
+      plane data links for all data networks. The MTU set on the user plane
+      access link is calculated to be 60 bytes greater than this value to allow
+      for GTP encapsulation.
+    fullName: ueMtu
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'ueMtu?: number'
+      return:
+        description: ''
+        type: number
   - name: version
     uid: '@azure/arm-mobilenetwork.PacketCoreControlPlane.version'
     package: '@azure/arm-mobilenetwork'

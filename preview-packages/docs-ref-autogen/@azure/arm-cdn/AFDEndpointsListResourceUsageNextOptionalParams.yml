@@ -1,15 +1,15 @@
 ### YamlMime:TSType
-name: AFDEndpointsListResourceUsageNextOptionalParams
-uid: '@azure/arm-cdn.AFDEndpointsListResourceUsageNextOptionalParams'
+name: AfdEndpointsListResourceUsageNextOptionalParams
+uid: '@azure/arm-cdn.AfdEndpointsListResourceUsageNextOptionalParams'
 package: '@azure/arm-cdn'
 summary: Optional parameters.
-fullName: AFDEndpointsListResourceUsageNextOptionalParams
+fullName: AfdEndpointsListResourceUsageNextOptionalParams
 remarks: ''
 isDeprecated: false
 type: interface
 inheritedProperties:
   - name: abortSignal
-    uid: '@azure/arm-cdn.AFDEndpointsListResourceUsageNextOptionalParams.abortSignal'
+    uid: '@azure/arm-cdn.AfdEndpointsListResourceUsageNextOptionalParams.abortSignal'
     package: '@azure/arm-cdn'
     summary: The signal which can be used to abort requests.
     fullName: abortSignal
@@ -22,7 +22,7 @@ inheritedProperties:
         type: AbortSignalLike
     inheritanceDescription: <b>Inherited From</b> coreClient.OperationOptions.abortSignal
   - name: onResponse
-    uid: '@azure/arm-cdn.AFDEndpointsListResourceUsageNextOptionalParams.onResponse'
+    uid: '@azure/arm-cdn.AfdEndpointsListResourceUsageNextOptionalParams.onResponse'
     package: '@azure/arm-cdn'
     summary: |-
       A function to be called each time a response is received from the server
@@ -39,7 +39,7 @@ inheritedProperties:
     inheritanceDescription: <b>Inherited From</b> coreClient.OperationOptions.onResponse
   - name: requestOptions
     uid: >-
-      @azure/arm-cdn.AFDEndpointsListResourceUsageNextOptionalParams.requestOptions
+      @azure/arm-cdn.AfdEndpointsListResourceUsageNextOptionalParams.requestOptions
     package: '@azure/arm-cdn'
     summary: Options used when creating and sending HTTP requests for this operation.
     fullName: requestOptions
@@ -53,7 +53,7 @@ inheritedProperties:
     inheritanceDescription: <b>Inherited From</b> coreClient.OperationOptions.requestOptions
   - name: serializerOptions
     uid: >-
-      @azure/arm-cdn.AFDEndpointsListResourceUsageNextOptionalParams.serializerOptions
+      @azure/arm-cdn.AfdEndpointsListResourceUsageNextOptionalParams.serializerOptions
     package: '@azure/arm-cdn'
     summary: Options to override serialization/de-serialization behavior.
     fullName: serializerOptions
@@ -67,7 +67,7 @@ inheritedProperties:
     inheritanceDescription: <b>Inherited From</b> coreClient.OperationOptions.serializerOptions
   - name: tracingOptions
     uid: >-
-      @azure/arm-cdn.AFDEndpointsListResourceUsageNextOptionalParams.tracingOptions
+      @azure/arm-cdn.AfdEndpointsListResourceUsageNextOptionalParams.tracingOptions
     package: '@azure/arm-cdn'
     summary: Options used when tracing is enabled.
     fullName: tracingOptions

@@ -7,4 +7,4 @@ fullName: GetOperationResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type GetOperationResponse = OperationDetails
+  type GetOperationResponse = OperationDetailsUnion

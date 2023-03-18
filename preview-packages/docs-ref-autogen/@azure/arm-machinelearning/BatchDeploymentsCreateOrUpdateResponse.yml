@@ -7,4 +7,4 @@ fullName: BatchDeploymentsCreateOrUpdateResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type BatchDeploymentsCreateOrUpdateResponse = BatchDeploymentData
+  type BatchDeploymentsCreateOrUpdateResponse = BatchDeployment

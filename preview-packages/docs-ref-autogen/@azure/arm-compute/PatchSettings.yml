@@ -25,6 +25,25 @@ properties:
       return:
         description: ''
         type: string
+  - name: automaticByPlatformSettings
+    uid: '@azure/arm-compute.PatchSettings.automaticByPlatformSettings'
+    package: '@azure/arm-compute'
+    summary: >-
+      Specifies additional settings for patch mode AutomaticByPlatform in VM
+      Guest Patching on Windows.
+    fullName: automaticByPlatformSettings
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        automaticByPlatformSettings?:
+        WindowsVMGuestPatchAutomaticByPlatformSettings
+      return:
+        description: ''
+        type: >-
+          <xref
+          uid="@azure/arm-compute.WindowsVMGuestPatchAutomaticByPlatformSettings"
+          />
   - name: enableHotpatching
     uid: '@azure/arm-compute.PatchSettings.enableHotpatching'
     package: '@azure/arm-compute'

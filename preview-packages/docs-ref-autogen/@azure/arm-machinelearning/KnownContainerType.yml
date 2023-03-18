@@ -12,8 +12,8 @@ fields:
   - name: InferenceServer
     uid: '@azure/arm-machinelearning.KnownContainerType.InferenceServer'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: InferenceServer
   - name: StorageInitializer
     uid: '@azure/arm-machinelearning.KnownContainerType.StorageInitializer'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: StorageInitializer

@@ -8,6 +8,18 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: groupIds
+    uid: '@azure/arm-botservice.PrivateEndpointConnection.groupIds'
+    package: '@azure/arm-botservice'
+    summary: Group ids
+    fullName: groupIds
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'groupIds?: string[]'
+      return:
+        description: ''
+        type: string[]
   - name: privateEndpoint
     uid: '@azure/arm-botservice.PrivateEndpointConnection.privateEndpoint'
     package: '@azure/arm-botservice'

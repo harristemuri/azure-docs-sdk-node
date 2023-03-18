@@ -6,8 +6,6 @@ type: package
 enums:
   - '@azure/arm-kubernetesconfiguration.KnownComplianceStateType'
   - '@azure/arm-kubernetesconfiguration.KnownCreatedByType'
-  - '@azure/arm-kubernetesconfiguration.KnownEnum0'
-  - '@azure/arm-kubernetesconfiguration.KnownEnum1'
   - '@azure/arm-kubernetesconfiguration.KnownFluxComplianceState'
   - '@azure/arm-kubernetesconfiguration.KnownKustomizationValidationType'
   - '@azure/arm-kubernetesconfiguration.KnownLevelType'
@@ -23,27 +21,13 @@ classes:
 interfaces:
   - '@azure/arm-kubernetesconfiguration.BucketDefinition'
   - '@azure/arm-kubernetesconfiguration.BucketPatchDefinition'
-  - '@azure/arm-kubernetesconfiguration.ClusterExtensionType'
-  - '@azure/arm-kubernetesconfiguration.ClusterExtensionTypeGetOptionalParams'
-  - '@azure/arm-kubernetesconfiguration.ClusterExtensionTypes'
-  - >-
-    @azure/arm-kubernetesconfiguration.ClusterExtensionTypesListNextOptionalParams
-  - '@azure/arm-kubernetesconfiguration.ClusterExtensionTypesListOptionalParams'
   - '@azure/arm-kubernetesconfiguration.ComplianceStatus'
-  - '@azure/arm-kubernetesconfiguration.DependsOnDefinition'
   - '@azure/arm-kubernetesconfiguration.ErrorAdditionalInfo'
   - '@azure/arm-kubernetesconfiguration.ErrorDetail'
   - '@azure/arm-kubernetesconfiguration.ErrorResponse'
+  - '@azure/arm-kubernetesconfiguration.Extension'
   - '@azure/arm-kubernetesconfiguration.ExtensionPropertiesAksAssignedIdentity'
   - '@azure/arm-kubernetesconfiguration.ExtensionStatus'
-  - '@azure/arm-kubernetesconfiguration.ExtensionType'
-  - '@azure/arm-kubernetesconfiguration.ExtensionTypeList'
-  - '@azure/arm-kubernetesconfiguration.ExtensionTypeVersions'
-  - >-
-    @azure/arm-kubernetesconfiguration.ExtensionTypeVersionsListNextOptionalParams
-  - '@azure/arm-kubernetesconfiguration.ExtensionTypeVersionsListOptionalParams'
-  - '@azure/arm-kubernetesconfiguration.ExtensionVersionList'
-  - '@azure/arm-kubernetesconfiguration.ExtensionVersionListVersionsItem'
   - '@azure/arm-kubernetesconfiguration.Extensions'
   - '@azure/arm-kubernetesconfiguration.ExtensionsCreateOptionalParams'
   - '@azure/arm-kubernetesconfiguration.ExtensionsDeleteOptionalParams'
@@ -55,6 +39,7 @@ interfaces:
   - '@azure/arm-kubernetesconfiguration.FluxConfigOperationStatus'
   - >-
     @azure/arm-kubernetesconfiguration.FluxConfigOperationStatusGetOptionalParams
+  - '@azure/arm-kubernetesconfiguration.FluxConfiguration'
   - '@azure/arm-kubernetesconfiguration.FluxConfigurationPatch'
   - '@azure/arm-kubernetesconfiguration.FluxConfigurations'
   - >-
@@ -72,10 +57,6 @@ interfaces:
   - '@azure/arm-kubernetesconfiguration.Identity'
   - '@azure/arm-kubernetesconfiguration.KustomizationDefinition'
   - '@azure/arm-kubernetesconfiguration.KustomizationPatchDefinition'
-  - '@azure/arm-kubernetesconfiguration.LocationExtensionTypes'
-  - >-
-    @azure/arm-kubernetesconfiguration.LocationExtensionTypesListNextOptionalParams
-  - '@azure/arm-kubernetesconfiguration.LocationExtensionTypesListOptionalParams'
   - '@azure/arm-kubernetesconfiguration.ObjectReferenceDefinition'
   - '@azure/arm-kubernetesconfiguration.ObjectStatusConditionDefinition'
   - '@azure/arm-kubernetesconfiguration.ObjectStatusDefinition'
@@ -89,6 +70,7 @@ interfaces:
   - '@azure/arm-kubernetesconfiguration.OperationsListNextOptionalParams'
   - '@azure/arm-kubernetesconfiguration.OperationsListOptionalParams'
   - '@azure/arm-kubernetesconfiguration.PatchExtension'
+  - '@azure/arm-kubernetesconfiguration.ProxyResource'
   - '@azure/arm-kubernetesconfiguration.RepositoryRefDefinition'
   - '@azure/arm-kubernetesconfiguration.Resource'
   - '@azure/arm-kubernetesconfiguration.ResourceProviderOperation'
@@ -97,6 +79,7 @@ interfaces:
   - '@azure/arm-kubernetesconfiguration.Scope'
   - '@azure/arm-kubernetesconfiguration.ScopeCluster'
   - '@azure/arm-kubernetesconfiguration.ScopeNamespace'
+  - '@azure/arm-kubernetesconfiguration.SourceControlConfiguration'
   - >-
     @azure/arm-kubernetesconfiguration.SourceControlConfigurationClientOptionalParams
   - '@azure/arm-kubernetesconfiguration.SourceControlConfigurationList'
@@ -111,21 +94,11 @@ interfaces:
     @azure/arm-kubernetesconfiguration.SourceControlConfigurationsListNextOptionalParams
   - >-
     @azure/arm-kubernetesconfiguration.SourceControlConfigurationsListOptionalParams
-  - '@azure/arm-kubernetesconfiguration.SupportedScopes'
   - '@azure/arm-kubernetesconfiguration.SystemData'
 typeAliases:
-  - '@azure/arm-kubernetesconfiguration.ClusterExtensionTypeGetResponse'
-  - '@azure/arm-kubernetesconfiguration.ClusterExtensionTypesListNextResponse'
-  - '@azure/arm-kubernetesconfiguration.ClusterExtensionTypesListResponse'
-  - '@azure/arm-kubernetesconfiguration.ClusterScopeSettings'
-  - '@azure/arm-kubernetesconfiguration.ClusterTypes'
+  - '@azure/arm-kubernetesconfiguration.AKSIdentityType'
   - '@azure/arm-kubernetesconfiguration.ComplianceStateType'
   - '@azure/arm-kubernetesconfiguration.CreatedByType'
-  - '@azure/arm-kubernetesconfiguration.Enum0'
-  - '@azure/arm-kubernetesconfiguration.Enum1'
-  - '@azure/arm-kubernetesconfiguration.Extension'
-  - '@azure/arm-kubernetesconfiguration.ExtensionTypeVersionsListNextResponse'
-  - '@azure/arm-kubernetesconfiguration.ExtensionTypeVersionsListResponse'
   - '@azure/arm-kubernetesconfiguration.ExtensionsCreateResponse'
   - '@azure/arm-kubernetesconfiguration.ExtensionsGetResponse'
   - '@azure/arm-kubernetesconfiguration.ExtensionsListNextResponse'
@@ -133,7 +106,6 @@ typeAliases:
   - '@azure/arm-kubernetesconfiguration.ExtensionsUpdateResponse'
   - '@azure/arm-kubernetesconfiguration.FluxComplianceState'
   - '@azure/arm-kubernetesconfiguration.FluxConfigOperationStatusGetResponse'
-  - '@azure/arm-kubernetesconfiguration.FluxConfiguration'
   - '@azure/arm-kubernetesconfiguration.FluxConfigurationsCreateOrUpdateResponse'
   - '@azure/arm-kubernetesconfiguration.FluxConfigurationsGetResponse'
   - '@azure/arm-kubernetesconfiguration.FluxConfigurationsListNextResponse'
@@ -141,8 +113,6 @@ typeAliases:
   - '@azure/arm-kubernetesconfiguration.FluxConfigurationsUpdateResponse'
   - '@azure/arm-kubernetesconfiguration.KustomizationValidationType'
   - '@azure/arm-kubernetesconfiguration.LevelType'
-  - '@azure/arm-kubernetesconfiguration.LocationExtensionTypesListNextResponse'
-  - '@azure/arm-kubernetesconfiguration.LocationExtensionTypesListResponse'
   - '@azure/arm-kubernetesconfiguration.MessageLevelType'
   - '@azure/arm-kubernetesconfiguration.OperationStatusGetResponse'
   - '@azure/arm-kubernetesconfiguration.OperationStatusListNextResponse'
@@ -153,9 +123,7 @@ typeAliases:
   - '@azure/arm-kubernetesconfiguration.OperatorType'
   - '@azure/arm-kubernetesconfiguration.ProvisioningState'
   - '@azure/arm-kubernetesconfiguration.ProvisioningStateType'
-  - '@azure/arm-kubernetesconfiguration.ProxyResource'
   - '@azure/arm-kubernetesconfiguration.ScopeType'
-  - '@azure/arm-kubernetesconfiguration.SourceControlConfiguration'
   - >-
     @azure/arm-kubernetesconfiguration.SourceControlConfigurationsCreateOrUpdateResponse
   - '@azure/arm-kubernetesconfiguration.SourceControlConfigurationsGetResponse'
@@ -163,3 +131,22 @@ typeAliases:
     @azure/arm-kubernetesconfiguration.SourceControlConfigurationsListNextResponse
   - '@azure/arm-kubernetesconfiguration.SourceControlConfigurationsListResponse'
   - '@azure/arm-kubernetesconfiguration.SourceKindType'
+functions:
+  - name: getContinuationToken(unknown)
+    uid: '@azure/arm-kubernetesconfiguration.getContinuationToken'
+    package: '@azure/arm-kubernetesconfiguration'
+    summary: |-
+      Given a result page from a pageable operation, returns a
+      continuation token that can be used to begin paging from
+      that point later.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getContinuationToken(page: unknown): string | undefined'
+      parameters:
+        - id: page
+          type: unknown
+          description: A result object from calling .byPage() on a paged operation.
+      return:
+        description: The continuation token that can be passed into byPage().
+        type: string | undefined

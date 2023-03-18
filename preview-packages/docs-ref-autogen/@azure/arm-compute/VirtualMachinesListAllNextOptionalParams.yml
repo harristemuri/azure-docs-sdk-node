@@ -7,21 +7,6 @@ fullName: VirtualMachinesListAllNextOptionalParams
 remarks: ''
 isDeprecated: false
 type: interface
-properties:
-  - name: statusOnly
-    uid: '@azure/arm-compute.VirtualMachinesListAllNextOptionalParams.statusOnly'
-    package: '@azure/arm-compute'
-    summary: >-
-      statusOnly=true enables fetching run time status of all Virtual Machines
-      in the subscription.
-    fullName: statusOnly
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'statusOnly?: string'
-      return:
-        description: ''
-        type: string
 inheritedProperties:
   - name: abortSignal
     uid: '@azure/arm-compute.VirtualMachinesListAllNextOptionalParams.abortSignal'

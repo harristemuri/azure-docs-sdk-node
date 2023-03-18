@@ -12,24 +12,24 @@ fields:
   - name: CustomModel
     uid: '@azure/arm-machinelearning.KnownJobOutputType.CustomModel'
     package: '@azure/arm-machinelearning'
-    summary: ''
-  - name: MLFlowModel
-    uid: '@azure/arm-machinelearning.KnownJobOutputType.MLFlowModel'
+    summary: CustomModel
+  - name: MlflowModel
+    uid: '@azure/arm-machinelearning.KnownJobOutputType.MlflowModel'
     package: '@azure/arm-machinelearning'
-    summary: ''
-  - name: MLTable
-    uid: '@azure/arm-machinelearning.KnownJobOutputType.MLTable'
+    summary: MlflowModel
+  - name: Mltable
+    uid: '@azure/arm-machinelearning.KnownJobOutputType.Mltable'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Mltable
   - name: TritonModel
     uid: '@azure/arm-machinelearning.KnownJobOutputType.TritonModel'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: TritonModel
   - name: UriFile
     uid: '@azure/arm-machinelearning.KnownJobOutputType.UriFile'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: UriFile
   - name: UriFolder
     uid: '@azure/arm-machinelearning.KnownJobOutputType.UriFolder'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: UriFolder

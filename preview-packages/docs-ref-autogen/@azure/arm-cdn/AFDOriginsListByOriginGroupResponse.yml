@@ -1,10 +1,10 @@
 ### YamlMime:TSTypeAlias
-name: AFDOriginsListByOriginGroupResponse
-uid: '@azure/arm-cdn.AFDOriginsListByOriginGroupResponse'
+name: AfdOriginsListByOriginGroupResponse
+uid: '@azure/arm-cdn.AfdOriginsListByOriginGroupResponse'
 package: '@azure/arm-cdn'
 summary: Contains response data for the listByOriginGroup operation.
-fullName: AFDOriginsListByOriginGroupResponse
+fullName: AfdOriginsListByOriginGroupResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type AFDOriginsListByOriginGroupResponse = AFDOriginListResult
+  type AfdOriginsListByOriginGroupResponse = AFDOriginListResult

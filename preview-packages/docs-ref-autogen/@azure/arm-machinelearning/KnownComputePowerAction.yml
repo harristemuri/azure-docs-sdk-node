@@ -13,8 +13,8 @@ fields:
   - name: Start
     uid: '@azure/arm-machinelearning.KnownComputePowerAction.Start'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Start
   - name: Stop
     uid: '@azure/arm-machinelearning.KnownComputePowerAction.Stop'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Stop

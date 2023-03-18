@@ -8,6 +8,18 @@ remarks: ''
 isDeprecated: false
 type: interface
 properties:
+  - name: mediaType
+    uid: '@azure/container-registry.UploadManifestOptions.mediaType'
+    package: '@azure/container-registry'
+    summary: Media type of the uploaded manifest
+    fullName: mediaType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'mediaType?: string'
+      return:
+        description: ''
+        type: string
   - name: tag
     uid: '@azure/container-registry.UploadManifestOptions.tag'
     package: '@azure/container-registry'
@@ -16,7 +28,7 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'tag: string'
+      content: 'tag?: string'
       return:
         description: ''
         type: string

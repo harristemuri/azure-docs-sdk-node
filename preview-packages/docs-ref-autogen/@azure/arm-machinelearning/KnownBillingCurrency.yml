@@ -13,4 +13,4 @@ fields:
   - name: USD
     uid: '@azure/arm-machinelearning.KnownBillingCurrency.USD'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: USD

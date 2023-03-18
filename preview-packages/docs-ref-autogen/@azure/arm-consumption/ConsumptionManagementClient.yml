@@ -37,6 +37,18 @@ constructors:
             />
           description: The parameter options
 properties:
+  - name: $host
+    uid: '@azure/arm-consumption.ConsumptionManagementClient.$host'
+    package: '@azure/arm-consumption'
+    summary: ''
+    fullName: $host
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: '$host: string'
+      return:
+        description: ''
+        type: string
   - name: aggregatedCost
     uid: '@azure/arm-consumption.ConsumptionManagementClient.aggregatedCost'
     package: '@azure/arm-consumption'
@@ -49,6 +61,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-consumption.AggregatedCost" />
+  - name: apiVersion
+    uid: '@azure/arm-consumption.ConsumptionManagementClient.apiVersion'
+    package: '@azure/arm-consumption'
+    summary: ''
+    fullName: apiVersion
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'apiVersion: string'
+      return:
+        description: ''
+        type: string
   - name: balances
     uid: '@azure/arm-consumption.ConsumptionManagementClient.balances'
     package: '@azure/arm-consumption'
@@ -219,6 +243,18 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-consumption.ReservationTransactions" />
+  - name: subscriptionId
+    uid: '@azure/arm-consumption.ConsumptionManagementClient.subscriptionId'
+    package: '@azure/arm-consumption'
+    summary: ''
+    fullName: subscriptionId
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'subscriptionId: string'
+      return:
+        description: ''
+        type: string
   - name: tags
     uid: '@azure/arm-consumption.ConsumptionManagementClient.tags'
     package: '@azure/arm-consumption'
@@ -244,36 +280,6 @@ properties:
         description: ''
         type: <xref uid="@azure/arm-consumption.UsageDetails" />
 inheritedProperties:
-  - name: $host
-    uid: '@azure/arm-consumption.ConsumptionManagementClient.$host'
-    package: '@azure/arm-consumption'
-    summary: ''
-    fullName: $host
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: '$host: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ConsumptionManagementClientContext.$host](xref:@azure/arm-consumption.ConsumptionManagementClientContext.$host)
-  - name: apiVersion
-    uid: '@azure/arm-consumption.ConsumptionManagementClient.apiVersion'
-    package: '@azure/arm-consumption'
-    summary: ''
-    fullName: apiVersion
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'apiVersion: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ConsumptionManagementClientContext.apiVersion](xref:@azure/arm-consumption.ConsumptionManagementClientContext.apiVersion)
   - name: pipeline
     uid: '@azure/arm-consumption.ConsumptionManagementClient.pipeline'
     package: '@azure/arm-consumption'
@@ -286,24 +292,7 @@ inheritedProperties:
       return:
         description: ''
         type: Pipeline
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ConsumptionManagementClientContext.pipeline](xref:@azure/arm-consumption.ConsumptionManagementClientContext.pipeline)
-  - name: subscriptionId
-    uid: '@azure/arm-consumption.ConsumptionManagementClient.subscriptionId'
-    package: '@azure/arm-consumption'
-    summary: ''
-    fullName: subscriptionId
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'subscriptionId: string'
-      return:
-        description: ''
-        type: string
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ConsumptionManagementClientContext.subscriptionId](xref:@azure/arm-consumption.ConsumptionManagementClientContext.subscriptionId)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.pipeline
 inheritedMethods:
   - name: sendOperationRequest<T>(OperationArguments, OperationSpec)
     uid: '@azure/arm-consumption.ConsumptionManagementClient.sendOperationRequest'
@@ -327,9 +316,7 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;T&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ConsumptionManagementClientContext.sendOperationRequest](xref:@azure/arm-consumption.ConsumptionManagementClientContext.sendOperationRequest)
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendOperationRequest
   - name: sendRequest(PipelineRequest)
     uid: '@azure/arm-consumption.ConsumptionManagementClient.sendRequest'
     package: '@azure/arm-consumption'
@@ -347,7 +334,5 @@ inheritedMethods:
       return:
         description: ''
         type: Promise&lt;PipelineResponse&gt;
-    inheritanceDescription: >-
-      <b>Inherited From</b>
-      [ConsumptionManagementClientContext.sendRequest](xref:@azure/arm-consumption.ConsumptionManagementClientContext.sendRequest)
-extends: <xref uid="@azure/arm-consumption.ConsumptionManagementClientContext" />
+    inheritanceDescription: <b>Inherited From</b> coreClient.ServiceClient.sendRequest
+extends: ServiceClient

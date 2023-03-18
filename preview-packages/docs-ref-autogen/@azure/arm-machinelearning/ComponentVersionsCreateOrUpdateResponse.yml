@@ -7,4 +7,4 @@ fullName: ComponentVersionsCreateOrUpdateResponse
 remarks: ''
 isDeprecated: false
 syntax: |
-  type ComponentVersionsCreateOrUpdateResponse = ComponentVersionData
+  type ComponentVersionsCreateOrUpdateResponse = ComponentVersion

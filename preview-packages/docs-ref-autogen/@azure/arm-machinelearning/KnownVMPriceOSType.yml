@@ -12,8 +12,8 @@ fields:
   - name: Linux
     uid: '@azure/arm-machinelearning.KnownVMPriceOSType.Linux'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Linux
   - name: Windows
     uid: '@azure/arm-machinelearning.KnownVMPriceOSType.Windows'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Windows

@@ -136,3 +136,15 @@ properties:
       return:
         description: ''
         type: string
+  - name: securityLevel
+    uid: '@azure/arm-mediaservices.ContentKeyPolicyPlayReadyLicense.securityLevel'
+    package: '@azure/arm-mediaservices'
+    summary: The security level.
+    fullName: securityLevel
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'securityLevel?: string'
+      return:
+        description: ''
+        type: string

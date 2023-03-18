@@ -16,8 +16,8 @@ fields:
   - name: Season
     uid: '@azure/arm-machinelearning.KnownUseStl.Season'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Season
   - name: SeasonTrend
     uid: '@azure/arm-machinelearning.KnownUseStl.SeasonTrend'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: SeasonTrend

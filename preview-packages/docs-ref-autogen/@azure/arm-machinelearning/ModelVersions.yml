@@ -9,7 +9,7 @@ isDeprecated: false
 type: interface
 methods:
   - name: >-
-      createOrUpdate(string, string, string, string, ModelVersionData,
+      createOrUpdate(string, string, string, string, ModelVersion,
       ModelVersionsCreateOrUpdateOptionalParams)
     uid: '@azure/arm-machinelearning.ModelVersions.createOrUpdate'
     package: '@azure/arm-machinelearning'
@@ -19,8 +19,8 @@ methods:
     syntax:
       content: >-
         function createOrUpdate(resourceGroupName: string, workspaceName:
-        string, name: string, version: string, body: ModelVersionData, options?:
-        ModelVersionsCreateOrUpdateOptionalParams): Promise<ModelVersionData>
+        string, name: string, version: string, body: ModelVersion, options?:
+        ModelVersionsCreateOrUpdateOptionalParams): Promise<ModelVersion>
       parameters:
         - id: resourceGroupName
           type: string
@@ -35,7 +35,7 @@ methods:
           type: string
           description: Version identifier. This is case-sensitive.
         - id: body
-          type: <xref uid="@azure/arm-machinelearning.ModelVersionData" />
+          type: <xref uid="@azure/arm-machinelearning.ModelVersion" />
           description: Version entity to create or update.
         - id: options
           type: >-
@@ -45,9 +45,7 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.ModelVersionData"
-          />&gt;
+        type: Promise&lt;<xref uid="@azure/arm-machinelearning.ModelVersion" />&gt;
   - name: delete(string, string, string, string, ModelVersionsDeleteOptionalParams)
     uid: '@azure/arm-machinelearning.ModelVersions.delete'
     package: '@azure/arm-machinelearning'
@@ -91,7 +89,7 @@ methods:
       content: >-
         function get(resourceGroupName: string, workspaceName: string, name:
         string, version: string, options?: ModelVersionsGetOptionalParams):
-        Promise<ModelVersionData>
+        Promise<ModelVersion>
       parameters:
         - id: resourceGroupName
           type: string
@@ -112,9 +110,7 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: >-
-          Promise&lt;<xref uid="@azure/arm-machinelearning.ModelVersionData"
-          />&gt;
+        type: Promise&lt;<xref uid="@azure/arm-machinelearning.ModelVersion" />&gt;
   - name: list(string, string, string, ModelVersionsListOptionalParams)
     uid: '@azure/arm-machinelearning.ModelVersions.list'
     package: '@azure/arm-machinelearning'
@@ -125,8 +121,7 @@ methods:
       content: >-
         function list(resourceGroupName: string, workspaceName: string, name:
         string, options?: ModelVersionsListOptionalParams):
-        PagedAsyncIterableIterator<ModelVersionData, ModelVersionData[],
-        PageSettings>
+        PagedAsyncIterableIterator<ModelVersion, ModelVersion[], PageSettings>
       parameters:
         - id: resourceGroupName
           type: string
@@ -146,6 +141,5 @@ methods:
         description: ''
         type: >-
           PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-machinelearning.ModelVersionData" />, <xref
-          uid="@azure/arm-machinelearning.ModelVersionData" />[],
-          PageSettings&gt;
+          uid="@azure/arm-machinelearning.ModelVersion" />, <xref
+          uid="@azure/arm-machinelearning.ModelVersion" />[], PageSettings&gt;

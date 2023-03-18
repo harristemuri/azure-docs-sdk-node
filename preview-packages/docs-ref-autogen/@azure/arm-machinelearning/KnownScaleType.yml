@@ -12,8 +12,8 @@ fields:
   - name: Default
     uid: '@azure/arm-machinelearning.KnownScaleType.Default'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: Default
   - name: TargetUtilization
     uid: '@azure/arm-machinelearning.KnownScaleType.TargetUtilization'
     package: '@azure/arm-machinelearning'
-    summary: ''
+    summary: TargetUtilization

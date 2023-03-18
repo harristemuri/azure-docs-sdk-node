@@ -128,6 +128,72 @@ methods:
       return:
         description: ''
         type: Promise&lt;void&gt;
+  - name: >-
+      beginUpdateTags(string, string, TagsObject,
+      ContactProfilesUpdateTagsOptionalParams)
+    uid: '@azure/arm-orbital.ContactProfiles.beginUpdateTags'
+    package: '@azure/arm-orbital'
+    summary: Updates the specified contact profile tags.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdateTags(resourceGroupName: string, contactProfileName:
+        string, parameters: TagsObject, options?:
+        ContactProfilesUpdateTagsOptionalParams):
+        Promise<PollerLike<PollOperationState<ContactProfile>, ContactProfile>>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: contactProfileName
+          type: string
+          description: Contact Profile Name
+        - id: parameters
+          type: <xref uid="@azure/arm-orbital.TagsObject" />
+          description: Parameters supplied to update contact profile tags.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-orbital.ContactProfilesUpdateTagsOptionalParams" />
+          description: The options parameters.
+      return:
+        description: ''
+        type: >-
+          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          uid="@azure/arm-orbital.ContactProfile" />&gt;, <xref
+          uid="@azure/arm-orbital.ContactProfile" />&gt;&gt;
+  - name: >-
+      beginUpdateTagsAndWait(string, string, TagsObject,
+      ContactProfilesUpdateTagsOptionalParams)
+    uid: '@azure/arm-orbital.ContactProfiles.beginUpdateTagsAndWait'
+    package: '@azure/arm-orbital'
+    summary: Updates the specified contact profile tags.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: >-
+        function beginUpdateTagsAndWait(resourceGroupName: string,
+        contactProfileName: string, parameters: TagsObject, options?:
+        ContactProfilesUpdateTagsOptionalParams): Promise<ContactProfile>
+      parameters:
+        - id: resourceGroupName
+          type: string
+          description: The name of the resource group. The name is case insensitive.
+        - id: contactProfileName
+          type: string
+          description: Contact Profile Name
+        - id: parameters
+          type: <xref uid="@azure/arm-orbital.TagsObject" />
+          description: Parameters supplied to update contact profile tags.
+        - id: options
+          type: >-
+            <xref
+            uid="@azure/arm-orbital.ContactProfilesUpdateTagsOptionalParams" />
+          description: The options parameters.
+      return:
+        description: ''
+        type: Promise&lt;<xref uid="@azure/arm-orbital.ContactProfile" />&gt;
   - name: get(string, string, ContactProfilesGetOptionalParams)
     uid: '@azure/arm-orbital.ContactProfiles.get'
     package: '@azure/arm-orbital'
@@ -154,7 +220,7 @@ methods:
   - name: list(string, ContactProfilesListOptionalParams)
     uid: '@azure/arm-orbital.ContactProfiles.list'
     package: '@azure/arm-orbital'
-    summary: Returns list of contact profiles
+    summary: Returns list of contact profiles by Resource Group
     remarks: ''
     isDeprecated: false
     syntax:
@@ -179,7 +245,7 @@ methods:
   - name: listBySubscription(ContactProfilesListBySubscriptionOptionalParams)
     uid: '@azure/arm-orbital.ContactProfiles.listBySubscription'
     package: '@azure/arm-orbital'
-    summary: Returns list of contact profiles
+    summary: Returns list of contact profiles by Subscription
     remarks: ''
     isDeprecated: false
     syntax:
@@ -201,34 +267,3 @@ methods:
           PagedAsyncIterableIterator&lt;<xref
           uid="@azure/arm-orbital.ContactProfile" />, <xref
           uid="@azure/arm-orbital.ContactProfile" />[], PageSettings&gt;
-  - name: >-
-      updateTags(string, string, TagsObject,
-      ContactProfilesUpdateTagsOptionalParams)
-    uid: '@azure/arm-orbital.ContactProfiles.updateTags'
-    package: '@azure/arm-orbital'
-    summary: Updates the specified contact profile tags.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function updateTags(resourceGroupName: string, contactProfileName:
-        string, parameters: TagsObject, options?:
-        ContactProfilesUpdateTagsOptionalParams): Promise<ContactProfile>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group. The name is case insensitive.
-        - id: contactProfileName
-          type: string
-          description: Contact Profile Name
-        - id: parameters
-          type: <xref uid="@azure/arm-orbital.TagsObject" />
-          description: Parameters supplied to update contact profile tags.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-orbital.ContactProfilesUpdateTagsOptionalParams" />
-          description: The options parameters.
-      return:
-        description: ''
-        type: Promise&lt;<xref uid="@azure/arm-orbital.ContactProfile" />&gt;

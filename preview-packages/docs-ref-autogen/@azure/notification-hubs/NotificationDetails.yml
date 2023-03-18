@@ -200,3 +200,15 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/notification-hubs.NotificationOutcome" />[]
+  - name: xiaomiOutcomeCounts
+    uid: '@azure/notification-hubs.NotificationDetails.xiaomiOutcomeCounts'
+    package: '@azure/notification-hubs'
+    summary: Xiaomi outcome counts per state.
+    fullName: xiaomiOutcomeCounts
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'xiaomiOutcomeCounts?: NotificationOutcome[]'
+      return:
+        description: ''
+        type: <xref uid="@azure/notification-hubs.NotificationOutcome" />[]

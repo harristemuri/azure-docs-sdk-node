@@ -20,6 +20,19 @@ properties:
       return:
         description: ''
         type: <xref uid="@azure/arm-compute.VirtualMachineScaleSetDataDisk" />[]
+  - name: diskControllerType
+    uid: >-
+      @azure/arm-compute.VirtualMachineScaleSetUpdateStorageProfile.diskControllerType
+    package: '@azure/arm-compute'
+    summary: ''
+    fullName: diskControllerType
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'diskControllerType?: string'
+      return:
+        description: ''
+        type: string
   - name: imageReference
     uid: >-
       @azure/arm-compute.VirtualMachineScaleSetUpdateStorageProfile.imageReference

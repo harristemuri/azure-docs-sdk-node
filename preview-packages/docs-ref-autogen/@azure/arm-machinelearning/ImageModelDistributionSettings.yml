@@ -335,23 +335,6 @@ properties:
       return:
         description: ''
         type: string
-  - name: splitRatio
-    uid: '@azure/arm-machinelearning.ImageModelDistributionSettings.splitRatio'
-    package: '@azure/arm-machinelearning'
-    summary: >-
-      If validation data is not defined, this specifies the split ratio for
-      splitting
-
-      train data into random train and validation subsets. Must be a float in
-      the range [0, 1].
-    fullName: splitRatio
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: 'splitRatio?: string'
-      return:
-        description: ''
-        type: string
   - name: stepLRGamma
     uid: '@azure/arm-machinelearning.ImageModelDistributionSettings.stepLRGamma'
     package: '@azure/arm-machinelearning'

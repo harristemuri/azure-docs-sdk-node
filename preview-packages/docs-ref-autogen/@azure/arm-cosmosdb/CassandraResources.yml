@@ -24,7 +24,7 @@ methods:
         createUpdateCassandraKeyspaceParameters:
         CassandraKeyspaceCreateUpdateParameters, options?:
         CassandraResourcesCreateUpdateCassandraKeyspaceOptionalParams):
-        Promise<PollerLike<PollOperationState<CassandraKeyspaceGetResults>,
+        Promise<SimplePollerLike<OperationState<CassandraKeyspaceGetResults>,
         CassandraKeyspaceGetResults>>
       parameters:
         - id: resourceGroupName
@@ -52,7 +52,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-cosmosdb.CassandraKeyspaceGetResults" />&gt;, <xref
           uid="@azure/arm-cosmosdb.CassandraKeyspaceGetResults" />&gt;&gt;
   - name: >-
@@ -117,7 +117,7 @@ methods:
         createUpdateCassandraTableParameters:
         CassandraTableCreateUpdateParameters, options?:
         CassandraResourcesCreateUpdateCassandraTableOptionalParams):
-        Promise<PollerLike<PollOperationState<CassandraTableGetResults>,
+        Promise<SimplePollerLike<OperationState<CassandraTableGetResults>,
         CassandraTableGetResults>>
       parameters:
         - id: resourceGroupName
@@ -148,7 +148,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-cosmosdb.CassandraTableGetResults" />&gt;, <xref
           uid="@azure/arm-cosmosdb.CassandraTableGetResults" />&gt;&gt;
   - name: >-
@@ -201,101 +201,6 @@ methods:
           Promise&lt;<xref uid="@azure/arm-cosmosdb.CassandraTableGetResults"
           />&gt;
   - name: >-
-      beginCreateUpdateCassandraView(string, string, string, string,
-      CassandraViewCreateUpdateParameters,
-      CassandraResourcesCreateUpdateCassandraViewOptionalParams)
-    uid: '@azure/arm-cosmosdb.CassandraResources.beginCreateUpdateCassandraView'
-    package: '@azure/arm-cosmosdb'
-    summary: Create or update an Azure Cosmos DB Cassandra View
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function beginCreateUpdateCassandraView(resourceGroupName: string,
-        accountName: string, keyspaceName: string, viewName: string,
-        createUpdateCassandraViewParameters:
-        CassandraViewCreateUpdateParameters, options?:
-        CassandraResourcesCreateUpdateCassandraViewOptionalParams):
-        Promise<PollerLike<PollOperationState<CassandraViewGetResults>,
-        CassandraViewGetResults>>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group. The name is case insensitive.
-        - id: accountName
-          type: string
-          description: Cosmos DB database account name.
-        - id: keyspaceName
-          type: string
-          description: Cosmos DB keyspace name.
-        - id: viewName
-          type: string
-          description: Cosmos DB view name.
-        - id: createUpdateCassandraViewParameters
-          type: >-
-            <xref uid="@azure/arm-cosmosdb.CassandraViewCreateUpdateParameters"
-            />
-          description: The parameters to provide for the current Cassandra View.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-cosmosdb.CassandraResourcesCreateUpdateCassandraViewOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-cosmosdb.CassandraViewGetResults" />&gt;, <xref
-          uid="@azure/arm-cosmosdb.CassandraViewGetResults" />&gt;&gt;
-  - name: >-
-      beginCreateUpdateCassandraViewAndWait(string, string, string, string,
-      CassandraViewCreateUpdateParameters,
-      CassandraResourcesCreateUpdateCassandraViewOptionalParams)
-    uid: >-
-      @azure/arm-cosmosdb.CassandraResources.beginCreateUpdateCassandraViewAndWait
-    package: '@azure/arm-cosmosdb'
-    summary: Create or update an Azure Cosmos DB Cassandra View
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function beginCreateUpdateCassandraViewAndWait(resourceGroupName:
-        string, accountName: string, keyspaceName: string, viewName: string,
-        createUpdateCassandraViewParameters:
-        CassandraViewCreateUpdateParameters, options?:
-        CassandraResourcesCreateUpdateCassandraViewOptionalParams):
-        Promise<CassandraViewGetResults>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group. The name is case insensitive.
-        - id: accountName
-          type: string
-          description: Cosmos DB database account name.
-        - id: keyspaceName
-          type: string
-          description: Cosmos DB keyspace name.
-        - id: viewName
-          type: string
-          description: Cosmos DB view name.
-        - id: createUpdateCassandraViewParameters
-          type: >-
-            <xref uid="@azure/arm-cosmosdb.CassandraViewCreateUpdateParameters"
-            />
-          description: The parameters to provide for the current Cassandra View.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-cosmosdb.CassandraResourcesCreateUpdateCassandraViewOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref uid="@azure/arm-cosmosdb.CassandraViewGetResults"
-          />&gt;
-  - name: >-
       beginDeleteCassandraKeyspace(string, string, string,
       CassandraResourcesDeleteCassandraKeyspaceOptionalParams)
     uid: '@azure/arm-cosmosdb.CassandraResources.beginDeleteCassandraKeyspace'
@@ -308,7 +213,8 @@ methods:
         function beginDeleteCassandraKeyspace(resourceGroupName: string,
         accountName: string, keyspaceName: string, options?:
         CassandraResourcesDeleteCassandraKeyspaceOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<CassandraResourcesDeleteCassandraKeyspaceHeaders>,
+        CassandraResourcesDeleteCassandraKeyspaceHeaders>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -327,7 +233,12 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
+          uid="@azure/arm-cosmosdb.CassandraResourcesDeleteCassandraKeyspaceHeaders"
+          />&gt;, <xref
+          uid="@azure/arm-cosmosdb.CassandraResourcesDeleteCassandraKeyspaceHeaders"
+          />&gt;&gt;
   - name: >-
       beginDeleteCassandraKeyspaceAndWait(string, string, string,
       CassandraResourcesDeleteCassandraKeyspaceOptionalParams)
@@ -340,7 +251,8 @@ methods:
       content: >-
         function beginDeleteCassandraKeyspaceAndWait(resourceGroupName: string,
         accountName: string, keyspaceName: string, options?:
-        CassandraResourcesDeleteCassandraKeyspaceOptionalParams): Promise<void>
+        CassandraResourcesDeleteCassandraKeyspaceOptionalParams):
+        Promise<CassandraResourcesDeleteCassandraKeyspaceHeaders>
       parameters:
         - id: resourceGroupName
           type: string
@@ -359,7 +271,10 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;void&gt;
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-cosmosdb.CassandraResourcesDeleteCassandraKeyspaceHeaders"
+          />&gt;
   - name: >-
       beginDeleteCassandraTable(string, string, string, string,
       CassandraResourcesDeleteCassandraTableOptionalParams)
@@ -373,7 +288,8 @@ methods:
         function beginDeleteCassandraTable(resourceGroupName: string,
         accountName: string, keyspaceName: string, tableName: string, options?:
         CassandraResourcesDeleteCassandraTableOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
+        Promise<SimplePollerLike<OperationState<CassandraResourcesDeleteCassandraTableHeaders>,
+        CassandraResourcesDeleteCassandraTableHeaders>>
       parameters:
         - id: resourceGroupName
           type: string
@@ -395,7 +311,12 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
+        type: >-
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
+          uid="@azure/arm-cosmosdb.CassandraResourcesDeleteCassandraTableHeaders"
+          />&gt;, <xref
+          uid="@azure/arm-cosmosdb.CassandraResourcesDeleteCassandraTableHeaders"
+          />&gt;&gt;
   - name: >-
       beginDeleteCassandraTableAndWait(string, string, string, string,
       CassandraResourcesDeleteCassandraTableOptionalParams)
@@ -408,7 +329,8 @@ methods:
       content: >-
         function beginDeleteCassandraTableAndWait(resourceGroupName: string,
         accountName: string, keyspaceName: string, tableName: string, options?:
-        CassandraResourcesDeleteCassandraTableOptionalParams): Promise<void>
+        CassandraResourcesDeleteCassandraTableOptionalParams):
+        Promise<CassandraResourcesDeleteCassandraTableHeaders>
       parameters:
         - id: resourceGroupName
           type: string
@@ -430,78 +352,10 @@ methods:
           description: The options parameters.
       return:
         description: ''
-        type: Promise&lt;void&gt;
-  - name: >-
-      beginDeleteCassandraView(string, string, string, string,
-      CassandraResourcesDeleteCassandraViewOptionalParams)
-    uid: '@azure/arm-cosmosdb.CassandraResources.beginDeleteCassandraView'
-    package: '@azure/arm-cosmosdb'
-    summary: Deletes an existing Azure Cosmos DB Cassandra view.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function beginDeleteCassandraView(resourceGroupName: string,
-        accountName: string, keyspaceName: string, viewName: string, options?:
-        CassandraResourcesDeleteCassandraViewOptionalParams):
-        Promise<PollerLike<PollOperationState<void>, void>>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group. The name is case insensitive.
-        - id: accountName
-          type: string
-          description: Cosmos DB database account name.
-        - id: keyspaceName
-          type: string
-          description: Cosmos DB keyspace name.
-        - id: viewName
-          type: string
-          description: Cosmos DB view name.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-cosmosdb.CassandraResourcesDeleteCassandraViewOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: Promise&lt;PollerLike&lt;PollOperationState&lt;void&gt;, void&gt;&gt;
-  - name: >-
-      beginDeleteCassandraViewAndWait(string, string, string, string,
-      CassandraResourcesDeleteCassandraViewOptionalParams)
-    uid: '@azure/arm-cosmosdb.CassandraResources.beginDeleteCassandraViewAndWait'
-    package: '@azure/arm-cosmosdb'
-    summary: Deletes an existing Azure Cosmos DB Cassandra view.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function beginDeleteCassandraViewAndWait(resourceGroupName: string,
-        accountName: string, keyspaceName: string, viewName: string, options?:
-        CassandraResourcesDeleteCassandraViewOptionalParams): Promise<void>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group. The name is case insensitive.
-        - id: accountName
-          type: string
-          description: Cosmos DB database account name.
-        - id: keyspaceName
-          type: string
-          description: Cosmos DB keyspace name.
-        - id: viewName
-          type: string
-          description: Cosmos DB view name.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-cosmosdb.CassandraResourcesDeleteCassandraViewOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: Promise&lt;void&gt;
+        type: >-
+          Promise&lt;<xref
+          uid="@azure/arm-cosmosdb.CassandraResourcesDeleteCassandraTableHeaders"
+          />&gt;
   - name: >-
       beginMigrateCassandraKeyspaceToAutoscale(string, string, string,
       CassandraResourcesMigrateCassandraKeyspaceToAutoscaleOptionalParams)
@@ -518,7 +372,7 @@ methods:
         function beginMigrateCassandraKeyspaceToAutoscale(resourceGroupName:
         string, accountName: string, keyspaceName: string, options?:
         CassandraResourcesMigrateCassandraKeyspaceToAutoscaleOptionalParams):
-        Promise<PollerLike<PollOperationState<ThroughputSettingsGetResults>,
+        Promise<SimplePollerLike<OperationState<ThroughputSettingsGetResults>,
         ThroughputSettingsGetResults>>
       parameters:
         - id: resourceGroupName
@@ -539,7 +393,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;, <xref
           uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;&gt;
   - name: >-
@@ -598,7 +452,7 @@ methods:
         beginMigrateCassandraKeyspaceToManualThroughput(resourceGroupName:
         string, accountName: string, keyspaceName: string, options?:
         CassandraResourcesMigrateCassandraKeyspaceToManualThroughputOptionalParams):
-        Promise<PollerLike<PollOperationState<ThroughputSettingsGetResults>,
+        Promise<SimplePollerLike<OperationState<ThroughputSettingsGetResults>,
         ThroughputSettingsGetResults>>
       parameters:
         - id: resourceGroupName
@@ -619,7 +473,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;, <xref
           uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;&gt;
   - name: >-
@@ -679,7 +533,7 @@ methods:
         string, accountName: string, keyspaceName: string, tableName: string,
         options?:
         CassandraResourcesMigrateCassandraTableToAutoscaleOptionalParams):
-        Promise<PollerLike<PollOperationState<ThroughputSettingsGetResults>,
+        Promise<SimplePollerLike<OperationState<ThroughputSettingsGetResults>,
         ThroughputSettingsGetResults>>
       parameters:
         - id: resourceGroupName
@@ -703,7 +557,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;, <xref
           uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;&gt;
   - name: >-
@@ -766,7 +620,7 @@ methods:
         string, accountName: string, keyspaceName: string, tableName: string,
         options?:
         CassandraResourcesMigrateCassandraTableToManualThroughputOptionalParams):
-        Promise<PollerLike<PollOperationState<ThroughputSettingsGetResults>,
+        Promise<SimplePollerLike<OperationState<ThroughputSettingsGetResults>,
         ThroughputSettingsGetResults>>
       parameters:
         - id: resourceGroupName
@@ -790,7 +644,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;, <xref
           uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;&gt;
   - name: >-
@@ -838,180 +692,6 @@ methods:
           Promise&lt;<xref
           uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;
   - name: >-
-      beginMigrateCassandraViewToAutoscale(string, string, string, string,
-      CassandraResourcesMigrateCassandraViewToAutoscaleOptionalParams)
-    uid: >-
-      @azure/arm-cosmosdb.CassandraResources.beginMigrateCassandraViewToAutoscale
-    package: '@azure/arm-cosmosdb'
-    summary: >-
-      Migrate an Azure Cosmos DB Cassandra view from manual throughput to
-      autoscale
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function beginMigrateCassandraViewToAutoscale(resourceGroupName: string,
-        accountName: string, keyspaceName: string, viewName: string, options?:
-        CassandraResourcesMigrateCassandraViewToAutoscaleOptionalParams):
-        Promise<PollerLike<PollOperationState<ThroughputSettingsGetResults>,
-        ThroughputSettingsGetResults>>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group. The name is case insensitive.
-        - id: accountName
-          type: string
-          description: Cosmos DB database account name.
-        - id: keyspaceName
-          type: string
-          description: Cosmos DB keyspace name.
-        - id: viewName
-          type: string
-          description: Cosmos DB view name.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-cosmosdb.CassandraResourcesMigrateCassandraViewToAutoscaleOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;, <xref
-          uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;&gt;
-  - name: >-
-      beginMigrateCassandraViewToAutoscaleAndWait(string, string, string,
-      string, CassandraResourcesMigrateCassandraViewToAutoscaleOptionalParams)
-    uid: >-
-      @azure/arm-cosmosdb.CassandraResources.beginMigrateCassandraViewToAutoscaleAndWait
-    package: '@azure/arm-cosmosdb'
-    summary: >-
-      Migrate an Azure Cosmos DB Cassandra view from manual throughput to
-      autoscale
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function beginMigrateCassandraViewToAutoscaleAndWait(resourceGroupName:
-        string, accountName: string, keyspaceName: string, viewName: string,
-        options?:
-        CassandraResourcesMigrateCassandraViewToAutoscaleOptionalParams):
-        Promise<ThroughputSettingsGetResults>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group. The name is case insensitive.
-        - id: accountName
-          type: string
-          description: Cosmos DB database account name.
-        - id: keyspaceName
-          type: string
-          description: Cosmos DB keyspace name.
-        - id: viewName
-          type: string
-          description: Cosmos DB view name.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-cosmosdb.CassandraResourcesMigrateCassandraViewToAutoscaleOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;
-  - name: >-
-      beginMigrateCassandraViewToManualThroughput(string, string, string,
-      string,
-      CassandraResourcesMigrateCassandraViewToManualThroughputOptionalParams)
-    uid: >-
-      @azure/arm-cosmosdb.CassandraResources.beginMigrateCassandraViewToManualThroughput
-    package: '@azure/arm-cosmosdb'
-    summary: >-
-      Migrate an Azure Cosmos DB Cassandra view from autoscale to manual
-      throughput
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function beginMigrateCassandraViewToManualThroughput(resourceGroupName:
-        string, accountName: string, keyspaceName: string, viewName: string,
-        options?:
-        CassandraResourcesMigrateCassandraViewToManualThroughputOptionalParams):
-        Promise<PollerLike<PollOperationState<ThroughputSettingsGetResults>,
-        ThroughputSettingsGetResults>>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group. The name is case insensitive.
-        - id: accountName
-          type: string
-          description: Cosmos DB database account name.
-        - id: keyspaceName
-          type: string
-          description: Cosmos DB keyspace name.
-        - id: viewName
-          type: string
-          description: Cosmos DB view name.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-cosmosdb.CassandraResourcesMigrateCassandraViewToManualThroughputOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;, <xref
-          uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;&gt;
-  - name: >-
-      beginMigrateCassandraViewToManualThroughputAndWait(string, string, string,
-      string,
-      CassandraResourcesMigrateCassandraViewToManualThroughputOptionalParams)
-    uid: >-
-      @azure/arm-cosmosdb.CassandraResources.beginMigrateCassandraViewToManualThroughputAndWait
-    package: '@azure/arm-cosmosdb'
-    summary: >-
-      Migrate an Azure Cosmos DB Cassandra view from autoscale to manual
-      throughput
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function
-        beginMigrateCassandraViewToManualThroughputAndWait(resourceGroupName:
-        string, accountName: string, keyspaceName: string, viewName: string,
-        options?:
-        CassandraResourcesMigrateCassandraViewToManualThroughputOptionalParams):
-        Promise<ThroughputSettingsGetResults>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group. The name is case insensitive.
-        - id: accountName
-          type: string
-          description: Cosmos DB database account name.
-        - id: keyspaceName
-          type: string
-          description: Cosmos DB keyspace name.
-        - id: viewName
-          type: string
-          description: Cosmos DB view name.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-cosmosdb.CassandraResourcesMigrateCassandraViewToManualThroughputOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;
-  - name: >-
       beginUpdateCassandraKeyspaceThroughput(string, string, string,
       ThroughputSettingsUpdateParameters,
       CassandraResourcesUpdateCassandraKeyspaceThroughputOptionalParams)
@@ -1028,7 +708,7 @@ methods:
         updateThroughputParameters: ThroughputSettingsUpdateParameters,
         options?:
         CassandraResourcesUpdateCassandraKeyspaceThroughputOptionalParams):
-        Promise<PollerLike<PollOperationState<ThroughputSettingsGetResults>,
+        Promise<SimplePollerLike<OperationState<ThroughputSettingsGetResults>,
         ThroughputSettingsGetResults>>
       parameters:
         - id: resourceGroupName
@@ -1056,7 +736,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;, <xref
           uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;&gt;
   - name: >-
@@ -1121,7 +801,7 @@ methods:
         updateThroughputParameters: ThroughputSettingsUpdateParameters,
         options?:
         CassandraResourcesUpdateCassandraTableThroughputOptionalParams):
-        Promise<PollerLike<PollOperationState<ThroughputSettingsGetResults>,
+        Promise<SimplePollerLike<OperationState<ThroughputSettingsGetResults>,
         ThroughputSettingsGetResults>>
       parameters:
         - id: resourceGroupName
@@ -1152,7 +832,7 @@ methods:
       return:
         description: ''
         type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
+          Promise&lt;SimplePollerLike&lt;OperationState&lt;<xref
           uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;, <xref
           uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;&gt;
   - name: >-
@@ -1197,105 +877,6 @@ methods:
           type: >-
             <xref
             uid="@azure/arm-cosmosdb.CassandraResourcesUpdateCassandraTableThroughputOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;
-  - name: >-
-      beginUpdateCassandraViewThroughput(string, string, string, string,
-      ThroughputSettingsUpdateParameters,
-      CassandraResourcesUpdateCassandraViewThroughputOptionalParams)
-    uid: '@azure/arm-cosmosdb.CassandraResources.beginUpdateCassandraViewThroughput'
-    package: '@azure/arm-cosmosdb'
-    summary: Update RUs per second of an Azure Cosmos DB Cassandra view
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function beginUpdateCassandraViewThroughput(resourceGroupName: string,
-        accountName: string, keyspaceName: string, viewName: string,
-        updateThroughputParameters: ThroughputSettingsUpdateParameters,
-        options?:
-        CassandraResourcesUpdateCassandraViewThroughputOptionalParams):
-        Promise<PollerLike<PollOperationState<ThroughputSettingsGetResults>,
-        ThroughputSettingsGetResults>>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group. The name is case insensitive.
-        - id: accountName
-          type: string
-          description: Cosmos DB database account name.
-        - id: keyspaceName
-          type: string
-          description: Cosmos DB keyspace name.
-        - id: viewName
-          type: string
-          description: Cosmos DB view name.
-        - id: updateThroughputParameters
-          type: >-
-            <xref uid="@azure/arm-cosmosdb.ThroughputSettingsUpdateParameters"
-            />
-          description: |-
-            The RUs per second of the parameters to provide for the current
-                                              Cassandra view.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-cosmosdb.CassandraResourcesUpdateCassandraViewThroughputOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;PollerLike&lt;PollOperationState&lt;<xref
-          uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;, <xref
-          uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;&gt;
-  - name: >-
-      beginUpdateCassandraViewThroughputAndWait(string, string, string, string,
-      ThroughputSettingsUpdateParameters,
-      CassandraResourcesUpdateCassandraViewThroughputOptionalParams)
-    uid: >-
-      @azure/arm-cosmosdb.CassandraResources.beginUpdateCassandraViewThroughputAndWait
-    package: '@azure/arm-cosmosdb'
-    summary: Update RUs per second of an Azure Cosmos DB Cassandra view
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function beginUpdateCassandraViewThroughputAndWait(resourceGroupName:
-        string, accountName: string, keyspaceName: string, viewName: string,
-        updateThroughputParameters: ThroughputSettingsUpdateParameters,
-        options?:
-        CassandraResourcesUpdateCassandraViewThroughputOptionalParams):
-        Promise<ThroughputSettingsGetResults>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group. The name is case insensitive.
-        - id: accountName
-          type: string
-          description: Cosmos DB database account name.
-        - id: keyspaceName
-          type: string
-          description: Cosmos DB keyspace name.
-        - id: viewName
-          type: string
-          description: Cosmos DB view name.
-        - id: updateThroughputParameters
-          type: >-
-            <xref uid="@azure/arm-cosmosdb.ThroughputSettingsUpdateParameters"
-            />
-          description: |-
-            The RUs per second of the parameters to provide for the current
-                                              Cassandra view.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-cosmosdb.CassandraResourcesUpdateCassandraViewThroughputOptionalParams"
             />
           description: The options parameters.
       return:
@@ -1464,88 +1045,6 @@ methods:
           Promise&lt;<xref
           uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;
   - name: >-
-      getCassandraView(string, string, string, string,
-      CassandraResourcesGetCassandraViewOptionalParams)
-    uid: '@azure/arm-cosmosdb.CassandraResources.getCassandraView'
-    package: '@azure/arm-cosmosdb'
-    summary: >-
-      Gets the Cassandra view under an existing Azure Cosmos DB database
-      account.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function getCassandraView(resourceGroupName: string, accountName:
-        string, keyspaceName: string, viewName: string, options?:
-        CassandraResourcesGetCassandraViewOptionalParams):
-        Promise<CassandraViewGetResults>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group. The name is case insensitive.
-        - id: accountName
-          type: string
-          description: Cosmos DB database account name.
-        - id: keyspaceName
-          type: string
-          description: Cosmos DB keyspace name.
-        - id: viewName
-          type: string
-          description: Cosmos DB view name.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-cosmosdb.CassandraResourcesGetCassandraViewOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref uid="@azure/arm-cosmosdb.CassandraViewGetResults"
-          />&gt;
-  - name: >-
-      getCassandraViewThroughput(string, string, string, string,
-      CassandraResourcesGetCassandraViewThroughputOptionalParams)
-    uid: '@azure/arm-cosmosdb.CassandraResources.getCassandraViewThroughput'
-    package: '@azure/arm-cosmosdb'
-    summary: >-
-      Gets the RUs per second of the Cassandra view under an existing Azure
-      Cosmos DB database account
-
-      with the provided name.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function getCassandraViewThroughput(resourceGroupName: string,
-        accountName: string, keyspaceName: string, viewName: string, options?:
-        CassandraResourcesGetCassandraViewThroughputOptionalParams):
-        Promise<ThroughputSettingsGetResults>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group. The name is case insensitive.
-        - id: accountName
-          type: string
-          description: Cosmos DB database account name.
-        - id: keyspaceName
-          type: string
-          description: Cosmos DB keyspace name.
-        - id: viewName
-          type: string
-          description: Cosmos DB view name.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-cosmosdb.CassandraResourcesGetCassandraViewThroughputOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: >-
-          Promise&lt;<xref
-          uid="@azure/arm-cosmosdb.ThroughputSettingsGetResults" />&gt;
-  - name: >-
       listCassandraKeyspaces(string, string,
       CassandraResourcesListCassandraKeyspacesOptionalParams)
     uid: '@azure/arm-cosmosdb.CassandraResources.listCassandraKeyspaces'
@@ -1621,44 +1120,4 @@ methods:
           PagedAsyncIterableIterator&lt;<xref
           uid="@azure/arm-cosmosdb.CassandraTableGetResults" />, <xref
           uid="@azure/arm-cosmosdb.CassandraTableGetResults" />[],
-          PageSettings&gt;
-  - name: >-
-      listCassandraViews(string, string, string,
-      CassandraResourcesListCassandraViewsOptionalParams)
-    uid: '@azure/arm-cosmosdb.CassandraResources.listCassandraViews'
-    package: '@azure/arm-cosmosdb'
-    summary: >-
-      Lists the Cassandra materialized views under an existing Azure Cosmos DB
-      database account.
-    remarks: ''
-    isDeprecated: false
-    syntax:
-      content: >-
-        function listCassandraViews(resourceGroupName: string, accountName:
-        string, keyspaceName: string, options?:
-        CassandraResourcesListCassandraViewsOptionalParams):
-        PagedAsyncIterableIterator<CassandraViewGetResults,
-        CassandraViewGetResults[], PageSettings>
-      parameters:
-        - id: resourceGroupName
-          type: string
-          description: The name of the resource group. The name is case insensitive.
-        - id: accountName
-          type: string
-          description: Cosmos DB database account name.
-        - id: keyspaceName
-          type: string
-          description: Cosmos DB keyspace name.
-        - id: options
-          type: >-
-            <xref
-            uid="@azure/arm-cosmosdb.CassandraResourcesListCassandraViewsOptionalParams"
-            />
-          description: The options parameters.
-      return:
-        description: ''
-        type: >-
-          PagedAsyncIterableIterator&lt;<xref
-          uid="@azure/arm-cosmosdb.CassandraViewGetResults" />, <xref
-          uid="@azure/arm-cosmosdb.CassandraViewGetResults" />[],
           PageSettings&gt;

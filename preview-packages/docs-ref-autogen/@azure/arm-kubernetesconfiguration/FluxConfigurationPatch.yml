@@ -16,10 +16,12 @@ properties:
     remarks: ''
     isDeprecated: false
     syntax:
-      content: 'bucket?: BucketDefinition'
+      content: 'bucket?: BucketPatchDefinition'
       return:
         description: ''
-        type: <xref uid="@azure/arm-kubernetesconfiguration.BucketDefinition" />
+        type: >-
+          <xref uid="@azure/arm-kubernetesconfiguration.BucketPatchDefinition"
+          />
   - name: configurationProtectedSettings
     uid: >-
       @azure/arm-kubernetesconfiguration.FluxConfigurationPatch.configurationProtectedSettings

@@ -13,7 +13,11 @@ methods:
       SitesCreateOrUpdateOptionalParams)
     uid: '@azure/arm-mobilenetwork.Sites.beginCreateOrUpdate'
     package: '@azure/arm-mobilenetwork'
-    summary: Creates or updates a mobile network site.
+    summary: >-
+      Creates or updates a mobile network site. Must be created in the same
+      location as its parent mobile
+
+      network.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -53,7 +57,11 @@ methods:
       SitesCreateOrUpdateOptionalParams)
     uid: '@azure/arm-mobilenetwork.Sites.beginCreateOrUpdateAndWait'
     package: '@azure/arm-mobilenetwork'
-    summary: Creates or updates a mobile network site.
+    summary: >-
+      Creates or updates a mobile network site. Must be created in the same
+      location as its parent mobile
+
+      network.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -87,7 +95,11 @@ methods:
   - name: beginDelete(string, string, string, SitesDeleteOptionalParams)
     uid: '@azure/arm-mobilenetwork.Sites.beginDelete'
     package: '@azure/arm-mobilenetwork'
-    summary: Deletes the specified mobile network site.
+    summary: >-
+      Deletes the specified mobile network site. This will also delete any
+      network functions that are a
+
+      part of this site.
     remarks: ''
     isDeprecated: false
     syntax:
@@ -114,7 +126,11 @@ methods:
   - name: beginDeleteAndWait(string, string, string, SitesDeleteOptionalParams)
     uid: '@azure/arm-mobilenetwork.Sites.beginDeleteAndWait'
     package: '@azure/arm-mobilenetwork'
-    summary: Deletes the specified mobile network site.
+    summary: >-
+      Deletes the specified mobile network site. This will also delete any
+      network functions that are a
+
+      part of this site.
     remarks: ''
     isDeprecated: false
     syntax:

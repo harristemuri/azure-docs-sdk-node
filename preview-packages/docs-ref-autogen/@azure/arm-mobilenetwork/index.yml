@@ -4,11 +4,14 @@ name: '@azure/arm-mobilenetwork'
 summary: ''
 type: package
 enums:
+  - '@azure/arm-mobilenetwork.KnownAuthenticationType'
   - '@azure/arm-mobilenetwork.KnownBillingSku'
-  - '@azure/arm-mobilenetwork.KnownCoreNetworkType'
+  - '@azure/arm-mobilenetwork.KnownCertificateProvisioningState'
   - '@azure/arm-mobilenetwork.KnownCreatedByType'
+  - '@azure/arm-mobilenetwork.KnownInstallationState'
   - '@azure/arm-mobilenetwork.KnownManagedServiceIdentityType'
   - '@azure/arm-mobilenetwork.KnownNaptEnabled'
+  - '@azure/arm-mobilenetwork.KnownObsoleteVersion'
   - '@azure/arm-mobilenetwork.KnownPduSessionType'
   - '@azure/arm-mobilenetwork.KnownPlatformType'
   - '@azure/arm-mobilenetwork.KnownPreemptionCapability'
@@ -17,6 +20,7 @@ enums:
   - '@azure/arm-mobilenetwork.KnownRecommendedVersion'
   - '@azure/arm-mobilenetwork.KnownSdfDirection'
   - '@azure/arm-mobilenetwork.KnownSimState'
+  - '@azure/arm-mobilenetwork.KnownSiteProvisioningState'
   - '@azure/arm-mobilenetwork.KnownTrafficControlPermission'
   - '@azure/arm-mobilenetwork.KnownVersionState'
 classes:
@@ -24,6 +28,8 @@ classes:
 interfaces:
   - '@azure/arm-mobilenetwork.Ambr'
   - '@azure/arm-mobilenetwork.Arp'
+  - '@azure/arm-mobilenetwork.AsyncOperationId'
+  - '@azure/arm-mobilenetwork.AsyncOperationStatus'
   - '@azure/arm-mobilenetwork.AttachedDataNetwork'
   - '@azure/arm-mobilenetwork.AttachedDataNetworkListResult'
   - '@azure/arm-mobilenetwork.AttachedDataNetworkResourceId'
@@ -37,6 +43,9 @@ interfaces:
     @azure/arm-mobilenetwork.AttachedDataNetworksListByPacketCoreDataPlaneOptionalParams
   - '@azure/arm-mobilenetwork.AttachedDataNetworksUpdateTagsOptionalParams'
   - '@azure/arm-mobilenetwork.AzureStackEdgeDeviceResourceId'
+  - '@azure/arm-mobilenetwork.AzureStackHCIClusterResourceId'
+  - '@azure/arm-mobilenetwork.CertificateProvisioning'
+  - '@azure/arm-mobilenetwork.CommonSimPropertiesFormat'
   - '@azure/arm-mobilenetwork.ConnectedClusterResourceId'
   - '@azure/arm-mobilenetwork.CustomLocationResourceId'
   - '@azure/arm-mobilenetwork.DataNetwork'
@@ -50,11 +59,14 @@ interfaces:
   - '@azure/arm-mobilenetwork.DataNetworksListByMobileNetworkNextOptionalParams'
   - '@azure/arm-mobilenetwork.DataNetworksListByMobileNetworkOptionalParams'
   - '@azure/arm-mobilenetwork.DataNetworksUpdateTagsOptionalParams'
+  - '@azure/arm-mobilenetwork.EncryptedSimPropertiesFormat'
+  - '@azure/arm-mobilenetwork.EncryptedSimUploadList'
   - '@azure/arm-mobilenetwork.ErrorAdditionalInfo'
   - '@azure/arm-mobilenetwork.ErrorDetail'
   - '@azure/arm-mobilenetwork.ErrorResponse'
+  - '@azure/arm-mobilenetwork.HttpsServerCertificate'
+  - '@azure/arm-mobilenetwork.Installation'
   - '@azure/arm-mobilenetwork.InterfaceProperties'
-  - '@azure/arm-mobilenetwork.KeyVaultCertificate'
   - '@azure/arm-mobilenetwork.KeyVaultKey'
   - '@azure/arm-mobilenetwork.LocalDiagnosticsAccessConfiguration'
   - '@azure/arm-mobilenetwork.ManagedServiceIdentity'
@@ -70,7 +82,6 @@ interfaces:
   - '@azure/arm-mobilenetwork.MobileNetworksListByResourceGroupOptionalParams'
   - '@azure/arm-mobilenetwork.MobileNetworksListBySubscriptionNextOptionalParams'
   - '@azure/arm-mobilenetwork.MobileNetworksListBySubscriptionOptionalParams'
-  - '@azure/arm-mobilenetwork.MobileNetworksListSimIdsOptionalParams'
   - '@azure/arm-mobilenetwork.MobileNetworksUpdateTagsOptionalParams'
   - '@azure/arm-mobilenetwork.NaptConfiguration'
   - '@azure/arm-mobilenetwork.Operation'
@@ -80,16 +91,18 @@ interfaces:
   - '@azure/arm-mobilenetwork.OperationsListNextOptionalParams'
   - '@azure/arm-mobilenetwork.OperationsListOptionalParams'
   - '@azure/arm-mobilenetwork.PacketCoreControlPlane'
+  - '@azure/arm-mobilenetwork.PacketCoreControlPlaneCollectDiagnosticsPackage'
   - '@azure/arm-mobilenetwork.PacketCoreControlPlaneListResult'
   - '@azure/arm-mobilenetwork.PacketCoreControlPlaneVersion'
   - '@azure/arm-mobilenetwork.PacketCoreControlPlaneVersionListResult'
   - '@azure/arm-mobilenetwork.PacketCoreControlPlaneVersions'
   - '@azure/arm-mobilenetwork.PacketCoreControlPlaneVersionsGetOptionalParams'
   - >-
-    @azure/arm-mobilenetwork.PacketCoreControlPlaneVersionsListByResourceGroupNextOptionalParams
-  - >-
-    @azure/arm-mobilenetwork.PacketCoreControlPlaneVersionsListByResourceGroupOptionalParams
+    @azure/arm-mobilenetwork.PacketCoreControlPlaneVersionsListNextOptionalParams
+  - '@azure/arm-mobilenetwork.PacketCoreControlPlaneVersionsListOptionalParams'
   - '@azure/arm-mobilenetwork.PacketCoreControlPlanes'
+  - >-
+    @azure/arm-mobilenetwork.PacketCoreControlPlanesCollectDiagnosticsPackageOptionalParams
   - '@azure/arm-mobilenetwork.PacketCoreControlPlanesCreateOrUpdateOptionalParams'
   - '@azure/arm-mobilenetwork.PacketCoreControlPlanesDeleteOptionalParams'
   - '@azure/arm-mobilenetwork.PacketCoreControlPlanesGetOptionalParams'
@@ -101,6 +114,8 @@ interfaces:
     @azure/arm-mobilenetwork.PacketCoreControlPlanesListBySubscriptionNextOptionalParams
   - >-
     @azure/arm-mobilenetwork.PacketCoreControlPlanesListBySubscriptionOptionalParams
+  - '@azure/arm-mobilenetwork.PacketCoreControlPlanesReinstallOptionalParams'
+  - '@azure/arm-mobilenetwork.PacketCoreControlPlanesRollbackOptionalParams'
   - '@azure/arm-mobilenetwork.PacketCoreControlPlanesUpdateTagsOptionalParams'
   - '@azure/arm-mobilenetwork.PacketCoreDataPlane'
   - '@azure/arm-mobilenetwork.PacketCoreDataPlaneListResult'
@@ -116,6 +131,7 @@ interfaces:
   - '@azure/arm-mobilenetwork.PccRuleConfiguration'
   - '@azure/arm-mobilenetwork.PccRuleQosPolicy'
   - '@azure/arm-mobilenetwork.PinholeTimeouts'
+  - '@azure/arm-mobilenetwork.Platform'
   - '@azure/arm-mobilenetwork.PlatformConfiguration'
   - '@azure/arm-mobilenetwork.PlmnId'
   - '@azure/arm-mobilenetwork.PortRange'
@@ -135,6 +151,7 @@ interfaces:
   - '@azure/arm-mobilenetwork.ServicesListByMobileNetworkOptionalParams'
   - '@azure/arm-mobilenetwork.ServicesUpdateTagsOptionalParams'
   - '@azure/arm-mobilenetwork.Sim'
+  - '@azure/arm-mobilenetwork.SimDeleteList'
   - '@azure/arm-mobilenetwork.SimGroup'
   - '@azure/arm-mobilenetwork.SimGroupListResult'
   - '@azure/arm-mobilenetwork.SimGroupResourceId'
@@ -147,8 +164,9 @@ interfaces:
   - '@azure/arm-mobilenetwork.SimGroupsListBySubscriptionNextOptionalParams'
   - '@azure/arm-mobilenetwork.SimGroupsListBySubscriptionOptionalParams'
   - '@azure/arm-mobilenetwork.SimGroupsUpdateTagsOptionalParams'
-  - '@azure/arm-mobilenetwork.SimIdListResult'
   - '@azure/arm-mobilenetwork.SimListResult'
+  - '@azure/arm-mobilenetwork.SimNameAndEncryptedProperties'
+  - '@azure/arm-mobilenetwork.SimNameAndProperties'
   - '@azure/arm-mobilenetwork.SimPolicies'
   - '@azure/arm-mobilenetwork.SimPoliciesCreateOrUpdateOptionalParams'
   - '@azure/arm-mobilenetwork.SimPoliciesDeleteOptionalParams'
@@ -159,16 +177,22 @@ interfaces:
   - '@azure/arm-mobilenetwork.SimPolicy'
   - '@azure/arm-mobilenetwork.SimPolicyListResult'
   - '@azure/arm-mobilenetwork.SimPolicyResourceId'
+  - '@azure/arm-mobilenetwork.SimPropertiesFormat'
   - '@azure/arm-mobilenetwork.SimStaticIpProperties'
   - '@azure/arm-mobilenetwork.SimStaticIpPropertiesStaticIp'
+  - '@azure/arm-mobilenetwork.SimUploadList'
   - '@azure/arm-mobilenetwork.Sims'
+  - '@azure/arm-mobilenetwork.SimsBulkDeleteOptionalParams'
+  - '@azure/arm-mobilenetwork.SimsBulkUploadEncryptedOptionalParams'
+  - '@azure/arm-mobilenetwork.SimsBulkUploadOptionalParams'
   - '@azure/arm-mobilenetwork.SimsCreateOrUpdateOptionalParams'
   - '@azure/arm-mobilenetwork.SimsDeleteOptionalParams'
   - '@azure/arm-mobilenetwork.SimsGetOptionalParams'
-  - '@azure/arm-mobilenetwork.SimsListBySimGroupNextOptionalParams'
-  - '@azure/arm-mobilenetwork.SimsListBySimGroupOptionalParams'
+  - '@azure/arm-mobilenetwork.SimsListByGroupNextOptionalParams'
+  - '@azure/arm-mobilenetwork.SimsListByGroupOptionalParams'
   - '@azure/arm-mobilenetwork.Site'
   - '@azure/arm-mobilenetwork.SiteListResult'
+  - '@azure/arm-mobilenetwork.SiteResourceId'
   - '@azure/arm-mobilenetwork.Sites'
   - '@azure/arm-mobilenetwork.SitesCreateOrUpdateOptionalParams'
   - '@azure/arm-mobilenetwork.SitesDeleteOptionalParams'
@@ -201,7 +225,9 @@ typeAliases:
   - >-
     @azure/arm-mobilenetwork.AttachedDataNetworksListByPacketCoreDataPlaneResponse
   - '@azure/arm-mobilenetwork.AttachedDataNetworksUpdateTagsResponse'
+  - '@azure/arm-mobilenetwork.AuthenticationType'
   - '@azure/arm-mobilenetwork.BillingSku'
+  - '@azure/arm-mobilenetwork.CertificateProvisioningState'
   - '@azure/arm-mobilenetwork.CoreNetworkType'
   - '@azure/arm-mobilenetwork.CreatedByType'
   - '@azure/arm-mobilenetwork.DataNetworksCreateOrUpdateResponse'
@@ -209,6 +235,7 @@ typeAliases:
   - '@azure/arm-mobilenetwork.DataNetworksListByMobileNetworkNextResponse'
   - '@azure/arm-mobilenetwork.DataNetworksListByMobileNetworkResponse'
   - '@azure/arm-mobilenetwork.DataNetworksUpdateTagsResponse'
+  - '@azure/arm-mobilenetwork.InstallationState'
   - '@azure/arm-mobilenetwork.ManagedServiceIdentityType'
   - '@azure/arm-mobilenetwork.MobileNetworksCreateOrUpdateResponse'
   - '@azure/arm-mobilenetwork.MobileNetworksGetResponse'
@@ -216,16 +243,16 @@ typeAliases:
   - '@azure/arm-mobilenetwork.MobileNetworksListByResourceGroupResponse'
   - '@azure/arm-mobilenetwork.MobileNetworksListBySubscriptionNextResponse'
   - '@azure/arm-mobilenetwork.MobileNetworksListBySubscriptionResponse'
-  - '@azure/arm-mobilenetwork.MobileNetworksListSimIdsResponse'
   - '@azure/arm-mobilenetwork.MobileNetworksUpdateTagsResponse'
   - '@azure/arm-mobilenetwork.NaptEnabled'
+  - '@azure/arm-mobilenetwork.ObsoleteVersion'
   - '@azure/arm-mobilenetwork.OperationsListNextResponse'
   - '@azure/arm-mobilenetwork.OperationsListResponse'
   - '@azure/arm-mobilenetwork.PacketCoreControlPlaneVersionsGetResponse'
+  - '@azure/arm-mobilenetwork.PacketCoreControlPlaneVersionsListNextResponse'
+  - '@azure/arm-mobilenetwork.PacketCoreControlPlaneVersionsListResponse'
   - >-
-    @azure/arm-mobilenetwork.PacketCoreControlPlaneVersionsListByResourceGroupNextResponse
-  - >-
-    @azure/arm-mobilenetwork.PacketCoreControlPlaneVersionsListByResourceGroupResponse
+    @azure/arm-mobilenetwork.PacketCoreControlPlanesCollectDiagnosticsPackageResponse
   - '@azure/arm-mobilenetwork.PacketCoreControlPlanesCreateOrUpdateResponse'
   - '@azure/arm-mobilenetwork.PacketCoreControlPlanesGetResponse'
   - >-
@@ -234,6 +261,8 @@ typeAliases:
   - >-
     @azure/arm-mobilenetwork.PacketCoreControlPlanesListBySubscriptionNextResponse
   - '@azure/arm-mobilenetwork.PacketCoreControlPlanesListBySubscriptionResponse'
+  - '@azure/arm-mobilenetwork.PacketCoreControlPlanesReinstallResponse'
+  - '@azure/arm-mobilenetwork.PacketCoreControlPlanesRollbackResponse'
   - '@azure/arm-mobilenetwork.PacketCoreControlPlanesUpdateTagsResponse'
   - '@azure/arm-mobilenetwork.PacketCoreDataPlanesCreateOrUpdateResponse'
   - '@azure/arm-mobilenetwork.PacketCoreDataPlanesGetResponse'
@@ -267,10 +296,14 @@ typeAliases:
   - '@azure/arm-mobilenetwork.SimPoliciesListByMobileNetworkResponse'
   - '@azure/arm-mobilenetwork.SimPoliciesUpdateTagsResponse'
   - '@azure/arm-mobilenetwork.SimState'
+  - '@azure/arm-mobilenetwork.SimsBulkDeleteResponse'
+  - '@azure/arm-mobilenetwork.SimsBulkUploadEncryptedResponse'
+  - '@azure/arm-mobilenetwork.SimsBulkUploadResponse'
   - '@azure/arm-mobilenetwork.SimsCreateOrUpdateResponse'
   - '@azure/arm-mobilenetwork.SimsGetResponse'
-  - '@azure/arm-mobilenetwork.SimsListBySimGroupNextResponse'
-  - '@azure/arm-mobilenetwork.SimsListBySimGroupResponse'
+  - '@azure/arm-mobilenetwork.SimsListByGroupNextResponse'
+  - '@azure/arm-mobilenetwork.SimsListByGroupResponse'
+  - '@azure/arm-mobilenetwork.SiteProvisioningState'
   - '@azure/arm-mobilenetwork.SitesCreateOrUpdateResponse'
   - '@azure/arm-mobilenetwork.SitesGetResponse'
   - '@azure/arm-mobilenetwork.SitesListByMobileNetworkNextResponse'
@@ -283,3 +316,26 @@ typeAliases:
   - '@azure/arm-mobilenetwork.SlicesUpdateTagsResponse'
   - '@azure/arm-mobilenetwork.TrafficControlPermission'
   - '@azure/arm-mobilenetwork.VersionState'
+functions:
+  - name: getContinuationToken(unknown)
+    uid: '@azure/arm-mobilenetwork.getContinuationToken'
+    package: '@azure/arm-mobilenetwork'
+    summary: |-
+      Given the last `.value` produced by the `byPage` iterator,
+      returns a continuation token that can be used to begin paging from
+      that point later.
+    remarks: ''
+    isDeprecated: false
+    syntax:
+      content: 'function getContinuationToken(page: unknown): string | undefined'
+      parameters:
+        - id: page
+          type: unknown
+          description: >-
+            An object from accessing `value` on the IteratorResult from a
+            `byPage` iterator.
+      return:
+        description: >-
+          The continuation token that can be passed into byPage() during future
+          calls.
+        type: string | undefined

@@ -2,7 +2,7 @@
 name: UserAssignedIdentity
 uid: '@azure/arm-dashboard.UserAssignedIdentity'
 package: '@azure/arm-dashboard'
-summary: ''
+summary: User assigned identity properties
 fullName: UserAssignedIdentity
 remarks: ''
 isDeprecated: false
@@ -12,7 +12,7 @@ properties:
     uid: '@azure/arm-dashboard.UserAssignedIdentity.clientId'
     package: '@azure/arm-dashboard'
     summary: >-
-      The client id of user assigned identity.
+      The client ID of the assigned identity.
 
       NOTE: This property will not be serialized. It can only be populated by
       the server.
@@ -28,7 +28,7 @@ properties:
     uid: '@azure/arm-dashboard.UserAssignedIdentity.principalId'
     package: '@azure/arm-dashboard'
     summary: >-
-      The principal id of user assigned identity.
+      The principal ID of the assigned identity.
 
       NOTE: This property will not be serialized. It can only be populated by
       the server.

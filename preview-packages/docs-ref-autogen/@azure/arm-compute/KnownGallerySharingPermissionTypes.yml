@@ -10,11 +10,15 @@ fullName: KnownGallerySharingPermissionTypes
 remarks: ''
 isDeprecated: false
 fields:
+  - name: Community
+    uid: '@azure/arm-compute.KnownGallerySharingPermissionTypes.Community'
+    package: '@azure/arm-compute'
+    summary: Community
   - name: Groups
     uid: '@azure/arm-compute.KnownGallerySharingPermissionTypes.Groups'
     package: '@azure/arm-compute'
-    summary: ''
+    summary: Groups
   - name: Private
     uid: '@azure/arm-compute.KnownGallerySharingPermissionTypes.Private'
     package: '@azure/arm-compute'
-    summary: ''
+    summary: Private
