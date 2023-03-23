@@ -1513,3 +1513,27 @@ Removed @azure/arm-connectedvmware@1.0.0-beta.2 because of docs package validati
 	Start to install npm package @azure/arm-connectedvmware@1.0.0-beta.2.
 	[User Error]: Failed to install npm package @azure/arm-connectedvmware@1.0.0-beta.2 with command: 
 		npm install @azure/arm-connectedvmware@1.0.0-beta.2 --prefix . 2>&1
+Removed @azure-rest/maps-geolocation@1.0.0-beta.2 because of docs package validation failure on 2023-03-22 23:50 +00:00
+	npm ERR! code ETARGET
+	npm ERR! notarget No matching version found for @azure-rest/maps-geolocation@1.0.0-beta.2.
+	npm ERR! notarget In most cases you or one of your dependencies are requesting
+	npm ERR! notarget a package version that doesn't exist.
+	System.Management.Automation.RemoteException
+	npm ERR! A complete log of this run can be found in:
+	npm ERR!     /home/vsts/.npm/_logs/2023-03-22T23_49_32_235Z-debug-0.log
+Removed @azure-rest/maps-render@1.0.0-beta.2 because of docs package validation failure on 2023-03-22 23:50 +00:00
+	npm ERR! code ETARGET
+	npm ERR! notarget No matching version found for @azure-rest/maps-render@1.0.0-beta.2.
+	npm ERR! notarget In most cases you or one of your dependencies are requesting
+	npm ERR! notarget a package version that doesn't exist.
+	System.Management.Automation.RemoteException
+	npm ERR! A complete log of this run can be found in:
+	npm ERR!     /home/vsts/.npm/_logs/2023-03-22T23_49_32_649Z-debug-0.log
+Removed @azure-rest/maps-search@1.0.0-beta.3 because of docs package validation failure on 2023-03-22 23:50 +00:00
+	npm ERR! code ETARGET
+	npm ERR! notarget No matching version found for @azure-rest/maps-search@1.0.0-beta.3.
+	npm ERR! notarget In most cases you or one of your dependencies are requesting
+	npm ERR! notarget a package version that doesn't exist.
+	System.Management.Automation.RemoteException
+	npm ERR! A complete log of this run can be found in:
+	npm ERR!     /home/vsts/.npm/_logs/2023-03-22T23_49_33_829Z-debug-0.log

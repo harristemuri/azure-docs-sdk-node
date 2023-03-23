@@ -866,7 +866,7 @@
       "name": "@azure/arm-dataprotection@1.0.0"
     },
     {
-      "name": "@azure/notification-hubs@1.0.0"
+      "name": "@azure/notification-hubs@1.0.1"
     }
   ],
   "source_repos": []
